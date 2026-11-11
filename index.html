@@ -408,19 +408,19 @@
       <div class="cv" id="cv-${key}"><canvas aria-label="${esc(s.name)} 일별 종가 차트" role="img"></canvas></div>
       <div class="src">출처: ${esc(s.source)}</div></a>`;
   }
-  function priceSeries(){
-    const A = (state.prices && state.prices.series) || {}, B = (state.data && state.data.prices) || {};
-    const out = {};
-    for (const k of new Set([...Object.keys(B), ...Object.keys(A)])) out[k] = A[k] || B[k];
-    return out;
+  // prices.json 압축 형식(d0 + 날짜 간격 dd + 값 v)을 [[날짜, 값], ...]으로 풀기 (한 번만)
+  function decodeSeries(s){
+    if (s.points || !s.d0) return s;
+    const pts = [], t = new Date(s.d0+"T00:00:00Z"), v = arr(s.v), dd = arr(s.dd);
+    for (let i=0; i<v.length; i++){ if (i) t.setUTCDate(t.getUTCDate()+dd[i-1]); pts.push([t.toISOString().slice(0,10), v[i]]); }
+    return Object.assign({}, s, {points: pts});
   }
+  function priceSeries(){ return (state.prices && state.prices.series) || {}; }
   function renderCharts(){
     const P = priceSeries();
     for (const g of ["stock","crypto","macro"]){
       const host = $("#ch-"+g);
-      if (host.dataset.built && host.dataset.src !== (state.prices?"p":"d")){ host.dataset.built=""; ORDER[g].forEach(k=>{ if(charts[k]){charts[k].destroy(); delete charts[k];} }); }
-      host.dataset.src = state.prices?"p":"d";
-      if (!host.dataset.built){ host.innerHTML = ORDER[g].filter(k=>P[k]).map(k=>cardHTML(k,P[k])).join(""); host.dataset.built="1"; }
+      if (!host.dataset.built && ORDER[g].some(k=>P[k])){ host.innerHTML = ORDER[g].filter(k=>P[k]).map(k=>cardHTML(k,P[k])).join(""); host.dataset.built="1"; }
       for (const k of ORDER[g]) if (P[k]) drawOne(k,P[k],g);
     }
   }
@@ -597,7 +597,7 @@
   }));
   function renderDD(){
     const D = (state.data && state.data.drawdown) || {}, KR = state.ddm==="kr";
-    const d = KR ? (state.krdd || D.kr || {}) : (D.us || {});
+    const d = KR ? (state.krdd || {note:"국내 데이터를 불러오는 중입니다."}) : (D.us || {});
     if (!arr(d.rows).length){
       $("#dd-note").innerHTML = `<span class="w">${esc(d.note || "데이터가 아직 없습니다.")}</span>`;
       $("#dd-body").innerHTML = '<div class="empty">표시할 종목이 없습니다.</div>'; return;
@@ -781,7 +781,7 @@
     try{ const r=await fetch("kr_drawdown.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.krdd=await r.json(); if(state.data) renderDD(); }catch(e){}
   }
   async function loadPrices(){
-    try{ const r=await fetch("prices.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.prices=await r.json(); if(state.data){ renderCharts(); renderWL(); } }catch(e){}
+    try{ const r=await fetch("prices.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; const pj=await r.json(); for (const k in (pj.series||{})) pj.series[k]=decodeSeries(pj.series[k]); state.prices=pj; if(state.data){ renderCharts(); renderWL(); } }catch(e){}
   }
   async function load(first){
     try{

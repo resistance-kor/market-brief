@@ -1,11 +1,11 @@
 """코스피200 편입 종목 중 52주 고점 대비 -30% 이하 종목 → kr_drawdown.json
 1) 구성 종목: 네이버 증권 모바일 API
-2) 시세(최근 약 1년 일봉): Yahoo Finance(<코드>.KS), 실패 시 네이버 siseJson (NXT 시간외 가격이 섞이지 않도록 Yahoo 우선)
+2) 시세(최근 약 1년 일봉): Yahoo Finance(<코드>.KS) — 정규장 종가·장중 고가(NXT 시간외 가격 제외)
    - 52주 고점 = 최근 365일 일별 '고가' 중 최댓값(장중 고가 기준), 종가는 마지막 일봉 종가
 3) 걸러진 종목만 네이버 증권(PER·추정PER·시가총액)과 다음 금융(WICS 업종)
 4) 의류·신발·패션·명품 업종 제외
 """
-import json, re, sys, time, urllib.request, urllib.parse
+import json, re, sys, time, urllib.request
 from datetime import datetime, timezone, timedelta
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
@@ -13,20 +13,11 @@ THRESHOLD = -30.0
 EXCLUDE_SECTOR = re.compile(r"섬유|의류|의복|신발|호화품|패션|럭셔리")
 
 
-def get(url, timeout=25, enc=None, headers=None):
+def get(url, timeout=25, headers=None):
     h = {"User-Agent": UA, "Accept": "*/*"}
     h.update(headers or {})
-    req = urllib.request.Request(url, headers=h)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        raw = r.read()
-    if enc:
-        return raw.decode(enc, "replace")
-    for e in ("utf-8", "euc-kr", "cp949"):
-        try:
-            return raw.decode(e)
-        except UnicodeDecodeError:
-            pass
-    return raw.decode("utf-8", "replace")
+    with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
 
 
 UNIVERSE_LABEL = "코스피200 편입 종목"
@@ -76,31 +67,6 @@ def yahoo_daily(code):
     raise RuntimeError(last)
 
 
-def naver_daily(code):
-    end = datetime.now(timezone(timedelta(hours=9)))
-    start = end - timedelta(days=400)
-    txt = get(f"https://api.finance.naver.com/siseJson.naver?symbol={code}&requestType=1"
-              f"&startTime={start:%Y%m%d}&endTime={end:%Y%m%d}&timeframe=day")
-    out = []
-    for m in re.finditer(r'\["(\d{8})",\s*([\d.]+),\s*([\d.]+),\s*([\d.]+),\s*([\d.]+)', txt):
-        d, o, h, l, c = m.groups()
-        if float(c) > 0:
-            out.append((f"{d[:4]}-{d[4:6]}-{d[6:]}", (float(h), float(c))))
-    if len(out) < 60:
-        raise RuntimeError(f"naver too short {len(out)}")
-    return sorted(out), None, "네이버 금융"
-
-
-def num(s):
-    if s is None:
-        return None
-    s = s.replace(",", "").strip()
-    try:
-        return float(s)
-    except ValueError:
-        return None
-
-
 def naver_detail(code):
     """PER(최근 실적)·추정PER·시가총액: 네이버 증권 모바일 integration / 업종: 다음 금융(WICS)."""
     d = json.loads(get(f"https://m.stock.naver.com/api/stock/{code}/integration"))
@@ -148,10 +114,7 @@ def main(path):
     hits, fails, asofs = [], [], []
     for i, (code, name) in enumerate(cons.items(), 1):
         try:
-            try:
-                rows, en, src = yahoo_daily(code)
-            except Exception as e1:
-                rows, en, src = naver_daily(code)
+            rows, en, _ = yahoo_daily(code)
             d_last, (_, px) = rows[-1]
             prev_close = rows[-2][1][1]
             cut = (datetime.strptime(d_last, "%Y-%m-%d") - timedelta(days=365)).strftime("%Y-%m-%d")
@@ -161,7 +124,7 @@ def main(path):
             if fh <= THRESHOLD:
                 hits.append({"ticker": code, "name_ko": name, "name": en or "", "index": ["코스피200"],
                              "asof": d_last, "price": round(px), "chg1d": round((px / prev_close - 1) * 100, 2),
-                             "high52": round(hi), "from_high": round(fh, 2), "price_source": src})
+                             "high52": round(hi), "from_high": round(fh, 2)})
         except Exception as e:
             fails.append(f"{code} {name}: {e}")
         time.sleep(0.25)

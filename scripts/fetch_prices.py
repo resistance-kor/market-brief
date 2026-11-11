@@ -157,6 +157,18 @@ def thin(pts, daily_years=3):
             out.append((d, v))
     return sorted(old.values()) + out
 
+def encode(points, unit):
+    """용량 절감: 첫 날짜(d0) + 날짜 간격(dd, 일 단위) + 값 배열(v, 지수·가격 소수 2자리 / 금리 3자리)."""
+    nd = 3 if unit == "%" else 2
+    first = datetime.strptime(points[0][0], "%Y-%m-%d")
+    prev, gaps, vals = first, [], []
+    for d, v in points:
+        cur = datetime.strptime(d, "%Y-%m-%d")
+        gaps.append((cur - prev).days); prev = cur
+        r = round(v, nd)
+        vals.append(int(r) if r == int(r) else r)
+    return {"d0": points[0][0], "dd": gaps[1:], "v": vals}
+
 def main(path):
     try:
         prev = json.load(open(path, encoding="utf-8"))
@@ -192,7 +204,7 @@ def main(path):
             "name": name, "group": group, "unit": unit, "source": src,
             "first": pts[0][0], "last": pts[-1][0],
             "ath": {"date": ath_d, "value": ath_v},
-            "points": [[d, v] for d, v in thinned],
+            **encode(thinned, unit),
         }
         ok += 1
         print(f"{key}: {src} {len(pts)}일 ({pts[0][0]}~{pts[-1][0]}) 마지막 {pts[-1][1]} / 사상최고 {ath_v} ({ath_d}) → 저장 {len(thinned)}개")
@@ -209,6 +221,7 @@ def main(path):
             print(f"watch {tk}: 실패 {e}")
         time.sleep(1)
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    print(f"prices.json {len(json.dumps(out, ensure_ascii=False, separators=(',', ':')).encode()):,} bytes")
     print(f"ok {ok}/{len(SERIES)}")
     if ok == 0:
         sys.exit(1)
