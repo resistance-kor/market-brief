@@ -35,7 +35,21 @@
   .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--tx3);margin-right:6px;vertical-align:middle}
   .dot.live{background:var(--acc)}
 
-  .topgrid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-bottom:24px;align-items:stretch}
+  .topgrid{display:grid;grid-template-columns:1fr 300px;gap:14px;margin-bottom:18px;align-items:start}
+  .topgrid .brief{padding:12px 16px}
+  .topgrid .brief .label{margin-bottom:4px}
+  .topgrid .brief .headline{font-size:16px;margin:0 0 6px}
+  .topgrid .brief ul{font-size:13px}
+  .topgrid .brief li{margin:1px 0}
+  .topgrid .note{margin-top:6px}
+  .morebtn{background:none;border:0;padding:0;color:var(--acc);font:inherit;font-size:12px;cursor:pointer}
+  .evbox{padding:12px 14px}
+  .evbox h2{font-size:13.5px;margin:0 0 4px}
+  .evl{display:grid;grid-template-columns:auto 1fr;gap:8px;padding:4px 0;border-top:1px solid var(--line);font-size:12.5px;align-items:baseline}
+  .evl:first-child{border-top:0}
+  .evl .d{color:var(--acc);font-size:11.5px;white-space:nowrap}
+  .evl .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .evl.today .d{font-weight:700}
   @media (max-width:900px){.topgrid{grid-template-columns:1fr}}
   .evbox{display:flex;flex-direction:column}
   .brief{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:24px}
@@ -193,12 +207,12 @@
     <div class="label">오늘의 시황 요약</div>
     <p class="headline" id="headline">불러오는 중입니다.</p>
     <ul id="bullets"></ul>
-    <div class="note">요약·영향 해석은 Claude가 수집 기사를 근거로 작성한 것으로 투자 권유가 아닙니다. 수치와 사실은 각 기사 원문에서 확인하세요.</div>
+    <div class="note" title="요약·영향 해석은 Claude가 수집 기사를 근거로 작성한 것으로 투자 권유가 아닙니다. 수치와 사실은 각 기사 원문에서 확인하세요.">Claude가 수집 기사로 작성한 요약 · 투자 권유 아님</div>
   </section>
     <div class="box evbox" style="margin-bottom:0">
       <h2>다가오는 주요 일정</h2>
       <div id="events"></div>
-      <div class="note"><a href="#news" style="color:var(--tx3)">지난 일정·뉴스는 뉴스 탭에서 →</a></div>
+      <div class="note"><button class="morebtn" id="evmore" type="button"></button></div>
     </div>
   </div>
 
@@ -498,20 +512,32 @@
   function renderMeta(){
     const m = state.data.meta || {};
     $("#headline").textContent = m.headline || "아직 요약이 없습니다.";
-    $("#bullets").innerHTML = arr(m.bullets).map(b=>`<li>${esc(b)}</li>`).join("");
+    const bl = arr(m.bullets), BMAX = 3, open = !!state.bopen;
+    $("#bullets").innerHTML = bl.slice(0, open ? bl.length : BMAX).map(b=>`<li>${esc(b)}</li>`).join("")
+      + (bl.length>BMAX ? `<li style="list-style:none;margin-left:-18px"><button class="morebtn" id="bmore" type="button">${open?"접기":"+"+(bl.length-BMAX)+"개 더 보기"}</button></li>` : "");
+    const bm = $("#bmore"); if (bm) bm.onclick = ()=>{ state.bopen = !state.bopen; renderMeta(); };
     $("#updated").textContent = m.updated_at ? kstTime(m.updated_at) : "—";
     $("#sched").textContent = m.schedule ? "자동 업데이트: "+m.schedule : "";
   }
   function renderEvents(){
-    const evs = arr(state.data.events).slice().sort((a,b)=>String(a.date).localeCompare(String(b.date)));
-    if (!evs.length){ $("#events").innerHTML='<div class="note">등록된 일정이 없습니다.</div>'; return; }
+    const evs = arr(state.data.events).slice().sort((a,b)=>(String(a.date)+(a.time||"")).localeCompare(String(b.date)+(b.time||"")));
     const today = new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
-    const from = new Date(Date.now()+9*3600e3-2*86400e3).toISOString().slice(0,10);
-    const shown = evs.filter(e=>(e.date||"")>=from).slice(0,9);
-    if (!shown.length){ $("#events").innerHTML='<div class="note">예정된 일정이 없습니다.</div>'; return; }
-    $("#events").innerHTML = shown.map(e=>`<div class="ev ${(e.date||"")<today?"past":""}">
-      <div class="d mono">${esc((e.date||"").slice(5).replace("-","/"))}${e.time?`<br>${esc(e.time)}`:""}</div>
-      <div><div class="t">${esc(e.title)}</div>${e.note?`<div class="n">${esc(e.note)}</div>`:""}</div></div>`).join("");
+    const open = !!state.evopen, btn = $("#evmore");
+    // 접힌 상태: 오늘 이후 5건을 한 줄씩(설명은 마우스를 올리면 표시) / 펼친 상태: 이틀 전부터 전부, 설명 포함
+    const from = open ? new Date(Date.now()+9*3600e3-2*86400e3).toISOString().slice(0,10) : today;
+    const all = evs.filter(e=>(e.date||"")>=from), shown = open ? all : all.slice(0,5);
+    if (!shown.length){ $("#events").innerHTML='<div class="note">예정된 일정이 없습니다.</div>'; btn.hidden = true; return; }
+    const md = d => esc((d||"").slice(5).replace("-","/"));
+    $("#events").innerHTML = open
+      ? shown.map(e=>`<div class="ev ${(e.date||"")<today?"past":""}">
+          <div class="d mono">${md(e.date)}${e.time?`<br>${esc(e.time)}`:""}</div>
+          <div><div class="t">${esc(e.title)}</div>${e.note?`<div class="n">${esc(e.note)}</div>`:""}</div></div>`).join("")
+      : shown.map(e=>`<div class="evl ${e.date===today?"today":""}" title="${esc(e.title+(e.note?" — "+e.note:""))}">
+          <span class="d mono">${e.date===today?"오늘":md(e.date)}${e.time?" "+esc(e.time):""}</span><span class="t">${esc(e.title)}</span></div>`).join("");
+    const moreN = all.length - shown.length;
+    btn.hidden = !open && moreN<=0 && !shown.some(e=>e.note);
+    btn.textContent = open ? "간단히 보기" : (moreN>0 ? `+${moreN}건 · 설명까지 펼치기` : "설명까지 펼치기");
+    btn.onclick = ()=>{ state.evopen = !state.evopen; renderEvents(); };
   }
 
   // ---------- views ----------
@@ -567,28 +593,35 @@
   function renderWL(){
     const W = (state.data && state.data.watchlist) || {}, items = arr(W.items);
     if (!items.length){ $("#wl").innerHTML='<div class="empty">등록된 종목이 없습니다.</div>'; return; }
-    const usd = v => v==null ? "—" : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+    const WQ = (state.prices && state.prices.watch) || {};
     const pe = v => v==null ? "해당 없음" : v<0 ? "적자" : Number(v).toFixed(1)+"배";
-    $("#wl").innerHTML = items.map(it=>{
-      const c = it.chg1d>0?"up":it.chg1d<0?"down":"flat", sign = it.chg1d>0?"▲":it.chg1d<0?"▼":"–";
+    $("#wl").innerHTML = items.map(it0=>{
+      // prices.json(매시간 GitHub Actions, Yahoo 종가)이 더 최근이면 가격·등락·52주 범위를 그 값으로 표시
+      const q = WQ[it0.ticker], useQ = q && !q.stale && q.price!=null && (!it0.asof || it0.price==null || q.asof >= it0.asof);
+      const it = useQ ? Object.assign({}, it0, {asof:q.asof, price:q.price, chg1d:q.chg1d, high52:q.high52_close, low52:q.low52_close,
+                         from_high:q.from_high, from_high_calc:false, closeBasis:true, currency: it0.currency || q.currency}) : it0;
+      const krw = it.currency==="KRW";
+      const usd = v => v==null ? "—" : krw ? Number(v).toLocaleString("ko-KR",{maximumFractionDigits:0})+"원"
+                                           : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+      const has = it.chg1d!=null, c = !has?"flat":it.chg1d>0?"up":it.chg1d<0?"down":"flat", sign = it.chg1d>0?"▲":it.chg1d<0?"▼":"–";
       const lo = it.low52, hi = it.high52, pos = (lo!=null&&hi!=null&&hi>lo) ? Math.max(0,Math.min(100,(it.price-lo)/(hi-lo)*100)) : null;
       return `<div class="wc">
         <div class="hd"><span class="nm">${esc(it.name_ko)}</span><span class="tk mono">${esc(it.ticker)}</span></div>
         <div class="sub">${esc(it.name)} · ${esc(it.sector)}</div>
         <div class="val mono">${usd(it.price)}</div>
-        <div class="chg mono ${c}">${sign} ${Math.abs(it.chg1d).toFixed(2)}% (전일 대비)</div>
+        <div class="chg mono ${c}">${has ? `${sign} ${Math.abs(it.chg1d).toFixed(2)}% (전일 대비)` : "다음 갱신 때 표시됩니다"}</div>
         ${pos!=null?`<div class="rng" title="52주 범위에서 현재 위치"><i style="left:calc(${pos.toFixed(1)}% - 1px)"></i></div>
         <div class="rngl mono"><span>52주 저 ${usd(lo)}</span><span>52주 고 ${usd(hi)}</span></div>`:""}
         <dl>
-          <dt>고점 대비</dt><dd class="mono"><b>${Number(it.from_high).toFixed(2)}%</b>${it.from_high_calc?' <span style="color:var(--tx3);font-size:11px">(종가÷52주 고점 계산)</span>':""}</dd>
+          <dt>고점 대비</dt><dd class="mono"><b>${it.from_high==null?"—":Number(it.from_high).toFixed(2)+"%"}</b>${it.closeBasis?' <span style="color:var(--tx3);font-size:11px">(52주 종가 고점 기준)</span>':it.from_high_calc?' <span style="color:var(--tx3);font-size:11px">(종가÷52주 고점 계산)</span>':""}</dd>
           <dt>PER (후행 / 선행)</dt><dd class="mono">${pe(it.per)} / ${pe(it.fper)}</dd>
-          <dt>규모</dt><dd>${esc(it.mcap)}</dd>
-          <dt>기준일</dt><dd class="mono">${esc(it.asof)} 미국 종가</dd>
+          <dt>규모</dt><dd>${esc(it.mcap||"—")}</dd>
+          <dt>기준일</dt><dd class="mono">${it.asof?esc(it.asof)+(krw?" 한국 종가":" 미국 종가"):"—"}</dd>
         </dl>
         ${it.note?`<div class="note">${esc(it.note)}</div>`:""}
         <div class="lk"><a href="${esc(safeUrl(it.live))}" target="_blank" rel="noopener">실시간 차트 ↗</a><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">종목 정보 ↗</a></div>
       </div>`; }).join("");
-    $("#wl-src").textContent = "출처: " + (W.source||"");
+    $("#wl-src").textContent = "출처: 가격·등락·52주 범위는 Yahoo Finance 종가(GitHub Actions가 매시간 갱신)를 우선 사용하고, PER·규모는 " + (W.source||"") + "(하루 2회 갱신)입니다.";
   }
 
   // ---------- 실시간 헤드라인 (GitHub Actions가 20분마다 RSS 수집 → headlines.json) ----------
@@ -680,7 +713,7 @@
   })();
 
   async function loadPrices(){
-    try{ const r=await fetch("prices.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.prices=await r.json(); if(state.data) renderCharts(); }catch(e){}
+    try{ const r=await fetch("prices.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.prices=await r.json(); if(state.data){ renderCharts(); renderWL(); } }catch(e){}
   }
   async function load(first){
     try{

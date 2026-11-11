@@ -19,6 +19,13 @@ SERIES = {
     "US10Y":  ("미국 10년물 금리", "macro",  "%",   "^TNX",    ("fred", "DGS10")),
     "GOLD":   ("금 (온스당)",      "macro",  "USD", "GC=F",    ("coinbase", "PAXG-USD")),
 }
+# 기타 종목(watchlist): 화면 티커 → Yahoo 심볼. 최근 약 400일 일봉으로 종가·전일 대비·52주 고/저(종가 기준) 계산
+WATCH = {
+    "TSLL": "TSLL",
+    "LUNR": "LUNR",
+    "UNH": "UNH",
+    "161510": "161510.KS",   # PLUS 고배당주 (KRX)
+}
 SOURCE_NAME = {
     "yahoo": "Yahoo Finance", "fred": "FRED", "coinbase": "Coinbase Exchange",
 }
@@ -57,6 +64,51 @@ def yahoo(sym):
             print(f"  yahoo {host} {sym}: {type(e).__name__} {e}")
         time.sleep(2)
     raise RuntimeError("yahoo failed")
+
+def yahoo_recent(sym, days=400):
+    """최근 days일 일봉 종가와 Yahoo 메타(이름·통화·거래소)."""
+    q = urllib.parse.quote(sym)
+    p2 = int(time.time()) + 86400; p1 = p2 - (days + 1) * 86400
+    last = None
+    for host in ("query1", "query2"):
+        try:
+            raw = get(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?period1={p1}&period2={p2}&interval=1d&includePrePost=false&events=")
+            res = json.loads(raw)["chart"]["result"][0]
+            meta = res["meta"]; off = meta.get("gmtoffset", 0)
+            pts = {}
+            for t, c in zip(res["timestamp"], res["indicators"]["quote"][0]["close"]):
+                if c is None or c <= 0:
+                    continue
+                pts[datetime.fromtimestamp(t + off, tz=timezone.utc).strftime("%Y-%m-%d")] = float(c)
+            out = sorted(pts.items())
+            if len(out) >= 30:
+                return out, meta
+            last = f"too short {len(out)}"
+        except Exception as e:
+            last = f"{type(e).__name__} {e}"
+        time.sleep(2)
+    raise RuntimeError(last)
+
+def watch_quote(sym):
+    pts, meta = yahoo_recent(sym)
+    d_last, px = pts[-1]
+    prev = pts[-2][1]
+    cut = (datetime.strptime(d_last, "%Y-%m-%d") - timedelta(days=365)).strftime("%Y-%m-%d")
+    yr = [v for d, v in pts if d > cut]
+    hi, lo = max(yr), min(yr)
+    r = lambda v, n=4: round(v, n)
+    return {
+        "symbol": sym,
+        "yahoo_name": meta.get("longName") or meta.get("shortName"),
+        "currency": meta.get("currency"),
+        "exchange": meta.get("fullExchangeName") or meta.get("exchangeName"),
+        "asof": d_last, "price": r(px), "prev_close": r(prev),
+        "chg1d": round((px / prev - 1) * 100, 2),
+        "high52_close": r(hi), "low52_close": r(lo),
+        "from_high": round((px / hi - 1) * 100, 2),
+        "basis": "최근 52주 일별 종가 기준",
+        "source": f"Yahoo Finance ({sym})",
+    }
 
 def fred(sid):
     raw = get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}").decode()
@@ -144,6 +196,17 @@ def main(path):
         }
         ok += 1
         print(f"{key}: {src} {len(pts)}일 ({pts[0][0]}~{pts[-1][0]}) 마지막 {pts[-1][1]} / 사상최고 {ath_v} ({ath_d}) → 저장 {len(thinned)}개")
+        time.sleep(1)
+    out["watch"] = {}
+    for tk, sym in WATCH.items():
+        try:
+            w = watch_quote(sym)
+            out["watch"][tk] = w
+            print(f"watch {tk}: {w['yahoo_name']} {w['currency']} {w['asof']} {w['price']} ({w['chg1d']}%) 52주종가고점 {w['high52_close']} → {w['from_high']}%")
+        except Exception as e:
+            if tk in prev.get("watch", {}):
+                out["watch"][tk] = dict(prev["watch"][tk], stale=True)
+            print(f"watch {tk}: 실패 {e}")
         time.sleep(1)
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"ok {ok}/{len(SERIES)}")
