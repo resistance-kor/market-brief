@@ -194,22 +194,28 @@
   <section class="block">
     <div class="bhead">
       <h2>주요 지수</h2>
-      <span class="hint">일별 종가 · 코인·금은 실시간(코인베이스) · 마우스를 올리면 날짜별 값</span>
+      <span class="hint">종가 차트(최근 3년 일별·그 이전 주별) · 비트코인·이더리움·솔라나는 실시간 · 마우스를 올리면 날짜별 값</span>
       <div class="seg" id="range">
         <button data-r="30" aria-pressed="false">1개월</button>
-        <button data-r="90" aria-pressed="true">3개월</button>
+        <button data-r="90" aria-pressed="false">3개월</button>
+        <button data-r="365" aria-pressed="true">1년</button>
+        <button data-r="1825" aria-pressed="false">5년</button>
         <button data-r="0" aria-pressed="false">전체</button>
       </div>
     </div>
     <div class="grouplabel"><i style="background:var(--stock)"></i>주식</div>
     <div class="livebar">
-      <div class="lbh"><span class="live">미국 지수·10년물 실시간</span><span class="note" style="margin:0">TradingView 제공 · 지수 원본 값은 무료 위젯에서 제공되지 않아, 지수를 따라가는 24시간 CFD(FOREX.com)와 ETF(SPY·QQQ, 정규장 23:30~06:00 KST)로 보여 줍니다. 아래 차트는 공식 지수 종가입니다</span></div>
+      <div class="lbh"><span class="live">미국 지수 실시간</span><span class="note" style="margin:0">TradingView 제공 · 지수 원본 값은 무료 위젯에서 제공되지 않아, 지수를 따라가는 24시간 CFD(FOREX.com)와 ETF(SPY·QQQ, 정규장 23:30~06:00 KST)로 보여 줍니다. 아래 차트는 공식 지수 종가입니다</span></div>
       <div id="tv-tickers" class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
     </div>
     <div class="charts" id="ch-stock"></div>
     <div class="grouplabel"><i style="background:var(--crypto)"></i>코인</div>
     <div class="charts" id="ch-crypto"></div>
     <div class="grouplabel"><i style="background:var(--macro)"></i>금리·원자재</div>
+    <div class="livebar">
+      <div class="lbh"><span class="live">금리·금 실시간</span><span class="note" style="margin:0">TradingView 제공 · 금은 현물(XAU/USD), 아래 차트는 금 선물(GC=F) 종가</span></div>
+      <div id="tv-macro" class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
+    </div>
     <div class="charts" id="ch-macro"></div>
   </section>
 
@@ -310,7 +316,7 @@
     ETH:"https://kr.tradingview.com/symbols/ETHUSD/", SOL:"https://kr.tradingview.com/symbols/SOLUSD/",
     US10Y:"https://kr.tradingview.com/symbols/TVC-US10Y/", GOLD:"https://kr.tradingview.com/symbols/XAUUSD/" };
 
-  const state = { data:null, range:90, imp:"", lvl:0, q:"", show:{stock:8,crypto:8,macro:6} };
+  const state = { data:null, prices:null, range:365, imp:"", lvl:0, q:"", show:{stock:8,crypto:8,macro:6} };
   const charts = {};
 
   function kstDay(iso){
@@ -337,10 +343,18 @@
       <div class="cv" id="cv-${key}"><canvas aria-label="${esc(s.name)} 일별 종가 차트" role="img"></canvas></div>
       <div class="src">출처: ${esc(s.source)}</div></a>`;
   }
+  function priceSeries(){
+    const A = (state.prices && state.prices.series) || {}, B = (state.data && state.data.prices) || {};
+    const out = {};
+    for (const k of new Set([...Object.keys(B), ...Object.keys(A)])) out[k] = A[k] || B[k];
+    return out;
+  }
   function renderCharts(){
-    const P = state.data.prices || {};
+    const P = priceSeries();
     for (const g of ["stock","crypto","macro"]){
       const host = $("#ch-"+g);
+      if (host.dataset.built && host.dataset.src !== (state.prices?"p":"d")){ host.dataset.built=""; ORDER[g].forEach(k=>{ if(charts[k]){charts[k].destroy(); delete charts[k];} }); }
+      host.dataset.src = state.prices?"p":"d";
       if (!host.dataset.built){ host.innerHTML = ORDER[g].filter(k=>P[k]).map(k=>cardHTML(k,P[k])).join(""); host.dataset.built="1"; }
       for (const k of ORDER[g]) if (P[k]) drawOne(k,P[k],g);
     }
@@ -366,13 +380,15 @@
     const hiEl = $("#hi-"+key);
     if (last && all.length > 1){
       let hi = all[0]; for (const p of all) if (p[1] > hi[1]) hi = p;
-      const md = hi[0].slice(5).replace("-","/"), since = all[0][0].slice(5).replace("-","/");
+      let since = all[0][0].slice(5).replace("-","/") + " 이후";
+      if (s.ath && s.ath.value){ if (s.ath.value >= hi[1]) hi = [s.ath.date, s.ath.value]; since = "사상 최고"; }
+      const md = hi[0].replace(/-/g,".");
       if (s.unit==="%"){
         const d = last[1]-hi[1];
-        hiEl.innerHTML = d===0 ? `기간 최고치 (${since} 이후)` : `고점 대비 <b>${d.toFixed(2)}%p</b> · 최고 ${hi[1].toFixed(2)}% (${md})`;
+        hiEl.innerHTML = d===0 ? `${since} 수준` : `${since} 대비 <b>${d.toFixed(2)}%p</b> · ${hi[1].toFixed(2)}% (${md})`;
       } else {
         const d = (last[1]/hi[1]-1)*100;
-        hiEl.innerHTML = d===0 ? `기간 최고치 (${since} 이후)` : `고점 대비 <b>${d.toFixed(2)}%</b> · 고점 ${md} (${since} 이후)`;
+        hiEl.innerHTML = d===0 ? `${since} 경신` : `${since} 대비 <b>${d.toFixed(2)}%</b> · ${md}`;
       }
     } else hiEl.textContent = "";
 
@@ -400,11 +416,11 @@
         plugins:{ legend:{display:false},
           tooltip:{ displayColors:false, backgroundColor:css("--panel2"), titleColor:css("--tx2"), bodyColor:css("--tx"),
             borderColor:css("--line"), borderWidth:1, padding:8,
-            bodyFont:{family:"JetBrains Mono"}, callbacks:{ label: c => fmt(c.parsed.y, s.unit) } } },
+            bodyFont:{family:"JetBrains Mono"}, callbacks:{ title: it => it[0] ? it[0].label : "", label: c => fmt(c.parsed.y, s.unit) } } },
         scales:{
           x:{ grid:{display:false}, border:{color:css("--line")},
               ticks:{ color:css("--tx3"), font:{size:10}, maxRotation:0, autoSkip:true, maxTicksLimit:4,
-                      callback(v){ const l=this.getLabelForValue(v); return l.slice(5).replace("-","/"); } } },
+                      callback(v){ const l=this.getLabelForValue(v); return (state.range===0||state.range>=365) ? l.slice(2,7).replace("-",".") : l.slice(5).replace("-","/"); } } },
           y:{ position:"right", grid:{color:css("--grid")}, border:{display:false},
               ticks:{ color:css("--tx3"), font:{size:10}, maxTicksLimit:4,
                       callback:v => s.unit==="%" ? v.toFixed(2)+"%" : s.unit==="USD" ? (v>=1000? "$"+(v/1000).toFixed(v>=10000?0:1)+"k" : "$"+v) : v.toLocaleString("ko-KR") } }
@@ -592,12 +608,12 @@
 
   // ---------- 실시간 코인 시세 (Coinbase Exchange WebSocket, 키 불필요) ----------
   const LIVEPX = {};
-  const WS_MAP = { "BTC-USD":"BTC", "ETH-USD":"ETH", "SOL-USD":"SOL", "PAXG-USD":"GOLD" };
+  const WS_MAP = { "BTC-USD":"BTC", "ETH-USD":"ETH", "SOL-USD":"SOL" };
   const pending = new Set(); let flushT = null, ws = null, wsTry = 0;
   function flush(){
     flushT = null;
     if (!state.data || location.hash==="#drawdown" || location.hash==="#watchlist"){ pending.clear(); return; }
-    const P = state.data.prices || {};
+    const P = priceSeries();
     for (const k of pending){ const s=P[k]; if (s) drawOne(k, s, s.group); }
     pending.clear();
   }
@@ -618,6 +634,20 @@
   connectWS();
 
   // ---------- 미국 지수 실시간 (TradingView 무료 위젯, 키 불필요) ----------
+  function tvTickers(id, symbols){
+    const host = document.getElementById(id); if (!host) return;
+    const dark = !(window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches);
+    const sc = document.createElement("script");
+    sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"; sc.async = true;
+    sc.text = JSON.stringify({ symbols, isTransparent: true, showSymbolLogo: false, colorTheme: dark ? "dark" : "light", locale: "kr" });
+    host.appendChild(sc);
+  }
+  tvTickers("tv-macro", [
+    { proName: "TVC:US10Y", title: "미국 10년물 금리" },
+    { proName: "TVC:US02Y", title: "미국 2년물 금리" },
+    { proName: "OANDA:XAUUSD", title: "금 현물 (XAU/USD)" },
+    { proName: "TVC:DXY", title: "달러 인덱스" }
+  ]);
   (function(){
     const host = document.getElementById("tv-tickers"); if (!host) return;
     const dark = !(window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches);
@@ -628,14 +658,16 @@
         { proName: "FOREXCOM:SPXUSD", title: "S&P 500 (24시간 CFD)" },
         { proName: "FOREXCOM:NSXUSD", title: "나스닥100 (24시간 CFD)" },
         { proName: "AMEX:SPY", title: "SPY (S&P500 ETF)" },
-        { proName: "NASDAQ:QQQ", title: "QQQ (나스닥100 ETF)" },
-        { proName: "TVC:US10Y", title: "미국 10년물 금리" }
+        { proName: "NASDAQ:QQQ", title: "QQQ (나스닥100 ETF)" }
       ],
       isTransparent: true, showSymbolLogo: false, colorTheme: dark ? "dark" : "light", locale: "kr"
     });
     host.appendChild(sc);
   })();
 
+  async function loadPrices(){
+    try{ const r=await fetch("prices.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.prices=await r.json(); if(state.data) renderCharts(); }catch(e){}
+  }
   async function load(first){
     try{
       const r = await fetch(new URL("data.json", location.href).href + "?t=" + Date.now(), {cache:"no-store"});
@@ -650,7 +682,7 @@
       if (!state.data){ const w=$("#warn"); w.textContent="데이터를 불러오지 못했습니다. 잠시 후 새로고침해 주세요."; w.style.display="block"; }
     }
   }
-  load(true);
+  load(true); loadPrices(); setInterval(loadPrices, 15*60*1000);
   setInterval(()=>load(false), 10*60*1000);
 })();
 </script>
