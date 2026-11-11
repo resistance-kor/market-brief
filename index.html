@@ -117,6 +117,8 @@
   a.cc:hover{border-color:var(--tx3)}
   .cc .go{font-size:11px;color:var(--acc);margin-left:6px}
   .cc .hi{font-size:12px;color:var(--tx3)}
+  .livebar{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px 6px;margin-bottom:12px}
+  .livebar .lbh{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
   .live{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;color:var(--acc);margin-left:6px;font-weight:500}
   .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--acc);animation:pl 1.6s infinite}
   @keyframes pl{0%,100%{opacity:1}50%{opacity:.25}}
@@ -191,6 +193,10 @@
       </div>
     </div>
     <div class="grouplabel"><i style="background:var(--stock)"></i>주식</div>
+    <div class="livebar">
+      <div class="lbh"><span class="live">미국 지수 실시간</span><span class="note" style="margin:0">TradingView 제공 · 정규장(한국시간 23:30~06:00) 외에는 마지막 값이 표시되며, 24시간 CFD는 장외 시간에도 움직입니다</span></div>
+      <div id="tv-tickers" class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
+    </div>
     <div class="charts" id="ch-stock"></div>
     <div class="grouplabel"><i style="background:var(--crypto)"></i>코인</div>
     <div class="charts" id="ch-crypto"></div>
@@ -559,6 +565,25 @@
     ws.onerror = () => { try { ws.close(); } catch(e){} };
   }
   connectWS();
+
+  // ---------- 미국 지수 실시간 (TradingView 무료 위젯, 키 불필요) ----------
+  (function(){
+    const host = document.getElementById("tv-tickers"); if (!host) return;
+    const dark = !(window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches);
+    const sc = document.createElement("script");
+    sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"; sc.async = true;
+    sc.text = JSON.stringify({
+      symbols: [
+        { proName: "SP:SPX", title: "S&P 500" },
+        { proName: "NASDAQ:IXIC", title: "나스닥 종합" },
+        { proName: "NASDAQ:NDX", title: "나스닥 100" },
+        { proName: "FOREXCOM:SPXUSD", title: "S&P 500 CFD (24시간)" },
+        { proName: "FOREXCOM:NSXUSD", title: "나스닥100 CFD (24시간)" }
+      ],
+      isTransparent: true, showSymbolLogo: false, colorTheme: dark ? "dark" : "light", locale: "kr"
+    });
+    host.appendChild(sc);
+  })();
 
   async function load(first){
     try{
