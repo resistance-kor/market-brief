@@ -574,11 +574,12 @@
     sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"; sc.async = true;
     sc.text = JSON.stringify({
       symbols: [
-        { proName: "SP:SPX", title: "S&P 500" },
-        { proName: "NASDAQ:IXIC", title: "나스닥 종합" },
-        { proName: "NASDAQ:NDX", title: "나스닥 100" },
-        { proName: "FOREXCOM:SPXUSD", title: "S&P 500 CFD (24시간)" },
-        { proName: "FOREXCOM:NSXUSD", title: "나스닥100 CFD (24시간)" }
+        { proName: "FOREXCOM:SPXUSD", title: "S&P 500 (FX CFD)" },
+        { proName: "FOREXCOM:NSXUSD", title: "나스닥100 (FX CFD)" },
+        { proName: "OANDA:SPX500USD", title: "S&P 500 (OANDA)" },
+        { proName: "OANDA:NAS100USD", title: "나스닥100 (OANDA)" },
+        { proName: "NASDAQ:QQQ", title: "QQQ" },
+        { proName: "AMEX:SPY", title: "SPY" }
       ],
       isTransparent: true, showSymbolLogo: false, colorTheme: dark ? "dark" : "light", locale: "kr"
     });
