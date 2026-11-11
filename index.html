@@ -152,6 +152,41 @@
   .dd-note{font-size:12.5px;color:var(--tx2);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:14px}
   .dd-note b{color:var(--tx)}
   .dd-note .w{color:var(--mix)}
+  .dd-note details summary{cursor:pointer;color:var(--tx2);margin-top:4px}
+  .dd-note details[open] summary{margin-bottom:4px}
+  .ddsort{display:none;align-items:center;gap:8px;font-size:13px;color:var(--tx2);margin:0 0 10px}
+  .ddsort select{font:inherit;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--tx)}
+  .ddcards{display:none}
+  .ddc{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+  .ddc .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .ddc .nm{font-weight:700;font-size:15px;text-decoration:none}
+  .ddc .tk{font-size:12px;color:var(--tx2);font-weight:500;margin-left:4px}
+  .ddc .sc{font-size:12px;color:var(--tx3);margin-top:1px}
+  .ddc .fh{font-size:19px;font-weight:700;color:var(--down);white-space:nowrap;text-align:right;line-height:1.2}
+  .ddc .fh small{display:block;font-size:11px;color:var(--tx3);font-weight:400}
+  .ddc .gauge{height:5px;border-radius:3px;background:var(--panel2);margin:9px 0 8px;overflow:hidden}
+  .ddc .gauge i{display:block;height:100%;background:var(--down);opacity:.75}
+  .ddc dl{display:grid;grid-template-columns:auto 1fr auto 1fr;gap:3px 10px;margin:0;font-size:12.5px}
+  .ddc dt{color:var(--tx3)} .ddc dd{margin:0;text-align:right}
+  @media (max-width:640px){
+    .wrap{padding:14px 12px 40px}
+    header{align-items:flex-start;padding-bottom:10px;margin-bottom:12px;gap:6px}
+    h1{font-size:22px}
+    .sub{font-size:12px}
+    .status{text-align:left;font-size:11.5px;line-height:1.45}
+    .tabs{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;margin:0 -12px 16px;padding:0 8px}
+    .tabs::-webkit-scrollbar{display:none}
+    .tabs a{white-space:nowrap;padding:9px 11px;font-size:14px;flex:0 0 auto}
+    .hl{padding:12px}
+    .hl li{grid-template-columns:42px 1fr;gap:8px;font-size:13.5px}
+    .tbl-wrap{display:none}
+    .ddcards{display:block}
+    .ddsort{display:flex}
+    .dd-note{font-size:12px;padding:10px 12px}
+    .bhead{flex-wrap:wrap}
+    .cc .cv,.cc .thin{height:100px}
+    .cc .val{font-size:20px}
+  }
   .tbl-wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px}
   table.dd{width:100%;border-collapse:collapse;font-size:13px;table-layout:auto}
   table.dd th{text-align:left;font-weight:500;color:var(--tx3);font-size:11.5px;padding:9px 8px;border-bottom:1px solid var(--line);white-space:nowrap;cursor:pointer;user-select:none}
@@ -567,11 +602,20 @@
       $("#dd-note").innerHTML = `<span class="w">${esc(d.note || "데이터가 아직 없습니다.")}</span>`;
       $("#dd-body").innerHTML = '<div class="empty">표시할 종목이 없습니다.</div>'; return;
     }
-    $("#dd-note").innerHTML = `<b>기준</b> ${esc(d.basis)} 대비 ${esc(String(d.threshold))}% 이하 · <b>기준일</b> ${esc(d.asof)} ${KR?"한국":"미국"} 종가 · <b>대상</b> ${esc(d.universe)}<br>
-      <b>출처</b> <a href="${esc(safeUrl(d.source_url))}" target="_blank" rel="noopener">${esc(d.source)}</a> · ${esc(d.excluded_note||"")}<br>
-      <span class="w">⚠ ${esc(d.coverage_note||"")}</span><br>PER = 주가 ÷ 주당순이익. 후행은 최근 12개월 실적, 선행은 향후 예상 실적 기준이며, 순이익이 적자면 "적자"로 표시합니다.`;
+    $("#dd-note").innerHTML = `<b>기준일</b> ${esc(d.asof)} ${KR?"한국":"미국"} 종가 · <b>대상</b> ${esc(d.universe)} · 52주 고점 대비 ${esc(String(d.threshold))}% 이하
+      <details><summary>기준·출처·제외 종목 보기</summary>
+      <b>기준</b> ${esc(d.basis)}<br>
+      <b>출처</b> <a href="${esc(safeUrl(d.source_url))}" target="_blank" rel="noopener">${esc(d.source)}</a><br>${esc(d.excluded_note||"")}<br>
+      <span class="w">⚠ ${esc(d.coverage_note||"")}</span><br>PER = 주가 ÷ 주당순이익. 후행은 최근 실적, 선행은 향후 예상 실적 기준이며, 순이익이 적자면 "적자"로 표시합니다.</details>`;
+    // 시가총액 문자열("7조 402억원", "$21B")을 정렬용 숫자(원 또는 달러)로
+    const mnum = v => { if (v==null) return null; const t=String(v).replace(/,/g,"");
+      if (t.startsWith("$")){ const m=t.match(/\$([\d.]+)\s*([TBM])?/); return m ? parseFloat(m[1])*({T:1e12,B:1e9,M:1e6}[m[2]]||1) : null; }
+      const jo=t.match(/([\d.]+)조/), eok=t.match(/([\d.]+)억/); return (jo?parseFloat(jo[1])*1e12:0)+(eok?parseFloat(eok[1])*1e8:0) || null; };
+    const val = (r,k) => k==="mcap" ? mnum(r.mcap) : r[k];
     const S = state.ddsort, rows = arr(d.rows).slice().sort((a,b)=>{
-      const x=a[S.k], y=b[S.k]; if (typeof x==="number" && typeof y==="number") return (x-y)*S.dir;
+      const x=val(a,S.k), y=val(b,S.k);
+      if (x==null && y==null) return 0; if (x==null) return 1; if (y==null) return -1;
+      if (typeof x==="number" && typeof y==="number") return (x-y)*S.dir;
       return String(x).localeCompare(String(y))*S.dir; });
     const cols = [["name_ko","종목",""],["index","지수","opt"],["sector","업종",""],["price","종가","num"],["high52","52주 고점","num opt"],["from_high","고점 대비","num"],["chg1d","1일","num"],["per","PER(후행)","num"],["fper","PER(선행)","num"],["mcap","시가총액","num"],["asof","기준일","num opt"]];
     const usd = v => KR ? Number(v).toLocaleString("ko-KR")+"원" : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -591,8 +635,22 @@
         <td class="num mono">${pe(r.per)}</td><td class="num mono">${pe(r.fper)}</td>
         <td class="num mono">${esc(r.mcap||"—")}</td>
         <td class="num mono opt" style="color:var(--tx3)">${esc((r.asof||"").slice(5).replace("-","/"))}</td></tr>`; }).join("");
-    $("#dd-body").innerHTML = `<div class="tbl-wrap"><table class="dd"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>
+    // 모바일(폭 640px 이하): 표 대신 카드
+    const cards = rows.map(r=>{
+      const c1 = r.chg1d>0?"up":r.chg1d<0?"down":"flat", w = Math.min(100, Math.abs(r.from_high));
+      return `<div class="ddc"><div class="top"><div><a class="nm" href="${esc(link(r))}" target="_blank" rel="noopener">${esc(r.name_ko||r.name)}</a><span class="tk mono">${esc(r.ticker)}</span>
+          <div class="sc">${esc(r.sector||"")}${arr(r.index).length?" · "+arr(r.index).map(esc).join(" · "):""}</div></div>
+          <div class="fh mono">${Number(r.from_high).toFixed(1)}%<small>52주 고점 대비</small></div></div>
+        <div class="gauge"><i style="width:${w.toFixed(0)}%"></i></div>
+        <dl><dt>종가</dt><dd class="mono">${usd(r.price)}</dd><dt>1일</dt><dd class="mono chg ${c1}">${r.chg1d>0?"+":""}${Number(r.chg1d).toFixed(2)}%</dd>
+          <dt>고점</dt><dd class="mono">${r.high52!=null?usd(r.high52):"—"}</dd><dt>시총</dt><dd class="mono">${esc(r.mcap||"—")}</dd>
+          <dt>PER</dt><dd class="mono">${pe(r.per)}</dd><dt>선행</dt><dd class="mono">${pe(r.fper)}</dd></dl></div>`; }).join("");
+    const opts = [["from_high",1,"하락 폭 큰 순"],["from_high",-1,"하락 폭 작은 순"],["chg1d",-1,"1일 상승 순"],["chg1d",1,"1일 하락 순"],["per",1,"PER 낮은 순"],["mcap",-1,"시가총액 큰 순"]];
+    $("#dd-body").innerHTML = `<label class="ddsort">정렬 <select id="ddsel">${opts.map(([k,dir,l])=>`<option value="${k}|${dir}" ${S.k===k&&S.dir===dir?"selected":""}>${l}</option>`).join("")}</select></label>
+      <div class="tbl-wrap"><table class="dd"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>
+      <div class="ddcards">${cards}</div>
       <div class="note">${rows.length}개 종목 · 종목명을 누르면 해당 종목 페이지(${KR?"네이버 금융":"chartrow.com"})가 열립니다. 표 머리글을 누르면 정렬됩니다.${KR&&d.updated_at?" · 계산 시각 "+esc(kstTime(d.updated_at)):""}</div>`;
+    $("#ddsel").addEventListener("change", e=>{ const [k,dir]=e.target.value.split("|"); state.ddsort={k, dir:+dir}; renderDD(); });
     document.querySelectorAll("table.dd th").forEach(th=>th.addEventListener("click",()=>{
       const k=th.dataset.k; state.ddsort = {k, dir: state.ddsort.k===k ? -state.ddsort.dir : 1}; renderDD(); }));
   }
