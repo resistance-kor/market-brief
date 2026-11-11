@@ -20,7 +20,7 @@ FEEDS = [
     ("구글뉴스: 비트코인", "coin", gnews("비트코인")),
 ]
 KEEP_HOURS = 36
-MAX_ITEMS = 120
+MAX_PER_CAT = {"stock": 90, "coin": 60}
 UA = "Mozilla/5.0 (market-brief headline bot; +https://github.com/resistance-kor/market-brief)"
 
 def text(el, *names):
@@ -92,7 +92,11 @@ def main(path):
         if key in seen or x["url"] in seen:
             continue
         seen.add(key); seen.add(x["url"]); uniq.append(x)
-    data = {"updated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "keep_hours": KEEP_HOURS, "feeds": status, "items": uniq[:MAX_ITEMS]}
+    kept, cnt = [], {}
+    for x in uniq:
+        if cnt.get(x["cat"], 0) < MAX_PER_CAT.get(x["cat"], 60):
+            kept.append(x); cnt[x["cat"]] = cnt.get(x["cat"], 0) + 1
+    data = {"updated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "keep_hours": KEEP_HOURS, "feeds": status, "items": kept}
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=0)
     ok = sum(1 for s in status if s["ok"])
