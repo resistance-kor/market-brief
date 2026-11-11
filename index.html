@@ -203,7 +203,7 @@
     </div>
     <div class="grouplabel"><i style="background:var(--stock)"></i>주식</div>
     <div class="livebar">
-      <div class="lbh"><span class="live">미국 지수 실시간</span><span class="note" style="margin:0">TradingView 제공 · 지수 원본 값은 무료 위젯에서 제공되지 않아, 지수를 따라가는 24시간 CFD(FOREX.com)와 ETF(SPY·QQQ, 정규장 23:30~06:00 KST)로 보여 줍니다. 아래 차트는 공식 지수 종가입니다</span></div>
+      <div class="lbh"><span class="live">미국 지수·10년물 실시간</span><span class="note" style="margin:0">TradingView 제공 · 지수 원본 값은 무료 위젯에서 제공되지 않아, 지수를 따라가는 24시간 CFD(FOREX.com)와 ETF(SPY·QQQ, 정규장 23:30~06:00 KST)로 보여 줍니다. 아래 차트는 공식 지수 종가입니다</span></div>
       <div id="tv-tickers" class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
     </div>
     <div class="charts" id="ch-stock"></div>
@@ -628,7 +628,8 @@
         { proName: "FOREXCOM:SPXUSD", title: "S&P 500 (24시간 CFD)" },
         { proName: "FOREXCOM:NSXUSD", title: "나스닥100 (24시간 CFD)" },
         { proName: "AMEX:SPY", title: "SPY (S&P500 ETF)" },
-        { proName: "NASDAQ:QQQ", title: "QQQ (나스닥100 ETF)" }
+        { proName: "NASDAQ:QQQ", title: "QQQ (나스닥100 ETF)" },
+        { proName: "TVC:US10Y", title: "미국 10년물 금리" }
       ],
       isTransparent: true, showSymbolLogo: false, colorTheme: dark ? "dark" : "light", locale: "kr"
     });
