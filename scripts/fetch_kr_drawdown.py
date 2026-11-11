@@ -31,6 +31,10 @@ def constituents():
     found = {}
     for page in range(1, 25):
         html = get(f"https://finance.naver.com/sise/entryJongmok.naver?type=KPI200&page={page}", enc="euc-kr")
+        if page == 1:
+            print(f"  [debug] entryJongmok p1 길이 {len(html)}")
+            i = html.find("code=")
+            print("  [debug] 샘플:", re.sub(r"\s+", " ", html[max(0, i-200):i+300] if i >= 0 else html[:600]))
         before = len(found)
         for code, name in re.findall(r'code=(\d{6})"[^>]*>\s*([^<]+?)\s*</a>', html):
             found.setdefault(code, name.strip())
@@ -127,6 +131,7 @@ def main(path):
     except Exception as e:
         cons = {}
         log.append(f"구성종목 수집 실패: {type(e).__name__} {e}")
+        print(log[-1])
     print(f"코스피200 구성종목 {len(cons)}개")
     if len(cons) < 150:
         print("구성종목이 너무 적음 — 이전 파일 유지")

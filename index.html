@@ -556,36 +556,38 @@
     b.setAttribute("aria-pressed","true"); state.ddm=b.dataset.m; renderDD();
   }));
   function renderDD(){
-    const D = (state.data && state.data.drawdown) || {}, d = D[state.ddm] || {};
-    if (state.ddm==="kr" || !arr(d.rows).length){
+    const D = (state.data && state.data.drawdown) || {}, KR = state.ddm==="kr";
+    const d = KR ? (state.krdd || D.kr || {}) : (D.us || {});
+    if (!arr(d.rows).length){
       $("#dd-note").innerHTML = `<span class="w">${esc(d.note || "데이터가 아직 없습니다.")}</span>`;
       $("#dd-body").innerHTML = '<div class="empty">표시할 종목이 없습니다.</div>'; return;
     }
-    $("#dd-note").innerHTML = `<b>기준</b> ${esc(d.basis)} 대비 ${esc(String(d.threshold))}% 이하 · <b>기준일</b> ${esc(d.asof)} 미국 종가 · <b>대상</b> ${esc(d.universe)}<br>
+    $("#dd-note").innerHTML = `<b>기준</b> ${esc(d.basis)} 대비 ${esc(String(d.threshold))}% 이하 · <b>기준일</b> ${esc(d.asof)} ${KR?"한국":"미국"} 종가 · <b>대상</b> ${esc(d.universe)}<br>
       <b>출처</b> <a href="${esc(safeUrl(d.source_url))}" target="_blank" rel="noopener">${esc(d.source)}</a> · ${esc(d.excluded_note||"")}<br>
       <span class="w">⚠ ${esc(d.coverage_note||"")}</span><br>PER = 주가 ÷ 주당순이익. 후행은 최근 12개월 실적, 선행은 향후 예상 실적 기준이며, 순이익이 적자면 "적자"로 표시합니다.`;
     const S = state.ddsort, rows = arr(d.rows).slice().sort((a,b)=>{
       const x=a[S.k], y=b[S.k]; if (typeof x==="number" && typeof y==="number") return (x-y)*S.dir;
       return String(x).localeCompare(String(y))*S.dir; });
     const cols = [["name_ko","종목",""],["index","지수",""],["sector","업종",""],["price","종가","num"],["high52","52주 고점","num"],["from_high","고점 대비","num"],["chg1d","1일","num"],["per","PER(후행)","num"],["fper","PER(선행)","num"],["mcap","시가총액","num"],["asof","기준일","num"]];
-    const usd = v => "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+    const usd = v => KR ? Number(v).toLocaleString("ko-KR")+"원" : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+    const link = r => KR ? "https://finance.naver.com/item/main.naver?code="+encodeURIComponent(r.ticker) : "https://chartrow.com/quote/"+encodeURIComponent(String(r.ticker).toLowerCase());
     const pe = v => v==null ? '<span style="color:var(--tx3)">—</span>' : v<0 ? '<span style="color:var(--tx3)">적자</span>' : Number(v).toFixed(1)+"배";
     const head = cols.map(([k,l,c])=>`<th class="${c}" data-k="${k}">${l}${S.k===k?(S.dir>0?" ▲":" ▼"):""}</th>`).join("");
     const body = rows.map(r=>{
       const w = Math.min(100, Math.abs(r.from_high));
       const c1 = r.chg1d>0?"up":r.chg1d<0?"down":"flat";
       return `<tr>
-        <td><a href="https://chartrow.com/quote/${encodeURIComponent(String(r.ticker).toLowerCase())}" target="_blank" rel="noopener"><b>${esc(r.name_ko||r.name)}</b> <span class="tk mono" style="font-weight:500;color:var(--tx2)">${esc(r.ticker)}</span></a><div class="nm2" style="margin-left:0">${esc(r.name)}</div></td>
+        <td><a href="${esc(link(r))}" target="_blank" rel="noopener"><b>${esc(r.name_ko||r.name)}</b> <span class="tk mono" style="font-weight:500;color:var(--tx2)">${esc(r.ticker)}</span></a><div class="nm2" style="margin-left:0">${esc(r.name)}</div></td>
         <td>${arr(r.index).map(esc).join(" · ")}</td><td>${esc(r.sector)}</td>
         <td class="num mono">${usd(r.price)}</td>
         <td class="num mono" style="color:var(--tx2)">${r.high52!=null?usd(r.high52):"—"}</td>
         <td class="num mono"><span class="bar" style="width:${(w*0.6).toFixed(0)}px"></span>${Number(r.from_high).toFixed(1)}%</td>
         <td class="num mono chg ${c1}">${r.chg1d>0?"+":""}${Number(r.chg1d).toFixed(2)}%</td>
         <td class="num mono">${pe(r.per)}</td><td class="num mono">${pe(r.fper)}</td>
-        <td class="num mono">${esc(r.mcap)}</td>
+        <td class="num mono">${esc(r.mcap||"—")}</td>
         <td class="num mono" style="color:var(--tx3)">${esc((r.asof||"").slice(5).replace("-","/"))}</td></tr>`; }).join("");
     $("#dd-body").innerHTML = `<div class="tbl-wrap"><table class="dd"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>
-      <div class="note">${rows.length}개 종목 · 종목명을 누르면 해당 종목 페이지(chartrow.com)가 열립니다. 표 머리글을 누르면 정렬됩니다.</div>`;
+      <div class="note">${rows.length}개 종목 · 종목명을 누르면 해당 종목 페이지(${KR?"네이버 금융":"chartrow.com"})가 열립니다. 표 머리글을 누르면 정렬됩니다.${KR&&d.updated_at?" · 계산 시각 "+esc(kstTime(d.updated_at)):""}</div>`;
     document.querySelectorAll("table.dd th").forEach(th=>th.addEventListener("click",()=>{
       const k=th.dataset.k; state.ddsort = {k, dir: state.ddsort.k===k ? -state.ddsort.dir : 1}; renderDD(); }));
   }
@@ -712,6 +714,9 @@
     host.appendChild(sc);
   })();
 
+  async function loadKR(){
+    try{ const r=await fetch("kr_drawdown.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.krdd=await r.json(); if(state.data) renderDD(); }catch(e){}
+  }
   async function loadPrices(){
     try{ const r=await fetch("prices.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.prices=await r.json(); if(state.data){ renderCharts(); renderWL(); } }catch(e){}
   }
@@ -729,7 +734,7 @@
       if (!state.data){ const w=$("#warn"); w.textContent="데이터를 불러오지 못했습니다. 잠시 후 새로고침해 주세요."; w.style.display="block"; }
     }
   }
-  load(true); loadPrices(); setInterval(loadPrices, 15*60*1000);
+  load(true); loadPrices(); loadKR(); setInterval(loadKR, 30*60*1000); setInterval(loadPrices, 15*60*1000);
   setInterval(()=>load(false), 10*60*1000);
 })();
 </script>
