@@ -1,8 +1,8 @@
 """코스피200 편입 종목 중 52주 고점 대비 -30% 이하 종목 → kr_drawdown.json
-1) 구성 종목: 네이버 금융 '코스피200 편입종목' 페이지
-2) 시세(최근 약 1년 일봉): Yahoo Finance(<코드>.KS), 실패 시 네이버 siseJson
+1) 구성 종목: 네이버 증권 모바일 API
+2) 시세(최근 약 1년 일봉): Yahoo Finance(<코드>.KS), 실패 시 네이버 siseJson (NXT 시간외 가격이 섞이지 않도록 Yahoo 우선)
    - 52주 고점 = 최근 365일 일별 '고가' 중 최댓값(장중 고가 기준), 종가는 마지막 일봉 종가
-3) 걸러진 종목만 네이버 종목 페이지에서 PER(후행)·추정 PER(선행)·업종·시가총액
+3) 걸러진 종목만 네이버 증권(PER·추정PER·시가총액)과 다음 금융(WICS 업종)
 4) 의류·신발·패션·명품 업종 제외
 """
 import json, re, sys, time, urllib.request, urllib.parse
@@ -10,11 +10,13 @@ from datetime import datetime, timezone, timedelta
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
 THRESHOLD = -30.0
-EXCLUDE_SECTOR = re.compile(r"섬유|의류|의복|신발|호화품|패션")
+EXCLUDE_SECTOR = re.compile(r"섬유|의류|의복|신발|호화품|패션|럭셔리")
 
 
-def get(url, timeout=25, enc=None):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*", "Referer": "https://finance.naver.com/"})
+def get(url, timeout=25, enc=None, headers=None):
+    h = {"User-Agent": UA, "Accept": "*/*"}
+    h.update(headers or {})
+    req = urllib.request.Request(url, headers=h)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         raw = r.read()
     if enc:
@@ -30,58 +32,22 @@ def get(url, timeout=25, enc=None):
 UNIVERSE_LABEL = "코스피200 편입 종목"
 
 
-def _scrape_pages(url_fmt, max_pages):
+def constituents():
+    """코스피200 구성종목: 네이버 증권 모바일 API (index/KPI200/enrollStocks)."""
     found = {}
-    for page in range(1, max_pages + 1):
-        html = get(url_fmt.format(page=page), enc="euc-kr")
+    for page in range(1, 6):
+        items = json.loads(get(f"https://m.stock.naver.com/api/index/KPI200/enrollStocks?page={page}&pageSize=100"))
+        if isinstance(items, dict):
+            items = items.get("stocks") or []
         before = len(found)
-        for code, name in re.findall(r'code=(\d{6})"[^>]*>\s*([^<]+?)\s*</a>', html):
-            found.setdefault(code, name.strip())
-        if len(found) == before:
+        for it in items:
+            code, name = it.get("itemCode"), it.get("stockName")
+            if code and name and re.fullmatch(r"\d{6}", code):
+                found.setdefault(code, name)
+        if len(found) == before or len(items) < 100:
             break
         time.sleep(0.3)
     return found
-
-
-def _mobile_api():
-    found = {}
-    for page in range(1, 4):
-        raw = get(f"https://m.stock.naver.com/api/index/KPI200/enrollStocks?page={page}&pageSize=100")
-        data = json.loads(raw)
-        items = data if isinstance(data, list) else (data.get("stocks") or data.get("result") or data.get("items") or [])
-        before = len(found)
-        for it in items:
-            code = it.get("itemCode") or it.get("code")
-            name = it.get("stockName") or it.get("name")
-            if code and name:
-                found.setdefault(code, name)
-        if len(found) == before:
-            break
-    return found
-
-
-def constituents():
-    """코스피200 구성종목. 여러 경로를 차례로 시도하고, 모두 실패하면 코스피 시가총액 상위 200으로 대체."""
-    global UNIVERSE_LABEL
-    tries = [
-        ("코스피200 편입 종목", lambda: _scrape_pages("https://finance.naver.com/sise/entryJongmok.naver?type=KPI200&page={page}", 25)),
-        ("코스피200 편입 종목", lambda: _scrape_pages("https://finance.naver.com/sise/entryJongmok.naver?&page={page}", 25)),
-        ("코스피200 편입 종목", lambda: _scrape_pages("https://finance.naver.com/sise/entryJongmok.nhn?&page={page}", 25)),
-        ("코스피200 편입 종목", _mobile_api),
-    ]
-    for label, fn in tries:
-        try:
-            got = fn()
-            print(f"  구성종목 시도 → {len(got)}개")
-            if len(got) >= 150:
-                UNIVERSE_LABEL = label
-                return got
-        except Exception as e:
-            print(f"  구성종목 시도 실패: {type(e).__name__} {e}")
-    got = _scrape_pages("https://finance.naver.com/sise/sise_market_sum.naver?sosok=0&page={page}", 4)
-    print(f"  대체: 코스피 시가총액 상위 → {len(got)}개")
-    UNIVERSE_LABEL = "코스피 시가총액 상위 200 종목(코스피200 구성 목록을 받지 못해 대체)"
-    return dict(list(got.items())[:200])
 
 
 def yahoo_daily(code):
@@ -136,28 +102,28 @@ def num(s):
 
 
 def naver_detail(code):
-    html = get(f"https://finance.naver.com/item/main.naver?code={code}", enc="euc-kr")
-    per = re.search(r'id="_per">\s*([-\d,.]+)\s*<', html)
-    fper = re.search(r'id="_cns_per">\s*([-\d,.]+)\s*<', html)
-    sector = re.search(r'sise_group_detail\.naver\?type=upjong&(?:amp;)?no=\d+"[^>]*>\s*([^<]+?)\s*</a>', html)
-    ms = re.search(r'id="_market_sum">(.*?)</em>', html, re.S)
-    mcap = None
-    if ms:
-        t = re.sub(r"<[^>]+>", " ", ms.group(1))
-        t = re.sub(r"\s+", " ", t).strip()          # 예: "1,060조 3,532"
-        if t:
-            mcap = (t + "억원") if not t.endswith("조") else (t + "원")
-    eps_neg = None
-    if not per:  # 적자 기업은 PER이 'N/A'로 나옴 → EPS 음수 여부로 적자 표시
-        eps = re.search(r'id="_eps">\s*([-\d,.]+)\s*<', html)
-        if eps and num(eps.group(1)) is not None and num(eps.group(1)) < 0:
-            eps_neg = True
-    return {
-        "per": (-1.0 if eps_neg else (num(per.group(1)) if per else None)),
-        "fper": num(fper.group(1)) if fper else None,
-        "sector": sector.group(1).strip() if sector else None,
-        "mcap": mcap,
-    }
+    """PER(최근 실적)·추정PER·시가총액: 네이버 증권 모바일 integration / 업종: 다음 금융(WICS)."""
+    d = json.loads(get(f"https://m.stock.naver.com/api/stock/{code}/integration"))
+    info = {x.get("code"): x.get("value") for x in d.get("totalInfos", [])}
+    def pnum(v):
+        if not v:
+            return None
+        m = re.search(r"-?[\d,]+(?:\.\d+)?", v)
+        return float(m.group(0).replace(",", "")) if m else None
+    per, fper = pnum(info.get("per")), pnum(info.get("cnsPer"))
+    if per is None:  # 적자면 PER이 N/A → EPS 음수면 적자 표시
+        eps = pnum(info.get("eps"))
+        if eps is not None and eps < 0:
+            per = -1.0
+    mcap = info.get("marketValue")
+    sector = None
+    try:
+        dd = json.loads(get(f"https://finance.daum.net/api/quotes/A{code}?summary=false",
+                            headers={"Referer": f"https://finance.daum.net/quotes/A{code}"}))
+        sector = dd.get("wicsSectorName") or dd.get("sectorName")
+    except Exception as e:
+        print(f"  {code} 업종(다음) 실패: {e}")
+    return {"per": per, "fper": fper, "sector": sector, "mcap": (mcap + "원") if mcap else None}
 
 
 def main(path):
@@ -173,7 +139,7 @@ def main(path):
         log.append(f"구성종목 수집 실패: {type(e).__name__} {e}")
         print(log[-1])
     print(f"코스피200 구성종목 {len(cons)}개")
-    if len(cons) < 150:
+    if len(cons) < 190:
         print("구성종목이 너무 적음 — 이전 파일 유지")
         if prev:
             sys.exit(0)
@@ -225,8 +191,8 @@ def main(path):
         "basis": "52주 고점(최근 1년 일별 장중 고가 중 최댓값)",
         "threshold": THRESHOLD,
         "universe": f"{UNIVERSE_LABEL} {len(cons)}개 (구성: 네이버 금융)",
-        "source": "시세: Yahoo Finance(실패 시 네이버 금융) · PER·업종·시가총액: 네이버 금융 종목 페이지",
-        "source_url": "https://finance.naver.com/sise/entryJongmok.naver?type=KPI200",
+        "source": "구성종목·PER·추정PER·시가총액: 네이버 증권 · 시세(정규장 종가·장중 고가): Yahoo Finance · 업종(WICS): 다음 금융",
+        "source_url": "https://m.stock.naver.com/domestic/index/KPI200/total",
         "excluded_note": ("의류·신발·패션·명품 업종 제외: " + ", ".join(excluded)) if excluded else "의류·신발·패션·명품 업종 제외(이번 해당 없음)",
         "coverage_note": f"대상 {len(cons)}개 전 종목을 계산했습니다." + (f" 시세를 받지 못한 종목 {len(fails)}개는 빠져 있습니다." if fails else ""),
         "failed": fails[:30],
