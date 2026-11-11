@@ -35,6 +35,9 @@
   .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--tx3);margin-right:6px;vertical-align:middle}
   .dot.live{background:var(--acc)}
 
+  .topgrid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-bottom:24px;align-items:stretch}
+  @media (max-width:900px){.topgrid{grid-template-columns:1fr}}
+  .evbox{display:flex;flex-direction:column}
   .brief{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:24px}
   .label{margin:0 0 8px;font-size:12.5px;color:var(--tx2);font-weight:500;letter-spacing:.04em}
   .brief .headline{font-size:19px;font-weight:700;margin:0 0 10px;letter-spacing:-.01em}
@@ -185,12 +188,19 @@
   <div class="warn" id="warn"></div>
   <div id="view-main">
 
-  <section class="brief">
+  <div class="topgrid">
+  <section class="brief" style="margin-bottom:0">
     <div class="label">오늘의 시황 요약</div>
     <p class="headline" id="headline">불러오는 중입니다.</p>
     <ul id="bullets"></ul>
     <div class="note">요약·영향 해석은 Claude가 수집 기사를 근거로 작성한 것으로 투자 권유가 아닙니다. 수치와 사실은 각 기사 원문에서 확인하세요.</div>
   </section>
+    <div class="box evbox" style="margin-bottom:0">
+      <h2>다가오는 주요 일정</h2>
+      <div id="events"></div>
+      <div class="note"><a href="#news" style="color:var(--tx3)">지난 일정·뉴스는 뉴스 탭에서 →</a></div>
+    </div>
+  </div>
 
   <section class="block">
     <div class="bhead">
@@ -267,10 +277,6 @@
       <div id="list-macro"></div>
     </div>
     <aside>
-      <div class="box">
-        <h2>다가오는 주요 일정</h2>
-        <div id="events"></div>
-      </div>
       <div class="box legend">
         <h2>표시 기준</h2>
         <div><span class="sw" style="background:var(--up)"></span>호재 · 상승</div>
@@ -500,7 +506,10 @@
     const evs = arr(state.data.events).slice().sort((a,b)=>String(a.date).localeCompare(String(b.date)));
     if (!evs.length){ $("#events").innerHTML='<div class="note">등록된 일정이 없습니다.</div>'; return; }
     const today = new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
-    $("#events").innerHTML = evs.map(e=>`<div class="ev ${(e.date||"")<today?"past":""}">
+    const from = new Date(Date.now()+9*3600e3-2*86400e3).toISOString().slice(0,10);
+    const shown = evs.filter(e=>(e.date||"")>=from).slice(0,9);
+    if (!shown.length){ $("#events").innerHTML='<div class="note">예정된 일정이 없습니다.</div>'; return; }
+    $("#events").innerHTML = shown.map(e=>`<div class="ev ${(e.date||"")<today?"past":""}">
       <div class="d mono">${esc((e.date||"").slice(5).replace("-","/"))}${e.time?`<br>${esc(e.time)}`:""}</div>
       <div><div class="t">${esc(e.title)}</div>${e.note?`<div class="n">${esc(e.note)}</div>`:""}</div></div>`).join("");
   }
