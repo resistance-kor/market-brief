@@ -178,6 +178,7 @@
 
   <nav class="tabs" aria-label="화면 선택">
     <a href="#" data-view="main">시황</a>
+    <a href="#news" data-view="news">뉴스</a>
     <a href="#drawdown" data-view="drawdown">고점 대비 하락 종목</a>
     <a href="#watchlist" data-view="watchlist">기타 종목</a>
   </nav>
@@ -219,6 +220,10 @@
     <div class="charts" id="ch-macro"></div>
   </section>
 
+  <a href="#news" class="more" style="display:block;text-align:center;text-decoration:none;margin-bottom:8px">뉴스 탭에서 실시간 헤드라인 · 뉴스 분석 · 일정 보기 →</a>
+  </div>
+
+  <div id="view-news" hidden>
   <section class="hl" id="hl">
     <div class="bhead" style="margin-bottom:0">
       <h2 style="font-size:16px">실시간 헤드라인</h2><span class="hint" id="hl-upd">불러오는 중…</span>
@@ -501,7 +506,7 @@
   }
 
   // ---------- views ----------
-  const VIEWS = ["main","drawdown","watchlist"];
+  const VIEWS = ["main","news","drawdown","watchlist"];
   function route(){
     const h = location.hash.slice(1), v = VIEWS.includes(h) ? h : "main";
     VIEWS.forEach(x => { $("#view-"+x).hidden = x!==v; });
@@ -612,7 +617,7 @@
   const pending = new Set(); let flushT = null, ws = null, wsTry = 0;
   function flush(){
     flushT = null;
-    if (!state.data || location.hash==="#drawdown" || location.hash==="#watchlist"){ pending.clear(); return; }
+    if (!state.data || (location.hash && location.hash!=="#")){ pending.clear(); return; }
     const P = priceSeries();
     for (const k of pending){ const s=P[k]; if (s) drawOne(k, s, s.group); }
     pending.clear();
