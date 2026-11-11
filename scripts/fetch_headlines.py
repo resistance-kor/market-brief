@@ -65,6 +65,12 @@ def fetch(src, cat, url):
         pub = parse_date(text(it, "pubDate", "{http://purl.org/dc/elements/1.1/}date") or it.findtext("a:updated", "", ns) or it.findtext("a:published", "", ns))
         if not title or not link.startswith("http") or pub is None:
             continue
+        now = datetime.now(timezone.utc)
+        if pub > now + timedelta(minutes=10):
+            # 일부 국내 RSS(예: 매일경제)는 한국시간을 +0000으로 표기 → 9시간 보정
+            pub = pub - timedelta(hours=9)
+            if pub > now + timedelta(minutes=10):
+                continue  # 그래도 미래면 버림
         name = src
         if src.startswith("구글뉴스"):  # 구글뉴스는 제목 끝에 " - 언론사" 가 붙음
             m = re.match(r"^(.*) - ([^-]{1,30})$", title)
