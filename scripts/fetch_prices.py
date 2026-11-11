@@ -1,0 +1,146 @@
+"""지수·코인·금리 일별 종가 전체 이력 수집 → prices.json
+- 최근 3년은 일봉, 그 이전은 주봉(매주 마지막 거래일)으로 줄여 저장
+- ath(사상 최고 종가)는 줄이기 전 전체 일봉에서 계산
+- 1순위 Yahoo Finance, 실패 시 FRED / Coinbase로 대체
+"""
+import csv, io, json, sys, time, urllib.request, urllib.parse
+from datetime import datetime, timezone, timedelta
+
+UA = "Mozilla/5.0 (market-brief price bot; +https://github.com/resistance-kor/market-brief)"
+
+SERIES = {
+    # key: (이름, 그룹, 단위, yahoo 심볼, 대체 소스)
+    "KOSPI":  ("코스피",          "stock",  "pt",  "^KS11",   None),
+    "NASDAQ": ("나스닥 종합",      "stock",  "pt",  "^IXIC",   ("fred", "NASDAQCOM")),
+    "SP500":  ("S&P 500",         "stock",  "pt",  "^GSPC",   ("fred", "SP500")),
+    "BTC":    ("비트코인",         "crypto", "USD", "BTC-USD", ("coinbase", "BTC-USD")),
+    "ETH":    ("이더리움",         "crypto", "USD", "ETH-USD", ("coinbase", "ETH-USD")),
+    "SOL":    ("솔라나",           "crypto", "USD", "SOL-USD", ("coinbase", "SOL-USD")),
+    "US10Y":  ("미국 10년물 금리", "macro",  "%",   "^TNX",    ("fred", "DGS10")),
+    "GOLD":   ("금 (온스당)",      "macro",  "USD", "GC=F",    ("coinbase", "PAXG-USD")),
+}
+SOURCE_NAME = {
+    "yahoo": "Yahoo Finance", "fred": "FRED", "coinbase": "Coinbase Exchange",
+}
+
+def get(url, timeout=30):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read()
+
+def yahoo(sym):
+    q = urllib.parse.quote(sym)
+    for host in ("query1", "query2"):
+        try:
+            raw = get(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?range=max&interval=1d&includePrePost=false")
+            res = json.loads(raw)["chart"]["result"][0]
+            ts = res["timestamp"]; close = res["indicators"]["quote"][0]["close"]
+            off = res["meta"].get("gmtoffset", 0)
+            pts = {}
+            for t, c in zip(ts, close):
+                if c is None or c <= 0:
+                    continue
+                d = datetime.fromtimestamp(t + off, tz=timezone.utc).strftime("%Y-%m-%d")
+                pts[d] = round(float(c), 4)
+            if len(pts) > 200:
+                return sorted(pts.items())
+        except Exception as e:
+            print(f"  yahoo {host} {sym}: {type(e).__name__} {e}")
+        time.sleep(2)
+    raise RuntimeError("yahoo failed")
+
+def fred(sid):
+    raw = get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}").decode()
+    pts = []
+    for row in csv.reader(io.StringIO(raw)):
+        if len(row) < 2 or row[0] in ("DATE", "observation_date"):
+            continue
+        try:
+            v = float(row[1])
+        except ValueError:
+            continue
+        pts.append((row[0], v))
+    if len(pts) < 200:
+        raise RuntimeError("fred too short")
+    return pts
+
+def coinbase(pid):
+    pts = {}
+    end = datetime.now(timezone.utc)
+    for _ in range(15):  # 300일씩 거꾸로
+        start = end - timedelta(days=300)
+        url = (f"https://api.exchange.coinbase.com/products/{pid}/candles?granularity=86400"
+               f"&start={start.strftime('%Y-%m-%dT%H:%M:%SZ')}&end={end.strftime('%Y-%m-%dT%H:%M:%SZ')}")
+        rows = json.loads(get(url))
+        if not rows:
+            break
+        for t, lo, hi, op, cl, vol in rows:
+            pts[datetime.fromtimestamp(t, tz=timezone.utc).strftime("%Y-%m-%d")] = float(cl)
+        end = start
+        time.sleep(0.5)
+    if len(pts) < 200:
+        raise RuntimeError("coinbase too short")
+    return sorted(pts.items())
+
+def thin(pts, daily_years=3):
+    """최근 daily_years년은 일봉, 그 이전은 ISO 주의 마지막 값만."""
+    if not pts:
+        return pts
+    cut = (datetime.strptime(pts[-1][0], "%Y-%m-%d") - timedelta(days=365 * daily_years)).strftime("%Y-%m-%d")
+    old, out = {}, []
+    for d, v in pts:
+        if d < cut:
+            y, w, _ = datetime.strptime(d, "%Y-%m-%d").isocalendar()
+            old[(y, w)] = (d, v)
+        else:
+            out.append((d, v))
+    return sorted(old.values()) + out
+
+def main(path):
+    try:
+        prev = json.load(open(path, encoding="utf-8"))
+    except Exception:
+        prev = {"series": {}}
+    out = {"updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "series": {}}
+    ok = 0
+    for key, (name, group, unit, ysym, fb) in SERIES.items():
+        pts, src = None, None
+        try:
+            pts, src = yahoo(ysym), f"Yahoo Finance ({ysym})"
+        except Exception:
+            if fb:
+                try:
+                    kind, sid = fb
+                    pts = fred(sid) if kind == "fred" else coinbase(sid)
+                    src = f"{SOURCE_NAME[kind]} ({sid})"
+                except Exception as e:
+                    print(f"  fallback {key}: {type(e).__name__} {e}")
+        if not pts:
+            if key in prev.get("series", {}):
+                out["series"][key] = prev["series"][key]
+                out["series"][key]["stale"] = True
+                print(f"{key}: 실패 — 이전 값 유지")
+            else:
+                print(f"{key}: 실패 — 데이터 없음")
+            continue
+        # 검증: 날짜 오름차순·중복 없음·값 > 0
+        pts = sorted({d: v for d, v in pts if v and v > 0}.items())
+        ath_d, ath_v = max(pts, key=lambda p: p[1])
+        thinned = thin(pts)
+        out["series"][key] = {
+            "name": name, "group": group, "unit": unit, "source": src,
+            "first": pts[0][0], "last": pts[-1][0],
+            "ath": {"date": ath_d, "value": ath_v},
+            "points": [[d, v] for d, v in thinned],
+        }
+        ok += 1
+        print(f"{key}: {src} {len(pts)}일 ({pts[0][0]}~{pts[-1][0]}) 마지막 {pts[-1][1]} / 사상최고 {ath_v} ({ath_d}) → 저장 {len(thinned)}개")
+        time.sleep(1)
+    json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    print(f"ok {ok}/{len(SERIES)}")
+    if ok == 0:
+        sys.exit(1)
+
+if __name__ == "__main__":
+
+    main(sys.argv[1] if len(sys.argv) > 1 else "prices.json")
