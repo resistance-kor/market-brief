@@ -27,14 +27,13 @@ def get(url, timeout=25, enc=None):
     return raw.decode("utf-8", "replace")
 
 
-def constituents():
+UNIVERSE_LABEL = "코스피200 편입 종목"
+
+
+def _scrape_pages(url_fmt, max_pages):
     found = {}
-    for page in range(1, 25):
-        html = get(f"https://finance.naver.com/sise/entryJongmok.naver?type=KPI200&page={page}", enc="euc-kr")
-        if page == 1:
-            print(f"  [debug] entryJongmok p1 길이 {len(html)}")
-            i = html.find("code=")
-            print("  [debug] 샘플:", re.sub(r"\s+", " ", html[max(0, i-200):i+300] if i >= 0 else html[:600]))
+    for page in range(1, max_pages + 1):
+        html = get(url_fmt.format(page=page), enc="euc-kr")
         before = len(found)
         for code, name in re.findall(r'code=(\d{6})"[^>]*>\s*([^<]+?)\s*</a>', html):
             found.setdefault(code, name.strip())
@@ -42,6 +41,47 @@ def constituents():
             break
         time.sleep(0.3)
     return found
+
+
+def _mobile_api():
+    found = {}
+    for page in range(1, 4):
+        raw = get(f"https://m.stock.naver.com/api/index/KPI200/enrollStocks?page={page}&pageSize=100")
+        data = json.loads(raw)
+        items = data if isinstance(data, list) else (data.get("stocks") or data.get("result") or data.get("items") or [])
+        before = len(found)
+        for it in items:
+            code = it.get("itemCode") or it.get("code")
+            name = it.get("stockName") or it.get("name")
+            if code and name:
+                found.setdefault(code, name)
+        if len(found) == before:
+            break
+    return found
+
+
+def constituents():
+    """코스피200 구성종목. 여러 경로를 차례로 시도하고, 모두 실패하면 코스피 시가총액 상위 200으로 대체."""
+    global UNIVERSE_LABEL
+    tries = [
+        ("코스피200 편입 종목", lambda: _scrape_pages("https://finance.naver.com/sise/entryJongmok.naver?type=KPI200&page={page}", 25)),
+        ("코스피200 편입 종목", lambda: _scrape_pages("https://finance.naver.com/sise/entryJongmok.naver?&page={page}", 25)),
+        ("코스피200 편입 종목", lambda: _scrape_pages("https://finance.naver.com/sise/entryJongmok.nhn?&page={page}", 25)),
+        ("코스피200 편입 종목", _mobile_api),
+    ]
+    for label, fn in tries:
+        try:
+            got = fn()
+            print(f"  구성종목 시도 → {len(got)}개")
+            if len(got) >= 150:
+                UNIVERSE_LABEL = label
+                return got
+        except Exception as e:
+            print(f"  구성종목 시도 실패: {type(e).__name__} {e}")
+    got = _scrape_pages("https://finance.naver.com/sise/sise_market_sum.naver?sosok=0&page={page}", 4)
+    print(f"  대체: 코스피 시가총액 상위 → {len(got)}개")
+    UNIVERSE_LABEL = "코스피 시가총액 상위 200 종목(코스피200 구성 목록을 받지 못해 대체)"
+    return dict(list(got.items())[:200])
 
 
 def yahoo_daily(code):
@@ -184,11 +224,11 @@ def main(path):
         "asof": latest,
         "basis": "52주 고점(최근 1년 일별 장중 고가 중 최댓값)",
         "threshold": THRESHOLD,
-        "universe": f"코스피200 편입 종목 {len(cons)}개 (구성: 네이버 금융)",
+        "universe": f"{UNIVERSE_LABEL} {len(cons)}개 (구성: 네이버 금융)",
         "source": "시세: Yahoo Finance(실패 시 네이버 금융) · PER·업종·시가총액: 네이버 금융 종목 페이지",
         "source_url": "https://finance.naver.com/sise/entryJongmok.naver?type=KPI200",
         "excluded_note": ("의류·신발·패션·명품 업종 제외: " + ", ".join(excluded)) if excluded else "의류·신발·패션·명품 업종 제외(이번 해당 없음)",
-        "coverage_note": f"코스피200 전 종목을 계산했습니다. 시세를 받지 못한 종목 {len(fails)}개는 빠져 있습니다." if fails else "코스피200 전 종목을 계산했습니다.",
+        "coverage_note": f"대상 {len(cons)}개 전 종목을 계산했습니다." + (f" 시세를 받지 못한 종목 {len(fails)}개는 빠져 있습니다." if fails else ""),
         "failed": fails[:30],
         "log": log[:30],
         "rows": out_rows,
