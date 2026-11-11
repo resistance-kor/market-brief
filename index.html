@@ -302,7 +302,7 @@
   function cardHTML(key,s){
     const href = LIVE[key] || "#";
     return `<a class="cc" id="cc-${key}" href="${esc(href)}" target="_blank" rel="noopener" title="실시간 차트 열기 (TradingView)">
-      <div class="top"><span class="nm">${esc(s.name)}<span class="go">실시간 ↗</span></span><span class="asof mono" id="asof-${key}"></span><span id="lv-${key}"></span></div>
+      <div class="top"><span class="nm">${esc(s.name)}<span class="go">차트 ↗</span></span><span class="asof mono" id="asof-${key}"></span><span id="lv-${key}"></span></div>
       <div class="val mono" id="val-${key}">—</div>
       <div class="chg mono" id="chg-${key}"></div>
       <div class="hi mono" id="hi-${key}"></div>
