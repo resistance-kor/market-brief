@@ -35,8 +35,8 @@ UNIVERSE_LABEL = "코스피200 편입 종목"
 def constituents():
     """코스피200 구성종목: 네이버 증권 모바일 API (index/KPI200/enrollStocks)."""
     found = {}
-    for page in range(1, 6):
-        items = json.loads(get(f"https://m.stock.naver.com/api/index/KPI200/enrollStocks?page={page}&pageSize=100"))
+    for page in range(1, 16):
+        items = json.loads(get(f"https://m.stock.naver.com/api/index/KPI200/enrollStocks?page={page}&pageSize=20"))
         if isinstance(items, dict):
             items = items.get("stocks") or []
         before = len(found)
@@ -44,7 +44,7 @@ def constituents():
             code, name = it.get("itemCode"), it.get("stockName")
             if code and name and re.fullmatch(r"\d{6}", code):
                 found.setdefault(code, name)
-        if len(found) == before or len(items) < 100:
+        if len(found) == before or len(items) < 20:
             break
         time.sleep(0.3)
     return found
