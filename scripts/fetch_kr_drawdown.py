@@ -190,7 +190,7 @@ def main(path):
         "asof": latest,
         "basis": "52주 고점(최근 1년 일별 장중 고가 중 최댓값)",
         "threshold": THRESHOLD,
-        "universe": f"{UNIVERSE_LABEL} {len(cons)}개 (구성: 네이버 금융)",
+        "universe": f"{UNIVERSE_LABEL} {len(cons)}개 (구성: 네이버 증권)",
         "source": "구성종목·PER·추정PER·시가총액: 네이버 증권 · 시세(정규장 종가·장중 고가): Yahoo Finance · 업종(WICS): 다음 금융",
         "source_url": "https://m.stock.naver.com/domestic/index/KPI200/total",
         "excluded_note": ("의류·신발·패션·명품 업종 제외: " + ", ".join(excluded)) if excluded else "의류·신발·패션·명품 업종 제외(이번 해당 없음)",
