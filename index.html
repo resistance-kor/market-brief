@@ -194,7 +194,7 @@
     </div>
     <div class="grouplabel"><i style="background:var(--stock)"></i>주식</div>
     <div class="livebar">
-      <div class="lbh"><span class="live">미국 지수 실시간</span><span class="note" style="margin:0">TradingView 제공 · 정규장(한국시간 23:30~06:00) 외에는 마지막 값이 표시되며, 24시간 CFD는 장외 시간에도 움직입니다</span></div>
+      <div class="lbh"><span class="live">미국 지수 실시간</span><span class="note" style="margin:0">TradingView 제공 · 지수 원본 값은 무료 위젯에서 제공되지 않아, 지수를 따라가는 24시간 CFD(FOREX.com)와 ETF(SPY·QQQ, 정규장 23:30~06:00 KST)로 보여 줍니다. 아래 차트는 공식 지수 종가입니다</span></div>
       <div id="tv-tickers" class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
     </div>
     <div class="charts" id="ch-stock"></div>
@@ -574,12 +574,10 @@
     sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"; sc.async = true;
     sc.text = JSON.stringify({
       symbols: [
-        { proName: "FOREXCOM:SPXUSD", title: "S&P 500 (FX CFD)" },
-        { proName: "FOREXCOM:NSXUSD", title: "나스닥100 (FX CFD)" },
-        { proName: "OANDA:SPX500USD", title: "S&P 500 (OANDA)" },
-        { proName: "OANDA:NAS100USD", title: "나스닥100 (OANDA)" },
-        { proName: "NASDAQ:QQQ", title: "QQQ" },
-        { proName: "AMEX:SPY", title: "SPY" }
+        { proName: "FOREXCOM:SPXUSD", title: "S&P 500 (24시간 CFD)" },
+        { proName: "FOREXCOM:NSXUSD", title: "나스닥100 (24시간 CFD)" },
+        { proName: "AMEX:SPY", title: "SPY (S&P500 ETF)" },
+        { proName: "NASDAQ:QQQ", title: "QQQ (나스닥100 ETF)" }
       ],
       isTransparent: true, showSymbolLogo: false, colorTheme: dark ? "dark" : "light", locale: "kr"
     });
