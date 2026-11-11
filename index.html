@@ -117,6 +117,15 @@
   a.cc:hover{border-color:var(--tx3)}
   .cc .go{font-size:11px;color:var(--acc);margin-left:6px}
   .cc .hi{font-size:12px;color:var(--tx3)}
+  .hl{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:22px}
+  .hl ol{list-style:none;margin:8px 0 0;padding:0;max-height:430px;overflow:auto}
+  .hl li{display:grid;grid-template-columns:78px 1fr;gap:10px;padding:7px 0;border-top:1px solid var(--line);font-size:14px}
+  .hl li:first-child{border-top:0}
+  .hl .t{color:var(--tx3);font-size:12px;padding-top:2px}
+  .hl a{text-decoration:none} .hl a:hover{text-decoration:underline}
+  .hl .s{color:var(--tx3);font-size:12px;margin-left:6px}
+  .hl .c{font-size:11px;padding:0 6px;border-radius:4px;margin-right:6px;color:#fff}
+  .hl .c.stock{background:var(--stock)} .hl .c.coin{background:var(--crypto)}
   .livebar{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px 6px;margin-bottom:12px}
   .livebar .lbh{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
   .live{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;color:var(--acc);margin-left:6px;font-weight:500}
@@ -204,8 +213,21 @@
     <div class="charts" id="ch-macro"></div>
   </section>
 
+  <section class="hl" id="hl">
+    <div class="bhead" style="margin-bottom:0">
+      <h2 style="font-size:16px">실시간 헤드라인</h2><span class="hint" id="hl-upd">불러오는 중…</span>
+      <div class="seg" id="hlseg">
+        <button data-c="" aria-pressed="true">전체</button>
+        <button data-c="stock" aria-pressed="false">주식</button>
+        <button data-c="coin" aria-pressed="false">코인</button>
+      </div>
+    </div>
+    <ol id="hl-list"></ol>
+    <div class="note" id="hl-src"></div>
+  </section>
+
   <section class="block">
-    <div class="bhead"><h2>뉴스</h2></div>
+    <div class="bhead"><h2>뉴스 분석</h2><span class="hint">Claude가 하루 2번 골라 요약·호재/악재를 판단한 기사</span></div>
     <div class="filters">
       <select id="imp" aria-label="영향">
         <option value="">영향: 전체</option><option>호재</option><option>악재</option><option>혼재</option><option>중립</option>
@@ -538,6 +560,35 @@
       </div>`; }).join("");
     $("#wl-src").textContent = "출처: " + (W.source||"");
   }
+
+  // ---------- 실시간 헤드라인 (GitHub Actions가 20분마다 RSS 수집 → headlines.json) ----------
+  const HL = { data:null, cat:"" };
+  function hlTime(iso){
+    const d=new Date(iso); if(isNaN(d)) return "";
+    const f=o=>d.toLocaleString("ko-KR",Object.assign({timeZone:"Asia/Seoul",hour12:false},o));
+    const today=new Date().toLocaleDateString("ko-KR",{timeZone:"Asia/Seoul"}), day=d.toLocaleDateString("ko-KR",{timeZone:"Asia/Seoul"});
+    return day===today ? f({hour:"2-digit",minute:"2-digit"}) : f({month:"numeric",day:"numeric"})+" "+f({hour:"2-digit",minute:"2-digit"});
+  }
+  function renderHL(){
+    const D=HL.data;
+    if(!D){ $("#hl-list").innerHTML='<li><span></span><span style="color:var(--tx3)">첫 수집을 기다리는 중입니다 (20분 간격 자동 수집).</span></li>'; $("#hl-upd").textContent=""; return; }
+    const items=arr(D.items).filter(x=>!HL.cat||x.cat===HL.cat).slice(0,60);
+    $("#hl-upd").textContent = D.updated_at ? "수집 "+hlTime(D.updated_at)+" · 20분마다 자동" : "";
+    $("#hl-list").innerHTML = items.length ? items.map(x=>`<li><span class="t mono">${esc(hlTime(x.published))}</span>
+      <span><span class="c ${x.cat==="coin"?"coin":"stock"}">${x.cat==="coin"?"코인":"주식"}</span><a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener">${esc(x.title)}</a><span class="s">${esc(x.source)}</span></span></li>`).join("")
+      : '<li><span></span><span style="color:var(--tx3)">표시할 헤드라인이 없습니다.</span></li>';
+    const ok=arr(D.feeds).filter(f=>f.ok).map(f=>f.feed), bad=arr(D.feeds).filter(f=>!f.ok).map(f=>f.feed);
+    $("#hl-src").textContent = "출처: "+ok.join(", ")+(bad.length?" · 이번 수집 실패: "+bad.join(", "):"")+" · 제목과 링크만 모아 보여 주며, 내용은 각 언론사 원문에서 확인하세요.";
+  }
+  document.querySelectorAll("#hlseg button").forEach(b=>b.addEventListener("click",()=>{
+    document.querySelectorAll("#hlseg button").forEach(x=>x.setAttribute("aria-pressed","false"));
+    b.setAttribute("aria-pressed","true"); HL.cat=b.dataset.c; renderHL();
+  }));
+  async function loadHL(){
+    try{ const r=await fetch("headlines.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; HL.data=await r.json(); }catch(e){}
+    renderHL();
+  }
+  loadHL(); setInterval(loadHL, 5*60*1000);
 
   // ---------- 실시간 코인 시세 (Coinbase Exchange WebSocket, 키 불필요) ----------
   const LIVEPX = {};
