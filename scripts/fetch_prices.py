@@ -28,11 +28,18 @@ def get(url, timeout=30):
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
+def is_daily(pts):
+    """최근 1년 구간의 날짜 간격 중앙값이 4일 이하면 일봉으로 판단."""
+    tail = [datetime.strptime(d, "%Y-%m-%d") for d, _ in pts[-260:]]
+    gaps = sorted((b - a).days for a, b in zip(tail, tail[1:]))
+    return bool(gaps) and gaps[len(gaps) // 2] <= 4
+
 def yahoo(sym):
     q = urllib.parse.quote(sym)
     for host in ("query1", "query2"):
         try:
-            raw = get(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?range=max&interval=1d&includePrePost=false")
+            p2 = int(time.time()) + 86400
+            raw = get(f"https://{host}.finance.yahoo.com/v8/finance/chart/{q}?period1=0&period2={p2}&interval=1d&includePrePost=false&events=")
             res = json.loads(raw)["chart"]["result"][0]
             ts = res["timestamp"]; close = res["indicators"]["quote"][0]["close"]
             off = res["meta"].get("gmtoffset", 0)
@@ -42,8 +49,10 @@ def yahoo(sym):
                     continue
                 d = datetime.fromtimestamp(t + off, tz=timezone.utc).strftime("%Y-%m-%d")
                 pts[d] = round(float(c), 4)
-            if len(pts) > 200:
-                return sorted(pts.items())
+            out = sorted(pts.items())
+            if len(out) > 200 and is_daily(out):
+                return out
+            print(f"  yahoo {host} {sym}: 일봉이 아님(또는 너무 짧음) {len(out)}개")
         except Exception as e:
             print(f"  yahoo {host} {sym}: {type(e).__name__} {e}")
         time.sleep(2)
@@ -60,8 +69,8 @@ def fred(sid):
         except ValueError:
             continue
         pts.append((row[0], v))
-    if len(pts) < 200:
-        raise RuntimeError("fred too short")
+    if len(pts) < 200 or not is_daily(pts):
+        raise RuntimeError("fred too short / not daily")
     return pts
 
 def coinbase(pid):
