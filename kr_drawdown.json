@@ -1,0 +1,2697 @@
+{
+ "updated_at": "2026-11-11T12:33:15Z",
+ "asof": "2026-11-11",
+ "basis": "52주 고점(최근 1년 일별 장중 고가 중 최댓값)",
+ "threshold": -30.0,
+ "universe": "코스피200 편입 종목 199개 (구성: 네이버 금융)",
+ "source": "구성종목·PER·추정PER·시가총액: 네이버 증권 · 시세(정규장 종가·장중 고가): Yahoo Finance · 업종(WICS): 다음 금융",
+ "source_url": "https://m.stock.naver.com/domestic/index/KPI200/total",
+ "excluded_note": "의류·신발·패션·명품 업종 제외: 영원무역(섬유,의류,신발,호화품), F&F(섬유,의류,신발,호화품), 영원무역홀딩스(섬유,의류,신발,호화품), 미스토홀딩스(섬유,의류,신발,호화품)",
+ "coverage_note": "대상 199개 전 종목을 계산했습니다.",
+ "failed": [],
+ "log": [],
+ "rows": [
+  {
+   "ticker": "011070",
+   "name_ko": "LG이노텍",
+   "name": "LG Innotek Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 293000,
+   "chg1d": 5.4,
+   "high52": 1788000,
+   "from_high": -83.61,
+   "price_source": "Yahoo Finance",
+   "per": 10.62,
+   "fper": 10.95,
+   "sector": "전자장비와기기",
+   "mcap": "7조 402억원"
+  },
+  {
+   "ticker": "001440",
+   "name_ko": "대한전선",
+   "name": "Taihan Cable & Solution Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 18680,
+   "chg1d": 3.89,
+   "high52": 75900,
+   "from_high": -75.39,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": -483.33,
+   "sector": "전기장비",
+   "mcap": "3조 6,945억원"
+  },
+  {
+   "ticker": "006800",
+   "name_ko": "미래에셋증권",
+   "name": "Mirae Asset Securities Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 22050,
+   "chg1d": 1.38,
+   "high52": 87800,
+   "from_high": -74.89,
+   "price_source": "Yahoo Finance",
+   "per": 4.22,
+   "fper": 4.99,
+   "sector": "증권",
+   "mcap": "12조 822억원"
+  },
+  {
+   "ticker": "064350",
+   "name_ko": "현대로템",
+   "name": "Hyundai Rotem Company",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 74200,
+   "chg1d": 1.5,
+   "high52": 282000,
+   "from_high": -73.69,
+   "price_source": "Yahoo Finance",
+   "per": 10.04,
+   "fper": 10.14,
+   "sector": "우주항공과국방",
+   "mcap": "8조 1,093억원"
+  },
+  {
+   "ticker": "307950",
+   "name_ko": "현대오토에버",
+   "name": "Hyundai Autoever Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 289000,
+   "chg1d": 3.03,
+   "high52": 1066000,
+   "from_high": -72.89,
+   "price_source": "Yahoo Finance",
+   "per": 41.9,
+   "fper": 39.23,
+   "sector": "IT서비스",
+   "mcap": "7조 9,941억원"
+  },
+  {
+   "ticker": "017960",
+   "name_ko": "한국카본",
+   "name": "Hankuk Carbon Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 14710,
+   "chg1d": 3.08,
+   "high52": 54100,
+   "from_high": -72.81,
+   "price_source": "Yahoo Finance",
+   "per": 7.47,
+   "fper": null,
+   "sector": "조선",
+   "mcap": "7,638억원"
+  },
+  {
+   "ticker": "000150",
+   "name_ko": "두산",
+   "name": "Doosan Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 688000,
+   "chg1d": 8.18,
+   "high52": 2489000,
+   "from_high": -72.36,
+   "price_source": "Yahoo Finance",
+   "per": 40.02,
+   "fper": 20.98,
+   "sector": "복합기업",
+   "mcap": "9조 8,808억원"
+  },
+  {
+   "ticker": "267260",
+   "name_ko": "HD현대일렉트릭",
+   "name": "HD Hyundai Electric Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 405000,
+   "chg1d": 2.79,
+   "high52": 1430000,
+   "from_high": -71.68,
+   "price_source": "Yahoo Finance",
+   "per": 17.46,
+   "fper": 17.12,
+   "sector": "전기장비",
+   "mcap": "14조 8,514억원"
+  },
+  {
+   "ticker": "047040",
+   "name_ko": "대우건설",
+   "name": "Daewoo Engineering & Construction Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 11650,
+   "chg1d": 3.37,
+   "high52": 40350,
+   "from_high": -71.13,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 8.87,
+   "sector": "건설",
+   "mcap": "4조 8,443억원"
+  },
+  {
+   "ticker": "082740",
+   "name_ko": "한화엔진",
+   "name": "Hanwha Engine Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 27550,
+   "chg1d": 0.55,
+   "high52": 94400,
+   "from_high": -70.82,
+   "price_source": "Yahoo Finance",
+   "per": 10.58,
+   "fper": 12.93,
+   "sector": "조선",
+   "mcap": "2조 3,157억원"
+  },
+  {
+   "ticker": "272210",
+   "name_ko": "한화시스템",
+   "name": "Hanwha Systems Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 56700,
+   "chg1d": 4.04,
+   "high52": 184000,
+   "from_high": -69.18,
+   "price_source": "Yahoo Finance",
+   "per": 57.42,
+   "fper": 90.11,
+   "sector": "우주항공과국방",
+   "mcap": "10조 6,739억원"
+  },
+  {
+   "ticker": "004170",
+   "name_ko": "신세계",
+   "name": "SHINSEGAE Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 245500,
+   "chg1d": 0.0,
+   "high52": 792000,
+   "from_high": -69.0,
+   "price_source": "Yahoo Finance",
+   "per": 13.88,
+   "fper": 5.56,
+   "sector": "백화점과일반상점",
+   "mcap": "2조 3,093억원"
+  },
+  {
+   "ticker": "042660",
+   "name_ko": "한화오션",
+   "name": "Hanwha Ocean Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 48350,
+   "chg1d": 0.52,
+   "high52": 154800,
+   "from_high": -68.77,
+   "price_source": "Yahoo Finance",
+   "per": 7.22,
+   "fper": 9.08,
+   "sector": "조선",
+   "mcap": "14조 9,683억원"
+  },
+  {
+   "ticker": "006260",
+   "name_ko": "LS",
+   "name": "LS Corp.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 188900,
+   "chg1d": 2.27,
+   "high52": 604000,
+   "from_high": -68.73,
+   "price_source": "Yahoo Finance",
+   "per": 14.07,
+   "fper": 9.11,
+   "sector": "전기장비",
+   "mcap": "5조 9,436억원"
+  },
+  {
+   "ticker": "454910",
+   "name_ko": "두산로보틱스",
+   "name": "Doosan Robotics Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 53300,
+   "chg1d": 5.13,
+   "high52": 170000,
+   "from_high": -68.65,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": null,
+   "sector": "기계",
+   "mcap": "3조 4,808억원"
+  },
+  {
+   "ticker": "066570",
+   "name_ko": "LG전자",
+   "name": "LG Electronics Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 141100,
+   "chg1d": 0.79,
+   "high52": 438000,
+   "from_high": -67.79,
+   "price_source": "Yahoo Finance",
+   "per": 24.68,
+   "fper": 12.84,
+   "sector": "전자제품",
+   "mcap": "23조 2,273억원"
+  },
+  {
+   "ticker": "450080",
+   "name_ko": "에코프로머티",
+   "name": "Ecopro Materials Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 28850,
+   "chg1d": 8.66,
+   "high52": 88800,
+   "from_high": -67.51,
+   "price_source": "Yahoo Finance",
+   "per": 30.66,
+   "fper": null,
+   "sector": "전기제품",
+   "mcap": "2조 607억원"
+  },
+  {
+   "ticker": "079550",
+   "name_ko": "LIG디펜스앤에어로스페이스",
+   "name": "LIG Defense&Aerospace Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 372000,
+   "chg1d": 9.73,
+   "high52": 1118000,
+   "from_high": -66.73,
+   "price_source": "Yahoo Finance",
+   "per": 28.45,
+   "fper": 28.79,
+   "sector": "우주항공과국방",
+   "mcap": "8조 1,510억원"
+  },
+  {
+   "ticker": "103140",
+   "name_ko": "풍산",
+   "name": "Poongsan Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 53100,
+   "chg1d": 0.38,
+   "high52": 159200,
+   "from_high": -66.65,
+   "price_source": "Yahoo Finance",
+   "per": 7.41,
+   "fper": 5.82,
+   "sector": "비철금속",
+   "mcap": "1조 4,965억원"
+  },
+  {
+   "ticker": "071970",
+   "name_ko": "HD현대마린엔진",
+   "name": "HD-Hyundai Marine Engine Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 39550,
+   "chg1d": 2.99,
+   "high52": 118200,
+   "from_high": -66.54,
+   "price_source": "Yahoo Finance",
+   "per": 6.91,
+   "fper": 9.52,
+   "sector": "조선",
+   "mcap": "1조 3,450억원"
+  },
+  {
+   "ticker": "001430",
+   "name_ko": "세아베스틸지주",
+   "name": "SeAH Besteel Holdings Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 31100,
+   "chg1d": 7.43,
+   "high52": 92500,
+   "from_high": -66.38,
+   "price_source": "Yahoo Finance",
+   "per": 12.62,
+   "fper": 17.97,
+   "sector": "철강",
+   "mcap": "1조 1,189억원"
+  },
+  {
+   "ticker": "034020",
+   "name_ko": "두산에너빌리티",
+   "name": "Doosan Enerbility Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 47350,
+   "chg1d": 0.85,
+   "high52": 139200,
+   "from_high": -65.98,
+   "price_source": "Yahoo Finance",
+   "per": 169.26,
+   "fper": 110.62,
+   "sector": "기계",
+   "mcap": "30조 6,829억원"
+  },
+  {
+   "ticker": "329180",
+   "name_ko": "HD현대중공업",
+   "name": "HD Hyundai Heavy Industries Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 262500,
+   "chg1d": -1.87,
+   "high52": 765000,
+   "from_high": -65.69,
+   "price_source": "Yahoo Finance",
+   "per": 10.28,
+   "fper": 9.77,
+   "sector": "조선",
+   "mcap": "27조 6,573억원"
+  },
+  {
+   "ticker": "456040",
+   "name_ko": "OCI",
+   "name": "OCI Company Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 56400,
+   "chg1d": 2.17,
+   "high52": 163200,
+   "from_high": -65.44,
+   "price_source": "Yahoo Finance",
+   "per": 58.49,
+   "fper": 6.71,
+   "sector": "화학",
+   "mcap": "5,058억원"
+  },
+  {
+   "ticker": "005380",
+   "name_ko": "현대차",
+   "name": "Hyundai Motor Company",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 272500,
+   "chg1d": -0.91,
+   "high52": 783000,
+   "from_high": -65.2,
+   "price_source": "Yahoo Finance",
+   "per": 8.96,
+   "fper": 8.22,
+   "sector": "자동차",
+   "mcap": "55조 9,533억원"
+  },
+  {
+   "ticker": "008730",
+   "name_ko": "율촌화학",
+   "name": "Youlchon Chemical Co.,Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 11620,
+   "chg1d": 0.26,
+   "high52": 32950,
+   "from_high": -64.73,
+   "price_source": "Yahoo Finance",
+   "per": 57.62,
+   "fper": null,
+   "sector": "포장재",
+   "mcap": "2,887억원"
+  },
+  {
+   "ticker": "000880",
+   "name_ko": "한화",
+   "name": "Hanwha Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 78800,
+   "chg1d": 0.38,
+   "high52": 220003,
+   "from_high": -64.18,
+   "price_source": "Yahoo Finance",
+   "per": 9.2,
+   "fper": 6.17,
+   "sector": "복합기업",
+   "mcap": "4조 2,183억원"
+  },
+  {
+   "ticker": "402340",
+   "name_ko": "SK스퀘어",
+   "name": "SK Square Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 796000,
+   "chg1d": 4.74,
+   "high52": 2189000,
+   "from_high": -63.64,
+   "price_source": "Yahoo Finance",
+   "per": 3.26,
+   "fper": 2.17,
+   "sector": "반도체와반도체장비",
+   "mcap": "106조 8,584억원"
+  },
+  {
+   "ticker": "010120",
+   "name_ko": "LS ELECTRIC",
+   "name": "LS ELECTRIC Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 121900,
+   "chg1d": 0.74,
+   "high52": 335000,
+   "from_high": -63.61,
+   "price_source": "Yahoo Finance",
+   "per": 47.96,
+   "fper": 33.31,
+   "sector": "전기장비",
+   "mcap": "18조 6,450억원"
+  },
+  {
+   "ticker": "352820",
+   "name_ko": "하이브",
+   "name": "HYBE Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 147800,
+   "chg1d": 3.07,
+   "high52": 405500,
+   "from_high": -63.55,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 130.56,
+   "sector": "방송과엔터테인먼트",
+   "mcap": "6조 4,272억원"
+  },
+  {
+   "ticker": "066970",
+   "name_ko": "엘앤에프",
+   "name": "L&F Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 82200,
+   "chg1d": 5.66,
+   "high52": 225000,
+   "from_high": -63.47,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": -39.8,
+   "sector": "전기제품",
+   "mcap": "3조 3,648억원"
+  },
+  {
+   "ticker": "120110",
+   "name_ko": "코오롱인더",
+   "name": "Kolon Industries, Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 38600,
+   "chg1d": 0.26,
+   "high52": 104900,
+   "from_high": -63.2,
+   "price_source": "Yahoo Finance",
+   "per": 8.77,
+   "fper": 6.04,
+   "sector": "화학",
+   "mcap": "1조 1,544억원"
+  },
+  {
+   "ticker": "039490",
+   "name_ko": "키움증권",
+   "name": "Kiwoom Securities Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 190900,
+   "chg1d": 3.36,
+   "high52": 517000,
+   "from_high": -63.08,
+   "price_source": "Yahoo Finance",
+   "per": 3.0,
+   "fper": 3.13,
+   "sector": "증권",
+   "mcap": "5조 227억원"
+  },
+  {
+   "ticker": "267250",
+   "name_ko": "HD현대",
+   "name": "HD Hyundai Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 124000,
+   "chg1d": -2.13,
+   "high52": 333000,
+   "from_high": -62.76,
+   "price_source": "Yahoo Finance",
+   "per": 3.62,
+   "fper": 3.15,
+   "sector": "조선",
+   "mcap": "9조 8,899억원"
+  },
+  {
+   "ticker": "052690",
+   "name_ko": "한전기술",
+   "name": "KEPCO Engineering & Construction Company, Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 74000,
+   "chg1d": -1.33,
+   "high52": 198000,
+   "from_high": -62.63,
+   "price_source": "Yahoo Finance",
+   "per": 80.13,
+   "fper": 62.68,
+   "sector": "전기유틸리티",
+   "mcap": "2조 8,818억원"
+  },
+  {
+   "ticker": "062040",
+   "name_ko": "산일전기",
+   "name": "Sanil Electric Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 127800,
+   "chg1d": 4.24,
+   "high52": 341000,
+   "from_high": -62.52,
+   "price_source": "Yahoo Finance",
+   "per": 22.05,
+   "fper": 19.69,
+   "sector": "전기장비",
+   "mcap": "3조 9,928억원"
+  },
+  {
+   "ticker": "298040",
+   "name_ko": "효성중공업",
+   "name": "Hyosung Heavy Industries Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 1793000,
+   "chg1d": 2.69,
+   "high52": 4742000,
+   "from_high": -62.19,
+   "price_source": "Yahoo Finance",
+   "per": 28.69,
+   "fper": 21.93,
+   "sector": "전기장비",
+   "mcap": "16조 7,842억원"
+  },
+  {
+   "ticker": "069960",
+   "name_ko": "현대백화점",
+   "name": "Hyundai Department Store Co. Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 84100,
+   "chg1d": 0.48,
+   "high52": 222000,
+   "from_high": -62.12,
+   "price_source": "Yahoo Finance",
+   "per": 8.13,
+   "fper": 6.91,
+   "sector": "백화점과일반상점",
+   "mcap": "1조 8,093억원"
+  },
+  {
+   "ticker": "023530",
+   "name_ko": "롯데쇼핑",
+   "name": "Lotte Shopping Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 80200,
+   "chg1d": -2.2,
+   "high52": 211000,
+   "from_high": -61.99,
+   "price_source": "Yahoo Finance",
+   "per": 12.58,
+   "fper": 6.51,
+   "sector": "백화점과일반상점",
+   "mcap": "2조 2,772억원"
+  },
+  {
+   "ticker": "361610",
+   "name_ko": "SK아이이테크놀로지",
+   "name": "SK IE Technology Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 12810,
+   "chg1d": -0.08,
+   "high52": 33600,
+   "from_high": -61.88,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": null,
+   "sector": "전기제품",
+   "mcap": "1조 583억원"
+  },
+  {
+   "ticker": "009150",
+   "name_ko": "삼성전기",
+   "name": "Samsung Electro-Mechanics Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 923000,
+   "chg1d": 4.65,
+   "high52": 2417000,
+   "from_high": -61.81,
+   "price_source": "Yahoo Finance",
+   "per": 72.7,
+   "fper": 42.43,
+   "sector": "전자장비와기기",
+   "mcap": "70조 5,108억원"
+  },
+  {
+   "ticker": "003030",
+   "name_ko": "세아제강지주",
+   "name": "SeAH Steel Holdings Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 101300,
+   "chg1d": -2.5,
+   "high52": 260000,
+   "from_high": -61.04,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": null,
+   "sector": "철강",
+   "mcap": "4,195억원"
+  },
+  {
+   "ticker": "012450",
+   "name_ko": "한화에어로스페이스",
+   "name": "Hanwha Aerospace Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 659000,
+   "chg1d": 0.0,
+   "high52": 1655000,
+   "from_high": -60.18,
+   "price_source": "Yahoo Finance",
+   "per": 16.43,
+   "fper": 19.52,
+   "sector": "우주항공과국방",
+   "mcap": "33조 9,803억원"
+  },
+  {
+   "ticker": "011170",
+   "name_ko": "롯데케미칼",
+   "name": "Lotte Chemical Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 47950,
+   "chg1d": -0.83,
+   "high52": 119500,
+   "from_high": -59.87,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": -4.85,
+   "sector": "화학",
+   "mcap": "2조 639억원"
+  },
+  {
+   "ticker": "034220",
+   "name_ko": "LG디스플레이",
+   "name": "LG Display Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 7210,
+   "chg1d": -1.1,
+   "high52": 17950,
+   "from_high": -59.83,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": -25.76,
+   "sector": "디스플레이패널",
+   "mcap": "3조 6,450억원"
+  },
+  {
+   "ticker": "071050",
+   "name_ko": "한국금융지주",
+   "name": "Korea Investment Holdings Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 121500,
+   "chg1d": 0.66,
+   "high52": 300500,
+   "from_high": -59.57,
+   "price_source": "Yahoo Finance",
+   "per": 2.58,
+   "fper": 2.91,
+   "sector": "증권",
+   "mcap": "6조 8,376억원"
+  },
+  {
+   "ticker": "011790",
+   "name_ko": "SKC",
+   "name": "SKC Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 75900,
+   "chg1d": 5.56,
+   "high52": 184400,
+   "from_high": -58.84,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": -10.6,
+   "sector": "화학",
+   "mcap": "3조 7,844억원"
+  },
+  {
+   "ticker": "000670",
+   "name_ko": "영풍",
+   "name": "Young Poong Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 29850,
+   "chg1d": -2.61,
+   "high52": 71650,
+   "from_high": -58.34,
+   "price_source": "Yahoo Finance",
+   "per": 5.39,
+   "fper": null,
+   "sector": "핸드셋",
+   "mcap": "5,532억원"
+  },
+  {
+   "ticker": "010130",
+   "name_ko": "고려아연",
+   "name": "Korea Zinc Company, Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 919000,
+   "chg1d": -4.96,
+   "high52": 2188000,
+   "from_high": -58.0,
+   "price_source": "Yahoo Finance",
+   "per": 19.02,
+   "fper": 17.7,
+   "sector": "비철금속",
+   "mcap": "19조 3,075억원"
+  },
+  {
+   "ticker": "377300",
+   "name_ko": "카카오페이",
+   "name": "Kakao Pay Corp.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 33500,
+   "chg1d": 1.52,
+   "high52": 79200,
+   "from_high": -57.7,
+   "price_source": "Yahoo Finance",
+   "per": 52.0,
+   "fper": 35.56,
+   "sector": "IT서비스",
+   "mcap": "4조 5,675억원"
+  },
+  {
+   "ticker": "009830",
+   "name_ko": "한화솔루션",
+   "name": "Hanwha Solutions Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 25100,
+   "chg1d": 2.87,
+   "high52": 59300,
+   "from_high": -57.67,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 25.17,
+   "sector": "에너지장비및서비스",
+   "mcap": "5조 7,235억원"
+  },
+  {
+   "ticker": "267270",
+   "name_ko": "HD건설기계",
+   "name": "HD Construction Equipment Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 92400,
+   "chg1d": 0.22,
+   "high52": 217500,
+   "from_high": -57.52,
+   "price_source": "Yahoo Finance",
+   "per": 7.25,
+   "fper": 9.39,
+   "sector": "기계",
+   "mcap": "4조 4,600억원"
+  },
+  {
+   "ticker": "000720",
+   "name_ko": "현대건설",
+   "name": "Hyundai Engineering & Construction Co.,Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 84700,
+   "chg1d": 0.59,
+   "high52": 198400,
+   "from_high": -57.31,
+   "price_source": "Yahoo Finance",
+   "per": 21.39,
+   "fper": 21.84,
+   "sector": "건설",
+   "mcap": "9조 5,098억원"
+  },
+  {
+   "ticker": "000990",
+   "name_ko": "DB하이텍",
+   "name": "DB HiTek CO., LTD.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 98400,
+   "chg1d": 12.2,
+   "high52": 230500,
+   "from_high": -57.31,
+   "price_source": "Yahoo Finance",
+   "per": 12.54,
+   "fper": 10.74,
+   "sector": "반도체와반도체장비",
+   "mcap": "4조 3,026억원"
+  },
+  {
+   "ticker": "011210",
+   "name_ko": "현대위아",
+   "name": "Hyundai Wia Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 48100,
+   "chg1d": -0.41,
+   "high52": 112600,
+   "from_high": -57.28,
+   "price_source": "Yahoo Finance",
+   "per": 18.65,
+   "fper": 11.6,
+   "sector": "자동차부품",
+   "mcap": "1조 3,230억원"
+  },
+  {
+   "ticker": "000660",
+   "name_ko": "SK하이닉스",
+   "name": "SK hynix Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 1277000,
+   "chg1d": 5.36,
+   "high52": 2987000,
+   "from_high": -57.25,
+   "price_source": "Yahoo Finance",
+   "per": 5.76,
+   "fper": 3.63,
+   "sector": "반도체와반도체장비",
+   "mcap": "943조 656억원"
+  },
+  {
+   "ticker": "093370",
+   "name_ko": "후성",
+   "name": "Foosung Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 10070,
+   "chg1d": 14.95,
+   "high52": 23550,
+   "from_high": -57.24,
+   "price_source": "Yahoo Finance",
+   "per": 31.18,
+   "fper": null,
+   "sector": "화학",
+   "mcap": "1조 1,369억원"
+  },
+  {
+   "ticker": "012330",
+   "name_ko": "현대모비스",
+   "name": "Hyundai Mobis Co.,Ltd",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 354500,
+   "chg1d": 0.85,
+   "high52": 822000,
+   "from_high": -56.87,
+   "price_source": "Yahoo Finance",
+   "per": 8.89,
+   "fper": 8.79,
+   "sector": "자동차부품",
+   "mcap": "31조 8,414억원"
+  },
+  {
+   "ticker": "042700",
+   "name_ko": "한미반도체",
+   "name": "HANMI Semiconductor Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 184000,
+   "chg1d": 6.11,
+   "high52": 426000,
+   "from_high": -56.81,
+   "price_source": "Yahoo Finance",
+   "per": 80.13,
+   "fper": null,
+   "sector": "반도체와반도체장비",
+   "mcap": "17조 7,948억원"
+  },
+  {
+   "ticker": "000120",
+   "name_ko": "CJ대한통운",
+   "name": "CJ Logistics Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 66800,
+   "chg1d": -1.47,
+   "high52": 154000,
+   "from_high": -56.62,
+   "price_source": "Yahoo Finance",
+   "per": 6.85,
+   "fper": 8.15,
+   "sector": "항공화물운송과물류",
+   "mcap": "1조 5,261억원"
+  },
+  {
+   "ticker": "204320",
+   "name_ko": "HL만도",
+   "name": "HL Mando Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 34400,
+   "chg1d": 1.33,
+   "high52": 79100,
+   "from_high": -56.51,
+   "price_source": "Yahoo Finance",
+   "per": 9.65,
+   "fper": 14.94,
+   "sector": "자동차부품",
+   "mcap": "1조 6,318억원"
+  },
+  {
+   "ticker": "015760",
+   "name_ko": "한국전력",
+   "name": "Korea Electric Power Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 30450,
+   "chg1d": -0.49,
+   "high52": 69500,
+   "from_high": -56.19,
+   "price_source": "Yahoo Finance",
+   "per": 2.51,
+   "fper": 5.08,
+   "sector": "전기유틸리티",
+   "mcap": "19조 6,762억원"
+  },
+  {
+   "ticker": "016360",
+   "name_ko": "삼성증권",
+   "name": "Samsung Securities Co.,Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 72100,
+   "chg1d": -0.83,
+   "high52": 163000,
+   "from_high": -55.77,
+   "price_source": "Yahoo Finance",
+   "per": 4.41,
+   "fper": 4.07,
+   "sector": "증권",
+   "mcap": "6조 4,564억원"
+  },
+  {
+   "ticker": "000270",
+   "name_ko": "기아",
+   "name": "Kia Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 94600,
+   "chg1d": -1.56,
+   "high52": 212500,
+   "from_high": -55.48,
+   "price_source": "Yahoo Finance",
+   "per": 5.28,
+   "fper": 5.34,
+   "sector": "자동차",
+   "mcap": "37조 892억원"
+  },
+  {
+   "ticker": "002030",
+   "name_ko": "아세아",
+   "name": "ASIA Holdings CO., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 182900,
+   "chg1d": -2.87,
+   "high52": 402000,
+   "from_high": -54.5,
+   "price_source": "Yahoo Finance",
+   "per": 13.61,
+   "fper": null,
+   "sector": "건축자재",
+   "mcap": "3,768억원"
+  },
+  {
+   "ticker": "010140",
+   "name_ko": "삼성중공업",
+   "name": "Samsung Heavy Industries Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 16490,
+   "chg1d": 0.24,
+   "high52": 35350,
+   "from_high": -53.35,
+   "price_source": "Yahoo Finance",
+   "per": 25.73,
+   "fper": 13.44,
+   "sector": "조선",
+   "mcap": "14조 5,376억원"
+  },
+  {
+   "ticker": "006650",
+   "name_ko": "대한유화",
+   "name": "Korea Petrochemical Ind. Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 94600,
+   "chg1d": -0.53,
+   "high52": 202500,
+   "from_high": -53.28,
+   "price_source": "Yahoo Finance",
+   "per": 8.38,
+   "fper": 11.02,
+   "sector": "화학",
+   "mcap": "6,175억원"
+  },
+  {
+   "ticker": "004000",
+   "name_ko": "롯데정밀화학",
+   "name": "LOTTE Fine Chemical Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 33800,
+   "chg1d": -1.31,
+   "high52": 71800,
+   "from_high": -52.92,
+   "price_source": "Yahoo Finance",
+   "per": 4.38,
+   "fper": 4.52,
+   "sector": "화학",
+   "mcap": "8,798억원"
+  },
+  {
+   "ticker": "005420",
+   "name_ko": "코스모화학",
+   "name": "Cosmo Chemical Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 9300,
+   "chg1d": 6.04,
+   "high52": 19630,
+   "from_high": -52.62,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": null,
+   "sector": "화학",
+   "mcap": "3,576억원"
+  },
+  {
+   "ticker": "139480",
+   "name_ko": "이마트",
+   "name": "E-MART Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 65100,
+   "chg1d": -8.05,
+   "high52": 136400,
+   "from_high": -52.27,
+   "price_source": "Yahoo Finance",
+   "per": 85.83,
+   "fper": -84.83,
+   "sector": "백화점과일반상점",
+   "mcap": "1조 7,832억원"
+  },
+  {
+   "ticker": "022100",
+   "name_ko": "포스코DX",
+   "name": "Posco Dx Company Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 21800,
+   "chg1d": 2.83,
+   "high52": 45600,
+   "from_high": -52.19,
+   "price_source": "Yahoo Finance",
+   "per": 104.29,
+   "fper": null,
+   "sector": "IT서비스",
+   "mcap": "3조 3,296억원"
+  },
+  {
+   "ticker": "032830",
+   "name_ko": "삼성생명",
+   "name": "Samsung Life Insurance Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 247500,
+   "chg1d": 1.23,
+   "high52": 516500,
+   "from_high": -52.08,
+   "price_source": "Yahoo Finance",
+   "per": 17.81,
+   "fper": 13.97,
+   "sector": "생명보험",
+   "mcap": "49조 9,000억원"
+  },
+  {
+   "ticker": "001040",
+   "name_ko": "CJ",
+   "name": "CJ Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 113500,
+   "chg1d": 0.98,
+   "high52": 235000,
+   "from_high": -51.7,
+   "price_source": "Yahoo Finance",
+   "per": 86.48,
+   "fper": 11.34,
+   "sector": "복합기업",
+   "mcap": "3조 3,233억원"
+  },
+  {
+   "ticker": "285130",
+   "name_ko": "SK케미칼",
+   "name": "SK Chemicals Co.,Ltd",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 39850,
+   "chg1d": -7.65,
+   "high52": 81800,
+   "from_high": -51.28,
+   "price_source": "Yahoo Finance",
+   "per": 106.46,
+   "fper": null,
+   "sector": "화학",
+   "mcap": "6,980억원"
+  },
+  {
+   "ticker": "003550",
+   "name_ko": "LG",
+   "name": "LG Corp.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 90600,
+   "chg1d": -0.55,
+   "high52": 185900,
+   "from_high": -51.26,
+   "price_source": "Yahoo Finance",
+   "per": 18.93,
+   "fper": 12.31,
+   "sector": "복합기업",
+   "mcap": "13조 7,736억원"
+  },
+  {
+   "ticker": "034230",
+   "name_ko": "파라다이스",
+   "name": "Paradise Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 10710,
+   "chg1d": 7.96,
+   "high52": 21850,
+   "from_high": -50.98,
+   "price_source": "Yahoo Finance",
+   "per": 13.25,
+   "fper": 13.05,
+   "sector": "호텔,레스토랑,레저",
+   "mcap": "9,921억원"
+  },
+  {
+   "ticker": "009540",
+   "name_ko": "HD한국조선해양",
+   "name": "HD Korea Shipbuilding & Offshore Engineering Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 240000,
+   "chg1d": -2.04,
+   "high52": 488000,
+   "from_high": -50.82,
+   "price_source": "Yahoo Finance",
+   "per": 4.96,
+   "fper": 4.56,
+   "sector": "조선",
+   "mcap": "17조 917억원"
+  },
+  {
+   "ticker": "035720",
+   "name_ko": "카카오",
+   "name": "Kakao Corp.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 32000,
+   "chg1d": -0.16,
+   "high52": 64800,
+   "from_high": -50.62,
+   "price_source": "Yahoo Finance",
+   "per": 40.87,
+   "fper": 27.16,
+   "sector": "양방향미디어와서비스",
+   "mcap": "14조 1,760억원"
+  },
+  {
+   "ticker": "007660",
+   "name_ko": "이수페타시스",
+   "name": "ISU Petasys Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 82000,
+   "chg1d": 19.36,
+   "high52": 164400,
+   "from_high": -50.12,
+   "price_source": "Yahoo Finance",
+   "per": 30.42,
+   "fper": 22.27,
+   "sector": "반도체와반도체장비",
+   "mcap": "6조 1,150억원"
+  },
+  {
+   "ticker": "028260",
+   "name_ko": "삼성물산",
+   "name": "Samsung C&T Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 283000,
+   "chg1d": 1.43,
+   "high52": 565000,
+   "from_high": -49.91,
+   "price_source": "Yahoo Finance",
+   "per": 17.31,
+   "fper": 16.4,
+   "sector": "복합기업",
+   "mcap": "46조 3,799억원"
+  },
+  {
+   "ticker": "010060",
+   "name_ko": "OCI홀딩스",
+   "name": "OCI Holdings Company Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 207500,
+   "chg1d": 4.96,
+   "high52": 414000,
+   "from_high": -49.88,
+   "price_source": "Yahoo Finance",
+   "per": 104.46,
+   "fper": 40.8,
+   "sector": "화학",
+   "mcap": "3조 8,927억원"
+  },
+  {
+   "ticker": "047810",
+   "name_ko": "한국항공우주",
+   "name": "Korea Aerospace Industries, Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 109000,
+   "chg1d": 7.71,
+   "high52": 215500,
+   "from_high": -49.42,
+   "price_source": "Yahoo Finance",
+   "per": 59.81,
+   "fper": 51.39,
+   "sector": "우주항공과국방",
+   "mcap": "10조 6,053억원"
+  },
+  {
+   "ticker": "008770",
+   "name_ko": "호텔신라",
+   "name": "Hotel Shilla Co.,Ltd",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 35600,
+   "chg1d": 0.42,
+   "high52": 70300,
+   "from_high": -49.36,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 15.25,
+   "sector": "백화점과일반상점",
+   "mcap": "1조 4,031억원"
+  },
+  {
+   "ticker": "069620",
+   "name_ko": "대웅제약",
+   "name": "Daewoong Pharmaceutical Co., Ltd",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 101600,
+   "chg1d": -2.31,
+   "high52": 199400,
+   "from_high": -49.05,
+   "price_source": "Yahoo Finance",
+   "per": 6.06,
+   "fper": 9.47,
+   "sector": "제약",
+   "mcap": "1조 1,853억원"
+  },
+  {
+   "ticker": "005490",
+   "name_ko": "POSCO홀딩스",
+   "name": "POSCO Holdings Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 276500,
+   "chg1d": 2.03,
+   "high52": 542000,
+   "from_high": -48.99,
+   "price_source": "Yahoo Finance",
+   "per": 16.52,
+   "fper": 12.85,
+   "sector": "철강",
+   "mcap": "21조 9,103억원"
+  },
+  {
+   "ticker": "003090",
+   "name_ko": "대웅",
+   "name": "Daewoong Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 15610,
+   "chg1d": -3.1,
+   "high52": 30600,
+   "from_high": -48.99,
+   "price_source": "Yahoo Finance",
+   "per": 5.1,
+   "fper": null,
+   "sector": "제약",
+   "mcap": "9,152억원"
+  },
+  {
+   "ticker": "375500",
+   "name_ko": "DL이앤씨",
+   "name": "DL E&C Co.,Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 54600,
+   "chg1d": -2.33,
+   "high52": 106600,
+   "from_high": -48.78,
+   "price_source": "Yahoo Finance",
+   "per": 3.81,
+   "fper": 6.26,
+   "sector": "건설",
+   "mcap": "2조 1,359억원"
+  },
+  {
+   "ticker": "483650",
+   "name_ko": "달바글로벌",
+   "name": "d'Alba Global Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 146000,
+   "chg1d": -0.34,
+   "high52": 283000,
+   "from_high": -48.41,
+   "price_source": "Yahoo Finance",
+   "per": 16.96,
+   "fper": 14.04,
+   "sector": "화장품",
+   "mcap": "1조 8,719억원"
+  },
+  {
+   "ticker": "005940",
+   "name_ko": "NH투자증권",
+   "name": "NH Investment & Securities Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 22000,
+   "chg1d": -3.72,
+   "high52": 42600,
+   "from_high": -48.36,
+   "price_source": "Yahoo Finance",
+   "per": 5.34,
+   "fper": 5.18,
+   "sector": "증권",
+   "mcap": "8조 1,225억원"
+  },
+  {
+   "ticker": "064400",
+   "name_ko": "LG씨엔에스",
+   "name": "LG CNS Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 79200,
+   "chg1d": -1.12,
+   "high52": 153300,
+   "from_high": -48.34,
+   "price_source": "Yahoo Finance",
+   "per": 15.94,
+   "fper": 16.28,
+   "sector": "IT서비스",
+   "mcap": "7조 6,734억원"
+  },
+  {
+   "ticker": "018880",
+   "name_ko": "한온시스템",
+   "name": "Hanon Systems",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 3090,
+   "chg1d": 0.32,
+   "high52": 5940,
+   "from_high": -47.98,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 21.05,
+   "sector": "자동차부품",
+   "mcap": "3조 1,968억원"
+  },
+  {
+   "ticker": "088350",
+   "name_ko": "한화생명",
+   "name": "Hanwha Life Insurance Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 3940,
+   "chg1d": -0.25,
+   "high52": 7560,
+   "from_high": -47.88,
+   "price_source": "Yahoo Finance",
+   "per": 3.24,
+   "fper": 3.52,
+   "sector": "생명보험",
+   "mcap": "3조 4,437억원"
+  },
+  {
+   "ticker": "003240",
+   "name_ko": "태광산업",
+   "name": "Taekwang Industrial Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 862000,
+   "chg1d": -1.37,
+   "high52": 1634000,
+   "from_high": -47.25,
+   "price_source": "Yahoo Finance",
+   "per": 8.11,
+   "fper": null,
+   "sector": "화학",
+   "mcap": "9,631억원"
+  },
+  {
+   "ticker": "278470",
+   "name_ko": "에이피알",
+   "name": "APR Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 251500,
+   "chg1d": 0.2,
+   "high52": 475000,
+   "from_high": -47.05,
+   "price_source": "Yahoo Finance",
+   "per": 21.95,
+   "fper": 17.4,
+   "sector": "화장품",
+   "mcap": "9조 4,719억원"
+  },
+  {
+   "ticker": "014680",
+   "name_ko": "한솔케미칼",
+   "name": "Hansol Chemical Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 184100,
+   "chg1d": 3.31,
+   "high52": 346500,
+   "from_high": -46.87,
+   "price_source": "Yahoo Finance",
+   "per": 13.63,
+   "fper": 12.32,
+   "sector": "화학",
+   "mcap": "2조 98억원"
+  },
+  {
+   "ticker": "051600",
+   "name_ko": "한전KPS",
+   "name": "KEPCO Plant Service & Engineering Co.,Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 36900,
+   "chg1d": -1.34,
+   "high52": 69000,
+   "from_high": -46.52,
+   "price_source": "Yahoo Finance",
+   "per": 12.96,
+   "fper": 13.61,
+   "sector": "전기유틸리티",
+   "mcap": "1조 6,830억원"
+  },
+  {
+   "ticker": "002380",
+   "name_ko": "KCC",
+   "name": "KCC Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 371000,
+   "chg1d": -0.4,
+   "high52": 692000,
+   "from_high": -46.39,
+   "price_source": "Yahoo Finance",
+   "per": 0.91,
+   "fper": 2.45,
+   "sector": "건축자재",
+   "mcap": "3조 2,352억원"
+  },
+  {
+   "ticker": "457190",
+   "name_ko": "이수스페셜티케미컬",
+   "name": "ISU Specialty Chemical Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 71500,
+   "chg1d": 12.42,
+   "high52": 131800,
+   "from_high": -45.75,
+   "price_source": "Yahoo Finance",
+   "per": 329.22,
+   "fper": null,
+   "sector": "화학",
+   "mcap": "2조 1,788억원"
+  },
+  {
+   "ticker": "005930",
+   "name_ko": "삼성전자",
+   "name": "Samsung Electronics Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 206000,
+   "chg1d": 3.57,
+   "high52": 374500,
+   "from_high": -44.99,
+   "price_source": "Yahoo Finance",
+   "per": 9.33,
+   "fper": 4.56,
+   "sector": "반도체와반도체장비",
+   "mcap": "1,216조 260억원"
+  },
+  {
+   "ticker": "047050",
+   "name_ko": "포스코인터내셔널",
+   "name": "Posco International Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 50500,
+   "chg1d": 2.43,
+   "high52": 91200,
+   "from_high": -44.63,
+   "price_source": "Yahoo Finance",
+   "per": 10.75,
+   "fper": 8.56,
+   "sector": "무역회사와판매업체",
+   "mcap": "8조 9,017억원"
+  },
+  {
+   "ticker": "034730",
+   "name_ko": "SK",
+   "name": "SK Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 493000,
+   "chg1d": 2.71,
+   "high52": 883000,
+   "from_high": -44.17,
+   "price_source": "Yahoo Finance",
+   "per": 4.52,
+   "fper": 2.94,
+   "sector": "석유와가스",
+   "mcap": "36조 701억원"
+  },
+  {
+   "ticker": "004990",
+   "name_ko": "롯데지주",
+   "name": "LOTTE Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 22150,
+   "chg1d": -0.45,
+   "high52": 39600,
+   "from_high": -44.07,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 64.12,
+   "sector": "복합기업",
+   "mcap": "2조 2,175억원"
+  },
+  {
+   "ticker": "051910",
+   "name_ko": "LG화학",
+   "name": "LG Chem, Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 245500,
+   "chg1d": 3.15,
+   "high52": 437500,
+   "from_high": -43.89,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": -34.33,
+   "sector": "화학",
+   "mcap": "17조 3,304억원"
+  },
+  {
+   "ticker": "138930",
+   "name_ko": "BNK금융지주",
+   "name": "BNK Financial Group Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 12970,
+   "chg1d": 0.08,
+   "high52": 23050,
+   "from_high": -43.73,
+   "price_source": "Yahoo Finance",
+   "per": 5.38,
+   "fper": 5.3,
+   "sector": "은행",
+   "mcap": "3조 9,644억원"
+  },
+  {
+   "ticker": "000210",
+   "name_ko": "DL",
+   "name": "DL Holdings CO., LTD.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 43750,
+   "chg1d": -3.95,
+   "high52": 77700,
+   "from_high": -43.69,
+   "price_source": "Yahoo Finance",
+   "per": 7.1,
+   "fper": null,
+   "sector": "화학",
+   "mcap": "9,263억원"
+  },
+  {
+   "ticker": "251270",
+   "name_ko": "넷마블",
+   "name": "Netmarble Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 33200,
+   "chg1d": -4.73,
+   "high52": 58900,
+   "from_high": -43.63,
+   "price_source": "Yahoo Finance",
+   "per": 7.11,
+   "fper": 6.03,
+   "sector": "게임엔터테인먼트",
+   "mcap": "2조 7,775억원"
+  },
+  {
+   "ticker": "298020",
+   "name_ko": "효성티앤씨",
+   "name": "Hyosung TNC Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 316500,
+   "chg1d": -1.4,
+   "high52": 557000,
+   "from_high": -43.18,
+   "price_source": "Yahoo Finance",
+   "per": 12.25,
+   "fper": 5.75,
+   "sector": "무역회사와판매업체",
+   "mcap": "1조 3,784억원"
+  },
+  {
+   "ticker": "443060",
+   "name_ko": "HD현대마린솔루션",
+   "name": "HD Hyundai Marine Solution CO.,LTD.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 163400,
+   "chg1d": -2.1,
+   "high52": 287000,
+   "from_high": -43.07,
+   "price_source": "Yahoo Finance",
+   "per": 21.99,
+   "fper": 23.43,
+   "sector": "조선",
+   "mcap": "7조 3,527억원"
+  },
+  {
+   "ticker": "004020",
+   "name_ko": "현대제철",
+   "name": "Hyundai Steel Company",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 28800,
+   "chg1d": 0.35,
+   "high52": 50400,
+   "from_high": -42.86,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 39.02,
+   "sector": "철강",
+   "mcap": "3조 8,633억원"
+  },
+  {
+   "ticker": "071320",
+   "name_ko": "지역난방공사",
+   "name": "Korea District Heating Corp.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 67000,
+   "chg1d": -1.03,
+   "high52": 116700,
+   "from_high": -42.59,
+   "price_source": "Yahoo Finance",
+   "per": 2.21,
+   "fper": 2.4,
+   "sector": "복합유틸리티",
+   "mcap": "7,804억원"
+  },
+  {
+   "ticker": "298050",
+   "name_ko": "HS효성첨단소재",
+   "name": "HS Hyosung Advanced Materials Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 163000,
+   "chg1d": 5.5,
+   "high52": 282000,
+   "from_high": -42.2,
+   "price_source": "Yahoo Finance",
+   "per": 19.73,
+   "fper": 9.34,
+   "sector": "화학",
+   "mcap": "7,320억원"
+  },
+  {
+   "ticker": "007340",
+   "name_ko": "DN오토모티브",
+   "name": "DN Automotive Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 39550,
+   "chg1d": -1.0,
+   "high52": 67500,
+   "from_high": -41.41,
+   "price_source": "Yahoo Finance",
+   "per": 5.99,
+   "fper": null,
+   "sector": "자동차부품",
+   "mcap": "2조 3,229억원"
+  },
+  {
+   "ticker": "010950",
+   "name_ko": "S-Oil",
+   "name": "S-Oil Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 103900,
+   "chg1d": -1.89,
+   "high52": 177100,
+   "from_high": -41.33,
+   "price_source": "Yahoo Finance",
+   "per": 8.05,
+   "fper": 3.45,
+   "sector": "석유와가스",
+   "mcap": "11조 8,437억원"
+  },
+  {
+   "ticker": "029780",
+   "name_ko": "삼성카드",
+   "name": "Samsung Card Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 40900,
+   "chg1d": -0.24,
+   "high52": 69200,
+   "from_high": -40.9,
+   "price_source": "Yahoo Finance",
+   "per": 7.64,
+   "fper": 8.27,
+   "sector": "카드",
+   "mcap": "4조 7,444억원"
+  },
+  {
+   "ticker": "017670",
+   "name_ko": "SK텔레콤",
+   "name": "SK Telecom Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 82700,
+   "chg1d": 1.47,
+   "high52": 139500,
+   "from_high": -40.72,
+   "price_source": "Yahoo Finance",
+   "per": 23.88,
+   "fper": 12.55,
+   "sector": "무선통신서비스",
+   "mcap": "17조 8,491억원"
+  },
+  {
+   "ticker": "003670",
+   "name_ko": "포스코퓨처엠",
+   "name": "Posco Future M Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 177600,
+   "chg1d": 5.09,
+   "high52": 299500,
+   "from_high": -40.7,
+   "price_source": "Yahoo Finance",
+   "per": 350.2,
+   "fper": 284.43,
+   "sector": "화학",
+   "mcap": "15조 7,613억원"
+  },
+  {
+   "ticker": "018260",
+   "name_ko": "삼성에스디에스",
+   "name": "Samsung SDS Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 230500,
+   "chg1d": -0.86,
+   "high52": 388500,
+   "from_high": -40.67,
+   "price_source": "Yahoo Finance",
+   "per": 27.67,
+   "fper": 26.76,
+   "sector": "IT서비스",
+   "mcap": "17조 9,516억원"
+  },
+  {
+   "ticker": "017800",
+   "name_ko": "현대엘리베이터",
+   "name": "Hyundai Elevator Co., Ltd",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 67300,
+   "chg1d": -1.03,
+   "high52": 113400,
+   "from_high": -40.65,
+   "price_source": "Yahoo Finance",
+   "per": 7.17,
+   "fper": null,
+   "sector": "기계",
+   "mcap": "2조 6,348억원"
+  },
+  {
+   "ticker": "005850",
+   "name_ko": "에스엘",
+   "name": "SL Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 47500,
+   "chg1d": 1.5,
+   "high52": 79500,
+   "from_high": -40.25,
+   "price_source": "Yahoo Finance",
+   "per": 5.81,
+   "fper": 5.9,
+   "sector": "자동차부품",
+   "mcap": "2조 2,133억원"
+  },
+  {
+   "ticker": "326030",
+   "name_ko": "SK바이오팜",
+   "name": "SK Biopharmaceuticals Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 86700,
+   "chg1d": -0.8,
+   "high52": 144100,
+   "from_high": -39.83,
+   "price_source": "Yahoo Finance",
+   "per": 17.09,
+   "fper": 22.34,
+   "sector": "제약",
+   "mcap": "6조 8,524억원"
+  },
+  {
+   "ticker": "000240",
+   "name_ko": "한국앤컴퍼니",
+   "name": "Hankook & Company Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 21950,
+   "chg1d": -2.88,
+   "high52": 36450,
+   "from_high": -39.78,
+   "price_source": "Yahoo Finance",
+   "per": 5.29,
+   "fper": null,
+   "sector": "자동차부품",
+   "mcap": "2조 933억원"
+  },
+  {
+   "ticker": "011780",
+   "name_ko": "금호석유화학",
+   "name": "Kumho Petro Chemical Co.,Ltd",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 98400,
+   "chg1d": -2.19,
+   "high52": 162300,
+   "from_high": -39.37,
+   "price_source": "Yahoo Finance",
+   "per": 5.66,
+   "fper": 6.66,
+   "sector": "화학",
+   "mcap": "2조 4,621억원"
+  },
+  {
+   "ticker": "036570",
+   "name_ko": "NC",
+   "name": "NC Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 209000,
+   "chg1d": -2.11,
+   "high52": 343500,
+   "from_high": -39.16,
+   "price_source": "Yahoo Finance",
+   "per": 7.31,
+   "fper": 9.29,
+   "sector": "게임엔터테인먼트",
+   "mcap": "4조 5,135억원"
+  },
+  {
+   "ticker": "000100",
+   "name_ko": "유한양행",
+   "name": "Yuhan Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 79000,
+   "chg1d": 0.51,
+   "high52": 129200,
+   "from_high": -38.85,
+   "price_source": "Yahoo Finance",
+   "per": 26.96,
+   "fper": 39.59,
+   "sector": "제약",
+   "mcap": "5조 8,083억원"
+  },
+  {
+   "ticker": "112610",
+   "name_ko": "씨에스윈드",
+   "name": "CS Wind Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 49200,
+   "chg1d": -0.61,
+   "high52": 79400,
+   "from_high": -38.04,
+   "price_source": "Yahoo Finance",
+   "per": 477.18,
+   "fper": 11.73,
+   "sector": "에너지장비및서비스",
+   "mcap": "2조 727억원"
+  },
+  {
+   "ticker": "078930",
+   "name_ko": "GS",
+   "name": "GS Holdings Corp.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 83200,
+   "chg1d": 1.34,
+   "high52": 133200,
+   "from_high": -37.54,
+   "price_source": "Yahoo Finance",
+   "per": 3.4,
+   "fper": 3.14,
+   "sector": "석유와가스",
+   "mcap": "7조 8,032억원"
+  },
+  {
+   "ticker": "185750",
+   "name_ko": "종근당",
+   "name": "Chong Kun Dang Pharmaceutical Corp.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 62200,
+   "chg1d": -1.43,
+   "high52": 98100,
+   "from_high": -36.6,
+   "price_source": "Yahoo Finance",
+   "per": 10.77,
+   "fper": 13.58,
+   "sector": "제약",
+   "mcap": "8,558억원"
+  },
+  {
+   "ticker": "161890",
+   "name_ko": "한국콜마",
+   "name": "Kolmar Korea Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 105600,
+   "chg1d": -0.19,
+   "high52": 165900,
+   "from_high": -36.35,
+   "price_source": "Yahoo Finance",
+   "per": 13.59,
+   "fper": 13.17,
+   "sector": "화장품",
+   "mcap": "2조 5,116억원"
+  },
+  {
+   "ticker": "073240",
+   "name_ko": "금호타이어",
+   "name": "Kumho Tire Co., Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 5640,
+   "chg1d": 0.89,
+   "high52": 8850,
+   "from_high": -36.27,
+   "price_source": "Yahoo Finance",
+   "per": 3.42,
+   "fper": 5.16,
+   "sector": "자동차부품",
+   "mcap": "1조 6,288억원"
+  },
+  {
+   "ticker": "035420",
+   "name_ko": "NAVER",
+   "name": "NAVER Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 194300,
+   "chg1d": 0.67,
+   "high52": 304000,
+   "from_high": -36.09,
+   "price_source": "Yahoo Finance",
+   "per": 15.17,
+   "fper": 16.07,
+   "sector": "양방향미디어와서비스",
+   "mcap": "29조 7,373억원"
+  },
+  {
+   "ticker": "024110",
+   "name_ko": "기업은행",
+   "name": "Industrial Bank of Korea",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 19020,
+   "chg1d": -0.26,
+   "high52": 29550,
+   "from_high": -35.63,
+   "price_source": "Yahoo Finance",
+   "per": 5.74,
+   "fper": 5.42,
+   "sector": "은행",
+   "mcap": "15조 1,670억원"
+  },
+  {
+   "ticker": "259960",
+   "name_ko": "크래프톤",
+   "name": "KRAFTON, Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 195800,
+   "chg1d": -9.56,
+   "high52": 303500,
+   "from_high": -35.49,
+   "price_source": "Yahoo Finance",
+   "per": 11.02,
+   "fper": 11.58,
+   "sector": "게임엔터테인먼트",
+   "mcap": "8조 8,737억원"
+  },
+  {
+   "ticker": "005300",
+   "name_ko": "롯데칠성",
+   "name": "Lotte Chilsung Beverage Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 100100,
+   "chg1d": -1.77,
+   "high52": 154800,
+   "from_high": -35.34,
+   "price_source": "Yahoo Finance",
+   "per": 15.41,
+   "fper": 11.43,
+   "sector": "음료",
+   "mcap": "9,297억원"
+  },
+  {
+   "ticker": "028670",
+   "name_ko": "팬오션",
+   "name": "Pan Ocean Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 5080,
+   "chg1d": 1.7,
+   "high52": 7830,
+   "from_high": -35.12,
+   "price_source": "Yahoo Finance",
+   "per": 8.04,
+   "fper": 5.14,
+   "sector": "해운사",
+   "mcap": "2조 7,210억원"
+  },
+  {
+   "ticker": "006400",
+   "name_ko": "삼성SDI",
+   "name": "Samsung SDI Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 478500,
+   "chg1d": 4.93,
+   "high52": 723000,
+   "from_high": -33.82,
+   "price_source": "Yahoo Finance",
+   "per": 1048.03,
+   "fper": 47.28,
+   "sector": "전기제품",
+   "mcap": "38조 6,811억원"
+  },
+  {
+   "ticker": "241560",
+   "name_ko": "두산밥캣",
+   "name": "Doosan Bobcat Inc.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 52800,
+   "chg1d": -1.31,
+   "high52": 79700,
+   "from_high": -33.75,
+   "price_source": "Yahoo Finance",
+   "per": 10.24,
+   "fper": 9.44,
+   "sector": "기계",
+   "mcap": "5조 995억원"
+  },
+  {
+   "ticker": "006040",
+   "name_ko": "동원산업",
+   "name": "Dongwon Industries Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 33350,
+   "chg1d": -8.76,
+   "high52": 49950,
+   "from_high": -33.23,
+   "price_source": "Yahoo Finance",
+   "per": 3.44,
+   "fper": null,
+   "sector": "식품",
+   "mcap": "1조 4,875억원"
+  },
+  {
+   "ticker": "096770",
+   "name_ko": "SK이노베이션",
+   "name": "SK Innovation Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 110600,
+   "chg1d": 0.82,
+   "high52": 165400,
+   "from_high": -33.13,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 4.54,
+   "sector": "석유와가스",
+   "mcap": "18조 8,325억원"
+  },
+  {
+   "ticker": "373220",
+   "name_ko": "LG에너지솔루션",
+   "name": "LG Energy Solution, Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 335500,
+   "chg1d": 1.51,
+   "high52": 497500,
+   "from_high": -32.56,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": -78.13,
+   "sector": "전기제품",
+   "mcap": "78조 7,410억원"
+  },
+  {
+   "ticker": "086280",
+   "name_ko": "현대글로비스",
+   "name": "Hyundai Glovis Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 200500,
+   "chg1d": 0.75,
+   "high52": 296000,
+   "from_high": -32.26,
+   "price_source": "Yahoo Finance",
+   "per": 9.76,
+   "fper": 8.77,
+   "sector": "항공화물운송과물류",
+   "mcap": "15조 375억원"
+  },
+  {
+   "ticker": "051900",
+   "name_ko": "LG생활건강",
+   "name": "LG H&H Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 228000,
+   "chg1d": -1.08,
+   "high52": 335500,
+   "from_high": -32.04,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 24.6,
+   "sector": "화장품",
+   "mcap": "3조 4,294억원"
+  },
+  {
+   "ticker": "069260",
+   "name_ko": "TKG휴켐스",
+   "name": "TKG Huchems Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 14650,
+   "chg1d": -2.53,
+   "high52": 21550,
+   "from_high": -32.02,
+   "price_source": "Yahoo Finance",
+   "per": 9.3,
+   "fper": null,
+   "sector": "화학",
+   "mcap": "5,993억원"
+  },
+  {
+   "ticker": "009420",
+   "name_ko": "한올바이오파마",
+   "name": "Hanall Biopharma Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 49650,
+   "chg1d": 6.32,
+   "high52": 73000,
+   "from_high": -31.99,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": -286.99,
+   "sector": "제약",
+   "mcap": "2조 5,937억원"
+  },
+  {
+   "ticker": "323410",
+   "name_ko": "카카오뱅크",
+   "name": "KakaoBank Corp.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 20300,
+   "chg1d": -1.22,
+   "high52": 29500,
+   "from_high": -31.19,
+   "price_source": "Yahoo Finance",
+   "per": 17.86,
+   "fper": 16.13,
+   "sector": "은행",
+   "mcap": "9조 7,333억원"
+  },
+  {
+   "ticker": "014820",
+   "name_ko": "동원시스템즈",
+   "name": "Dongwon Systems Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 20750,
+   "chg1d": -2.35,
+   "high52": 30150,
+   "from_high": -31.18,
+   "price_source": "Yahoo Finance",
+   "per": 9.62,
+   "fper": null,
+   "sector": "포장재",
+   "mcap": "6,030억원"
+  },
+  {
+   "ticker": "001680",
+   "name_ko": "대상",
+   "name": "Daesang Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 16630,
+   "chg1d": -0.95,
+   "high52": 24150,
+   "from_high": -31.14,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": null,
+   "sector": "식품",
+   "mcap": "5,772억원"
+  },
+  {
+   "ticker": "175330",
+   "name_ko": "JB금융지주",
+   "name": "JB Financial Group Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 26600,
+   "chg1d": 0.95,
+   "high52": 38500,
+   "from_high": -30.91,
+   "price_source": "Yahoo Finance",
+   "per": 6.96,
+   "fper": 6.79,
+   "sector": "은행",
+   "mcap": "4조 9,615억원"
+  },
+  {
+   "ticker": "009240",
+   "name_ko": "한샘",
+   "name": "Hanssem Co., Ltd.",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 38000,
+   "chg1d": -4.76,
+   "high52": 54800,
+   "from_high": -30.66,
+   "price_source": "Yahoo Finance",
+   "per": 75.54,
+   "fper": 50.8,
+   "sector": "가구",
+   "mcap": "9,013억원"
+  },
+  {
+   "ticker": "097950",
+   "name_ko": "CJ제일제당",
+   "name": "CJ Cheiljedang Corporation",
+   "index": [
+    "코스피200"
+   ],
+   "asof": "2026-11-11",
+   "price": 175900,
+   "chg1d": -0.96,
+   "high52": 252000,
+   "from_high": -30.2,
+   "price_source": "Yahoo Finance",
+   "per": -1.0,
+   "fper": 10.86,
+   "sector": "식품",
+   "mcap": "2조 6,571억원"
+  }
+ ]
+}
