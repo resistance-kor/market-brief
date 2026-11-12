@@ -89,7 +89,8 @@ def naver_detail(code):
         sector = dd.get("wicsSectorName") or dd.get("sectorName")
     except Exception as e:
         print(f"  {code} 업종(다음) 실패: {e}")
-    return {"per": per, "fper": fper, "sector": sector, "mcap": (mcap + "원") if mcap else None}
+    return {"per": per, "fper": fper, "sector": sector, "mcap": (mcap + "원") if mcap else None,
+            "pbr": pnum(info.get("pbr")), "div_yield": pnum(info.get("dividendYieldRatio"))}
 
 
 FIN_ROWS = {"유보율": "reserve_ratio", "부채비율": "debt_ratio"}
@@ -180,7 +181,7 @@ def main(path):
         try:
             det = naver_detail(r["ticker"])
         except Exception as e:
-            det = {"per": None, "fper": None, "sector": None, "mcap": None}
+            det = {"per": None, "fper": None, "sector": None, "mcap": None, "pbr": None, "div_yield": None}
             log.append(f"{r['ticker']} 상세 실패: {e}")
         r.update(det)
         try:
@@ -197,18 +198,32 @@ def main(path):
     out_rows.sort(key=lambda r: r["from_high"])
 
     latest = max(asofs) if asofs else None
+    # 신규·이탈: 직전 기준일 목록과 비교(같은 기준일로 다시 돌면 이전 비교 결과 유지)
+    changes = (prev or {}).get("changes")
+    if prev and prev.get("rows") and prev.get("asof") and latest and prev["asof"] < latest and not fails:
+        old = {r["ticker"]: r for r in prev["rows"]}
+        new = {r["ticker"] for r in out_rows}
+        hit_all = {r["ticker"] for r in hits}
+        changes = {"from": prev["asof"], "to": latest,
+                   "added": [r["ticker"] for r in out_rows if r["ticker"] not in old],
+                   "removed": [{"ticker": t, "name_ko": o.get("name_ko"), "prev_from_high": o.get("from_high")}
+                               for t, o in old.items() if t not in new and t not in hit_all]}
+    added = set((changes or {}).get("added", []))
+    for r in out_rows:
+        r["new"] = r["ticker"] in added
     out = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "asof": latest,
         "basis": "52주 고점(최근 1년 일별 장중 고가 중 최댓값)",
         "threshold": THRESHOLD,
         "universe": f"{UNIVERSE_LABEL} {len(cons)}개 (구성: 네이버 증권)",
-        "source": "구성종목·PER·추정PER·시가총액·유보율·부채비율: 네이버 증권 · 시세(정규장 종가·장중 고가): Yahoo Finance · 업종(WICS): 다음 금융",
+        "source": "구성종목·PER·추정PER·PBR·배당수익률·시가총액·유보율·부채비율: 네이버 증권 · 시세(정규장 종가·장중 고가): Yahoo Finance · 업종(WICS): 다음 금융",
         "source_url": "https://m.stock.naver.com/domestic/index/KPI200/total",
         "excluded_note": ("의류·신발·패션·명품 업종 제외: " + ", ".join(excluded)) if excluded else "의류·신발·패션·명품 업종 제외(이번 해당 없음)",
         "coverage_note": f"대상 {len(cons)}개 전 종목을 계산했습니다." + (f" 시세를 받지 못한 종목 {len(fails)}개는 빠져 있습니다." if fails else ""),
         "failed": fails[:30],
         "log": log[:30],
+        "changes": changes,
         "rows": out_rows,
     }
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

@@ -18,6 +18,10 @@ SERIES = {
     "SOL":    ("솔라나",           "crypto", "USD", "SOL-USD", ("coinbase", "SOL-USD")),
     "US10Y":  ("미국 10년물 금리", "macro",  "%",   "^TNX",    ("fred", "DGS10")),
     "GOLD":   ("금 (온스당)",      "macro",  "USD", "GC=F",    ("coinbase", "PAXG-USD")),
+    "WTI":    ("WTI 유가 (배럴당)", "macro",  "USD", "CL=F",    None),
+    "USDKRW": ("원/달러 환율",     "macro",  "KRW", "KRW=X",   None),
+    "DXY":    ("달러인덱스",       "macro",  "pt",  "DX-Y.NYB", None),
+    "VIX":    ("VIX 변동성 지수",  "macro",  "pt",  "^VIX",    ("fred", "VIXCLS")),
 }
 # 기타 종목(watchlist): 화면 티커 → Yahoo 심볼. 최근 약 400일 일봉으로 종가·전일 대비·52주 고/저(종가 기준) 계산
 WATCH = {
@@ -106,7 +110,8 @@ def naver_info(code):
     if per is None and (num(info.get("eps")) or 0) < 0:
         per = -1.0
     mv = info.get("marketValue")
-    return {"per": per, "fper": num(info.get("cnsPer")), "mcap": (mv + "원") if mv else None}
+    return {"per": per, "fper": num(info.get("cnsPer")), "mcap": (mv + "원") if mv else None,
+            "pbr": num(info.get("pbr")), "div_yield": num(info.get("dividendYieldRatio"))}
 
 def watch_quote(sym):
     pts, meta = yahoo_recent(sym)
@@ -126,8 +131,55 @@ def watch_quote(sym):
         "high52_close": r(hi), "low52_close": r(lo),
         "from_high": round((px / hi - 1) * 100, 2),
         "basis": "최근 52주 일별 종가 기준",
+        "spark": [round(v, 2) for d, v in pts if d > cut][::-1][::5][::-1],  # 최근 1년 종가, 5거래일 간격(마지막 값 포함)
         "source": f"Yahoo Finance ({sym})",
     }
+
+def crypto_indicators(prev):
+    """코인 심리·수급 지표. 각 항목은 실패하면 이전 값을 유지."""
+    import re
+    out = dict(prev or {})
+    try:  # 공포·탐욕 지수 (alternative.me, 0=극단적 공포 ~ 100=극단적 탐욕)
+        d = json.loads(get("https://api.alternative.me/fng/?limit=30"))["data"]
+        KO = {"Extreme Fear": "극단적 공포", "Fear": "공포", "Neutral": "중립", "Greed": "탐욕", "Extreme Greed": "극단적 탐욕"}
+        out["fng"] = {"value": int(d[0]["value"]), "label": KO.get(d[0]["value_classification"], d[0]["value_classification"]),
+                      "date": datetime.fromtimestamp(int(d[0]["timestamp"]), tz=timezone.utc).strftime("%Y-%m-%d"),
+                      "hist": [int(x["value"]) for x in d][::-1], "source": "alternative.me"}
+        print("fng", out["fng"]["value"], out["fng"]["label"])
+    except Exception as e:
+        print("fng 실패", e)
+    try:  # 무기한 선물 펀딩비 (Bitget USDT-M)
+        fr = {}
+        for c in ("BTC", "ETH", "SOL"):
+            x = json.loads(get(f"https://api.bitget.com/api/v2/mix/market/current-fund-rate?symbol={c}USDT&productType=usdt-futures"))["data"][0]
+            fr[c] = {"rate_pct": round(float(x["fundingRate"]) * 100, 4), "interval_h": int(float(x.get("fundingRateInterval") or 8))}
+            time.sleep(0.2)
+        out["funding"] = {"items": fr, "asof": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "source": "Bitget USDT-M 무기한 선물"}
+        print("funding", fr)
+    except Exception as e:
+        print("funding 실패", e)
+    try:  # 미국 비트코인 현물 ETF 일별 순유입 (Farside, 백만 달러)
+        html = get("https://farside.co.uk/btc/").decode("utf-8", "replace")
+        rows = []
+        for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S):
+            cells = [re.sub(r"<[^>]+>|&nbsp;|\s+", " ", c).strip() for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", tr, re.S)]
+            if len(cells) < 3 or not re.fullmatch(r"\d{1,2} \w{3} \d{4}", cells[0]):
+                continue
+            t = cells[-1].replace(",", "")
+            m = re.fullmatch(r"\(?(-?[\d.]+)\)?", t)
+            if not m:
+                continue
+            v = float(m.group(1)) * (-1 if t.startswith("(") else 1)
+            rows.append((datetime.strptime(cells[0], "%d %b %Y").strftime("%Y-%m-%d"), v))
+        rows.sort()
+        if rows:
+            out["etf_flow"] = {"unit": "백만 달러", "days": [{"date": d, "net": v} for d, v in rows[-5:]], "source": "Farside Investors"}
+            print("etf_flow", rows[-5:])
+        else:
+            print("etf_flow: 표를 찾지 못함")
+    except Exception as e:
+        print("etf_flow 실패", e)
+    return out
 
 def fred(sid):
     raw = get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}").decode()
@@ -241,6 +293,7 @@ def main(path):
                 out["watch"][tk] = dict(prev["watch"][tk], stale=True)
             print(f"watch {tk}: 실패 {e}")
         time.sleep(1)
+    out["crypto_ind"] = crypto_indicators(prev.get("crypto_ind"))
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"prices.json {len(json.dumps(out, ensure_ascii=False, separators=(',', ':')).encode()):,} bytes")
     print(f"ok {ok}/{len(SERIES)}")
