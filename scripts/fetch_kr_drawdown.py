@@ -2,7 +2,7 @@
 1) 구성 종목: 네이버 증권 모바일 API
 2) 시세(최근 약 1년 일봉): Yahoo Finance(<코드>.KS) — 정규장 종가·장중 고가(NXT 시간외 가격 제외)
    - 52주 고점 = 최근 365일 일별 '고가' 중 최댓값(장중 고가 기준), 종가는 마지막 일봉 종가
-3) 걸러진 종목만 네이버 증권(PER·추정PER·시가총액)과 다음 금융(WICS 업종)
+3) 걸러진 종목만 네이버 증권(PER·추정PER·시가총액, 재무 API의 유보율·부채비율)과 다음 금융(WICS 업종)
 4) 의류·신발·패션·명품 업종 제외
 """
 import json, re, sys, time, urllib.request
@@ -92,6 +92,49 @@ def naver_detail(code):
     return {"per": per, "fper": fper, "sector": sector, "mcap": (mcap + "원") if mcap else None}
 
 
+FIN_ROWS = {"유보율": "reserve_ratio", "부채비율": "debt_ratio"}
+
+
+def _num(v):
+    if v is None:
+        return None
+    m = re.search(r"-?[\d,]+(?:\.\d+)?", str(v))
+    return float(m.group(0).replace(",", "")) if m else None
+
+
+def naver_fin(code, debug=False):
+    """네이버 증권 모바일 재무 API(분기→연간): 컨센서스가 아닌 최근 확정 기간의 유보율·부채비율."""
+    for kind in ("quarter", "annual"):
+        try:
+            d = json.loads(get(f"https://m.stock.naver.com/api/stock/{code}/finance/{kind}"))
+        except Exception as e:
+            if debug:
+                print(f"  [debug] finance/{kind} 실패: {e}")
+            continue
+        fi = d.get("financeInfo") or d
+        titles = fi.get("trTitleList") or []
+        if debug:
+            print(f"  [debug] finance/{kind} keys={list(d)[:8]} titles={titles[:6]} rows={[r.get('title') for r in (fi.get('rowList') or [])][:40]}")
+        keys = [t.get("key") for t in titles if str(t.get("isConsensus", "N")).upper() != "Y" and t.get("key")]
+        label = {t.get("key"): (t.get("title") or "").strip(" .") for t in titles}
+        out = {}
+        for row in fi.get("rowList") or []:
+            f = FIN_ROWS.get((row.get("title") or "").strip())
+            if not f:
+                continue
+            cols = row.get("columns") or {}
+            for k in sorted(keys, reverse=True):
+                c = cols.get(k)
+                v = _num(c.get("value") if isinstance(c, dict) else c)
+                if v is not None:
+                    out[f] = v
+                    out.setdefault("fin_period", label.get(k) or k)
+                    break
+        if out:
+            return out
+    return {}
+
+
 def main(path):
     try:
         prev = json.load(open(path, encoding="utf-8"))
@@ -140,6 +183,12 @@ def main(path):
             det = {"per": None, "fper": None, "sector": None, "mcap": None}
             log.append(f"{r['ticker']} 상세 실패: {e}")
         r.update(det)
+        try:
+            fin = naver_fin(r["ticker"], debug=(len(out_rows) == 0))
+        except Exception as e:
+            fin = {}
+            log.append(f"{r['ticker']} 재무 실패: {e}")
+        r.update({"reserve_ratio": fin.get("reserve_ratio"), "debt_ratio": fin.get("debt_ratio"), "fin_period": fin.get("fin_period")})
         if r["sector"] and EXCLUDE_SECTOR.search(r["sector"]):
             excluded.append(f"{r['name_ko']}({r['sector']})")
             continue
@@ -154,7 +203,7 @@ def main(path):
         "basis": "52주 고점(최근 1년 일별 장중 고가 중 최댓값)",
         "threshold": THRESHOLD,
         "universe": f"{UNIVERSE_LABEL} {len(cons)}개 (구성: 네이버 증권)",
-        "source": "구성종목·PER·추정PER·시가총액: 네이버 증권 · 시세(정규장 종가·장중 고가): Yahoo Finance · 업종(WICS): 다음 금융",
+        "source": "구성종목·PER·추정PER·시가총액·유보율·부채비율: 네이버 증권 · 시세(정규장 종가·장중 고가): Yahoo Finance · 업종(WICS): 다음 금융",
         "source_url": "https://m.stock.naver.com/domestic/index/KPI200/total",
         "excluded_note": ("의류·신발·패션·명품 업종 제외: " + ", ".join(excluded)) if excluded else "의류·신발·패션·명품 업종 제외(이번 해당 없음)",
         "coverage_note": f"대상 {len(cons)}개 전 종목을 계산했습니다." + (f" 시세를 받지 못한 종목 {len(fails)}개는 빠져 있습니다." if fails else ""),
@@ -165,7 +214,7 @@ def main(path):
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"기준일 {latest} · -30% 이하 {len(hits)}개(제외 {len(excluded)}) → {len(out_rows)}개 저장 · 실패 {len(fails)}")
     for r in out_rows[:60]:
-        print(f"  {r['ticker']} {r['name_ko']} {r['sector']} {r['price']} 고점 {r['high52']} {r['from_high']}% PER {r['per']}/{r['fper']} {r['mcap']}")
+        print(f"  {r['ticker']} {r['name_ko']} {r['sector']} {r['price']} 고점 {r['high52']} {r['from_high']}% PER {r['per']}/{r['fper']} {r['mcap']} 유보율 {r.get('reserve_ratio')} 부채비율 {r.get('debt_ratio')} ({r.get('fin_period')})")
     for f in fails[:10]:
         print("  실패", f)
 
