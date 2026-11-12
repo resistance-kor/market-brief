@@ -172,6 +172,8 @@ def crypto_indicators(prev):
             v = float(m.group(1)) * (-1 if t.startswith("(") else 1)
             rows.append((datetime.strptime(cells[0], "%d %b %Y").strftime("%Y-%m-%d"), v))
         rows.sort()
+        while rows and rows[-1][1] == 0:  # 아직 집계되지 않은 최근일은 0으로 나오므로 제외
+            rows.pop()
         if rows:
             out["etf_flow"] = {"unit": "백만 달러", "days": [{"date": d, "net": v} for d, v in rows[-5:]], "source": "Farside Investors"}
             print("etf_flow", rows[-5:])
