@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: repo-write
+  group: ${{ github.workflow }}   # 작업별로 따로(같은 그룹이면 대기 중인 실행이 취소됨). 커밋 충돌은 아래 pull --rebase 재시도로 처리
   cancel-in-progress: false
 
 jobs:

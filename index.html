@@ -157,6 +157,18 @@
   .ddsort{display:none;align-items:center;gap:8px;font-size:13px;color:var(--tx2);margin:0 0 10px}
   .ddsort select{font:inherit;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--tx)}
   .ddcards{display:none}
+  .ddf{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 10px}
+  .ddf button,.ddf select{font:inherit;font-size:12.5px;padding:5px 10px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--tx2);cursor:pointer}
+  .ddf button[aria-pressed="true"]{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+  .ddf .cnt{margin-left:auto;font-size:12px;color:var(--tx3)}
+  .newb{font-size:10.5px;font-weight:700;color:var(--acc);border:1px solid var(--acc);border-radius:4px;padding:0 4px;vertical-align:1px;white-space:nowrap}
+  .spark{display:block;width:100%;height:44px;margin:8px 0 2px}
+  .cind{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:0 0 18px}
+  .cind:empty{display:none}
+  .ci{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .ci .l{font-size:12.5px;color:var(--tx2)} .ci .v{font-size:20px;font-weight:700;margin:2px 0}
+  .ci .v small{font-size:12px;font-weight:500;color:var(--tx2)} .ci .s{font-size:11px;color:var(--tx3);line-height:1.45}
+  .ci .spark{height:30px;margin:4px 0}
   .ddc{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
   .ddc .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
   .ddc .nm{font-weight:700;font-size:15px;text-decoration:none}
@@ -276,7 +288,8 @@
     <div class="charts" id="ch-stock"></div>
     <div class="grouplabel"><i style="background:var(--crypto)"></i>코인</div>
     <div class="charts" id="ch-crypto"></div>
-    <div class="grouplabel"><i style="background:var(--macro)"></i>금리·원자재</div>
+    <div class="cind" id="cind"></div>
+    <div class="grouplabel"><i style="background:var(--macro)"></i>금리·환율·원자재</div>
     <div class="livebar">
       <div class="lbh"><span class="live">금리·금 실시간</span><span class="note" style="margin:0">TradingView 제공 · 금은 현물(XAU/USD), 아래 차트는 금 선물(GC=F) 종가</span></div>
       <div id="tv-macro" class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
@@ -373,13 +386,16 @@
   const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : "#";
   const arr = v => Array.isArray(v) ? v : [];
   const impClass = v => v==="호재"?"up":v==="악재"?"down":v==="혼재"?"mix":"neu";
-  const ORDER = { stock:["KOSPI","NASDAQ","SP500"], crypto:["BTC","ETH","SOL"], macro:["US10Y","GOLD"] };
+  const ORDER = { stock:["KOSPI","NASDAQ","SP500"], crypto:["BTC","ETH","SOL"], macro:["US10Y","USDKRW","DXY","VIX","GOLD","WTI"] };
+  const RANGE52 = new Set(["USDKRW","DXY","VIX"]);  // 사상 최고 대비가 의미 없는 지표는 52주 범위를 표시
   const GCOLOR = { stock:"--stock", crypto:"--crypto", macro:"--macro" };
   const LIVE = {
     KOSPI:"https://kr.tradingview.com/symbols/KRX-KOSPI/", NASDAQ:"https://kr.tradingview.com/symbols/NASDAQ-IXIC/",
     SP500:"https://kr.tradingview.com/symbols/SPX/", BTC:"https://kr.tradingview.com/symbols/BTCUSD/",
     ETH:"https://kr.tradingview.com/symbols/ETHUSD/", SOL:"https://kr.tradingview.com/symbols/SOLUSD/",
-    US10Y:"https://kr.tradingview.com/symbols/TVC-US10Y/", GOLD:"https://kr.tradingview.com/symbols/XAUUSD/" };
+    US10Y:"https://kr.tradingview.com/symbols/TVC-US10Y/", GOLD:"https://kr.tradingview.com/symbols/XAUUSD/",
+    WTI:"https://kr.tradingview.com/symbols/TVC-USOIL/", USDKRW:"https://kr.tradingview.com/symbols/USDKRW/",
+    DXY:"https://kr.tradingview.com/symbols/TVC-DXY/", VIX:"https://kr.tradingview.com/symbols/TVC-VIX/" };
 
   const state = { data:null, prices:null, range:365, imp:"", lvl:0, q:"", show:{stock:8,crypto:8,macro:6} };
   const charts = {};
@@ -395,7 +411,7 @@
   }
   const fmt = (v,unit) => unit==="%" ? v.toFixed(2)+"%" : unit==="USD"
     ? "$"+v.toLocaleString("en-US",{minimumFractionDigits:v<1000?2:0,maximumFractionDigits:v<1000?2:0})
-    : v.toLocaleString("ko-KR",{minimumFractionDigits:2,maximumFractionDigits:2});
+    : v.toLocaleString("ko-KR",{minimumFractionDigits:2,maximumFractionDigits:2})+(unit==="KRW"?"원":"");
 
   // ---------- charts ----------
   function cardHTML(key,s){
@@ -443,7 +459,10 @@
       ch.textContent = s.unit==="%" ? `${sign} ${Math.abs(d).toFixed(2)}%p (전일 대비)` : `${sign} ${Math.abs(p).toFixed(2)}% (전일 대비)`;
     } else { ch.className="chg flat"; ch.textContent=""; }
     const hiEl = $("#hi-"+key);
-    if (last && all.length > 1){
+    if (last && RANGE52.has(key)){
+      const yr = all.filter(p => p[0] >= cutoff(last[0], 365)).map(p=>p[1]);
+      hiEl.innerHTML = `52주 범위 <b>${fmt(Math.min(...yr),s.unit)} ~ ${fmt(Math.max(...yr),s.unit)}</b>`;
+    } else if (last && all.length > 1){
       let hi = all[0]; for (const p of all) if (p[1] > hi[1]) hi = p;
       let since = all[0][0].slice(5).replace("-","/") + " 이후";
       if (s.ath && s.ath.value){ if (s.ath.value >= hi[1]) hi = [s.ath.date, s.ath.value]; since = "사상 최고"; }
@@ -560,7 +579,12 @@
     $("#sched").textContent = m.schedule ? "자동 업데이트: "+m.schedule : "";
   }
   function renderEvents(){
-    const evs = arr(state.data.events).slice().sort((a,b)=>(String(a.date)+(a.time||"")).localeCompare(String(b.date)+(b.time||"")));
+    // 실적 발표 예정일(us_drawdown.json)을 합침 — 같은 종목 일정이 이미 있으면(±1일) 건너뜀
+    const base = arr(state.data.events), day = x => new Date(x+"T00:00:00Z").getTime();
+    const auto = arr(state.usdd && state.usdd.earnings).filter(e => !base.some(b => Math.abs(day(b.date)-day(e.date)) <= 86400e3 &&
+        [e.name_ko, e.ticker, (e.name||"").split(/[ ,]/)[0]].some(k => k && String(b.title).includes(k))))
+      .map(e => ({date:e.date, time:e.time, title:`${e.name_ko||e.name||e.ticker} 실적 발표`, note:"Yahoo Finance 예정일 기준(한국 시간) · 변경될 수 있습니다"}));
+    const evs = base.concat(auto).sort((a,b)=>(String(a.date)+(a.time||"")).localeCompare(String(b.date)+(b.time||"")));
     const today = new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
     const open = !!state.evopen, btn = $("#evmore");
     // 접힌 상태: 오늘 이후 5건을 한 줄씩(설명은 마우스를 올리면 표시) / 펼친 상태: 이틀 전부터 전부, 설명 포함
@@ -590,127 +614,147 @@
   }
   window.addEventListener("hashchange", route); route();
 
-  state.ddm = "us"; state.ddsort = {k:"from_high", dir:1};
+  state.ddm = "us"; state.ddsort = {k:"from_high", dir:1}; state.ddf = {};
   document.querySelectorAll("#ddmk button").forEach(b=>b.addEventListener("click",()=>{
     document.querySelectorAll("#ddmk button").forEach(x=>x.setAttribute("aria-pressed","false"));
-    b.setAttribute("aria-pressed","true"); state.ddm=b.dataset.m; renderDD();
+    b.setAttribute("aria-pressed","true"); state.ddm=b.dataset.m; state.ddf={}; renderDD();
   }));
+  // 하락 종목 조건 필터: [키, 버튼 이름, 통과 조건]
+  const DDF = [["debt","부채비율 100% 이하", r=>r.debt_ratio!=null && r.debt_ratio>=0 && r.debt_ratio<=100],
+               ["per","PER 10배 이하", r=>r.per>0 && r.per<=10],
+               ["profit","적자 제외", r=>r.per>0],
+               ["div","배당 3% 이상", r=>r.div_yield>=3],
+               ["new","신규만", r=>r.new]];
+  const dim = t => `<span style="color:var(--tx3)">${t}</span>`;
+  const pe = v => v==null ? dim("—") : v<0 ? dim("적자") : Number(v).toFixed(1)+"배";
+  const pbr = v => v==null ? dim("—") : Number(v).toFixed(2)+"배";
+  const dy = v => v==null ? dim("—") : v===0 ? dim("없음") : Number(v).toFixed(1)+"%";
+  const pct = v => v==null ? dim("—") : Number(v).toLocaleString("ko-KR",{maximumFractionDigits:0})+"%";
+  const dr = v => v==null ? dim("—") : v<0 ? dim("자본잠식") : pct(v);
+  const bil = v => v==null ? dim("—") : (v<0?"-":"")+"$"+(Math.abs(v)>=100?Math.abs(v).toFixed(0):Math.abs(v).toFixed(1))+"B";
+  // 시가총액 문자열("7조 402억원", "$21B")을 정렬·비율 계산용 숫자(원 또는 달러)로
+  const mnum = v => { if (v==null) return null; const t=String(v).replace(/,/g,"");
+    if (t.startsWith("$")){ const m=t.match(/\$([\d.]+)\s*([TBM])?/); return m ? parseFloat(m[1])*({T:1e12,B:1e9,M:1e6}[m[2]]||1) : null; }
+    const jo=t.match(/([\d.]+)조/), eok=t.match(/([\d.]+)억/); return (jo?parseFloat(jo[1])*1e12:0)+(eok?parseFloat(eok[1])*1e8:0) || null; };
   function renderDD(){
-    const D = (state.data && state.data.drawdown) || {}, KR = state.ddm==="kr";
-    const d = KR ? (state.krdd || {note:"국내 데이터를 불러오는 중입니다."}) : (D.us || {});
-    if (!arr(d.rows).length){
-      $("#dd-note").innerHTML = `<span class="w">${esc(d.note || "데이터가 아직 없습니다.")}</span>`;
+    const KR = state.ddm==="kr", d = (KR ? state.krdd : state.usdd) || {}, all = arr(d.rows);
+    if (!all.length){
+      $("#dd-note").innerHTML = '<span class="w">데이터를 불러오는 중입니다.</span>';
       $("#dd-body").innerHTML = '<div class="empty">표시할 종목이 없습니다.</div>'; return;
     }
+    const ch = d.changes, nm = r => esc(r.name_ko||r.name||r.ticker);
     $("#dd-note").innerHTML = `<b>기준일</b> ${esc(d.asof)} ${KR?"한국":"미국"} 종가 · <b>대상</b> ${esc(d.universe)} · 52주 고점 대비 ${esc(String(d.threshold))}% 이하
+      ${ch ? `<br><b>직전 기준일(${esc(ch.from)}) 대비</b> 신규 ${arr(ch.added).length}개 · 이탈 ${arr(ch.removed).length}개${arr(ch.removed).length ? " ("+arr(ch.removed).slice(0,12).map(nm).join(", ")+(ch.removed.length>12?" 외":"")+")" : ""}` : ""}
       <details><summary>기준·출처·제외 종목 보기</summary>
       <b>기준</b> ${esc(d.basis)}<br>
       <b>출처</b> <a href="${esc(safeUrl(d.source_url))}" target="_blank" rel="noopener">${esc(d.source)}</a><br>${esc(d.excluded_note||"")}<br>
-      <span class="w">⚠ ${esc(d.coverage_note||"")}</span><br>PER = 주가 ÷ 주당순이익. 후행은 최근 실적, 선행은 향후 예상 실적 기준이며, 순이익이 적자면 "적자"로 표시합니다.<br>${KR
-        ? "유보율 = (자본잉여금+이익잉여금) ÷ 납입자본금 × 100. 높을수록 회사 안에 쌓아 둔 돈이 많다는 뜻입니다. 부채비율 = 부채총계 ÷ 자본총계 × 100. 둘 다 네이버 증권 재무 자료의 최근 확정 분기 기준입니다."
-        : "미국 기업은 액면가가 매우 작아 한국식 유보율은 의미가 없어 이익잉여금(누적 이익, 마이너스면 누적 결손)을 대신 표시합니다. 현금성자산은 현금 및 현금성자산(괄호는 시가총액 대비). 부채비율 = 부채총계 ÷ 자본총계 × 100(자본이 0 이하면 \"자본잠식\"). 모두 Yahoo Finance의 최근 분기 재무제표 기준입니다."}</details>`;
-    // 미국: us_fin.json(SEC) 값을 티커로 붙임
-    const UF = (state.usfin && state.usfin.items) || {};
-    const fin = r => KR ? r : Object.assign({}, r, (u => u ? {debt_ratio:u.debt_ratio, cash:u.cash_b, retained:u.retained_b, fin_period:u.period} : {})(UF[String(r.ticker).toUpperCase()]));
-    // 시가총액 문자열("7조 402억원", "$21B")을 정렬용 숫자(원 또는 달러)로
-    const mnum = v => { if (v==null) return null; const t=String(v).replace(/,/g,"");
-      if (t.startsWith("$")){ const m=t.match(/\$([\d.]+)\s*([TBM])?/); return m ? parseFloat(m[1])*({T:1e12,B:1e9,M:1e6}[m[2]]||1) : null; }
-      const jo=t.match(/([\d.]+)조/), eok=t.match(/([\d.]+)억/); return (jo?parseFloat(jo[1])*1e12:0)+(eok?parseFloat(eok[1])*1e8:0) || null; };
-    const val = (r,k) => k==="mcap" ? mnum(r.mcap) : k==="debt_ratio" && r.debt_ratio!=null && r.debt_ratio<0 ? 1e9 : r[k];
-    const S = state.ddsort, rows = arr(d.rows).map(fin).sort((a,b)=>{
+      <span class="w">⚠ ${esc(d.coverage_note||"")}</span><br>PER = 주가 ÷ 주당순이익(후행은 최근 실적, 선행은 예상 실적 기준, 적자면 "적자"). PBR = 주가 ÷ 주당순자산(1배 미만이면 장부상 자산가치보다 싸게 거래). 배당 = 배당수익률. 부채비율 = 부채총계 ÷ 자본총계 × 100(자본이 0 이하면 "자본잠식").<br>${KR
+        ? "유보율 = (자본잉여금+이익잉여금) ÷ 납입자본금 × 100 — 액면가가 작은 회사는 수만 %까지 커져 회사 간 비교에는 맞지 않습니다. 재무 값은 네이버 증권의 최근 확정 분기 기준입니다."
+        : "미국 기업은 액면가가 매우 작아 유보율 대신 이익잉여금(누적 이익, 마이너스면 누적 결손)을 표시합니다. 현금성자산의 괄호는 시가총액 대비 비율. 배당수익률은 최근 1년 배당 합계 ÷ 종가. 재무 값은 Yahoo Finance의 최근 분기 재무제표 기준입니다."}</details>`;
+    const val = (r,k) => k==="mcap" ? mnum(r.mcap) : k==="debt_ratio" && r.debt_ratio<0 ? 1e9 : r[k];
+    const S = state.ddsort, F = state.ddf;
+    const rows = all.filter(r=>(!F.sector||r.sector===F.sector) && DDF.every(([k,,ok])=>!F[k]||ok(r))).sort((a,b)=>{
       const x=val(a,S.k), y=val(b,S.k);
       if (x==null && y==null) return 0; if (x==null) return 1; if (y==null) return -1;
-      if (typeof x==="number" && typeof y==="number") return (x-y)*S.dir;
-      return String(x).localeCompare(String(y))*S.dir; });
-    const cols = [["name_ko","종목",""],["index","지수","opt"],["sector","업종",""],["price","종가","num"],["high52","52주 고점","num opt"],["from_high","고점 대비","num"],["chg1d","1일","num"],["per","PER(후행)","num"],["fper","PER(선행)","num"],["mcap","시가총액","num"]].concat(KR
-      ? [["reserve_ratio","유보율","num"],["debt_ratio","부채비율","num"]]
-      : [["cash","현금성자산","num"],["retained","이익잉여금","num opt"],["debt_ratio","부채비율","num"]]).concat([["asof","기준일","num opt"]]);
-    const dim = t => `<span style="color:var(--tx3)">${t}</span>`;
-    const pct = v => v==null ? dim("—") : Number(v).toLocaleString("ko-KR",{maximumFractionDigits:0})+"%";
-    const dr = v => v==null ? dim("—") : v<0 ? dim("자본잠식") : pct(v);
-    const bil = v => v==null ? dim("—") : (v<0?"-":"")+"$"+(Math.abs(v)>=100?Math.abs(v).toFixed(0):Math.abs(v).toFixed(1))+"B";
+      return (typeof x==="number" && typeof y==="number" ? x-y : String(x).localeCompare(String(y)))*S.dir; });
+    const cols = [["name_ko","종목",""]].concat(KR?[]:[["index","지수","opt"]], [["sector","업종",""],["price","종가","num"],["high52","52주 고점","num opt"],["from_high","고점 대비","num"],["chg1d","1일","num"],["per","PER 후/선행","num"],["pbr","PBR","num"],["div_yield","배당","num"],["mcap","시가총액","num"]], KR
+      ? [["reserve_ratio","유보율","num opt"],["debt_ratio","부채비율","num"]]
+      : [["cash","현금성자산","num"],["retained","이익잉여금","num opt"],["debt_ratio","부채비율","num"]]);
     const cashPct = r => { const m = mnum(r.mcap); return (r.cash!=null && m) ? ` <small style="color:var(--tx3)">(${(r.cash*1e9/m*100).toFixed(0)}%)</small>` : ""; };
     const ft = r => r.fin_period ? ` title="재무 기준 ${esc(r.fin_period)}"` : "";
-    const finCells = r => KR
-      ? `<td class="num mono"${ft(r)}>${pct(r.reserve_ratio)}</td><td class="num mono"${ft(r)}>${dr(r.debt_ratio)}</td>`
-      : `<td class="num mono"${ft(r)}>${bil(r.cash)}${cashPct(r)}</td><td class="num mono opt"${ft(r)}>${bil(r.retained)}</td><td class="num mono"${ft(r)}>${dr(r.debt_ratio)}</td>`;
-    const finCard = r => KR
-      ? `<dt>유보율</dt><dd class="mono">${pct(r.reserve_ratio)}</dd><dt>부채비율</dt><dd class="mono">${dr(r.debt_ratio)}</dd>`
-      : `<dt>현금</dt><dd class="mono">${bil(r.cash)}</dd><dt>부채비율</dt><dd class="mono">${dr(r.debt_ratio)}</dd>`;
-    const usd = v => KR ? Number(v).toLocaleString("ko-KR")+"원" : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
-    const link = r => KR ? "https://finance.naver.com/item/main.naver?code="+encodeURIComponent(r.ticker) : "https://chartrow.com/quote/"+encodeURIComponent(String(r.ticker).toLowerCase());
-    const pe = v => v==null ? '<span style="color:var(--tx3)">—</span>' : v<0 ? '<span style="color:var(--tx3)">적자</span>' : Number(v).toFixed(1)+"배";
+    const money = v => v==null ? "—" : KR ? Number(v).toLocaleString("ko-KR")+"원" : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+    const link = r => KR ? "https://finance.naver.com/item/main.naver?code="+encodeURIComponent(r.ticker) : "https://finance.yahoo.com/quote/"+encodeURIComponent(r.ticker);
+    const chg = r => `<span class="chg ${r.chg1d>0?"up":r.chg1d<0?"down":"flat"}">${r.chg1d>0?"+":""}${Number(r.chg1d).toFixed(2)}%</span>`;
+    const newb = r => r.new ? ' <span class="newb">신규</span>' : "";
     const head = cols.map(([k,l,c])=>`<th class="${c}" data-k="${k}">${l}${S.k===k?(S.dir>0?" ▲":" ▼"):""}</th>`).join("");
-    const body = rows.map(r=>{
-      const w = Math.min(100, Math.abs(r.from_high));
-      const c1 = r.chg1d>0?"up":r.chg1d<0?"down":"flat";
-      return `<tr>
-        <td class="nmc"><a href="${esc(link(r))}" target="_blank" rel="noopener"><b>${esc(r.name_ko||r.name)}</b> <span class="tk mono" style="font-weight:500;color:var(--tx2)">${esc(r.ticker)}</span></a><div class="nm2" style="margin-left:0" title="${esc(r.name)}">${esc(r.name)}</div></td>
-        <td class="ix opt">${arr(r.index).map(esc).join(" · ")}</td><td class="sec">${esc(r.sector)}</td>
-        <td class="num mono">${usd(r.price)}</td>
-        <td class="num mono opt" style="color:var(--tx2)">${r.high52!=null?usd(r.high52):"—"}</td>
-        <td class="num mono"><span class="bar" style="width:${(w*0.4).toFixed(0)}px"></span>${Number(r.from_high).toFixed(1)}%</td>
-        <td class="num mono chg ${c1}">${r.chg1d>0?"+":""}${Number(r.chg1d).toFixed(2)}%</td>
-        <td class="num mono">${pe(r.per)}</td><td class="num mono">${pe(r.fper)}</td>
+    const body = rows.map(r=>`<tr>
+        <td class="nmc"><a href="${esc(link(r))}" target="_blank" rel="noopener"><b>${nm(r)}</b> <span class="tk mono" style="font-weight:500;color:var(--tx2)">${esc(r.ticker)}</span></a>${newb(r)}${r.name_ko?`<div class="nm2" style="margin-left:0" title="${esc(r.name)}">${esc(r.name)}</div>`:""}</td>
+        ${KR?"":`<td class="ix opt">${arr(r.index).map(esc).join(" · ")}</td>`}<td class="sec">${esc(r.sector||"")}</td>
+        <td class="num mono">${money(r.price)}</td>
+        <td class="num mono opt" style="color:var(--tx2)">${money(r.high52)}</td>
+        <td class="num mono"><span class="bar" style="width:${(Math.min(100,Math.abs(r.from_high))*0.4).toFixed(0)}px"></span>${Number(r.from_high).toFixed(1)}%</td>
+        <td class="num mono">${chg(r)}</td>
+        <td class="num mono">${pe(r.per).replace("배","")} ${dim("/")} ${pe(r.fper).replace("배","")}</td><td class="num mono">${pbr(r.pbr)}</td><td class="num mono">${dy(r.div_yield)}</td>
         <td class="num mono">${esc(r.mcap||"—")}</td>
-        ${finCells(r)}
-        <td class="num mono opt" style="color:var(--tx3)">${esc((r.asof||"").slice(5).replace("-","/"))}</td></tr>`; }).join("");
+        ${KR ? `<td class="num mono opt"${ft(r)}>${pct(r.reserve_ratio)}</td>` : `<td class="num mono"${ft(r)}>${bil(r.cash)}${cashPct(r)}</td><td class="num mono opt"${ft(r)}>${bil(r.retained)}</td>`}
+        <td class="num mono"${ft(r)}>${dr(r.debt_ratio)}</td></tr>`).join("");
     // 모바일(폭 640px 이하): 표 대신 카드
-    const cards = rows.map(r=>{
-      const c1 = r.chg1d>0?"up":r.chg1d<0?"down":"flat", w = Math.min(100, Math.abs(r.from_high));
-      return `<div class="ddc"><div class="top"><div><a class="nm" href="${esc(link(r))}" target="_blank" rel="noopener">${esc(r.name_ko||r.name)}</a><span class="tk mono">${esc(r.ticker)}</span>
-          <div class="sc">${esc(r.sector||"")}${arr(r.index).length?" · "+arr(r.index).map(esc).join(" · "):""}</div></div>
+    const cards = rows.map(r=>`<div class="ddc"><div class="top"><div><a class="nm" href="${esc(link(r))}" target="_blank" rel="noopener">${nm(r)}</a><span class="tk mono">${esc(r.ticker)}</span>${newb(r)}
+          <div class="sc">${esc(r.sector||"")}${KR||!arr(r.index).length?"":" · "+arr(r.index).map(esc).join(" · ")}</div></div>
           <div class="fh mono">${Number(r.from_high).toFixed(1)}%<small>52주 고점 대비</small></div></div>
-        <div class="gauge"><i style="width:${w.toFixed(0)}%"></i></div>
-        <dl><dt>종가</dt><dd class="mono">${usd(r.price)}</dd><dt>1일</dt><dd class="mono chg ${c1}">${r.chg1d>0?"+":""}${Number(r.chg1d).toFixed(2)}%</dd>
-          <dt>고점</dt><dd class="mono">${r.high52!=null?usd(r.high52):"—"}</dd><dt>시총</dt><dd class="mono">${esc(r.mcap||"—")}</dd>
+        <div class="gauge"><i style="width:${Math.min(100,Math.abs(r.from_high)).toFixed(0)}%"></i></div>
+        <dl><dt>종가</dt><dd class="mono">${money(r.price)}</dd><dt>1일</dt><dd class="mono">${chg(r)}</dd>
+          <dt>고점</dt><dd class="mono">${money(r.high52)}</dd><dt>시총</dt><dd class="mono">${esc(r.mcap||"—")}</dd>
           <dt>PER</dt><dd class="mono">${pe(r.per)}</dd><dt>선행</dt><dd class="mono">${pe(r.fper)}</dd>
-          ${finCard(r)}</dl></div>`; }).join("");
-    const opts = [["from_high",1,"하락 폭 큰 순"],["from_high",-1,"하락 폭 작은 순"],["chg1d",-1,"1일 상승 순"],["chg1d",1,"1일 하락 순"],["per",1,"PER 낮은 순"],["mcap",-1,"시가총액 큰 순"]].concat(KR
-      ? [["reserve_ratio",-1,"유보율 높은 순"],["debt_ratio",1,"부채비율 낮은 순"]]
-      : [["cash",-1,"현금성자산 많은 순"],["debt_ratio",1,"부채비율 낮은 순"]]);
-    $("#dd-body").innerHTML = `<label class="ddsort">정렬 <select id="ddsel">${opts.map(([k,dir,l])=>`<option value="${k}|${dir}" ${S.k===k&&S.dir===dir?"selected":""}>${l}</option>`).join("")}</select></label>
-      <div class="tbl-wrap"><table class="dd"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>
-      <div class="ddcards">${cards}</div>
-      <div class="note">${rows.length}개 종목 · 종목명을 누르면 해당 종목 페이지(${KR?"네이버 금융":"chartrow.com"})가 열립니다. 표 머리글을 누르면 정렬됩니다.${KR&&d.updated_at?" · 계산 시각 "+esc(kstTime(d.updated_at)):""}</div>`;
+          <dt>PBR</dt><dd class="mono">${pbr(r.pbr)}</dd><dt>배당</dt><dd class="mono">${dy(r.div_yield)}</dd>
+          <dt>${KR?"유보율":"현금"}</dt><dd class="mono">${KR?pct(r.reserve_ratio):bil(r.cash)}</dd><dt>부채비율</dt><dd class="mono">${dr(r.debt_ratio)}</dd></dl></div>`).join("");
+    const opts = [["from_high",1,"하락 폭 큰 순"],["from_high",-1,"하락 폭 작은 순"],["chg1d",-1,"1일 상승 순"],["chg1d",1,"1일 하락 순"],["per",1,"PER 낮은 순"],["pbr",1,"PBR 낮은 순"],["div_yield",-1,"배당 높은 순"],["mcap",-1,"시가총액 큰 순"],["debt_ratio",1,"부채비율 낮은 순"]];
+    const sectors = [...new Set(all.map(r=>r.sector).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ko"));
+    $("#dd-body").innerHTML = `<div class="ddf">${DDF.map(([k,l])=>`<button type="button" data-f="${k}" aria-pressed="${!!F[k]}">${l}</button>`).join("")}
+        <select id="ddsec" aria-label="업종"><option value="">업종 전체</option>${sectors.map(x=>`<option ${F.sector===x?"selected":""}>${esc(x)}</option>`).join("")}</select>
+        <span class="cnt">${rows.length}개 / 전체 ${all.length}개</span></div>
+      <label class="ddsort">정렬 <select id="ddsel">${opts.map(([k,dir,l])=>`<option value="${k}|${dir}" ${S.k===k&&S.dir===dir?"selected":""}>${l}</option>`).join("")}</select></label>
+      ${rows.length ? `<div class="tbl-wrap"><table class="dd"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>
+      <div class="ddcards">${cards}</div>` : '<div class="empty">조건에 맞는 종목이 없습니다.</div>'}
+      <div class="note">종목명을 누르면 해당 종목 페이지(${KR?"네이버 금융":"Yahoo Finance"})가 열립니다. 표 머리글을 누르면 정렬됩니다.${d.updated_at?" · 계산 시각 "+esc(kstTime(d.updated_at)):""}</div>`;
+    document.querySelectorAll(".ddf button").forEach(b=>b.addEventListener("click",()=>{ F[b.dataset.f]=!F[b.dataset.f]; renderDD(); }));
+    $("#ddsec").addEventListener("change", e=>{ F.sector=e.target.value; renderDD(); });
     $("#ddsel").addEventListener("change", e=>{ const [k,dir]=e.target.value.split("|"); state.ddsort={k, dir:+dir}; renderDD(); });
     document.querySelectorAll("table.dd th").forEach(th=>th.addEventListener("click",()=>{
-      const k=th.dataset.k; state.ddsort = {k, dir: state.ddsort.k===k ? -state.ddsort.dir : 1}; renderDD(); }));
+      const k=th.dataset.k; state.ddsort = {k, dir: S.k===k ? -S.dir : 1}; renderDD(); }));
   }
 
+  // 최근 1년 종가 흐름(작은 선 그래프)
+  function spark(v){
+    if (!v || v.length<2) return "";
+    const mn=Math.min(...v), mx=Math.max(...v), W=240, H=44;
+    const pts=v.map((y,i)=>`${(i/(v.length-1)*W).toFixed(1)},${(H-2-(y-mn)/((mx-mn)||1)*(H-4)).toFixed(1)}`).join(" ");
+    return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="최근 1년 종가 흐름"><polyline points="${pts}" fill="none" stroke="var(--${v[v.length-1]>=v[0]?"up":"down"})" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>`;
+  }
   function renderWL(){
-    const W = (state.data && state.data.watchlist) || {}, items = arr(W.items);
+    const items = arr(state.data && state.data.watchlist && state.data.watchlist.items);
     if (!items.length){ $("#wl").innerHTML='<div class="empty">등록된 종목이 없습니다.</div>'; return; }
-    const WQ = (state.prices && state.prices.watch) || {};
-    const pe = v => v==null ? "해당 없음" : v<0 ? "적자" : Number(v).toFixed(1)+"배";
-    $("#wl").innerHTML = items.map(it0=>{
-      // prices.json(매시간 GitHub Actions, Yahoo 종가)이 더 최근이면 가격·등락·52주 범위를 그 값으로 표시
-      const q = WQ[it0.ticker], useQ = q && !q.stale && q.price!=null && (!it0.asof || it0.price==null || q.asof >= it0.asof);
-      const it = useQ ? Object.assign({}, it0, {asof:q.asof, price:q.price, chg1d:q.chg1d, high52:q.high52_close, low52:q.low52_close,
-                         from_high:q.from_high, from_high_calc:false, closeBasis:true, currency: it0.currency || q.currency},
-                         q.symbol && /\.KS$/.test(q.symbol) ? {per:q.per, fper:q.fper, mcap:q.mcap || it0.mcap} : {}) : it0;
-      const krw = it.currency==="KRW";
-      const usd = v => v==null ? "—" : krw ? Number(v).toLocaleString("ko-KR",{maximumFractionDigits:0})+"원"
-                                           : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
-      const has = it.chg1d!=null, c = !has?"flat":it.chg1d>0?"up":it.chg1d<0?"down":"flat", sign = it.chg1d>0?"▲":it.chg1d<0?"▼":"–";
-      const lo = it.low52, hi = it.high52, pos = (lo!=null&&hi!=null&&hi>lo) ? Math.max(0,Math.min(100,(it.price-lo)/(hi-lo)*100)) : null;
+    const WQ = (state.prices && state.prices.watch) || {}, WU = (state.usdd && state.usdd.watch) || {};
+    $("#wl").innerHTML = items.map(it=>{
+      // 가격: prices.json(매시간) / 재무 지표: 국내는 prices.json(네이버), 미국은 us_drawdown.json(Yahoo, 하루 1회)
+      const q = WQ[it.ticker] || {}, krw = it.currency==="KRW", f = (krw ? q : WU[it.ticker]) || {}, etf = it.type==="ETF";
+      const money = v => v==null ? "—" : krw ? Number(v).toLocaleString("ko-KR",{maximumFractionDigits:0})+"원"
+                                             : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+      const has = q.chg1d!=null, c = !has?"flat":q.chg1d>0?"up":q.chg1d<0?"down":"flat", sign = q.chg1d>0?"▲":q.chg1d<0?"▼":"–";
+      const lo = q.low52_close, hi = q.high52_close, pos = hi>lo ? Math.max(0,Math.min(100,(q.price-lo)/(hi-lo)*100)) : null;
       return `<div class="wc">
         <div class="hd"><span class="nm">${esc(it.name_ko)}</span><span class="tk mono">${esc(it.ticker)}</span></div>
         <div class="sub">${esc(it.name)} · ${esc(it.sector)}</div>
-        <div class="val mono">${usd(it.price)}</div>
-        <div class="chg mono ${c}">${has ? `${sign} ${Math.abs(it.chg1d).toFixed(2)}% (전일 대비)` : "다음 갱신 때 표시됩니다"}</div>
+        <div class="val mono">${money(q.price)}</div>
+        <div class="chg mono ${c}">${has ? `${sign} ${Math.abs(q.chg1d).toFixed(2)}% (전일 대비)` : "다음 갱신 때 표시됩니다"}</div>
+        ${spark(q.spark)}
         ${pos!=null?`<div class="rng" title="52주 범위에서 현재 위치"><i style="left:calc(${pos.toFixed(1)}% - 1px)"></i></div>
-        <div class="rngl mono"><span>52주 저 ${usd(lo)}</span><span>52주 고 ${usd(hi)}</span></div>`:""}
+        <div class="rngl mono"><span>52주 저 ${money(lo)}</span><span>52주 고 ${money(hi)}</span></div>`:""}
         <dl>
-          <dt>고점 대비</dt><dd class="mono"><b>${it.from_high==null?"—":Number(it.from_high).toFixed(2)+"%"}</b>${it.closeBasis?' <span style="color:var(--tx3);font-size:11px">(52주 종가 고점 기준)</span>':it.from_high_calc?' <span style="color:var(--tx3);font-size:11px">(종가÷52주 고점 계산)</span>':""}</dd>
-          <dt>PER (후행 / 선행)</dt><dd class="mono">${pe(it.per)} / ${pe(it.fper)}</dd>
-          <dt>규모</dt><dd>${esc(it.mcap||"—")}</dd>
-          <dt>기준일</dt><dd class="mono">${it.asof?esc(it.asof)+(krw?" 한국 종가":" 미국 종가"):"—"}</dd>
+          <dt>고점 대비</dt><dd class="mono"><b>${q.from_high==null?"—":Number(q.from_high).toFixed(2)+"%"}</b> <span style="color:var(--tx3);font-size:11px">(52주 종가 고점 기준)</span></dd>
+          ${etf ? "" : `<dt>PER (후행 / 선행)</dt><dd class="mono">${pe(f.per)} / ${pe(f.fper)}</dd>
+          <dt>PBR</dt><dd class="mono">${pbr(f.pbr)}</dd>`}
+          <dt>배당수익률</dt><dd class="mono">${dy(f.div_yield)}</dd>
+          ${etf ? "" : `<dt>시가총액</dt><dd>${esc(f.mcap||"—")}</dd>`}
+          ${f.debt_ratio!=null ? `<dt>부채비율</dt><dd class="mono">${dr(f.debt_ratio)}</dd>` : ""}
+          <dt>기준일</dt><dd class="mono">${q.asof?esc(q.asof)+(krw?" 한국 종가":" 미국 종가"):"—"}</dd>
         </dl>
         ${it.note?`<div class="note">${esc(it.note)}</div>`:""}
         <div class="lk"><a href="${esc(safeUrl(it.live))}" target="_blank" rel="noopener">실시간 차트 ↗</a><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">종목 정보 ↗</a></div>
       </div>`; }).join("");
-    $("#wl-src").textContent = "출처: 가격·등락·52주 범위는 Yahoo Finance 종가(GitHub Actions가 매시간 갱신)를 우선 사용하고, PER·규모는 " + (W.source||"") + "(하루 2회 갱신)입니다.";
+    $("#wl-src").textContent = "출처: 가격·등락·52주 범위·1년 흐름은 Yahoo Finance 종가(매시간 갱신), 국내 종목 PER·PBR·배당·시가총액은 네이버 증권, 미국 종목은 Yahoo Finance(하루 1회)입니다.";
+  }
+
+  // 코인 심리·수급 지표 (prices.json의 crypto_ind)
+  function renderCInd(){
+    const C = (state.prices && state.prices.crypto_ind) || {}, t = [];
+    if (C.fng) t.push(`<div class="ci"><div class="l">공포·탐욕 지수</div><div class="v mono">${esc(String(C.fng.value))} <small>${esc(C.fng.label)}</small></div>${spark(C.fng.hist)}<div class="s">0 극단적 공포 ~ 100 극단적 탐욕 · 최근 30일 · ${esc(C.fng.source)}</div></div>`);
+    if (C.funding) t.push(`<div class="ci"><div class="l">선물 펀딩비</div><div class="v mono" style="font-size:15px">${Object.entries(C.funding.items).map(([k,x])=>`${esc(k)} <b class="chg ${x.rate_pct>0?"up":x.rate_pct<0?"down":"flat"}">${x.rate_pct>0?"+":""}${Number(x.rate_pct).toFixed(4)}%</b>`).join(" · ")}</div><div class="s">${Object.values(C.funding.items)[0].interval_h}시간마다 · 플러스면 롱이 숏에게 지급(매수 쏠림) · ${esc(C.funding.source)} · ${esc(kstTime(C.funding.asof))}</div></div>`);
+    if (C.etf_flow && arr(C.etf_flow.days).length){
+      const d = C.etf_flow.days, x = d[d.length-1], f = v => (v>0?"+":"")+Number(v).toLocaleString("en-US",{maximumFractionDigits:0});
+      t.push(`<div class="ci"><div class="l">비트코인 현물 ETF 순유입</div><div class="v mono"><span class="chg ${x.net>0?"up":x.net<0?"down":"flat"}">${f(x.net)}</span> <small>백만 달러 · ${esc(x.date.slice(5).replace("-","/"))}</small></div><div class="s">최근 ${d.length}일: ${d.map(y=>f(y.net)).join(" / ")} · ${esc(C.etf_flow.source)}</div></div>`);
+    }
+    $("#cind").innerHTML = t.join("");
   }
 
   // ---------- 실시간 헤드라인 (GitHub Actions가 20분마다 RSS 수집 → headlines.json) ----------
@@ -801,14 +845,14 @@
     host.appendChild(sc);
   })();
 
-  async function loadUSFin(){
-    try{ const r=await fetch("us_fin.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.usfin=await r.json(); if(state.data) renderDD(); }catch(e){}
+  async function loadUS(){
+    try{ const r=await fetch("us_drawdown.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.usdd=await r.json(); if(state.data){ renderDD(); renderWL(); renderEvents(); } }catch(e){}
   }
   async function loadKR(){
     try{ const r=await fetch("kr_drawdown.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.krdd=await r.json(); if(state.data) renderDD(); }catch(e){}
   }
   async function loadPrices(){
-    try{ const r=await fetch("prices.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; const pj=await r.json(); for (const k in (pj.series||{})) pj.series[k]=decodeSeries(pj.series[k]); state.prices=pj; if(state.data){ renderCharts(); renderWL(); } }catch(e){}
+    try{ const r=await fetch("prices.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; const pj=await r.json(); for (const k in (pj.series||{})) pj.series[k]=decodeSeries(pj.series[k]); state.prices=pj; if(state.data){ renderCharts(); renderWL(); } renderCInd(); }catch(e){}
   }
   async function load(first){
     try{
@@ -824,7 +868,7 @@
       if (!state.data){ const w=$("#warn"); w.textContent="데이터를 불러오지 못했습니다. 잠시 후 새로고침해 주세요."; w.style.display="block"; }
     }
   }
-  load(true); loadPrices(); loadKR(); loadUSFin(); setInterval(loadKR, 30*60*1000); setInterval(loadPrices, 15*60*1000);
+  load(true); loadPrices(); loadKR(); loadUS(); setInterval(()=>{ loadKR(); loadUS(); }, 30*60*1000); setInterval(loadPrices, 15*60*1000);
   setInterval(()=>load(false), 10*60*1000);
 })();
 </script>

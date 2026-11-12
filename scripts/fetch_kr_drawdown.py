@@ -198,6 +198,9 @@ def main(path):
     out_rows.sort(key=lambda r: r["from_high"])
 
     latest = max(asofs) if asofs else None
+    if prev and prev.get("asof") and (not latest or latest < prev["asof"]):
+        print(f"기준일이 이전({prev['asof']})보다 오래됨({latest}) — 이전 파일 유지")
+        sys.exit(0)
     # 신규·이탈: 직전 기준일 목록과 비교(같은 기준일로 다시 돌면 이전 비교 결과 유지)
     changes = (prev or {}).get("changes")
     if prev and prev.get("rows") and prev.get("asof") and latest and prev["asof"] < latest and not fails:

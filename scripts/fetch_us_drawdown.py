@@ -6,7 +6,7 @@
    - 부채비율 = 부채총계 ÷ 자본총계, PBR = 시가총액 ÷ 자본총계
 4) 의류·신발·명품 업종 제외, 직전 기준일 대비 신규·이탈 표시, 주요 종목 실적 발표 예정일
 """
-import csv, io, json, sys, time, urllib.request, urllib.parse, http.cookiejar
+import csv, io, json, os, sys, time, urllib.request, urllib.parse, http.cookiejar
 from datetime import datetime, timezone, timedelta
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
@@ -155,14 +155,15 @@ def detail(sym):
 
 def main(data_path, out_path):
     data = json.load(open(data_path, encoding="utf-8"))
-    names_ko = {r["ticker"]: r["name_ko"] for r in data.get("drawdown", {}).get("us", {}).get("rows", []) if r.get("name_ko")}
-    names_ko.update(data.get("names_ko") or {})
-    watch_us = [w["ticker"] for w in data.get("watchlist", {}).get("items", []) if w.get("currency") != "KRW"]
+    wl = [w for w in data.get("watchlist", {}).get("items", []) if w.get("currency") != "KRW"]
+    watch_us = [w["ticker"] for w in wl]
+    # 한국어 종목명: scripts/us_names_ko.json(없는 종목은 화면에 영문명으로 표시) + 기타 종목에 적힌 이름
+    names_ko = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "us_names_ko.json"), encoding="utf-8"))
+    names_ko.update({w["ticker"]: w["name_ko"] for w in wl if w.get("name_ko")})
     try:
         prev = json.load(open(out_path, encoding="utf-8"))
     except Exception:
         prev = {}
-    names_ko = {**{r["ticker"]: r["name_ko"] for r in prev.get("rows", []) if r.get("name_ko")}, **names_ko}
     cons = constituents()
 
     hits, fails, asofs = [], [], []
@@ -223,12 +224,15 @@ def main(data_path, out_path):
             time.sleep(0.3)
     now = time.time()
     keep = set(watch_us) | set(EARNINGS_EXTRA)
-    earnings = sorted(({"ticker": t, "name_ko": names_ko.get(t), "name": cons.get(t, {}).get("name"),
+    earnings = sorted(({"ticker": t, "name_ko": names_ko.get(t), "name": cons.get(t, {}).get("name") or t,
                         "date": (datetime.fromtimestamp(ts, tz=timezone.utc) + timedelta(hours=9)).strftime("%Y-%m-%d"),
                         "time": (datetime.fromtimestamp(ts, tz=timezone.utc) + timedelta(hours=9)).strftime("%H:%M")}
                        for t, ts in earn.items() if t in keep and now - 86400 < ts < now + 45 * 86400), key=lambda e: (e["date"], e["time"]))
 
     latest = max(asofs) if asofs else None
+    if prev.get("asof") and (not latest or latest < prev["asof"]):
+        print(f"기준일이 이전({prev['asof']})보다 오래됨({latest}) — 이전 파일 유지")
+        sys.exit(0)
     # 신규·이탈: 직전 기준일 목록과 비교(같은 기준일로 다시 돌면 이전 비교 결과 유지)
     changes = prev.get("changes")
     if prev.get("rows") and prev.get("asof") and latest and prev["asof"] < latest:
