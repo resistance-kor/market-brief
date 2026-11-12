@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T12:33:15Z",
+ "updated_at": "2026-11-12T00:03:54Z",
  "asof": "2026-11-11",
  "basis": "52주 고점(최근 1년 일별 장중 고가 중 최댓값)",
  "threshold": -30.0,
@@ -23,11 +23,10 @@
    "chg1d": 5.4,
    "high52": 1788000,
    "from_high": -83.61,
-   "price_source": "Yahoo Finance",
-   "per": 10.62,
-   "fper": 10.95,
+   "per": 10.49,
+   "fper": 10.82,
    "sector": "전자장비와기기",
-   "mcap": "7조 402억원"
+   "mcap": "6조 9,574억원"
   },
   {
    "ticker": "001440",
@@ -41,11 +40,10 @@
    "chg1d": 3.89,
    "high52": 75900,
    "from_high": -75.39,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": -483.33,
+   "fper": -478.21,
    "sector": "전기장비",
-   "mcap": "3조 6,945억원"
+   "mcap": "3조 6,553억원"
   },
   {
    "ticker": "006800",
@@ -59,11 +57,10 @@
    "chg1d": 1.38,
    "high52": 87800,
    "from_high": -74.89,
-   "price_source": "Yahoo Finance",
-   "per": 4.22,
-   "fper": 4.99,
+   "per": 4.18,
+   "fper": 4.95,
    "sector": "증권",
-   "mcap": "12조 822억원"
+   "mcap": "11조 9,736억원"
   },
   {
    "ticker": "064350",
@@ -77,11 +74,10 @@
    "chg1d": 1.5,
    "high52": 282000,
    "from_high": -73.69,
-   "price_source": "Yahoo Finance",
-   "per": 10.04,
-   "fper": 10.14,
+   "per": 10.01,
+   "fper": 10.11,
    "sector": "우주항공과국방",
-   "mcap": "8조 1,093억원"
+   "mcap": "8조 874억원"
   },
   {
    "ticker": "307950",
@@ -95,11 +91,10 @@
    "chg1d": 3.03,
    "high52": 1066000,
    "from_high": -72.89,
-   "price_source": "Yahoo Finance",
-   "per": 41.9,
-   "fper": 39.23,
+   "per": 41.04,
+   "fper": 38.43,
    "sector": "IT서비스",
-   "mcap": "7조 9,941억원"
+   "mcap": "7조 8,295억원"
   },
   {
    "ticker": "017960",
@@ -113,11 +108,10 @@
    "chg1d": 3.08,
    "high52": 54100,
    "from_high": -72.81,
-   "price_source": "Yahoo Finance",
-   "per": 7.47,
+   "per": 7.44,
    "fper": null,
    "sector": "조선",
-   "mcap": "7,638억원"
+   "mcap": "7,602억원"
   },
   {
    "ticker": "000150",
@@ -131,11 +125,10 @@
    "chg1d": 8.18,
    "high52": 2489000,
    "from_high": -72.36,
-   "price_source": "Yahoo Finance",
-   "per": 40.02,
-   "fper": 20.98,
+   "per": 38.57,
+   "fper": 20.19,
    "sector": "복합기업",
-   "mcap": "9조 8,808억원"
+   "mcap": "9조 5,248억원"
   },
   {
    "ticker": "267260",
@@ -149,11 +142,10 @@
    "chg1d": 2.79,
    "high52": 1430000,
    "from_high": -71.68,
-   "price_source": "Yahoo Finance",
-   "per": 17.46,
-   "fper": 17.12,
+   "per": 17.16,
+   "fper": 16.83,
    "sector": "전기장비",
-   "mcap": "14조 8,514억원"
+   "mcap": "14조 5,991억원"
   },
   {
    "ticker": "047040",
@@ -167,11 +159,10 @@
    "chg1d": 3.37,
    "high52": 40350,
    "from_high": -71.13,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 8.87,
+   "fper": 8.51,
    "sector": "건설",
-   "mcap": "4조 8,443억원"
+   "mcap": "4조 6,553억원"
   },
   {
    "ticker": "082740",
@@ -185,11 +176,10 @@
    "chg1d": 0.55,
    "high52": 94400,
    "from_high": -70.82,
-   "price_source": "Yahoo Finance",
-   "per": 10.58,
-   "fper": 12.93,
+   "per": 10.35,
+   "fper": 12.65,
    "sector": "조선",
-   "mcap": "2조 3,157억원"
+   "mcap": "2조 2,656억원"
   },
   {
    "ticker": "272210",
@@ -203,11 +193,10 @@
    "chg1d": 4.04,
    "high52": 184000,
    "from_high": -69.18,
-   "price_source": "Yahoo Finance",
-   "per": 57.42,
-   "fper": 90.11,
+   "per": 56.61,
+   "fper": 88.84,
    "sector": "우주항공과국방",
-   "mcap": "10조 6,739억원"
+   "mcap": "10조 5,228억원"
   },
   {
    "ticker": "004170",
@@ -221,11 +210,10 @@
    "chg1d": 0.0,
    "high52": 792000,
    "from_high": -69.0,
-   "price_source": "Yahoo Finance",
-   "per": 13.88,
-   "fper": 5.56,
+   "per": 13.71,
+   "fper": 5.47,
    "sector": "백화점과일반상점",
-   "mcap": "2조 3,093억원"
+   "mcap": "2조 2,810억원"
   },
   {
    "ticker": "042660",
@@ -239,11 +227,10 @@
    "chg1d": 0.52,
    "high52": 154800,
    "from_high": -68.77,
-   "price_source": "Yahoo Finance",
-   "per": 7.22,
-   "fper": 9.08,
+   "per": 7.14,
+   "fper": 8.98,
    "sector": "조선",
-   "mcap": "14조 9,683억원"
+   "mcap": "14조 8,151억원"
   },
   {
    "ticker": "006260",
@@ -257,11 +244,10 @@
    "chg1d": 2.27,
    "high52": 604000,
    "from_high": -68.73,
-   "price_source": "Yahoo Finance",
-   "per": 14.07,
-   "fper": 9.11,
+   "per": 13.85,
+   "fper": 8.95,
    "sector": "전기장비",
-   "mcap": "5조 9,436억원"
+   "mcap": "5조 8,531억원"
   },
   {
    "ticker": "454910",
@@ -275,11 +261,10 @@
    "chg1d": 5.13,
    "high52": 170000,
    "from_high": -68.65,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
    "fper": null,
    "sector": "기계",
-   "mcap": "3조 4,808억원"
+   "mcap": "3조 3,836억원"
   },
   {
    "ticker": "066570",
@@ -293,11 +278,10 @@
    "chg1d": 0.79,
    "high52": 438000,
    "from_high": -67.79,
-   "price_source": "Yahoo Finance",
-   "per": 24.68,
-   "fper": 12.84,
+   "per": 24.42,
+   "fper": 12.7,
    "sector": "전자제품",
-   "mcap": "23조 2,273억원"
+   "mcap": "22조 9,830억원"
   },
   {
    "ticker": "450080",
@@ -311,11 +295,10 @@
    "chg1d": 8.66,
    "high52": 88800,
    "from_high": -67.51,
-   "price_source": "Yahoo Finance",
-   "per": 30.66,
+   "per": 30.3,
    "fper": null,
    "sector": "전기제품",
-   "mcap": "2조 607억원"
+   "mcap": "2조 359억원"
   },
   {
    "ticker": "079550",
@@ -329,11 +312,10 @@
    "chg1d": 9.73,
    "high52": 1118000,
    "from_high": -66.73,
-   "price_source": "Yahoo Finance",
-   "per": 28.45,
-   "fper": 28.79,
+   "per": 28.76,
+   "fper": 29.01,
    "sector": "우주항공과국방",
-   "mcap": "8조 1,510억원"
+   "mcap": "8조 2,390억원"
   },
   {
    "ticker": "103140",
@@ -347,11 +329,10 @@
    "chg1d": 0.38,
    "high52": 159200,
    "from_high": -66.65,
-   "price_source": "Yahoo Finance",
-   "per": 7.41,
-   "fper": 5.82,
+   "per": 7.43,
+   "fper": 5.84,
    "sector": "비철금속",
-   "mcap": "1조 4,965억원"
+   "mcap": "1조 4,993억원"
   },
   {
    "ticker": "071970",
@@ -365,11 +346,10 @@
    "chg1d": 2.99,
    "high52": 118200,
    "from_high": -66.54,
-   "price_source": "Yahoo Finance",
-   "per": 6.91,
-   "fper": 9.52,
+   "per": 6.84,
+   "fper": 9.43,
    "sector": "조선",
-   "mcap": "1조 3,450억원"
+   "mcap": "1조 3,314억원"
   },
   {
    "ticker": "001430",
@@ -383,11 +363,10 @@
    "chg1d": 7.43,
    "high52": 92500,
    "from_high": -66.38,
-   "price_source": "Yahoo Finance",
-   "per": 12.62,
-   "fper": 17.97,
+   "per": 12.52,
+   "fper": 17.83,
    "sector": "철강",
-   "mcap": "1조 1,189억원"
+   "mcap": "1조 1,099억원"
   },
   {
    "ticker": "034020",
@@ -401,11 +380,10 @@
    "chg1d": 0.85,
    "high52": 139200,
    "from_high": -65.98,
-   "price_source": "Yahoo Finance",
-   "per": 169.26,
-   "fper": 110.62,
+   "per": 167.31,
+   "fper": 109.35,
    "sector": "기계",
-   "mcap": "30조 6,829억원"
+   "mcap": "30조 3,306억원"
   },
   {
    "ticker": "329180",
@@ -419,11 +397,10 @@
    "chg1d": -1.87,
    "high52": 765000,
    "from_high": -65.69,
-   "price_source": "Yahoo Finance",
-   "per": 10.28,
-   "fper": 9.77,
+   "per": 10.24,
+   "fper": 9.74,
    "sector": "조선",
-   "mcap": "27조 6,573억원"
+   "mcap": "27조 5,523억원"
   },
   {
    "ticker": "456040",
@@ -437,11 +414,10 @@
    "chg1d": 2.17,
    "high52": 163200,
    "from_high": -65.44,
-   "price_source": "Yahoo Finance",
-   "per": 58.49,
-   "fper": 6.71,
+   "per": 58.18,
+   "fper": 6.68,
    "sector": "화학",
-   "mcap": "5,058억원"
+   "mcap": "5,031억원"
   },
   {
    "ticker": "005380",
@@ -455,11 +431,10 @@
    "chg1d": -0.91,
    "high52": 783000,
    "from_high": -65.2,
-   "price_source": "Yahoo Finance",
-   "per": 8.96,
-   "fper": 8.22,
+   "per": 8.88,
+   "fper": 8.15,
    "sector": "자동차",
-   "mcap": "55조 9,533억원"
+   "mcap": "55조 4,446억원"
   },
   {
    "ticker": "008730",
@@ -473,11 +448,10 @@
    "chg1d": 0.26,
    "high52": 32950,
    "from_high": -64.73,
-   "price_source": "Yahoo Finance",
-   "per": 57.62,
+   "per": 57.52,
    "fper": null,
    "sector": "포장재",
-   "mcap": "2,887억원"
+   "mcap": "2,882억원"
   },
   {
    "ticker": "000880",
@@ -491,11 +465,10 @@
    "chg1d": 0.38,
    "high52": 220003,
    "from_high": -64.18,
-   "price_source": "Yahoo Finance",
-   "per": 9.2,
-   "fper": 6.17,
+   "per": 9.15,
+   "fper": 6.14,
    "sector": "복합기업",
-   "mcap": "4조 2,183억원"
+   "mcap": "4조 1,970억원"
   },
   {
    "ticker": "402340",
@@ -509,11 +482,10 @@
    "chg1d": 4.74,
    "high52": 2189000,
    "from_high": -63.64,
-   "price_source": "Yahoo Finance",
-   "per": 3.26,
-   "fper": 2.17,
+   "per": 3.21,
+   "fper": 2.13,
    "sector": "반도체와반도체장비",
-   "mcap": "106조 8,584억원"
+   "mcap": "105조 115억원"
   },
   {
    "ticker": "010120",
@@ -527,11 +499,10 @@
    "chg1d": 0.74,
    "high52": 335000,
    "from_high": -63.61,
-   "price_source": "Yahoo Finance",
-   "per": 47.96,
-   "fper": 33.31,
+   "per": 47.03,
+   "fper": 32.66,
    "sector": "전기장비",
-   "mcap": "18조 6,450억원"
+   "mcap": "18조 2,850억원"
   },
   {
    "ticker": "352820",
@@ -545,11 +516,10 @@
    "chg1d": 3.07,
    "high52": 405500,
    "from_high": -63.55,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 130.56,
+   "fper": 129.67,
    "sector": "방송과엔터테인먼트",
-   "mcap": "6조 4,272억원"
+   "mcap": "6조 5,178억원"
   },
   {
    "ticker": "066970",
@@ -563,11 +533,10 @@
    "chg1d": 5.66,
    "high52": 225000,
    "from_high": -63.47,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": -39.8,
+   "fper": -39.27,
    "sector": "전기제품",
-   "mcap": "3조 3,648억원"
+   "mcap": "3조 3,201억원"
   },
   {
    "ticker": "120110",
@@ -581,11 +550,10 @@
    "chg1d": 0.26,
    "high52": 104900,
    "from_high": -63.2,
-   "price_source": "Yahoo Finance",
-   "per": 8.77,
-   "fper": 6.04,
+   "per": 8.26,
+   "fper": 5.68,
    "sector": "화학",
-   "mcap": "1조 1,544억원"
+   "mcap": "1조 870억원"
   },
   {
    "ticker": "039490",
@@ -599,11 +567,10 @@
    "chg1d": 3.36,
    "high52": 517000,
    "from_high": -63.08,
-   "price_source": "Yahoo Finance",
-   "per": 3.0,
-   "fper": 3.13,
+   "per": 2.97,
+   "fper": 3.1,
    "sector": "증권",
-   "mcap": "5조 227억원"
+   "mcap": "4조 9,650억원"
   },
   {
    "ticker": "267250",
@@ -617,11 +584,10 @@
    "chg1d": -2.13,
    "high52": 333000,
    "from_high": -62.76,
-   "price_source": "Yahoo Finance",
-   "per": 3.62,
-   "fper": 3.15,
+   "per": 3.56,
+   "fper": 3.1,
    "sector": "조선",
-   "mcap": "9조 8,899억원"
+   "mcap": "9조 7,240억원"
   },
   {
    "ticker": "052690",
@@ -635,11 +601,10 @@
    "chg1d": -1.33,
    "high52": 198000,
    "from_high": -62.63,
-   "price_source": "Yahoo Finance",
-   "per": 80.13,
-   "fper": 62.68,
+   "per": 78.96,
+   "fper": 61.76,
    "sector": "전기유틸리티",
-   "mcap": "2조 8,818억원"
+   "mcap": "2조 8,397억원"
   },
   {
    "ticker": "062040",
@@ -653,11 +618,10 @@
    "chg1d": 4.24,
    "high52": 341000,
    "from_high": -62.52,
-   "price_source": "Yahoo Finance",
-   "per": 22.05,
-   "fper": 19.69,
+   "per": 21.54,
+   "fper": 19.24,
    "sector": "전기장비",
-   "mcap": "3조 9,928억원"
+   "mcap": "3조 9,008억원"
   },
   {
    "ticker": "298040",
@@ -671,7 +635,6 @@
    "chg1d": 2.69,
    "high52": 4742000,
    "from_high": -62.19,
-   "price_source": "Yahoo Finance",
    "per": 28.69,
    "fper": 21.93,
    "sector": "전기장비",
@@ -689,11 +652,10 @@
    "chg1d": 0.48,
    "high52": 222000,
    "from_high": -62.12,
-   "price_source": "Yahoo Finance",
-   "per": 8.13,
-   "fper": 6.91,
+   "per": 7.87,
+   "fper": 6.69,
    "sector": "백화점과일반상점",
-   "mcap": "1조 8,093억원"
+   "mcap": "1조 7,511억원"
   },
   {
    "ticker": "023530",
@@ -707,11 +669,10 @@
    "chg1d": -2.2,
    "high52": 211000,
    "from_high": -61.99,
-   "price_source": "Yahoo Finance",
-   "per": 12.58,
-   "fper": 6.51,
+   "per": 12.33,
+   "fper": 6.38,
    "sector": "백화점과일반상점",
-   "mcap": "2조 2,772억원"
+   "mcap": "2조 2,320억원"
   },
   {
    "ticker": "361610",
@@ -725,11 +686,10 @@
    "chg1d": -0.08,
    "high52": 33600,
    "from_high": -61.88,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
    "fper": null,
    "sector": "전기제품",
-   "mcap": "1조 583억원"
+   "mcap": "1조 469억원"
   },
   {
    "ticker": "009150",
@@ -743,11 +703,10 @@
    "chg1d": 4.65,
    "high52": 2417000,
    "from_high": -61.81,
-   "price_source": "Yahoo Finance",
-   "per": 72.7,
-   "fper": 42.43,
+   "per": 71.09,
+   "fper": 41.48,
    "sector": "전자장비와기기",
-   "mcap": "70조 5,108억원"
+   "mcap": "68조 9,423억원"
   },
   {
    "ticker": "003030",
@@ -761,11 +720,10 @@
    "chg1d": -2.5,
    "high52": 260000,
    "from_high": -61.04,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
    "fper": null,
    "sector": "철강",
-   "mcap": "4,195억원"
+   "mcap": "4,171억원"
   },
   {
    "ticker": "012450",
@@ -779,7 +737,6 @@
    "chg1d": 0.0,
    "high52": 1655000,
    "from_high": -60.18,
-   "price_source": "Yahoo Finance",
    "per": 16.43,
    "fper": 19.52,
    "sector": "우주항공과국방",
@@ -797,11 +754,10 @@
    "chg1d": -0.83,
    "high52": 119500,
    "from_high": -59.87,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": -4.85,
+   "fper": -4.78,
    "sector": "화학",
-   "mcap": "2조 639억원"
+   "mcap": "2조 340억원"
   },
   {
    "ticker": "034220",
@@ -815,11 +771,10 @@
    "chg1d": -1.1,
    "high52": 17950,
    "from_high": -59.83,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": -25.76,
+   "fper": -25.16,
    "sector": "디스플레이패널",
-   "mcap": "3조 6,450억원"
+   "mcap": "3조 6,350억원"
   },
   {
    "ticker": "071050",
@@ -833,11 +788,10 @@
    "chg1d": 0.66,
    "high52": 300500,
    "from_high": -59.57,
-   "price_source": "Yahoo Finance",
-   "per": 2.58,
-   "fper": 2.91,
+   "per": 2.57,
+   "fper": 2.9,
    "sector": "증권",
-   "mcap": "6조 8,376억원"
+   "mcap": "6조 8,097억원"
   },
   {
    "ticker": "011790",
@@ -851,11 +805,10 @@
    "chg1d": 5.56,
    "high52": 184400,
    "from_high": -58.84,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": -10.6,
+   "fper": -10.53,
    "sector": "화학",
-   "mcap": "3조 7,844억원"
+   "mcap": "3조 7,596억원"
   },
   {
    "ticker": "000670",
@@ -869,11 +822,10 @@
    "chg1d": -2.61,
    "high52": 71650,
    "from_high": -58.34,
-   "price_source": "Yahoo Finance",
-   "per": 5.39,
+   "per": 5.35,
    "fper": null,
    "sector": "핸드셋",
-   "mcap": "5,532억원"
+   "mcap": "5,496억원"
   },
   {
    "ticker": "010130",
@@ -887,11 +839,10 @@
    "chg1d": -4.96,
    "high52": 2188000,
    "from_high": -58.0,
-   "price_source": "Yahoo Finance",
-   "per": 19.02,
-   "fper": 17.7,
+   "per": 18.89,
+   "fper": 17.59,
    "sector": "비철금속",
-   "mcap": "19조 3,075억원"
+   "mcap": "19조 1,823억원"
   },
   {
    "ticker": "377300",
@@ -905,11 +856,10 @@
    "chg1d": 1.52,
    "high52": 79200,
    "from_high": -57.7,
-   "price_source": "Yahoo Finance",
-   "per": 52.0,
-   "fper": 35.56,
+   "per": 51.62,
+   "fper": 35.3,
    "sector": "IT서비스",
-   "mcap": "4조 5,675억원"
+   "mcap": "4조 5,336억원"
   },
   {
    "ticker": "009830",
@@ -923,11 +873,10 @@
    "chg1d": 2.87,
    "high52": 59300,
    "from_high": -57.67,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 25.17,
+   "fper": 24.6,
    "sector": "에너지장비및서비스",
-   "mcap": "5조 7,235억원"
+   "mcap": "5조 5,942억원"
   },
   {
    "ticker": "267270",
@@ -941,11 +890,10 @@
    "chg1d": 0.22,
    "high52": 217500,
    "from_high": -57.52,
-   "price_source": "Yahoo Finance",
-   "per": 7.25,
-   "fper": 9.39,
+   "per": 7.11,
+   "fper": 9.2,
    "sector": "기계",
-   "mcap": "4조 4,600억원"
+   "mcap": "4조 3,698억원"
   },
   {
    "ticker": "000720",
@@ -959,11 +907,10 @@
    "chg1d": 0.59,
    "high52": 198400,
    "from_high": -57.31,
-   "price_source": "Yahoo Finance",
-   "per": 21.39,
-   "fper": 21.84,
+   "per": 20.74,
+   "fper": 21.11,
    "sector": "건설",
-   "mcap": "9조 5,098억원"
+   "mcap": "9조 2,203억원"
   },
   {
    "ticker": "000990",
@@ -977,11 +924,10 @@
    "chg1d": 12.2,
    "high52": 230500,
    "from_high": -57.31,
-   "price_source": "Yahoo Finance",
-   "per": 12.54,
-   "fper": 10.74,
+   "per": 11.1,
+   "fper": 9.83,
    "sector": "반도체와반도체장비",
-   "mcap": "4조 3,026억원"
+   "mcap": "3조 8,067억원"
   },
   {
    "ticker": "011210",
@@ -995,11 +941,10 @@
    "chg1d": -0.41,
    "high52": 112600,
    "from_high": -57.28,
-   "price_source": "Yahoo Finance",
-   "per": 18.65,
-   "fper": 11.6,
+   "per": 18.52,
+   "fper": 11.52,
    "sector": "자동차부품",
-   "mcap": "1조 3,230억원"
+   "mcap": "1조 3,135억원"
   },
   {
    "ticker": "000660",
@@ -1013,11 +958,10 @@
    "chg1d": 5.36,
    "high52": 2987000,
    "from_high": -57.25,
-   "price_source": "Yahoo Finance",
-   "per": 5.76,
-   "fper": 3.63,
+   "per": 5.69,
+   "fper": 3.59,
    "sector": "반도체와반도체장비",
-   "mcap": "943조 656억원"
+   "mcap": "932조 8,388억원"
   },
   {
    "ticker": "093370",
@@ -1031,11 +975,10 @@
    "chg1d": 14.95,
    "high52": 23550,
    "from_high": -57.24,
-   "price_source": "Yahoo Finance",
-   "per": 31.18,
+   "per": 29.74,
    "fper": null,
    "sector": "화학",
-   "mcap": "1조 1,369억원"
+   "mcap": "1조 844억원"
   },
   {
    "ticker": "012330",
@@ -1049,7 +992,6 @@
    "chg1d": 0.85,
    "high52": 822000,
    "from_high": -56.87,
-   "price_source": "Yahoo Finance",
    "per": 8.89,
    "fper": 8.79,
    "sector": "자동차부품",
@@ -1067,11 +1009,10 @@
    "chg1d": 6.11,
    "high52": 426000,
    "from_high": -56.81,
-   "price_source": "Yahoo Finance",
-   "per": 80.13,
+   "per": 78.97,
    "fper": null,
    "sector": "반도체와반도체장비",
-   "mcap": "17조 7,948억원"
+   "mcap": "17조 5,374억원"
   },
   {
    "ticker": "000120",
@@ -1085,11 +1026,10 @@
    "chg1d": -1.47,
    "high52": 154000,
    "from_high": -56.62,
-   "price_source": "Yahoo Finance",
-   "per": 6.85,
-   "fper": 8.15,
+   "per": 6.84,
+   "fper": 8.14,
    "sector": "항공화물운송과물류",
-   "mcap": "1조 5,261억원"
+   "mcap": "1조 5,239억원"
   },
   {
    "ticker": "204320",
@@ -1103,11 +1043,10 @@
    "chg1d": 1.33,
    "high52": 79100,
    "from_high": -56.51,
-   "price_source": "Yahoo Finance",
-   "per": 9.65,
-   "fper": 14.94,
+   "per": 9.44,
+   "fper": 14.62,
    "sector": "자동차부품",
-   "mcap": "1조 6,318억원"
+   "mcap": "1조 5,965억원"
   },
   {
    "ticker": "015760",
@@ -1121,11 +1060,10 @@
    "chg1d": -0.49,
    "high52": 69500,
    "from_high": -56.19,
-   "price_source": "Yahoo Finance",
-   "per": 2.51,
-   "fper": 5.08,
+   "per": 2.49,
+   "fper": 5.05,
    "sector": "전기유틸리티",
-   "mcap": "19조 6,762억원"
+   "mcap": "19조 5,478억원"
   },
   {
    "ticker": "016360",
@@ -1139,11 +1077,10 @@
    "chg1d": -0.83,
    "high52": 163000,
    "from_high": -55.77,
-   "price_source": "Yahoo Finance",
-   "per": 4.41,
-   "fper": 4.07,
+   "per": 4.36,
+   "fper": 4.02,
    "sector": "증권",
-   "mcap": "6조 4,564억원"
+   "mcap": "6조 3,760억원"
   },
   {
    "ticker": "000270",
@@ -1157,11 +1094,10 @@
    "chg1d": -1.56,
    "high52": 212500,
    "from_high": -55.48,
-   "price_source": "Yahoo Finance",
-   "per": 5.28,
-   "fper": 5.34,
+   "per": 5.25,
+   "fper": 5.31,
    "sector": "자동차",
-   "mcap": "37조 892억원"
+   "mcap": "36조 9,331억원"
   },
   {
    "ticker": "002030",
@@ -1175,11 +1111,10 @@
    "chg1d": -2.87,
    "high52": 402000,
    "from_high": -54.5,
-   "price_source": "Yahoo Finance",
-   "per": 13.61,
+   "per": 13.6,
    "fper": null,
    "sector": "건축자재",
-   "mcap": "3,768억원"
+   "mcap": "3,766억원"
   },
   {
    "ticker": "010140",
@@ -1193,11 +1128,10 @@
    "chg1d": 0.24,
    "high52": 35350,
    "from_high": -53.35,
-   "price_source": "Yahoo Finance",
-   "per": 25.73,
-   "fper": 13.44,
+   "per": 25.61,
+   "fper": 13.38,
    "sector": "조선",
-   "mcap": "14조 5,376억원"
+   "mcap": "14조 4,672억원"
   },
   {
    "ticker": "006650",
@@ -1211,11 +1145,10 @@
    "chg1d": -0.53,
    "high52": 202500,
    "from_high": -53.28,
-   "price_source": "Yahoo Finance",
-   "per": 8.38,
-   "fper": 11.02,
+   "per": 8.33,
+   "fper": 10.95,
    "sector": "화학",
-   "mcap": "6,175억원"
+   "mcap": "6,136억원"
   },
   {
    "ticker": "004000",
@@ -1229,11 +1162,10 @@
    "chg1d": -1.31,
    "high52": 71800,
    "from_high": -52.92,
-   "price_source": "Yahoo Finance",
-   "per": 4.38,
-   "fper": 4.52,
+   "per": 4.35,
+   "fper": 4.49,
    "sector": "화학",
-   "mcap": "8,798억원"
+   "mcap": "8,746억원"
   },
   {
    "ticker": "005420",
@@ -1247,11 +1179,10 @@
    "chg1d": 6.04,
    "high52": 19630,
    "from_high": -52.62,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
    "fper": null,
    "sector": "화학",
-   "mcap": "3,576억원"
+   "mcap": "3,545억원"
   },
   {
    "ticker": "139480",
@@ -1265,11 +1196,10 @@
    "chg1d": -8.05,
    "high52": 136400,
    "from_high": -52.27,
-   "price_source": "Yahoo Finance",
-   "per": 85.83,
-   "fper": -84.83,
+   "per": 82.57,
+   "fper": -81.62,
    "sector": "백화점과일반상점",
-   "mcap": "1조 7,832억원"
+   "mcap": "1조 7,157억원"
   },
   {
    "ticker": "022100",
@@ -1283,11 +1213,10 @@
    "chg1d": 2.83,
    "high52": 45600,
    "from_high": -52.19,
-   "price_source": "Yahoo Finance",
-   "per": 104.29,
+   "per": 103.33,
    "fper": null,
    "sector": "IT서비스",
-   "mcap": "3조 3,296억원"
+   "mcap": "3조 2,992억원"
   },
   {
    "ticker": "032830",
@@ -1301,11 +1230,10 @@
    "chg1d": 1.23,
    "high52": 516500,
    "from_high": -52.08,
-   "price_source": "Yahoo Finance",
-   "per": 17.81,
-   "fper": 13.97,
+   "per": 17.66,
+   "fper": 13.86,
    "sector": "생명보험",
-   "mcap": "49조 9,000억원"
+   "mcap": "49조 5,000억원"
   },
   {
    "ticker": "001040",
@@ -1319,11 +1247,10 @@
    "chg1d": 0.98,
    "high52": 235000,
    "from_high": -51.7,
-   "price_source": "Yahoo Finance",
-   "per": 86.48,
-   "fper": 11.34,
+   "per": 86.1,
+   "fper": 11.3,
    "sector": "복합기업",
-   "mcap": "3조 3,233억원"
+   "mcap": "3조 3,087억원"
   },
   {
    "ticker": "285130",
@@ -1337,11 +1264,10 @@
    "chg1d": -7.65,
    "high52": 81800,
    "from_high": -51.28,
-   "price_source": "Yahoo Finance",
-   "per": 106.46,
+   "per": 105.15,
    "fper": null,
    "sector": "화학",
-   "mcap": "6,980억원"
+   "mcap": "6,894억원"
   },
   {
    "ticker": "003550",
@@ -1355,11 +1281,10 @@
    "chg1d": -0.55,
    "high52": 185900,
    "from_high": -51.26,
-   "price_source": "Yahoo Finance",
-   "per": 18.93,
-   "fper": 12.31,
+   "per": 18.57,
+   "fper": 12.08,
    "sector": "복합기업",
-   "mcap": "13조 7,736억원"
+   "mcap": "13조 5,166억원"
   },
   {
    "ticker": "034230",
@@ -1373,11 +1298,10 @@
    "chg1d": 7.96,
    "high52": 21850,
    "from_high": -50.98,
-   "price_source": "Yahoo Finance",
-   "per": 13.25,
-   "fper": 13.05,
+   "per": 13.18,
+   "fper": 13.0,
    "sector": "호텔,레스토랑,레저",
-   "mcap": "9,921억원"
+   "mcap": "9,865억원"
   },
   {
    "ticker": "009540",
@@ -1391,11 +1315,10 @@
    "chg1d": -2.04,
    "high52": 488000,
    "from_high": -50.82,
-   "price_source": "Yahoo Finance",
-   "per": 4.96,
-   "fper": 4.56,
+   "per": 4.83,
+   "fper": 4.44,
    "sector": "조선",
-   "mcap": "17조 917억원"
+   "mcap": "16조 6,671억원"
   },
   {
    "ticker": "035720",
@@ -1409,7 +1332,6 @@
    "chg1d": -0.16,
    "high52": 64800,
    "from_high": -50.62,
-   "price_source": "Yahoo Finance",
    "per": 40.87,
    "fper": 27.16,
    "sector": "양방향미디어와서비스",
@@ -1427,11 +1349,10 @@
    "chg1d": 19.36,
    "high52": 164400,
    "from_high": -50.12,
-   "price_source": "Yahoo Finance",
-   "per": 30.42,
-   "fper": 22.27,
+   "per": 31.34,
+   "fper": 22.94,
    "sector": "반도체와반도체장비",
-   "mcap": "6조 1,150억원"
+   "mcap": "6조 2,985억원"
   },
   {
    "ticker": "028260",
@@ -1445,11 +1366,10 @@
    "chg1d": 1.43,
    "high52": 565000,
    "from_high": -49.91,
-   "price_source": "Yahoo Finance",
-   "per": 17.31,
-   "fper": 16.4,
+   "per": 17.13,
+   "fper": 16.07,
    "sector": "복합기업",
-   "mcap": "46조 3,799억원"
+   "mcap": "45조 8,934억원"
   },
   {
    "ticker": "010060",
@@ -1463,11 +1383,10 @@
    "chg1d": 4.96,
    "high52": 414000,
    "from_high": -49.88,
-   "price_source": "Yahoo Finance",
-   "per": 104.46,
-   "fper": 40.8,
+   "per": 102.45,
+   "fper": 40.02,
    "sector": "화학",
-   "mcap": "3조 8,927억원"
+   "mcap": "3조 8,181억원"
   },
   {
    "ticker": "047810",
@@ -1481,11 +1400,10 @@
    "chg1d": 7.71,
    "high52": 215500,
    "from_high": -49.42,
-   "price_source": "Yahoo Finance",
-   "per": 59.81,
-   "fper": 51.39,
+   "per": 59.43,
+   "fper": 51.06,
    "sector": "우주항공과국방",
-   "mcap": "10조 6,053억원"
+   "mcap": "10조 5,371억원"
   },
   {
    "ticker": "008770",
@@ -1499,11 +1417,10 @@
    "chg1d": 0.42,
    "high52": 70300,
    "from_high": -49.36,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 15.25,
+   "fper": 15.07,
    "sector": "백화점과일반상점",
-   "mcap": "1조 4,031억원"
+   "mcap": "1조 3,874억원"
   },
   {
    "ticker": "069620",
@@ -1517,11 +1434,10 @@
    "chg1d": -2.31,
    "high52": 199400,
    "from_high": -49.05,
-   "price_source": "Yahoo Finance",
-   "per": 6.06,
-   "fper": 9.47,
+   "per": 6.08,
+   "fper": 9.49,
    "sector": "제약",
-   "mcap": "1조 1,853억원"
+   "mcap": "1조 1,876억원"
   },
   {
    "ticker": "005490",
@@ -1535,7 +1451,6 @@
    "chg1d": 2.03,
    "high52": 542000,
    "from_high": -48.99,
-   "price_source": "Yahoo Finance",
    "per": 16.52,
    "fper": 12.85,
    "sector": "철강",
@@ -1553,11 +1468,10 @@
    "chg1d": -3.1,
    "high52": 30600,
    "from_high": -48.99,
-   "price_source": "Yahoo Finance",
-   "per": 5.1,
+   "per": 5.07,
    "fper": null,
    "sector": "제약",
-   "mcap": "9,152억원"
+   "mcap": "9,105억원"
   },
   {
    "ticker": "375500",
@@ -1571,11 +1485,10 @@
    "chg1d": -2.33,
    "high52": 106600,
    "from_high": -48.78,
-   "price_source": "Yahoo Finance",
-   "per": 3.81,
-   "fper": 6.26,
+   "per": 3.71,
+   "fper": 6.24,
    "sector": "건설",
-   "mcap": "2조 1,359억원"
+   "mcap": "2조 778억원"
   },
   {
    "ticker": "483650",
@@ -1589,11 +1502,10 @@
    "chg1d": -0.34,
    "high52": 283000,
    "from_high": -48.41,
-   "price_source": "Yahoo Finance",
-   "per": 16.96,
-   "fper": 14.04,
+   "per": 17.21,
+   "fper": 14.24,
    "sector": "화장품",
-   "mcap": "1조 8,719억원"
+   "mcap": "1조 8,994억원"
   },
   {
    "ticker": "005940",
@@ -1607,11 +1519,10 @@
    "chg1d": -3.72,
    "high52": 42600,
    "from_high": -48.36,
-   "price_source": "Yahoo Finance",
-   "per": 5.34,
-   "fper": 5.18,
+   "per": 5.28,
+   "fper": 5.12,
    "sector": "증권",
-   "mcap": "8조 1,225억원"
+   "mcap": "8조 302억원"
   },
   {
    "ticker": "064400",
@@ -1625,11 +1536,10 @@
    "chg1d": -1.12,
    "high52": 153300,
    "from_high": -48.34,
-   "price_source": "Yahoo Finance",
-   "per": 15.94,
-   "fper": 16.28,
+   "per": 15.56,
+   "fper": 15.89,
    "sector": "IT서비스",
-   "mcap": "7조 6,734억원"
+   "mcap": "7조 4,893억원"
   },
   {
    "ticker": "018880",
@@ -1643,11 +1553,10 @@
    "chg1d": 0.32,
    "high52": 5940,
    "from_high": -47.98,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 21.05,
+   "fper": 20.91,
    "sector": "자동차부품",
-   "mcap": "3조 1,968억원"
+   "mcap": "3조 1,762억원"
   },
   {
    "ticker": "088350",
@@ -1661,11 +1570,10 @@
    "chg1d": -0.25,
    "high52": 7560,
    "from_high": -47.88,
-   "price_source": "Yahoo Finance",
-   "per": 3.24,
-   "fper": 3.52,
+   "per": 3.21,
+   "fper": 3.49,
    "sector": "생명보험",
-   "mcap": "3조 4,437억원"
+   "mcap": "3조 4,133억원"
   },
   {
    "ticker": "003240",
@@ -1679,11 +1587,10 @@
    "chg1d": -1.37,
    "high52": 1634000,
    "from_high": -47.25,
-   "price_source": "Yahoo Finance",
-   "per": 8.11,
+   "per": 8.07,
    "fper": null,
    "sector": "화학",
-   "mcap": "9,631억원"
+   "mcap": "9,575억원"
   },
   {
    "ticker": "278470",
@@ -1697,11 +1604,10 @@
    "chg1d": 0.2,
    "high52": 475000,
    "from_high": -47.05,
-   "price_source": "Yahoo Finance",
-   "per": 21.95,
-   "fper": 17.4,
+   "per": 22.04,
+   "fper": 17.47,
    "sector": "화장품",
-   "mcap": "9조 4,719억원"
+   "mcap": "9조 5,093억원"
   },
   {
    "ticker": "014680",
@@ -1715,11 +1621,10 @@
    "chg1d": 3.31,
    "high52": 346500,
    "from_high": -46.87,
-   "price_source": "Yahoo Finance",
-   "per": 13.63,
-   "fper": 12.32,
+   "per": 13.55,
+   "fper": 12.25,
    "sector": "화학",
-   "mcap": "2조 98억원"
+   "mcap": "1조 9,980억원"
   },
   {
    "ticker": "051600",
@@ -1733,11 +1638,10 @@
    "chg1d": -1.34,
    "high52": 69000,
    "from_high": -46.52,
-   "price_source": "Yahoo Finance",
-   "per": 12.96,
-   "fper": 13.61,
+   "per": 12.84,
+   "fper": 13.49,
    "sector": "전기유틸리티",
-   "mcap": "1조 6,830억원"
+   "mcap": "1조 6,673억원"
   },
   {
    "ticker": "002380",
@@ -1751,11 +1655,10 @@
    "chg1d": -0.4,
    "high52": 692000,
    "from_high": -46.39,
-   "price_source": "Yahoo Finance",
-   "per": 0.91,
-   "fper": 2.45,
+   "per": 0.9,
+   "fper": 2.44,
    "sector": "건축자재",
-   "mcap": "3조 2,352억원"
+   "mcap": "3조 2,137억원"
   },
   {
    "ticker": "457190",
@@ -1769,11 +1672,10 @@
    "chg1d": 12.42,
    "high52": 131800,
    "from_high": -45.75,
-   "price_source": "Yahoo Finance",
-   "per": 329.22,
+   "per": 328.77,
    "fper": null,
    "sector": "화학",
-   "mcap": "2조 1,788억원"
+   "mcap": "2조 1,758억원"
   },
   {
    "ticker": "005930",
@@ -1787,11 +1689,10 @@
    "chg1d": 3.57,
    "high52": 374500,
    "from_high": -44.99,
-   "price_source": "Yahoo Finance",
-   "per": 9.33,
-   "fper": 4.56,
+   "per": 9.24,
+   "fper": 4.51,
    "sector": "반도체와반도체장비",
-   "mcap": "1,216조 260억원"
+   "mcap": "1,204조 3,334억원"
   },
   {
    "ticker": "047050",
@@ -1805,11 +1706,10 @@
    "chg1d": 2.43,
    "high52": 91200,
    "from_high": -44.63,
-   "price_source": "Yahoo Finance",
-   "per": 10.75,
-   "fper": 8.56,
+   "per": 10.66,
+   "fper": 8.49,
    "sector": "무역회사와판매업체",
-   "mcap": "8조 9,017억원"
+   "mcap": "8조 8,313억원"
   },
   {
    "ticker": "034730",
@@ -1823,11 +1723,10 @@
    "chg1d": 2.71,
    "high52": 883000,
    "from_high": -44.17,
-   "price_source": "Yahoo Finance",
-   "per": 4.52,
-   "fper": 2.94,
+   "per": 4.48,
+   "fper": 2.88,
    "sector": "석유와가스",
-   "mcap": "36조 701억원"
+   "mcap": "35조 7,438억원"
   },
   {
    "ticker": "004990",
@@ -1841,11 +1740,10 @@
    "chg1d": -0.45,
    "high52": 39600,
    "from_high": -44.07,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 64.12,
+   "fper": 63.69,
    "sector": "복합기업",
-   "mcap": "2조 2,175억원"
+   "mcap": "2조 2,026억원"
   },
   {
    "ticker": "051910",
@@ -1859,7 +1757,6 @@
    "chg1d": 3.15,
    "high52": 437500,
    "from_high": -43.89,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
    "fper": -34.33,
    "sector": "화학",
@@ -1877,11 +1774,10 @@
    "chg1d": 0.08,
    "high52": 23050,
    "from_high": -43.73,
-   "price_source": "Yahoo Finance",
    "per": 5.38,
-   "fper": 5.3,
+   "fper": 5.29,
    "sector": "은행",
-   "mcap": "3조 9,644억원"
+   "mcap": "3조 9,613억원"
   },
   {
    "ticker": "000210",
@@ -1895,11 +1791,10 @@
    "chg1d": -3.95,
    "high52": 77700,
    "from_high": -43.69,
-   "price_source": "Yahoo Finance",
-   "per": 7.1,
+   "per": 7.04,
    "fper": null,
    "sector": "화학",
-   "mcap": "9,263억원"
+   "mcap": "9,189억원"
   },
   {
    "ticker": "251270",
@@ -1913,11 +1808,10 @@
    "chg1d": -4.73,
    "high52": 58900,
    "from_high": -43.63,
-   "price_source": "Yahoo Finance",
-   "per": 7.11,
-   "fper": 6.03,
+   "per": 7.05,
+   "fper": 5.97,
    "sector": "게임엔터테인먼트",
-   "mcap": "2조 7,775억원"
+   "mcap": "2조 7,525억원"
   },
   {
    "ticker": "298020",
@@ -1931,7 +1825,6 @@
    "chg1d": -1.4,
    "high52": 557000,
    "from_high": -43.18,
-   "price_source": "Yahoo Finance",
    "per": 12.25,
    "fper": 5.75,
    "sector": "무역회사와판매업체",
@@ -1949,11 +1842,10 @@
    "chg1d": -2.1,
    "high52": 287000,
    "from_high": -43.07,
-   "price_source": "Yahoo Finance",
-   "per": 21.99,
-   "fper": 23.43,
+   "per": 21.8,
+   "fper": 23.23,
    "sector": "조선",
-   "mcap": "7조 3,527억원"
+   "mcap": "7조 2,899억원"
   },
   {
    "ticker": "004020",
@@ -1967,11 +1859,10 @@
    "chg1d": 0.35,
    "high52": 50400,
    "from_high": -42.86,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 39.02,
+   "fper": 38.48,
    "sector": "철강",
-   "mcap": "3조 8,633억원"
+   "mcap": "3조 8,099억원"
   },
   {
    "ticker": "071320",
@@ -1985,11 +1876,10 @@
    "chg1d": -1.03,
    "high52": 116700,
    "from_high": -42.59,
-   "price_source": "Yahoo Finance",
    "per": 2.21,
-   "fper": 2.4,
+   "fper": 2.98,
    "sector": "복합유틸리티",
-   "mcap": "7,804억원"
+   "mcap": "7,816억원"
   },
   {
    "ticker": "298050",
@@ -2003,11 +1893,10 @@
    "chg1d": 5.5,
    "high52": 282000,
    "from_high": -42.2,
-   "price_source": "Yahoo Finance",
-   "per": 19.73,
-   "fper": 9.34,
+   "per": 19.75,
+   "fper": 9.35,
    "sector": "화학",
-   "mcap": "7,320억원"
+   "mcap": "7,329억원"
   },
   {
    "ticker": "007340",
@@ -2021,11 +1910,10 @@
    "chg1d": -1.0,
    "high52": 67500,
    "from_high": -41.41,
-   "price_source": "Yahoo Finance",
-   "per": 5.99,
+   "per": 6.02,
    "fper": null,
    "sector": "자동차부품",
-   "mcap": "2조 3,229억원"
+   "mcap": "2조 3,346억원"
   },
   {
    "ticker": "010950",
@@ -2039,11 +1927,10 @@
    "chg1d": -1.89,
    "high52": 177100,
    "from_high": -41.33,
-   "price_source": "Yahoo Finance",
-   "per": 8.05,
-   "fper": 3.45,
+   "per": 8.03,
+   "fper": 3.44,
    "sector": "석유와가스",
-   "mcap": "11조 8,437억원"
+   "mcap": "11조 8,099억원"
   },
   {
    "ticker": "029780",
@@ -2057,11 +1944,10 @@
    "chg1d": -0.24,
    "high52": 69200,
    "from_high": -40.9,
-   "price_source": "Yahoo Finance",
-   "per": 7.64,
-   "fper": 8.27,
+   "per": 7.62,
+   "fper": 8.25,
    "sector": "카드",
-   "mcap": "4조 7,444억원"
+   "mcap": "4조 7,328억원"
   },
   {
    "ticker": "017670",
@@ -2075,11 +1961,10 @@
    "chg1d": 1.47,
    "high52": 139500,
    "from_high": -40.72,
-   "price_source": "Yahoo Finance",
-   "per": 23.88,
-   "fper": 12.55,
+   "per": 23.76,
+   "fper": 12.48,
    "sector": "무선통신서비스",
-   "mcap": "17조 8,491억원"
+   "mcap": "17조 7,631억원"
   },
   {
    "ticker": "003670",
@@ -2093,11 +1978,10 @@
    "chg1d": 5.09,
    "high52": 299500,
    "from_high": -40.7,
-   "price_source": "Yahoo Finance",
-   "per": 350.2,
-   "fper": 284.43,
+   "per": 350.99,
+   "fper": 285.07,
    "sector": "화학",
-   "mcap": "15조 7,613억원"
+   "mcap": "15조 7,968억원"
   },
   {
    "ticker": "018260",
@@ -2111,11 +1995,10 @@
    "chg1d": -0.86,
    "high52": 388500,
    "from_high": -40.67,
-   "price_source": "Yahoo Finance",
-   "per": 27.67,
-   "fper": 26.76,
+   "per": 27.49,
+   "fper": 26.51,
    "sector": "IT서비스",
-   "mcap": "17조 9,516억원"
+   "mcap": "17조 8,356억원"
   },
   {
    "ticker": "017800",
@@ -2129,11 +2012,10 @@
    "chg1d": -1.03,
    "high52": 113400,
    "from_high": -40.65,
-   "price_source": "Yahoo Finance",
-   "per": 7.17,
+   "per": 7.09,
    "fper": null,
    "sector": "기계",
-   "mcap": "2조 6,348억원"
+   "mcap": "2조 6,036억원"
   },
   {
    "ticker": "005850",
@@ -2147,11 +2029,10 @@
    "chg1d": 1.5,
    "high52": 79500,
    "from_high": -40.25,
-   "price_source": "Yahoo Finance",
-   "per": 5.81,
-   "fper": 5.9,
+   "per": 5.77,
+   "fper": 5.86,
    "sector": "자동차부품",
-   "mcap": "2조 2,133억원"
+   "mcap": "2조 1,993억원"
   },
   {
    "ticker": "326030",
@@ -2165,11 +2046,10 @@
    "chg1d": -0.8,
    "high52": 144100,
    "from_high": -39.83,
-   "price_source": "Yahoo Finance",
-   "per": 17.09,
-   "fper": 22.34,
+   "per": 17.25,
+   "fper": 22.55,
    "sector": "제약",
-   "mcap": "6조 8,524억원"
+   "mcap": "6조 9,151억원"
   },
   {
    "ticker": "000240",
@@ -2183,11 +2063,10 @@
    "chg1d": -2.88,
    "high52": 36450,
    "from_high": -39.78,
-   "price_source": "Yahoo Finance",
-   "per": 5.29,
+   "per": 5.27,
    "fper": null,
    "sector": "자동차부품",
-   "mcap": "2조 933억원"
+   "mcap": "2조 838억원"
   },
   {
    "ticker": "011780",
@@ -2201,11 +2080,10 @@
    "chg1d": -2.19,
    "high52": 162300,
    "from_high": -39.37,
-   "price_source": "Yahoo Finance",
-   "per": 5.66,
-   "fper": 6.66,
+   "per": 5.64,
+   "fper": 6.64,
    "sector": "화학",
-   "mcap": "2조 4,621억원"
+   "mcap": "2조 4,546억원"
   },
   {
    "ticker": "036570",
@@ -2219,11 +2097,10 @@
    "chg1d": -2.11,
    "high52": 343500,
    "from_high": -39.16,
-   "price_source": "Yahoo Finance",
-   "per": 7.31,
-   "fper": 9.29,
+   "per": 7.24,
+   "fper": 9.2,
    "sector": "게임엔터테인먼트",
-   "mcap": "4조 5,135억원"
+   "mcap": "4조 4,704억원"
   },
   {
    "ticker": "000100",
@@ -2237,11 +2114,10 @@
    "chg1d": 0.51,
    "high52": 129200,
    "from_high": -38.85,
-   "price_source": "Yahoo Finance",
-   "per": 26.96,
-   "fper": 39.59,
+   "per": 26.82,
+   "fper": 39.63,
    "sector": "제약",
-   "mcap": "5조 8,083억원"
+   "mcap": "5조 7,788억원"
   },
   {
    "ticker": "112610",
@@ -2255,11 +2131,10 @@
    "chg1d": -0.61,
    "high52": 79400,
    "from_high": -38.04,
-   "price_source": "Yahoo Finance",
-   "per": 477.18,
-   "fper": 11.73,
+   "per": 475.73,
+   "fper": 11.69,
    "sector": "에너지장비및서비스",
-   "mcap": "2조 727억원"
+   "mcap": "2조 664억원"
   },
   {
    "ticker": "078930",
@@ -2273,11 +2148,10 @@
    "chg1d": 1.34,
    "high52": 133200,
    "from_high": -37.54,
-   "price_source": "Yahoo Finance",
-   "per": 3.4,
-   "fper": 3.14,
+   "per": 3.36,
+   "fper": 3.12,
    "sector": "석유와가스",
-   "mcap": "7조 8,032억원"
+   "mcap": "7조 6,917억원"
   },
   {
    "ticker": "185750",
@@ -2291,11 +2165,10 @@
    "chg1d": -1.43,
    "high52": 98100,
    "from_high": -36.6,
-   "price_source": "Yahoo Finance",
-   "per": 10.77,
-   "fper": 13.58,
+   "per": 10.8,
+   "fper": 13.63,
    "sector": "제약",
-   "mcap": "8,558억원"
+   "mcap": "8,585억원"
   },
   {
    "ticker": "161890",
@@ -2309,11 +2182,10 @@
    "chg1d": -0.19,
    "high52": 165900,
    "from_high": -36.35,
-   "price_source": "Yahoo Finance",
-   "per": 13.59,
-   "fper": 13.17,
+   "per": 13.89,
+   "fper": 13.46,
    "sector": "화장품",
-   "mcap": "2조 5,116억원"
+   "mcap": "2조 5,682억원"
   },
   {
    "ticker": "073240",
@@ -2327,11 +2199,10 @@
    "chg1d": 0.89,
    "high52": 8850,
    "from_high": -36.27,
-   "price_source": "Yahoo Finance",
-   "per": 3.42,
-   "fper": 5.16,
+   "per": 3.38,
+   "fper": 5.1,
    "sector": "자동차부품",
-   "mcap": "1조 6,288억원"
+   "mcap": "1조 6,087억원"
   },
   {
    "ticker": "035420",
@@ -2345,11 +2216,10 @@
    "chg1d": 0.67,
    "high52": 304000,
    "from_high": -36.09,
-   "price_source": "Yahoo Finance",
-   "per": 15.17,
-   "fper": 16.07,
+   "per": 15.08,
+   "fper": 15.97,
    "sector": "양방향미디어와서비스",
-   "mcap": "29조 7,373억원"
+   "mcap": "29조 5,582억원"
   },
   {
    "ticker": "024110",
@@ -2363,7 +2233,6 @@
    "chg1d": -0.26,
    "high52": 29550,
    "from_high": -35.63,
-   "price_source": "Yahoo Finance",
    "per": 5.74,
    "fper": 5.42,
    "sector": "은행",
@@ -2381,11 +2250,10 @@
    "chg1d": -9.56,
    "high52": 303500,
    "from_high": -35.49,
-   "price_source": "Yahoo Finance",
-   "per": 11.02,
-   "fper": 11.58,
+   "per": 11.06,
+   "fper": 16.04,
    "sector": "게임엔터테인먼트",
-   "mcap": "8조 8,737억원"
+   "mcap": "8조 9,010억원"
   },
   {
    "ticker": "005300",
@@ -2399,11 +2267,10 @@
    "chg1d": -1.77,
    "high52": 154800,
    "from_high": -35.34,
-   "price_source": "Yahoo Finance",
-   "per": 15.41,
-   "fper": 11.43,
+   "per": 15.39,
+   "fper": 11.42,
    "sector": "음료",
-   "mcap": "9,297억원"
+   "mcap": "9,288억원"
   },
   {
    "ticker": "028670",
@@ -2417,11 +2284,10 @@
    "chg1d": 1.7,
    "high52": 7830,
    "from_high": -35.12,
-   "price_source": "Yahoo Finance",
-   "per": 8.04,
-   "fper": 5.14,
+   "per": 7.96,
+   "fper": 5.09,
    "sector": "해운사",
-   "mcap": "2조 7,210억원"
+   "mcap": "2조 6,942억원"
   },
   {
    "ticker": "006400",
@@ -2435,11 +2301,10 @@
    "chg1d": 4.93,
    "high52": 723000,
    "from_high": -33.82,
-   "price_source": "Yahoo Finance",
-   "per": 1048.03,
-   "fper": 47.28,
+   "per": 1044.76,
+   "fper": 47.5,
    "sector": "전기제품",
-   "mcap": "38조 6,811억원"
+   "mcap": "38조 5,602억원"
   },
   {
    "ticker": "241560",
@@ -2453,11 +2318,10 @@
    "chg1d": -1.31,
    "high52": 79700,
    "from_high": -33.75,
-   "price_source": "Yahoo Finance",
-   "per": 10.24,
-   "fper": 9.44,
+   "per": 10.04,
+   "fper": 9.26,
    "sector": "기계",
-   "mcap": "5조 995억원"
+   "mcap": "5조 37억원"
   },
   {
    "ticker": "006040",
@@ -2471,11 +2335,10 @@
    "chg1d": -8.76,
    "high52": 49950,
    "from_high": -33.23,
-   "price_source": "Yahoo Finance",
-   "per": 3.44,
+   "per": 3.4,
    "fper": null,
    "sector": "식품",
-   "mcap": "1조 4,875억원"
+   "mcap": "1조 4,721억원"
   },
   {
    "ticker": "096770",
@@ -2489,11 +2352,10 @@
    "chg1d": 0.82,
    "high52": 165400,
    "from_high": -33.13,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 4.54,
+   "fper": 4.5,
    "sector": "석유와가스",
-   "mcap": "18조 8,325억원"
+   "mcap": "18조 6,972억원"
   },
   {
    "ticker": "373220",
@@ -2507,11 +2369,10 @@
    "chg1d": 1.51,
    "high52": 497500,
    "from_high": -32.56,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": -78.13,
+   "fper": -82.47,
    "sector": "전기제품",
-   "mcap": "78조 7,410억원"
+   "mcap": "78조 5,070억원"
   },
   {
    "ticker": "086280",
@@ -2525,7 +2386,6 @@
    "chg1d": 0.75,
    "high52": 296000,
    "from_high": -32.26,
-   "price_source": "Yahoo Finance",
    "per": 9.76,
    "fper": 8.77,
    "sector": "항공화물운송과물류",
@@ -2543,11 +2403,10 @@
    "chg1d": -1.08,
    "high52": 335500,
    "from_high": -32.04,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 24.6,
+   "fper": 24.71,
    "sector": "화장품",
-   "mcap": "3조 4,294억원"
+   "mcap": "3조 4,444억원"
   },
   {
    "ticker": "069260",
@@ -2561,11 +2420,10 @@
    "chg1d": -2.53,
    "high52": 21550,
    "from_high": -32.02,
-   "price_source": "Yahoo Finance",
-   "per": 9.3,
+   "per": 9.27,
    "fper": null,
    "sector": "화학",
-   "mcap": "5,993억원"
+   "mcap": "5,976억원"
   },
   {
    "ticker": "009420",
@@ -2579,11 +2437,10 @@
    "chg1d": 6.32,
    "high52": 73000,
    "from_high": -31.99,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": -286.99,
+   "fper": -197.71,
    "sector": "제약",
-   "mcap": "2조 5,937억원"
+   "mcap": "2조 7,061억원"
   },
   {
    "ticker": "323410",
@@ -2597,11 +2454,10 @@
    "chg1d": -1.22,
    "high52": 29500,
    "from_high": -31.19,
-   "price_source": "Yahoo Finance",
-   "per": 17.86,
-   "fper": 16.13,
+   "per": 17.69,
+   "fper": 15.97,
    "sector": "은행",
-   "mcap": "9조 7,333억원"
+   "mcap": "9조 6,378억원"
   },
   {
    "ticker": "014820",
@@ -2615,11 +2471,10 @@
    "chg1d": -2.35,
    "high52": 30150,
    "from_high": -31.18,
-   "price_source": "Yahoo Finance",
-   "per": 9.62,
+   "per": 9.52,
    "fper": null,
    "sector": "포장재",
-   "mcap": "6,030억원"
+   "mcap": "5,972억원"
   },
   {
    "ticker": "001680",
@@ -2633,11 +2488,10 @@
    "chg1d": -0.95,
    "high52": 24150,
    "from_high": -31.14,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
    "fper": null,
    "sector": "식품",
-   "mcap": "5,772억원"
+   "mcap": "5,769억원"
   },
   {
    "ticker": "175330",
@@ -2651,7 +2505,6 @@
    "chg1d": 0.95,
    "high52": 38500,
    "from_high": -30.91,
-   "price_source": "Yahoo Finance",
    "per": 6.96,
    "fper": 6.79,
    "sector": "은행",
@@ -2669,11 +2522,10 @@
    "chg1d": -4.76,
    "high52": 54800,
    "from_high": -30.66,
-   "price_source": "Yahoo Finance",
-   "per": 75.54,
-   "fper": 50.8,
+   "per": 74.56,
+   "fper": 48.71,
    "sector": "가구",
-   "mcap": "9,013억원"
+   "mcap": "8,896억원"
   },
   {
    "ticker": "097950",
@@ -2687,11 +2539,10 @@
    "chg1d": -0.96,
    "high52": 252000,
    "from_high": -30.2,
-   "price_source": "Yahoo Finance",
    "per": -1.0,
-   "fper": 10.86,
+   "fper": 12.47,
    "sector": "식품",
-   "mcap": "2조 6,571억원"
+   "mcap": "2조 6,435억원"
   }
  ]
 }
