@@ -1,0 +1,33 @@
+name: 미국 종목 재무 지표
+
+on:
+  schedule:
+    - cron: "37 23 * * *"   # 매일 08:37 KST
+  push:
+    branches: [main]
+    paths: [data.json]      # 하락 종목 목록이 바뀌면 바로 갱신
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: SEC 재무 지표 수집
+        run: python3 scripts/fetch_us_fin.py data.json us_fin.json
+      - name: 바뀐 경우에만 커밋
+        run: |
+          git config user.name "price-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add us_fin.json
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "미국 종목 재무 지표 갱신 $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M') KST"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin main && break; sleep 5; done
