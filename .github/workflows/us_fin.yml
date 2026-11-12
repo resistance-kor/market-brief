@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - name: SEC 재무 지표 수집
+      - name: 재무 지표 수집(Yahoo Finance)
         run: python3 scripts/fetch_us_fin.py data.json us_fin.json
       - name: 바뀐 경우에만 커밋
         run: |

@@ -1,41 +1,45 @@
 """미국 하락 종목·기타 종목의 재무 지표 → us_fin.json
-출처: SEC EDGAR XBRL companyfacts (data.sec.gov, 무료·공식). 10-Q/10-K로 제출된 가장 최근 분기말 값.
-- 부채비율 = 부채총계(Liabilities) ÷ 자본총계(StockholdersEquity) × 100
-  (Liabilities가 없으면 LiabilitiesAndStockholdersEquity − 자본총계)
-- 현금성자산 = CashAndCashEquivalentsAtCarryingValue
-- 이익잉여금 = RetainedEarningsAccumulatedDeficit (미국은 액면가가 매우 작아 한국식 유보율이 의미가 없어 대신 표시)
+출처: Yahoo Finance 분기 재무제표(fundamentals-timeseries). 가장 최근 분기말 값.
+(SEC EDGAR는 GitHub Actions 서버 접속을 403으로 막아 사용하지 않음)
+- 부채비율 = 부채총계(TotalLiabilitiesNetMinorityInterest) ÷ 자본총계(StockholdersEquity) × 100
+- 현금성자산 = CashAndCashEquivalents
+- 이익잉여금 = RetainedEarnings (미국은 액면가가 매우 작아 한국식 유보율이 의미가 없어 대신 표시)
 """
-import json, sys, time, urllib.request
+import json, sys, time, urllib.request, urllib.parse
 from datetime import datetime, timezone
 
-UA = "market-brief resistance-kor@users.noreply.github.com"  # SEC 요구 형식: 이름 + 연락처
-FORMS = {"10-Q", "10-K", "10-Q/A", "10-K/A", "20-F", "40-F", "6-K"}
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+TYPES = {"quarterlyTotalLiabilitiesNetMinorityInterest": "liab", "quarterlyStockholdersEquity": "eq",
+         "quarterlyCashAndCashEquivalents": "cash", "quarterlyRetainedEarnings": "ret"}
 
 
 def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "identity"})
-    with urllib.request.urlopen(req, timeout=40) as r:
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
         return json.loads(r.read().decode("utf-8"))
 
 
-def latest(facts, *names):
-    """여러 태그 중 가장 최근 분기말(end) 값. (값, 기준일, 서식, 태그)"""
-    best = None
-    for ns in ("us-gaap", "ifrs-full"):
-        for n in names:
-            node = facts.get(ns, {}).get(n)
-            if not node:
-                continue
-            for unit, arr in node.get("units", {}).items():
-                if unit not in ("USD",):
-                    continue
-                for x in arr:
-                    if x.get("form") not in FORMS or "end" not in x or x.get("val") is None:
-                        continue
-                    key = (x["end"], x.get("filed", ""))
-                    if best is None or key > best[0]:
-                        best = (key, float(x["val"]), x["end"], x.get("form"), n)
-    return None if best is None else best[1:]
+def fundamentals(sym):
+    """{필드: (asOfDate, 값)} — 필드별 가장 최근 분기."""
+    p2 = int(time.time()) + 86400
+    p1 = p2 - 800 * 86400
+    last = None
+    for host in ("query2", "query1"):
+        try:
+            d = get(f"https://{host}.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/{urllib.parse.quote(sym)}"
+                    f"?type={','.join(TYPES)}&period1={p1}&period2={p2}")
+            out = {}
+            for res in d.get("timeseries", {}).get("result", []):
+                typ = (res.get("meta", {}).get("type") or [None])[0]
+                pts = [x for x in res.get(typ) or [] if x and x.get("reportedValue")]
+                if typ in TYPES and pts:
+                    x = max(pts, key=lambda x: x["asOfDate"])
+                    out[TYPES[typ]] = (x["asOfDate"], float(x["reportedValue"]["raw"]))
+            return out
+        except Exception as e:
+            last = e
+            time.sleep(1)
+    raise RuntimeError(last)
 
 
 def main(data_path, out_path):
@@ -47,44 +51,31 @@ def main(data_path, out_path):
         prev = json.load(open(out_path, encoding="utf-8")).get("items", {})
     except Exception:
         prev = {}
-    cik = {v["ticker"].upper(): v["cik_str"] for v in get("https://www.sec.gov/files/company_tickers.json").values()}
     items, miss = {}, []
     for t in tickers:
-        c = cik.get(t) or cik.get(t.replace(".", "-"))
-        if not c:
-            miss.append(f"{t}: SEC 등록 회사 아님(ETF 등)")
-            continue
         try:
-            facts = get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{int(c):010d}.json").get("facts", {})
+            f = fundamentals(t)
         except Exception as e:
             miss.append(f"{t}: {e}")
             if t in prev:
                 items[t] = dict(prev[t], stale=True)
-            time.sleep(0.3)
             continue
-        eq = latest(facts, "StockholdersEquity", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest", "Equity")
-        li = latest(facts, "Liabilities")
-        if li is None or (eq and li[1] != eq[1]):
-            tot = latest(facts, "LiabilitiesAndStockholdersEquity", "EquityAndLiabilities")
-            if tot and eq and tot[1] == eq[1]:
-                li = (tot[0] - eq[0], tot[1], tot[2], "LiabilitiesAndStockholdersEquity-Equity")
-        cash = latest(facts, "CashAndCashEquivalentsAtCarryingValue", "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents", "CashAndCashEquivalents")
-        re_ = latest(facts, "RetainedEarningsAccumulatedDeficit", "RetainedEarnings")
-        item = {"period": eq[1] if eq else None, "form": eq[2] if eq else None,
-                "equity_b": round(eq[0] / 1e9, 3) if eq else None,
-                "liabilities_b": round(li[0] / 1e9, 3) if li else None,
-                "cash_b": round(cash[0] / 1e9, 3) if cash else None,
-                "retained_b": round(re_[0] / 1e9, 3) if re_ else None}
-        if eq and li and li[1] == eq[1]:
-            item["debt_ratio"] = round(li[0] / eq[0] * 100, 1) if eq[0] > 0 else -1  # -1 = 자본잠식(자본 ≤ 0)
+        if not f:
+            miss.append(f"{t}: 재무 자료 없음(ETF 등)")
+            continue
+        eq, li, cash, ret = f.get("eq"), f.get("liab"), f.get("cash"), f.get("ret")
+        b = lambda x: round(x[1] / 1e9, 3) if x else None
+        item = {"period": eq[0] if eq else (li or cash or ret)[0], "equity_b": b(eq), "liabilities_b": b(li), "cash_b": b(cash), "retained_b": b(ret)}
+        if eq and li and eq[0] == li[0]:
+            item["debt_ratio"] = round(li[1] / eq[1] * 100, 1) if eq[1] > 0 else -1  # -1 = 자본잠식(자본 0 이하)
         else:
             item["debt_ratio"] = None
         items[t] = item
-        print(f"{t}: 기준 {item['period']} {item['form']} 부채비율 {item['debt_ratio']} 현금 {item['cash_b']}B 이익잉여금 {item['retained_b']}B")
-        time.sleep(0.3)  # SEC 권장: 초당 10건 이하
+        print(f"{t}: 기준 {item['period']} 부채비율 {item['debt_ratio']} 현금 {item['cash_b']}B 이익잉여금 {item['retained_b']}B")
+        time.sleep(0.4)
     out = {"updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-           "source": "SEC EDGAR XBRL companyfacts (10-Q/10-K 최근 분기말)",
-           "source_url": "https://www.sec.gov/edgar/search/",
+           "source": "Yahoo Finance 분기 재무제표(최근 분기말)",
+           "source_url": "https://finance.yahoo.com/",
            "items": items, "missing": miss}
     json.dump(out, open(out_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"{len(items)}개 저장, 없음 {len(miss)}: {miss}")

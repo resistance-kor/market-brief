@@ -608,7 +608,7 @@
       <b>출처</b> <a href="${esc(safeUrl(d.source_url))}" target="_blank" rel="noopener">${esc(d.source)}</a><br>${esc(d.excluded_note||"")}<br>
       <span class="w">⚠ ${esc(d.coverage_note||"")}</span><br>PER = 주가 ÷ 주당순이익. 후행은 최근 실적, 선행은 향후 예상 실적 기준이며, 순이익이 적자면 "적자"로 표시합니다.<br>${KR
         ? "유보율 = (자본잉여금+이익잉여금) ÷ 납입자본금 × 100. 높을수록 회사 안에 쌓아 둔 돈이 많다는 뜻입니다. 부채비율 = 부채총계 ÷ 자본총계 × 100. 둘 다 네이버 증권 재무 자료의 최근 확정 분기 기준입니다."
-        : "미국 기업은 액면가가 매우 작아 한국식 유보율은 의미가 없어 이익잉여금(누적 이익, 마이너스면 누적 결손)을 대신 표시합니다. 현금성자산은 현금 및 현금성자산(괄호는 시가총액 대비). 부채비율 = 부채총계 ÷ 자본총계 × 100(자본이 0 이하면 \"자본잠식\"). 모두 SEC에 제출된 최근 분기 재무제표(10-Q/10-K) 기준입니다."}</details>`;
+        : "미국 기업은 액면가가 매우 작아 한국식 유보율은 의미가 없어 이익잉여금(누적 이익, 마이너스면 누적 결손)을 대신 표시합니다. 현금성자산은 현금 및 현금성자산(괄호는 시가총액 대비). 부채비율 = 부채총계 ÷ 자본총계 × 100(자본이 0 이하면 \"자본잠식\"). 모두 Yahoo Finance의 최근 분기 재무제표 기준입니다."}</details>`;
     // 미국: us_fin.json(SEC) 값을 티커로 붙임
     const UF = (state.usfin && state.usfin.items) || {};
     const fin = r => KR ? r : Object.assign({}, r, (u => u ? {debt_ratio:u.debt_ratio, cash:u.cash_b, retained:u.retained_b, fin_period:u.period} : {})(UF[String(r.ticker).toUpperCase()]));
