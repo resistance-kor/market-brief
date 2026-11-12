@@ -1,1390 +1,1648 @@
 {
- "meta": {
-  "updated_at": "2026-11-12T04:06:41Z",
-  "headline": "젠슨 황 거취 논의에 엔비디아 시간외 급락…코스피는 보합권 공방, 비트코인 7.37만 달러 정체 속 MSCI는 스트래티지 편출 확정",
-  "bullets": [
-   "미국: 11일 나스닥 25,466(+1.60%)·S&P500 7,619(+1.31%) 상승 마감, 그러나 엔비디아는 이사회의 젠슨 황 거취 논의 보도에 시간외 7~8%대 하락",
-   "한국: 12일 코스피는 오전 5,408(+0.61%)까지 올랐다가 낮 12시 58분 집계 5,371로 보합권, 삼성전자는 강세",
-   "코인: 비트코인 7.37만 달러 부근 5주째 약세, MSCI는 스트래티지를 12월 1일부터 지수에서 제외",
-   "금리·원자재: 미 10년물 약 5.0%, 브렌트유 92.76달러로 반등, 금은 3,986달러로 하락",
-   "다음 변수: 오늘 밤 시스코·AMAT 실적 → 13일 PPI → 17일 엔비디아 실적 → 19일 FOMC 의사록·앤트로픽 상장 예정 → 26일 금통위"
-  ],
-  "schedule": "매일 07:19 · 22:19 (KST)"
- },
- "articles": [
-  {
-   "id": "20261112-msci-strategy-exclusion",
-   "title": "MSCI, 스트래티지 지수 편출 확정…12월 1일부터 제외",
-   "source": "블루밍비트",
-   "url": "https://bloomingbit.io/feed/news/124250",
-   "published": "2026-11-12T02:45:00Z",
-   "summary": "로이터에 따르면 MSCI는 스트래티지를 투자펀드 성격의 기업으로 분류해 12월 1일부터 MSCI 미국·월드 지수에서 제외하며, 리밸런싱은 30일 진행됩니다. 메타플래닛과 우라늄 투자사 옐로케이크도 제외 대상에 포함됐습니다. JP모건은 앞서 최대 28억 달러 규모 매도 물량을 추정했고, 스트래티지 주가는 시간외에서 2.5% 하락했습니다.",
-   "why": "패시브 자금 매도로 MSTR 주가 변동성이 커질 수 있고, 주식 발행으로 비트코인을 사들이는 재무 전략에 부담이 될 수 있습니다. 스트래티지는 해당 펀드 보유 지분이 3.1%에 불과하다며 영향이 제한적이라는 입장입니다.",
-   "markets": [
-    "코인",
-    "미국주식"
-   ],
-   "impact": "악재",
-   "importance": 2,
-   "tickers": [
-    "MSTR",
-    "BTC"
-   ],
-   "added": "2026-11-12T04:06:41Z"
+  "meta": {
+    "updated_at": "2026-11-12T13:29:49Z",
+    "headline": "젠슨 황 파문에 엔비디아 프리마켓 7% 급락…코스피 0.61% 하락 마감, 비트코인 7.2만 달러대로 밀려",
+    "bullets": [
+      "미국: 엔비디아가 젠슨 황 사생활 파문·이사회 조사 여파로 12일 프리마켓 7%가량 하락, 월가 목표가 하향 잇따라",
+      "한국: 코스피는 장중 5,450선 터치 후 0.61% 내린 5,342.73 마감, 기관 7,642억원 순매도·코스닥 700선 하회",
+      "코인: 비트코인 약 7.25만 달러로 밀려, 현물 ETF 5거래일째 유출·IBIT 9거래일 연속 유출",
+      "금리·원자재: 미 10년물 약 5.0% 유지, 금은 3,943달러로 하락, 원·달러는 1,320원대 저점",
+      "다음 변수: 오늘 밤 시스코·AMAT 실적 → 13일 PPI → 17일(현지) 엔비디아 실적 → 19일 FOMC 의사록·앤트로픽 상장 예정"
+    ],
+    "schedule": "매일 07:19 · 22:19 (KST)"
   },
-  {
-   "id": "20261112-robinhood-oct-crypto",
-   "title": "로빈후드 10월 코인 거래대금 전년 대비 48% 감소…주식은 2% 증가",
-   "source": "뉴스1",
-   "url": "https://www.news1.kr/finance/blockchain-fintech/6351761",
-   "published": "2026-11-12T02:25:00Z",
-   "summary": "로빈후드의 10월 가상자산 명목 거래대금은 약 170억 달러로 1년 전보다 48%, 9월보다 21% 줄었습니다. 반면 주식 거래대금은 전년 대비 2% 늘었고 예측시장 이벤트 계약 거래량은 136% 증가했습니다(토큰포스트 인용).",
-   "why": "개인 투자자의 코인 거래 열기가 식었음을 보여 주는 지표로, 거래소·브로커 실적과 코인 수급에 부정적 신호로 읽힐 수 있습니다.",
-   "markets": [
-    "코인",
-    "미국주식"
-   ],
-   "impact": "악재",
-   "importance": 1,
-   "tickers": [
-    "HOOD"
-   ],
-   "added": "2026-11-12T04:06:41Z"
-  },
-  {
-   "id": "20261112-kospi-huang-intraday",
-   "title": "코스피, '젠슨 황 해임 논란' 속 보합권 등락…삼성전자는 강세",
-   "source": "SBS(연합뉴스)",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008842792",
-   "published": "2026-11-12T02:21:00Z",
-   "summary": "코스피는 12일 미국 반도체주 강세에 상승 출발했지만 엔비디아 경영 불확실성과 이틀 연속 상승에 따른 차익 매물로 보합권에서 등락했습니다. 오전 10시 59분 기준 5,408.29(+0.61%)였고 삼성전자는 2%대 강세, SK하이닉스는 1% 안팎 움직임을 보였습니다. IT서비스·부동산·보험 업종은 약세였습니다.",
-   "why": "엔비디아와 HBM 등으로 협력하는 국내 반도체 대형주에 심리적 부담이 이어질 수 있으나, 실제 공급 영향은 아직 확인되지 않았습니다.",
-   "markets": [
-    "국내주식"
-   ],
-   "impact": "혼재",
-   "importance": 3,
-   "tickers": [
-    "005930",
-    "000660"
-   ],
-   "added": "2026-11-12T04:06:41Z"
-  },
-  {
-   "id": "20261112-russia-crypto-exchange",
-   "title": "러시아, 22일부터 거래소 코인 현물거래 허용…개인은 연 30만 루블 한도",
-   "source": "디지털투데이",
-   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=714818",
-   "published": "2026-11-12T01:32:00Z",
-   "summary": "러시아 중앙은행이 22일부터 거래소를 통한 암호화폐 거래를 허용합니다. 일반 투자자는 비트코인·이더리움·테더만 중개기관당 연 30만 루블까지 살 수 있고, 거래 전 지식 테스트를 거쳐야 합니다. 국내 결제 수단으로 쓰는 것은 계속 금지됩니다.",
-   "why": "제도권 매수 경로가 새로 열리는 것이지만 개인 한도가 작아 단기 수급 영향은 제한적일 수 있습니다.",
-   "markets": [
-    "코인"
-   ],
-   "impact": "중립",
-   "importance": 1,
-   "tickers": [
-    "BTC",
-    "ETH",
-    "USDT"
-   ],
-   "added": "2026-11-12T04:06:41Z"
-  },
-  {
-   "id": "20261112-nvda-board-huang",
-   "title": "엔비디아 이사회, 젠슨 황 CEO 거취 논의…주가는 시간외 7~8%대 하락",
-   "source": "블록미디어",
-   "url": "https://www.blockmedia.co.kr/archives/1164743",
-   "published": "2026-11-12T00:14:00Z",
-   "summary": "뉴욕타임스는 엔비디아 이사회가 사생활 논란에 휩싸인 젠슨 황 CEO의 향후 거취를 논의하는 회의를 열고 있다고 보도했습니다. 월스트리트저널의 해임 준비 보도 이후 엔비디아 주가는 정규장 2.87% 상승 뒤 시간외 거래에서 7~8%대 하락했습니다(연합뉴스·SBS 보도). 백악관에도 정치적 부담이 되고 있다는 분석이 나왔습니다.",
-   "why": "엔비디아는 S&P500·나스닥 시가총액 상위 종목이라 경영 공백 우려가 지수와 AI·반도체 심리에 부담이 될 수 있습니다. 17일 실적 발표 전후 변동성이 커질 수 있습니다.",
-   "markets": [
-    "미국주식",
-    "국내주식"
-   ],
-   "impact": "악재",
-   "importance": 3,
-   "tickers": [
-    "NVDA"
-   ],
-   "added": "2026-11-12T04:06:41Z"
-  },
-  {
-   "id": "20261112-congress-huang-pressure",
-   "title": "美 공화당서 젠슨 황 사퇴 요구…하원은 강제 소환 경고",
-   "source": "아시아경제",
-   "url": "https://view.asiae.co.kr/article/2026111206563242326",
-   "published": "2026-11-11T21:56:00Z",
-   "summary": "공화당 케빈 크레이머 상원의원이 중국 정보기관 연계 의혹 인물과의 관계를 이유로 황 CEO의 사퇴를 촉구했습니다. 존 물레나르 하원 미중전략경쟁특위 위원장은 비공개 브리핑 요청에 응하지 않으면 소환장을 발부할 수 있다고 경고했습니다. 엔비디아는 국가안보나 기밀이 침해됐다고 볼 근거가 없다는 입장입니다.",
-   "why": "의회 압박이 대중국 반도체 수출 통제 강화 논의로 이어질 경우 엔비디아 등 반도체주의 중국 매출 전망에 부담이 될 수 있습니다.",
-   "markets": [
-    "미국주식"
-   ],
-   "impact": "악재",
-   "importance": 2,
-   "tickers": [
-    "NVDA"
-   ],
-   "added": "2026-11-12T04:06:41Z"
-  },
-  {
-   "id": "20261111-memory-chips-lead",
-   "title": "메모리주가 반도체 반등 주도…마이크론 11.9%·샌디스크 13.7% 급등",
-   "source": "Capp Notes",
-   "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-11",
-   "published": "2026-11-11T21:30:00Z",
-   "added": "2026-11-11T23:33:04Z",
-   "summary": "11일 반도체 반등은 메모리 업체가 이끌었다. 마이크론은 11.89%, 샌디스크는 13.69% 올랐다. 필라델피아 반도체지수는 코어위브 발표 전 6월 고점보다 28% 넘게 빠져 있었다(FXStreet).",
-   "why": "AI 데이터센터 증설이 고대역폭 메모리 수요로 이어진다는 기대가 되살아난 것으로, SK하이닉스·삼성전자 등 국내 메모리주에도 영향을 줄 수 있다.",
-   "markets": [
-    "미국주식",
-    "국내주식"
-   ],
-   "impact": "호재",
-   "importance": 2,
-   "tickers": [
-    "MU",
-    "SNDK",
-    "SOXX"
-   ]
-  },
-  {
-   "id": "20261111-us-close-ai-rebound",
-   "title": "뉴욕증시, 코어위브發 AI 반등에 나스닥 1.6%·S&P500 1.3% 상승",
-   "source": "TheStreet",
-   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026",
-   "published": "2026-11-11T21:10:00Z",
-   "added": "2026-11-11T23:33:04Z",
-   "summary": "11일 나스닥은 25,466.19(+1.60%), S&P500은 7,619.38(+1.31%)로 마감했다. 전날 물가 지표 충격과 엔비디아 급락으로 하락했던 증시가 코어위브 실적을 계기로 하루 만에 반등했다.",
-   "why": "지난주 AI 매도분을 상당 부분 되돌렸지만, 금리 인상 우려가 남아 있어 반등 지속 여부는 13일 PPI와 17일 엔비디아 실적에 달려 있다.",
-   "markets": [
-    "미국주식"
-   ],
-   "impact": "호재",
-   "importance": 3,
-   "tickers": [
-    "QQQ",
-    "SPY"
-   ]
-  },
-  {
-   "id": "20261111-coreweave-beat-raise",
-   "title": "코어위브, 3분기 매출 36.6억 달러·연간 전망 상향…주가 24.7% 급등",
-   "source": "The Motley Fool",
-   "url": "https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-coreweave-surges-25-on-beat-and-raise-quarter/",
-   "published": "2026-11-11T21:00:00Z",
-   "added": "2026-11-11T23:33:04Z",
-   "summary": "AI 클라우드 기업 코어위브가 3분기 매출 36.6억 달러로 예상을 웃돌고 2026년 매출 전망을 130억~133억 달러로 올렸다. 주가는 11일 60.77달러로 24.71% 올랐고 네비우스(+15.44%) 등 같은 업종도 동반 급등했다.",
-   "why": "AI 인프라 수요와 자금 조달 우려를 덜어 주는 실적으로, 최근 급락한 AI·반도체주 반등의 직접적인 계기가 됐다.",
-   "markets": [
-    "미국주식"
-   ],
-   "impact": "호재",
-   "importance": 3,
-   "tickers": [
-    "CRWV",
-    "NBIS",
-    "APLD"
-   ]
-  },
-  {
-   "id": "20261111-nvidia-rebound",
-   "title": "엔비디아, 이틀 급락 뒤 반등…그래도 11월 들어 약 14% 하락",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html",
-   "published": "2026-11-11T15:00:00Z",
-   "added": "2026-11-11T23:33:04Z",
-   "summary": "젠슨 황 CEO 관련 의혹으로 이틀 연속 급락했던 엔비디아가 11일 반등했다. 다만 이사회 조사와 의회 압박이 이어지고 있고, 11월 들어 주가는 약 14%, 시가총액은 약 7천억 달러 줄어든 상태다. 장 마감 후 시간외 거래에서는 다시 하락했다(StockTitan).",
-   "why": "CEO 리스크가 해소되지 않아 변동성이 크며, 17일 실적 발표가 다음 분기점이다.",
-   "markets": [
-    "미국주식"
-   ],
-   "impact": "혼재",
-   "importance": 2,
-   "tickers": [
-    "NVDA"
-   ]
-  },
-  {
-   "id": "20261111-btc-etf-outflow",
-   "title": "비트코인, 주식 반등에도 7.4만 달러 정체…현물 ETF 4일 연속 유출",
-   "source": "CoinDesk",
-   "url": "https://www.coindesk.com/ko/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day",
-   "published": "2026-11-11T14:00:00Z",
-   "added": "2026-11-11T23:33:04Z",
-   "summary": "비트코인은 약 7.37만 달러 부근에서 움직이며 주식 반등에 동참하지 못했다. 미국 현물 비트코인 ETF는 10일 9,500만 달러가 빠져 4거래일 연속 순유출을 기록했고, 물가 지표 이후 연준 12월 금리 인상 확률은 약 90%로 높아졌다.",
-   "why": "금리 인상 우려와 ETF 자금 이탈이 겹쳐 주식과 코인이 따로 움직이고 있다. 13일 PPI가 다음 변수다.",
-   "markets": [
-    "코인",
-    "거시·금리"
-   ],
-   "impact": "악재",
-   "importance": 3,
-   "tickers": [
-    "BTC",
-    "ETH"
-   ]
-  },
-  {
-   "id": "20261111-tsmc-ai-investment",
-   "title": "TSMC, 앤트로픽·오픈AI에 최대 10억 달러 투자 승인",
-   "source": "뉴스핌",
-   "url": "https://www.newspim.com/news/view/20261111001575",
-   "published": "2026-11-11T13:00:00Z",
-   "added": "2026-11-11T23:33:04Z",
-   "summary": "TSMC가 앤트로픽과 오픈AI에 최대 10억 달러 투자를 승인했다는 소식에 대만 증시에서 4.8% 올랐고, 미국 예탁증서도 개장 전 약 5% 상승했다.",
-   "why": "파운드리 1위 업체가 AI 모델 기업에 직접 투자하며 AI 수요에 대한 확신을 보였다는 점에서 반도체 업종 심리에 긍정적이다.",
-   "markets": [
-    "미국주식"
-   ],
-   "impact": "호재",
-   "importance": 2,
-   "tickers": [
-    "TSM"
-   ]
-  },
-  {
-   "id": "20261111-oil-rebound-iran",
-   "title": "국제유가 사흘 만에 반등…이란 '농축 핵물질 반출 불가'에 협상 기대 후퇴",
-   "source": "굿모닝경제",
-   "url": "https://www.goodkyung.com/news/articleView.html?idxno=293377",
-   "published": "2026-11-11T12:00:00Z",
-   "summary": "11일(미 동부시간) WTI는 0.57% 오른 배럴당 86.53달러, 브렌트유는 1.39% 오른 92.76달러에 마감해 두 유종 모두 6일 이후 처음 상승했습니다. 이란이 핵물질 해외 반출 불가 입장을 재확인하고 미국의 추가 공격에 보복을 경고하면서 종전 협상 기대가 약해졌습니다. 두바이유 현물은 89.00달러였습니다.",
-   "why": "유가 반등은 물가 부담을 키워 금리 인상 우려를 자극할 수 있고, 항공·운송·화학 등 원가 부담 업종에 불리할 수 있습니다.",
-   "markets": [
-    "원자재·환율",
-    "거시·금리"
-   ],
-   "impact": "혼재",
-   "importance": 2,
-   "tickers": [
-    "WTI",
-    "BRENT"
-   ],
-   "added": "2026-11-12T04:06:41Z"
-  },
-  {
-   "id": "20261111-anthropic-ipo-hope",
-   "title": "앤트로픽 19일 상장 기대가 국내 반도체주 반등에 힘 보태",
-   "source": "한국경제",
-   "url": "https://www.hankyung.com/article/2026111106306",
-   "published": "2026-11-11T07:30:00Z",
-   "added": "2026-11-11T23:33:04Z",
-   "summary": "한국경제는 19일로 예정된 앤트로픽 기업공개(IPO) 기대가 코어위브 호실적과 함께 AI 투자심리를 자극해 국내 반도체 대형주가 장 초반 약세를 뒤집었다고 전했다.",
-   "why": "대형 AI 기업 상장이 AI 투자 사이클에 대한 신뢰를 높일지 주목된다. 상장 일정은 변동될 수 있다.",
-   "markets": [
-    "국내주식",
-    "미국주식"
-   ],
-   "impact": "호재",
-   "importance": 2,
-   "tickers": [
-    "005930",
-    "000660"
-   ]
-  },
-  {
-   "id": "20261111-kospi-rebound",
-   "title": "코스피 2.6% 올라 5,375 마감…코스닥 5.6% 급등, 이틀 연속 매수 사이드카",
-   "source": "뉴스핌",
-   "url": "https://www.newspim.com/news/view/20261111001287",
-   "published": "2026-11-11T07:04:00Z",
-   "added": "2026-11-11T23:33:04Z",
-   "summary": "11일 코스피는 136.23포인트(2.60%) 오른 5,375.36, 코스닥은 5.62% 오른 705.10에 마감했다. 외국인이 코스피에서 7,761억원을 순매수했고, 삼성전자는 3.57%, SK하이닉스는 5.36% 올랐다(MTN).",
-   "why": "미국 물가 충격에도 외국인이 반도체 대형주를 사들이며 이틀 연속 반등했다. 외국인 순매수 규모는 매체마다 집계 시점이 달라 차이가 있다.",
-   "markets": [
-    "국내주식"
-   ],
-   "impact": "호재",
-   "importance": 3,
-   "tickers": [
-    "005930",
-    "000660"
-   ]
-  },
-  {
-   "id": "20261111-us10y-5pct",
-   "title": "美 10년물 국채금리 장중 5% 재돌파…연준 '빅스텝' 언급까지",
-   "source": "아시아경제",
-   "url": "https://view.asiae.co.kr/article/2026111109545632083",
-   "published": "2026-11-11T01:30:23Z",
-   "summary": "10월 CPI가 전월 대비 0.4% 올라 예상을 웃돌고 연준 인사들이 0.5%p 인상 가능성까지 언급하자 미 국채금리가 급등했습니다. 10년물은 장중 5%를 넘었다가 4.99%로 마감했고, 2년물은 19개월 만에 가장 큰 폭으로 올랐습니다. 11일은 재향군인의 날로 미 국채 현물시장이 휴장했습니다(뉴스1).",
-   "why": "장기금리 5% 안팎은 성장주 밸류에이션과 비트코인 등 위험자산에 부담 요인으로 꼽힙니다. 12월 FOMC 인상 폭 전망이 시장 방향을 좌우할 수 있습니다.",
-   "markets": [
-    "거시·금리",
-    "미국주식",
-    "코인"
-   ],
-   "impact": "악재",
-   "importance": 3,
-   "tickers": [
-    "US10Y"
-   ],
-   "added": "2026-11-12T04:06:41Z"
-  },
-  {
-   "id": "20261111-hankyung-cpi-kospi",
-   "title": "美 10월 CPI 예상 상회…코스피 약보합 출발, 코스닥은 외국인 매수로 강세",
-   "source": "한국경제",
-   "url": "https://www.hankyung.com/article/2026111193136",
-   "published": "2026-11-11T00:10:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "미국 10월 소비자물가지수가 시장 예상을 웃돌면서 연준 추가 긴축 우려가 커졌다. 11일 개장 직후 코스피는 0.27% 내린 5,225선, 코스닥은 1.85% 오른 679선. 전날 뉴욕증시는 나스닥 -0.74%, S&P500 -0.38%(7,520.93), 다우 -0.30%로 마감했고 엔비디아는 -5.47%로 이틀 연속 크게 밀렸다. SK하이닉스 ADR(-3.51%), 마이크론(-1.1%) 등 메모리주도 약세.",
-   "why": "물가 재가속은 12월 FOMC 금리 인상 가능성을 키우는 재료로, 성장주·반도체·코인 같은 위험자산에 부담. 다만 기관 매수로 코스피 낙폭은 제한되는 모습.",
-   "markets": [
-    "국내주식",
-    "미국주식",
-    "거시·금리"
-   ],
-   "impact": "악재",
-   "importance": 3,
-   "tickers": [
-    "KOSPI",
-    "KOSDAQ",
-    "NVDA",
-    "MU",
-    "SK하이닉스"
-   ]
-  },
-  {
-   "id": "20261110-gulfnews-brent",
-   "title": "미-이란 긴장 완화 기대에 브렌트유 6% 급락",
-   "source": "Gulf News",
-   "url": "https://gulfnews.com/business/energy/oil-slides-as-iran-strike-fears-ease-brent-falls-1.500741822",
-   "published": "2026-11-10T03:00:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "10일 장 초반 원유 선물이 큰 폭으로 하락했고 브렌트유는 6.17% 내렸다. 미-이란 긴장이 누그러질 것이란 기대가 반영됐지만 상선 운항에 대한 위협은 여전히 남아 있다.",
-   "why": "유가 하락은 물가 압력을 낮춰 금리 인상 우려를 일부 상쇄하는 요인(주식·코인엔 우호적, 정유·에너지주엔 불리). 협상이 틀어지면 재급등 위험.",
-   "markets": [
-    "원자재·환율",
-    "거시·금리"
-   ],
-   "impact": "혼재",
-   "importance": 2,
-   "tickers": [
-    "BRENT",
-    "WTI"
-   ]
-  },
-  {
-   "id": "20261109-finimize-nvda-probe",
-   "title": "엔비디아, 젠슨 황 CEO 관련 이사회 내부조사 소식에 급락…시장 전체는 반등",
-   "source": "Finimize",
-   "url": "https://finimize.com/content/wall-street-bounced-back-while-nvidias-ceo-questions-hung-over-ai",
-   "published": "2026-11-09T21:00:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "엔비디아가 CEO 젠슨 황과 관련된 내부조사 소식에 9일 5.6% 하락했다. 같은 날 미국 증시 전반은 지난주 AI 매도에서 반등했고, 투자자 관심은 다음 날 발표되는 10월 CPI로 옮겨갔다.",
-   "why": "AI 대장주의 경영 리더십 불확실성은 SK하이닉스·삼성전자 등 국내 반도체 수급에도 직접 연결. 11월 17일 엔비디아 실적 발표가 다음 분기점.",
-   "markets": [
-    "미국주식",
-    "국내주식"
-   ],
-   "impact": "악재",
-   "importance": 3,
-   "tickers": [
-    "NVDA",
-    "SK하이닉스",
-    "삼성전자"
-   ]
-  },
-  {
-   "id": "20261110-tokenpost-btc-eth",
-   "title": "비트코인 7만4천달러대, 이더리움 4%대 하락",
-   "source": "토큰포스트",
-   "url": "https://www.tokenpost.kr/news/briefing/435404",
-   "published": "2026-11-09T19:59:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "11월 10일 오전 4시 59분(KST) 기준 비트코인은 전날보다 1.33% 내린 74,826.79달러, 이더리움은 4.57% 내린 2,127.26달러에 거래됐다.",
-   "why": "이더리움이 비트코인보다 하락 폭이 커 알트코인 위험 회피 흐름이 이어지는 모습.",
-   "markets": [
-    "코인"
-   ],
-   "impact": "악재",
-   "importance": 1,
-   "tickers": [
-    "BTC",
-    "ETH"
-   ]
-  },
-  {
-   "id": "20261109-reuters-ai-overdone",
-   "title": "모건스탠리·UBS \"지난주 AI 매도는 과도\"",
-   "source": "Reuters (GV Wire)",
-   "url": "https://gvwire.com/2026/11/09/wall-street-rallies-after-last-weeks-ai-rout-nvidia-falls/",
-   "published": "2026-11-09T16:00:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "모건스탠리와 UBS 등은 지난주 AI 관련주 급락이 지나쳤다고 평가했다. 민주당이 장악한 의회에서 데이터센터 개발을 강하게 규제할 위험은 현실화될 가능성이 낮다는 판단이다.",
-   "why": "정책 리스크가 과대 반영됐다는 시각은 AI·반도체 저가매수 근거가 될 수 있음. 실제 규제 논의가 나오면 재차 흔들릴 수 있음.",
-   "markets": [
-    "미국주식",
-    "국내주식"
-   ],
-   "impact": "호재",
-   "importance": 2,
-   "tickers": [
-    "NVDA",
-    "AI 데이터센터"
-   ]
-  },
-  {
-   "id": "20261109-tradingnews-spx-oil",
-   "title": "유가 급락에 S&P500 장중 1.9% 반등…반도체 매수는 엔비디아→AMD로 이동",
-   "source": "TradingNews",
-   "url": "https://www.tradingnews.com/news/sp500-hirts-7517-nasdaq-jumps-578-points-dow-climbs-to-52139",
-   "published": "2026-11-09T15:28:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "9일 오전(미 동부) S&P500은 7,517.64로 1.91% 상승. 브렌트유는 이란 긴장 완화 기대로 94달러대까지 내려와 11월 초 112달러에서 크게 하락했다. 엔비디아는 이사회 조사 소식에 갭하락한 반면 AMD는 9.6% 급등.",
-   "why": "유가 하락이 인플레 우려를 덜어 지수 반등을 견인. 반도체 내에서도 종목별 쏠림이 바뀌는 국면이라 개별 종목 변동성 확대에 유의.",
-   "markets": [
-    "미국주식",
-    "원자재·환율"
-   ],
-   "impact": "혼재",
-   "importance": 2,
-   "tickers": [
-    "SPX",
-    "AMD",
-    "NVDA",
-    "BRENT"
-   ]
-  },
-  {
-   "id": "20261109-bk-kospi-foreign",
-   "title": "외국인 6,930억 순매도에 코스피 5,018선 마감",
-   "source": "Businesskorea",
-   "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280833",
-   "published": "2026-11-09T07:00:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "지난주 급락 충격이 이어진 9일 코스피는 장중 등락을 반복하다 약세로 마감했다. 외국인이 코스피에서 6,930억 원을 순매도하며 하락을 주도했고 삼성전자·SK하이닉스의 소폭 반등으로는 지수를 지키지 못했다.",
-   "why": "외국인 수급이 지수 방향을 좌우하는 국면. 엔비디아·미국 금리 뉴스가 외국인 매도 강도에 영향을 주고 있음.",
-   "markets": [
-    "국내주식"
-   ],
-   "impact": "악재",
-   "importance": 2,
-   "tickers": [
-    "KOSPI",
-    "삼성전자",
-    "SK하이닉스"
-   ]
-  },
-  {
-   "id": "20261108-coincentral-week",
-   "title": "이번 주 일정: CPI·CoreWeave·Cisco·AMAT 실적, PPI…엔비디아 실적은 17일",
-   "source": "CoinCentral",
-   "url": "https://coincentral.com/?p=216737",
-   "published": "2026-11-08T12:00:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "11월 9~13일 주간에는 10일 미국 10월 CPI(미 동부 오전 8시 30분), 10일 장 마감 후 CoreWeave 실적, 12일 장 마감 후 Cisco·Applied Materials 실적, 생산자물가와 연준 발언이 예정돼 있다. 엔비디아 실적은 17일.",
-   "why": "이번 주는 물가 지표 → 금리 기대 → AI·반도체 순으로 영향이 전달되는 구조. 일정표는 일정 패널 참고.",
-   "markets": [
-    "미국주식",
-    "거시·금리"
-   ],
-   "impact": "중립",
-   "importance": 2,
-   "tickers": [
-    "CRWV",
-    "CSCO",
-    "AMAT",
-    "NVDA"
-   ]
-  },
-  {
-   "id": "20261107-panda-btc-weekly",
-   "title": "비트코인 주간 -2.1%…중간선거 직후 랠리를 사흘 만에 반납",
-   "source": "Panda Forecast",
-   "url": "https://pandaforecast.com/crypto-news/bitcoin-midterm-bounce-chip-rout-liquidations-etf-outflows/",
-   "published": "2026-11-07T12:00:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "비트코인은 주간 75,916달러로 마감해 직전 주(77,543달러) 대비 2.10% 하락했다. 선거 결과 발표 후 81,196달러까지 올랐으나 증시의 AI 매도가 번지며 상승분을 되돌렸다. 전체 암호화폐 시총은 2.57조 달러, 비트코인 점유율 59.3%.",
-   "why": "코인이 AI·기술주와 동조화되는 흐름이 뚜렷해, 나스닥 방향이 단기 코인 방향에도 영향.",
-   "markets": [
-    "코인"
-   ],
-   "impact": "악재",
-   "importance": 2,
-   "tickers": [
-    "BTC"
-   ]
-  },
-  {
-   "id": "20261105-rtt-crypto-squeeze",
-   "title": "숏 스퀴즈에 암호화폐 상승폭 확대…시총 2.66조 달러",
-   "source": "RTTNews",
-   "url": "https://www.rttnews.com/3710651/cryptos-extend-gains-amidst-short-squeeze.aspx",
-   "published": "2026-11-05T12:00:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "위험자산 전반의 반등과 숏 스퀴즈로 주요 코인이 상승을 이어갔다. 암호화폐 시총은 2.66조 달러로 늘었고 비트코인은 24시간 동안 79,326~80,879달러 범위에서 거래됐다. ETF에서는 IBIT가 2.01억 달러 유출, FBTC가 2.37억 달러 유입.",
-   "why": "선거 결과가 미국 코인 규제에 미칠 영향을 시장이 저울질 중. 이후 같은 주에 상승분을 반납해 단기 반등의 지속력은 약했음.",
-   "markets": [
-    "코인"
-   ],
-   "impact": "호재",
-   "importance": 1,
-   "tickers": [
-    "BTC",
-    "IBIT",
-    "FBTC"
-   ]
-  },
-  {
-   "id": "20261028-wm-fomc-hold",
-   "title": "연준, 기준금리 3.75~4.00% 동결…위원 2명은 인상 주장",
-   "source": "WealthManagement (Bloomberg)",
-   "url": "https://www.wealthmanagement.com/fixed-income/fed-holds-rates-says-more-data-will-help-next-decision",
-   "published": "2026-10-28T18:00:00Z",
-   "added": "2026-11-11T06:10:00Z",
-   "summary": "FOMC가 10대 2로 기준금리를 3.75~4.00%에 동결했다. 쿡 이사와 해맥 클리블랜드 연은 총재는 0.25%p 인상을 주장하며 반대표를 던졌다. 연준은 12월 인상 여부에 대한 명확한 신호는 주지 않았다.",
-   "why": "위원회 내 매파 목소리가 있는 상태에서 물가 지표가 높게 나오면 12월 인상 확률이 빠르게 반영될 수 있음.",
-   "markets": [
-    "거시·금리",
-    "미국주식",
-    "코인"
-   ],
-   "impact": "악재",
-   "importance": 2,
-   "tickers": [
-    "FOMC"
-   ]
-  }
- ],
- "events": [
-  {
-   "id": "20261110-cpi",
-   "date": "2026-11-10",
-   "time": "22:30",
-   "title": "미국 10월 CPI",
-   "note": "발표 완료 — 예상 상회(한국경제)"
-  },
-  {
-   "id": "20261110-crwv",
-   "date": "2026-11-10",
-   "time": "장후",
-   "title": "CoreWeave 실적",
-   "note": "발표 완료 — 매출 36.6억 달러, 연간 전망 상향 → 11일 주가 +24.71%"
-  },
-  {
-   "id": "20261112-csco-amat",
-   "date": "2026-11-12",
-   "time": "장후",
-   "title": "Cisco·Applied Materials 실적",
-   "note": "반도체 장비·네트워크"
-  },
-  {
-   "id": "20261113-ppi",
-   "date": "2026-11-13",
-   "title": "미국 10월 PPI",
-   "note": "CPI 이후 물가 확인"
-  },
-  {
-   "id": "20261117-nvda",
-   "date": "2026-11-17",
-   "time": "장후",
-   "title": "엔비디아 실적 발표",
-   "note": "AI·반도체·코인 심리 분기점 — 이사회의 젠슨 황 거취 논의 중"
-  },
-  {
-   "id": "20261119-anthropic-ipo",
-   "date": "2026-11-19",
-   "title": "앤트로픽 IPO(예정)",
-   "note": "한국경제 보도 기준 19일 예정 — 일정 변동 가능"
-  },
-  {
-   "id": "20261119-fomc-minutes",
-   "date": "2026-11-19",
-   "time": "04:00",
-   "title": "10월 FOMC 의사록",
-   "note": "한국시간 기준(이슈온) — 추가 인상 논의 강도 확인"
-  },
-  {
-   "id": "20261122-russia-crypto",
-   "date": "2026-11-22",
-   "title": "러시아 거래소 코인거래 허용",
-   "note": "개인은 BTC·ETH·USDT, 중개기관당 연 30만 루블 한도"
-  },
-  {
-   "id": "20261125-pce-beige",
-   "date": "2026-11-25",
-   "title": "미국 PCE·베이지북",
-   "note": "현지시간 25일 발표(이슈온)"
-  },
-  {
-   "id": "20261126-bok",
-   "date": "2026-11-26",
-   "title": "한국은행 금통위",
-   "note": "기준금리 결정"
-  },
-  {
-   "id": "20261201-msci-rebal",
-   "date": "2026-12-01",
-   "title": "MSCI 변경 적용(MSTR 편출)",
-   "note": "현지 11월 30일 리밸런싱, 12월 1일부터 제외"
-  },
-  {
-   "id": "20261204-jobs",
-   "date": "2026-12-04",
-   "title": "미국 11월 고용보고서",
-   "note": "FOMC 전 마지막 고용지표"
-  },
-  {
-   "id": "20261209-fomc",
-   "date": "2026-12-09",
-   "title": "FOMC 금리 결정 (12/8~9)",
-   "note": "인상 여부 주목"
-  },
-  {
-   "id": "20261210-cpi",
-   "date": "2026-12-10",
-   "time": "22:30",
-   "title": "미국 11월 CPI",
-   "note": ""
-  }
- ],
- "drawdown": {
-  "us": {
-   "asof": "2026-11-10",
-   "basis": "52주 고점",
-   "source": "chartrow.com 종목별 페이지(52주 고점·하락률·PER)",
-   "source_url": "https://chartrow.com/lists/stocks-in-a-drawdown",
-   "universe": "S&P500 + 나스닥100 편입 종목(편입 여부: stockanalysis.com 지수 구성 목록)",
-   "threshold": -30,
-   "coverage_note": "후보는 chartrow '하락 상위 50'·'1년 수익률 하위 50'과 marketcrash '52주 저가 근처' 목록에서 뽑아 종목별 페이지로 확인했습니다. 이 세 목록에 들지 않은 -30% 이하 종목은 빠져 있을 수 있습니다. 종목마다 기준일(11/6~11/10)이 다를 수 있어 표에 따로 표시합니다.",
-   "excluded_note": "의류·명품 계열 제외(룰루레몬·나이키 제외됨)",
-   "rows": [
+  "articles": [
     {
-     "ticker": "ALNY",
-     "name_ko": "앨나일람 파마슈티컬스",
-     "name": "Alnylam Pharmaceuticals",
-     "sector": "바이오",
-     "index": [
-      "나스닥100"
-     ],
-     "asof": "2026-11-09",
-     "price": 156.61,
-     "chg1d": 0.43,
-     "high52": 479.79,
-     "from_high": -67.36,
-     "per": 7.92,
-     "fper": 14.3,
-     "mcap": "$21B"
+      "id": "20261112-btc-options-expiry",
+      "title": "비트코인, 27억 달러대 옵션 만기 앞두고 7.3만 달러대 변동성 경계",
+      "source": "블록미디어",
+      "url": "https://www.blockmedia.co.kr/archives/1164890?utm_source=general&utm_medium=rss",
+      "published": "2026-11-12T12:30:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "비트코인이 7만3천 달러대에서 움직이는 가운데 27억 달러 규모의 옵션 만기가 다가오며 단기 변동성 확대 가능성이 거론된다고 블록미디어가 보도했다.",
+      "why": "대규모 옵션 만기 전후에는 가격이 특정 행사가 부근으로 쏠리거나 급등락할 수 있어 단기 매매에 주의가 필요하다.",
+      "markets": [
+        "코인"
+      ],
+      "impact": "중립",
+      "importance": 1,
+      "tickers": [
+        "BTC"
+      ]
     },
     {
-     "ticker": "CRWV",
-     "name_ko": "코어위브",
-     "name": "CoreWeave",
-     "sector": "소프트웨어(인프라)",
-     "index": [
-      "나스닥100"
-     ],
-     "asof": "2026-11-09",
-     "price": 48.98,
-     "chg1d": 5.56,
-     "high52": 138.25,
-     "from_high": -64.57,
-     "per": -14.01,
-     "fper": -22.6,
-     "mcap": "$27B"
+      "id": "20261112-kospi-trading-value",
+      "title": "코스피 거래대금 6개월 새 60% 감소…개인 투자 여력 위축",
+      "source": "매일경제",
+      "url": "https://www.mk.co.kr/news/stock/12206924",
+      "published": "2026-11-12T11:57:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "매일경제는 코스피 거래대금이 6개월 사이 약 60% 줄었다고 보도했다. 손실을 본 개인 투자자들이 추가 매수 여력을 잃으면서 반등장에서도 거래가 살아나지 않고 있다는 분석이다.",
+      "why": "거래 위축은 반등 탄력을 약하게 만들 수 있고 증권업 실적에도 부담이다.",
+      "markets": [
+        "국내주식"
+      ],
+      "impact": "악재",
+      "importance": 1,
+      "tickers": [
+        "KOSPI"
+      ]
     },
     {
-     "ticker": "SNDK",
-     "name_ko": "샌디스크",
-     "name": "Sandisk",
-     "sector": "컴퓨터 하드웨어·저장장치",
-     "index": [
-      "S&P500",
-      "나스닥100"
-     ],
-     "asof": "2026-11-10",
-     "price": 859.99,
-     "chg1d": -2.99,
-     "high52": 2354.39,
-     "from_high": -63.47,
-     "per": 6.3,
-     "fper": 2.9,
-     "mcap": "$122.4B"
+      "id": "20261112-btc-etf-outflow-day5",
+      "title": "비트코인, 엔비디아 따라 하락…현물 ETF 5거래일째 자금 유출",
+      "source": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five",
+      "published": "2026-11-12T11:30:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "CoinDesk는 엔비디아 급락과 함께 비트코인도 약세를 보였고 미국 현물 비트코인 ETF에서 5거래일 연속 자금이 빠져나갔다고 전했다. 블록미디어는 하루 유출 규모를 약 4.4억 달러로 집계했다.",
+      "why": "기관 자금 유출이 이어지는 한 반등 탄력이 제한될 수 있으며, AI 기술주와의 동조화가 변동성을 키우고 있다.",
+      "markets": [
+        "코인"
+      ],
+      "impact": "악재",
+      "importance": 2,
+      "tickers": [
+        "BTC"
+      ]
     },
     {
-     "ticker": "WDC",
-     "name_ko": "웨스턴디지털",
-     "name": "Western Digital",
-     "sector": "컴퓨터 하드웨어·저장장치",
-     "index": [
-      "S&P500",
-      "나스닥100"
-     ],
-     "asof": "2026-11-10",
-     "price": 289.2,
-     "chg1d": -0.2,
-     "high52": 799.87,
-     "from_high": -63.84,
-     "per": 10.8,
-     "fper": 7.3,
-     "mcap": "$108.3B"
+      "id": "20261112-btc-dominance-60",
+      "title": "비트코인 시장 점유율 60% 돌파…알트코인 상대 약세",
+      "source": "블록미디어",
+      "url": "https://www.blockmedia.co.kr/archives/1164885?utm_source=general&utm_medium=rss",
+      "published": "2026-11-12T11:30:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "하락장 속에서도 비트코인의 시장 점유율(도미넌스)이 60%를 넘어섰다고 블록미디어가 전했다. 투자자들이 상대적으로 안전한 비트코인에 머무르면서 알트코인은 더 크게 밀리는 모습이다.",
+      "why": "도미넌스 상승은 위험 회피 국면의 특징으로, 이더리움·솔라나 등 알트코인의 상대 부진이 이어질 수 있다.",
+      "markets": [
+        "코인"
+      ],
+      "impact": "혼재",
+      "importance": 1,
+      "tickers": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ]
     },
     {
-     "ticker": "RKLB",
-     "name_ko": "로켓랩",
-     "name": "Rocket Lab",
-     "sector": "항공우주·방산",
-     "index": [
-      "나스닥100"
-     ],
-     "asof": "2026-11-09",
-     "price": 58.86,
-     "chg1d": 10.91,
-     "high52": 151.0,
-     "from_high": -61.02,
-     "per": -159.6,
-     "fper": 1010.3,
-     "mcap": "$37.2B"
+      "id": "20261112-nvda-premarket-drop",
+      "title": "엔비디아, 뉴욕 프리마켓서 7% 급락…젠슨 황 사생활 파문 확산",
+      "source": "블록미디어",
+      "url": "https://www.blockmedia.co.kr/archives/1165023?utm_source=general&utm_medium=rss",
+      "published": "2026-11-12T10:21:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "젠슨 황 CEO가 사생활 문제를 인정한 뒤 엔비디아 주가가 12일 뉴욕 프리마켓에서 7%가량 밀렸다. 블록미디어는 이 여파로 시가총액이 약 786조원 줄었다고 전했고, 매일경제 등은 이사회가 해임 가능성까지 검토 중이라고 보도했다.",
+      "why": "AI 대장주의 경영 공백 우려가 17일 실적 발표를 앞두고 반도체·AI 관련주 전반의 변동성을 키울 수 있다.",
+      "markets": [
+        "미국주식",
+        "국내주식"
+      ],
+      "impact": "악재",
+      "importance": 3,
+      "tickers": [
+        "NVDA"
+      ]
     },
     {
-     "ticker": "FICO",
-     "name_ko": "페어아이작",
-     "name": "Fair Isaac",
-     "sector": "소프트웨어(응용)",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 723.76,
-     "chg1d": 2.73,
-     "high52": 1858.91,
-     "from_high": -61.07,
-     "per": 18.53,
-     "fper": 13.8,
-     "mcap": "$15.5B"
+      "id": "20261112-usdkrw-1320",
+      "title": "원·달러 환율, 코스피 약세 전환에 하락…1,320원대서 저점",
+      "source": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9zX1hjWVB1cEZKby1qc2N1MndPNnNvY0JFX1BZc2lVdUVkbVRQRDJRSkVqVFdINFJVS2ZqQVY4QnM1V3VuM2I0X0xIUUFXUy16eGZTZzctbTJnSnBMZmNCN0NxYk0yOGhlZU91RjU0M09VM0ZM?oc=5",
+      "published": "2026-11-12T09:43:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "12일 서울 외환시장에서 원·달러 환율은 하락 마감했으며 장중 저점은 1,320원대였다. 연합인포맥스는 코스피가 약세로 돌아선 흐름과 함께 환율도 내려갔다고 전했다.",
+      "why": "환율 안정은 외국인 수급에 우호적일 수 있으나 미국 금리 변수에 따라 다시 흔들릴 수 있다.",
+      "markets": [
+        "원자재·환율"
+      ],
+      "impact": "중립",
+      "importance": 1,
+      "tickers": [
+        "USDKRW"
+      ]
     },
     {
-     "ticker": "BSX",
-     "name_ko": "보스턴 사이언티픽",
-     "name": "Boston Scientific",
-     "sector": "의료기기",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 44.02,
-     "chg1d": 2.97,
-     "high52": 105.65,
-     "from_high": -58.33,
-     "per": 18.6,
-     "fper": 13.9,
-     "mcap": "$63.8B"
+      "id": "20261112-anthropic-ipo-1-4t",
+      "title": "\"몸값 1.4조 달러\" 앤트로픽 상장, AI주 투자심리 가늠자로",
+      "source": "매일경제",
+      "url": "https://www.mk.co.kr/news/stock/12206044",
+      "published": "2026-11-12T09:38:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "매일경제는 기업가치 1조4천억 달러로 거론되는 앤트로픽 상장이 AI 관련주 흐름을 가를 변수로 떠올랐다고 전했다. 상장 성과에 따라 AI주 추가 상승 여부가 갈릴 것이라는 시각이다.",
+      "why": "흥행하면 AI 투자 심리를 되살릴 수 있지만, 부진하면 AI 고평가 논란을 키울 수 있다.",
+      "markets": [
+        "미국주식",
+        "국내주식"
+      ],
+      "impact": "혼재",
+      "importance": 2,
+      "tickers": [
+        "Anthropic"
+      ]
     },
     {
-     "ticker": "FIS",
-     "name_ko": "피델리티 내셔널 인포메이션 서비스",
-     "name": "Fidelity National Information Services",
-     "sector": "IT 서비스",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 28.34,
-     "chg1d": -1.36,
-     "high52": 68.37,
-     "from_high": -58.55,
-     "per": 4.2,
-     "fper": 4.4,
-     "mcap": "$14.6B"
+      "id": "20261112-ibit-9day-outflow",
+      "title": "블랙록 비트코인 ETF, 9거래일 연속 순유출…누적 20억 달러",
+      "source": "블루밍비트",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1nd1I3V1FHRWdSTzkwRjd6Y1lTbVpFalZpRXBfUS1ibDRLNUd1UklSdS1BU3J4bFcxZG1xTmNkd2FKcnpiZmJKcXJnYW9JMEp1?oc=5",
+      "published": "2026-11-12T08:32:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "최대 비트코인 현물 ETF인 블랙록 IBIT에서 9거래일 연속 자금이 빠져나가 누적 유출액이 약 20억 달러에 이르렀다고 블루밍비트가 전했다. 코인베이스 프리미엄도 50일 연속 마이너스로 미국 매수세 약화가 지적됐다.",
+      "why": "미국 기관·개인 수요 둔화를 보여주는 지표로, 유출이 멈추는지가 바닥 확인의 단서가 될 수 있다.",
+      "markets": [
+        "코인"
+      ],
+      "impact": "악재",
+      "importance": 2,
+      "tickers": [
+        "BTC",
+        "IBIT"
+      ]
     },
     {
-     "ticker": "INTC",
-     "name_ko": "인텔",
-     "name": "Intel",
-     "sector": "반도체",
-     "index": [
-      "S&P500",
-      "나스닥100"
-     ],
-     "asof": "2026-11-10",
-     "price": 58.13,
-     "chg1d": -2.09,
-     "high52": 142.33,
-     "from_high": -59.16,
-     "per": -24.5,
-     "fper": 33.5,
-     "mcap": "$309B"
+      "id": "20261112-btc-node-vuln",
+      "title": "비트코인 노드 수천 개에서 보안 취약점 발견",
+      "source": "블록미디어",
+      "url": "https://www.blockmedia.co.kr/archives/1164913?utm_source=general&utm_medium=rss",
+      "published": "2026-11-12T08:13:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "블록미디어는 수천 개의 비트코인 노드에서 외부 접속자에게 신뢰 권한을 부여하는 보안 취약점이 발견됐다고 보도했다. 같은 날 비트코인 코어 개발진도 채굴자의 블록 생성을 방해할 수 있었던 고위험 취약점을 공개했다.",
+      "why": "패치 여부가 관건이며 시장 충격은 제한적일 수 있지만, 약세 심리 속에서 부정적 재료로 받아들여질 수 있다.",
+      "markets": [
+        "코인"
+      ],
+      "impact": "악재",
+      "importance": 1,
+      "tickers": [
+        "BTC"
+      ]
     },
     {
-     "ticker": "ARM",
-     "name_ko": "암 홀딩스",
-     "name": "Arm Holdings",
-     "sector": "반도체",
-     "index": [
-      "나스닥100"
-     ],
-     "asof": "2026-11-09",
-     "price": 186.3,
-     "chg1d": 6.69,
-     "high52": 452.7,
-     "from_high": -58.85,
-     "per": 219.2,
-     "fper": 56.7,
-     "mcap": "$198.2B"
+      "id": "20261112-nvda-target-cuts",
+      "title": "월가, 엔비디아 목표가 잇달아 하향…\"추가 스캔들 가능성\" 경계",
+      "source": "블록미디어",
+      "url": "https://www.blockmedia.co.kr/archives/1164963?utm_source=general&utm_medium=rss",
+      "published": "2026-11-12T07:47:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "젠슨 황 CEO 거취 논란 이후 월가 증권사들이 엔비디아 목표주가를 잇달아 낮추고 있다고 블록미디어가 전했다. 일부는 목표가를 절반 수준으로 내렸으며 추가 폭로 가능성을 위험 요인으로 꼽았다.",
+      "why": "목표가 하향이 이어지면 실적과 별개로 밸류에이션 할인 요인이 커질 수 있다. 국내 투자자 보유 비중이 큰 종목이라 서학개미 수급에도 영향이 있다.",
+      "markets": [
+        "미국주식"
+      ],
+      "impact": "악재",
+      "importance": 2,
+      "tickers": [
+        "NVDA"
+      ]
     },
     {
-     "ticker": "COIN",
-     "name_ko": "코인베이스",
-     "name": "Coinbase Global",
-     "sector": "금융 데이터·거래소",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-10",
-     "price": 132.13,
-     "chg1d": -2.92,
-     "high52": 324.8,
-     "from_high": -59.32,
-     "per": -52.5,
-     "fper": 54.7,
-     "mcap": "$35B"
+      "id": "20261112-ktb-yields-mixed",
+      "title": "국고채 금리 혼조 마감…3년물 3.729%, 美 빅스텝 경계 지속",
+      "source": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261112153251008",
+      "published": "2026-11-12T07:47:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "12일 국고채 금리는 전날 급등분 일부를 되돌리는 흐름과 미국 연준의 큰 폭 인상 가능성에 대한 경계가 맞서며 혼조로 마감했다. 3년물은 연 3.729%를 기록했다.",
+      "why": "국내 금리가 미국 금리 방향에 연동되는 만큼 13일 미국 PPI와 연준 발언이 다음 방향을 정할 변수다.",
+      "markets": [
+        "거시·금리"
+      ],
+      "impact": "중립",
+      "importance": 2,
+      "tickers": []
     },
     {
-     "ticker": "CIEN",
-     "name_ko": "시에나",
-     "name": "Ciena",
-     "sector": "통신장비",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 269.33,
-     "chg1d": 10.66,
-     "high52": 637.51,
-     "from_high": -57.75,
-     "per": 58.36,
-     "fper": 22.7,
-     "mcap": "$38.2B"
+      "id": "20261112-kospi-close-0-61",
+      "title": "코스피 0.61% 내린 5,342.73 마감…장중 5,450선 찍고 하락 전환",
+      "source": "굿모닝경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9iT3NyOVpBYzN5MXZ0cUFxNUNGMVV2V3U3el9oSUFzMWlzSGdwdVhyWmRiX3c0cnVjNFh4UE5YaHhxY1ZBbHlFMktrVDlkZTJqbFNwQkdlUmhlYzA3UHpaV2dDZWFhSU1oNEdYVA?oc=5",
+      "published": "2026-11-12T07:32:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "12일 코스피는 장중 5,450선까지 올랐다가 젠슨 황 해임설 여파로 밀려 0.61% 내린 5,342.73에 마감하며 사흘 만에 하락했다. 기관이 7,642억원어치를 순매도했고 코스닥은 1.22% 떨어져 700선을 내줬다.",
+      "why": "삼성전자는 강세였지만 SK하이닉스 등 AI 밸류체인이 약세를 보여, 엔비디아 이슈가 국내 반도체 종목 간 차별화로 이어지는 모습이다.",
+      "markets": [
+        "국내주식"
+      ],
+      "impact": "악재",
+      "importance": 3,
+      "tickers": [
+        "KOSPI",
+        "005930",
+        "000660"
+      ]
     },
     {
-     "ticker": "PODD",
-     "name_ko": "인슐렛",
-     "name": "Insulet",
-     "sector": "의료기기",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-10",
-     "price": 148.06,
-     "chg1d": -1.17,
-     "high52": 354.88,
-     "from_high": -58.28,
-     "per": 24.1,
-     "fper": 20.4,
-     "mcap": "$10.3B"
+      "id": "20261112-securities-q3",
+      "title": "증시 부진·금리 상승에 증권사 3분기 실적 줄줄이 악화",
+      "source": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261112087051008",
+      "published": "2026-11-12T07:29:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "연합뉴스에 따르면 증시 부진과 금리 상승이 겹치며 주요 증권사의 3분기 실적이 잇달아 나빠졌다. 반면 삼성증권은 3분기 순이익이 전년보다 14.1% 늘었다고 밝혔다.",
+      "why": "증권주는 거래대금·금리에 민감해 시장 회복 신호가 나오기 전까지는 실적 부담이 이어질 수 있다.",
+      "markets": [
+        "국내주식"
+      ],
+      "impact": "악재",
+      "importance": 1,
+      "tickers": [
+        "016360"
+      ]
     },
     {
-     "ticker": "ALAB",
-     "name_ko": "아스테라 랩스",
-     "name": "Astera Labs",
-     "sector": "반도체",
-     "index": [
-      "나스닥100"
-     ],
-     "asof": "2026-11-09",
-     "price": 216.87,
-     "chg1d": 13.72,
-     "high52": 499.06,
-     "from_high": -56.54,
-     "per": 82.17,
-     "fper": 30.5,
-     "mcap": "$37.9B"
+      "id": "20261112-semco-sejong",
+      "title": "삼성전기, 세종에 4조3천억원 투자 결정",
+      "source": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261112148100063",
+      "published": "2026-11-12T07:25:00Z",
+      "added": "2026-11-12T13:29:49Z",
+      "summary": "삼성전기가 세종시에 4조3천억원 규모의 투자를 진행한다고 연합뉴스가 보도했다. 지역에서는 경제 활성화와 일자리 창출 효과를 기대하고 있다.",
+      "why": "대규모 증설 투자는 중장기 성장 기대를 높이지만 단기적으로는 투자비 부담도 함께 고려될 수 있다.",
+      "markets": [
+        "국내주식"
+      ],
+      "impact": "호재",
+      "importance": 1,
+      "tickers": [
+        "009150"
+      ]
     },
     {
-     "ticker": "APTV",
-     "name_ko": "앱티브",
-     "name": "Aptiv",
-     "sector": "자동차 부품",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-10",
-     "price": 39.57,
-     "chg1d": -0.85,
-     "high52": 88.93,
-     "from_high": -55.5,
-     "per": 10.42,
-     "fper": 6.5,
-     "mcap": "$8B"
+      "id": "20261112-msci-strategy-exclusion",
+      "title": "MSCI, 스트래티지 지수 편출 확정…12월 1일부터 제외",
+      "source": "블루밍비트",
+      "url": "https://bloomingbit.io/feed/news/124250",
+      "published": "2026-11-12T02:45:00Z",
+      "summary": "로이터에 따르면 MSCI는 스트래티지를 투자펀드 성격의 기업으로 분류해 12월 1일부터 MSCI 미국·월드 지수에서 제외하며, 리밸런싱은 30일 진행됩니다. 메타플래닛과 우라늄 투자사 옐로케이크도 제외 대상에 포함됐습니다. JP모건은 앞서 최대 28억 달러 규모 매도 물량을 추정했고, 스트래티지 주가는 시간외에서 2.5% 하락했습니다.",
+      "why": "패시브 자금 매도로 MSTR 주가 변동성이 커질 수 있고, 주식 발행으로 비트코인을 사들이는 재무 전략에 부담이 될 수 있습니다. 스트래티지는 해당 펀드 보유 지분이 3.1%에 불과하다며 영향이 제한적이라는 입장입니다.",
+      "markets": [
+        "코인",
+        "미국주식"
+      ],
+      "impact": "악재",
+      "importance": 2,
+      "tickers": [
+        "MSTR",
+        "BTC"
+      ],
+      "added": "2026-11-12T04:06:41Z"
     },
     {
-     "ticker": "CSGP",
-     "name_ko": "코스타 그룹",
-     "name": "CoStar Group",
-     "sector": "부동산 서비스",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 31.24,
-     "chg1d": 2.26,
-     "high52": 70.57,
-     "from_high": -55.73,
-     "per": 70.41,
-     "fper": 17.7,
-     "mcap": "$12.6B"
+      "id": "20261112-robinhood-oct-crypto",
+      "title": "로빈후드 10월 코인 거래대금 전년 대비 48% 감소…주식은 2% 증가",
+      "source": "뉴스1",
+      "url": "https://www.news1.kr/finance/blockchain-fintech/6351761",
+      "published": "2026-11-12T02:25:00Z",
+      "summary": "로빈후드의 10월 가상자산 명목 거래대금은 약 170억 달러로 1년 전보다 48%, 9월보다 21% 줄었습니다. 반면 주식 거래대금은 전년 대비 2% 늘었고 예측시장 이벤트 계약 거래량은 136% 증가했습니다(토큰포스트 인용).",
+      "why": "개인 투자자의 코인 거래 열기가 식었음을 보여 주는 지표로, 거래소·브로커 실적과 코인 수급에 부정적 신호로 읽힐 수 있습니다.",
+      "markets": [
+        "코인",
+        "미국주식"
+      ],
+      "impact": "악재",
+      "importance": 1,
+      "tickers": [
+        "HOOD"
+      ],
+      "added": "2026-11-12T04:06:41Z"
     },
     {
-     "ticker": "GLW",
-     "name_ko": "코닝",
-     "name": "Corning",
-     "sector": "전자부품",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-10",
-     "price": 112.13,
-     "chg1d": -3.29,
-     "high52": 271.49,
-     "from_high": -58.7,
-     "per": 44.93,
-     "fper": 24.1,
-     "mcap": "$96.6B"
+      "id": "20261112-kospi-huang-intraday",
+      "title": "코스피, '젠슨 황 해임 논란' 속 보합권 등락…삼성전자는 강세",
+      "source": "SBS(연합뉴스)",
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008842792",
+      "published": "2026-11-12T02:21:00Z",
+      "summary": "코스피는 12일 미국 반도체주 강세에 상승 출발했지만 엔비디아 경영 불확실성과 이틀 연속 상승에 따른 차익 매물로 보합권에서 등락했습니다. 오전 10시 59분 기준 5,408.29(+0.61%)였고 삼성전자는 2%대 강세, SK하이닉스는 1% 안팎 움직임을 보였습니다. IT서비스·부동산·보험 업종은 약세였습니다.",
+      "why": "엔비디아와 HBM 등으로 협력하는 국내 반도체 대형주에 심리적 부담이 이어질 수 있으나, 실제 공급 영향은 아직 확인되지 않았습니다.",
+      "markets": [
+        "국내주식"
+      ],
+      "impact": "혼재",
+      "importance": 3,
+      "tickers": [
+        "005930",
+        "000660"
+      ],
+      "added": "2026-11-12T04:06:41Z"
     },
     {
-     "ticker": "ALB",
-     "name_ko": "앨버말",
-     "name": "Albemarle",
-     "sector": "특수화학",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-10",
-     "price": 94.93,
-     "chg1d": -4.23,
-     "high52": 221.0,
-     "from_high": -57.05,
-     "per": 16.44,
-     "fper": 10.9,
-     "mcap": "$11.2B"
+      "id": "20261112-russia-crypto-exchange",
+      "title": "러시아, 22일부터 거래소 코인 현물거래 허용…개인은 연 30만 루블 한도",
+      "source": "디지털투데이",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=714818",
+      "published": "2026-11-12T01:32:00Z",
+      "summary": "러시아 중앙은행이 22일부터 거래소를 통한 암호화폐 거래를 허용합니다. 일반 투자자는 비트코인·이더리움·테더만 중개기관당 연 30만 루블까지 살 수 있고, 거래 전 지식 테스트를 거쳐야 합니다. 국내 결제 수단으로 쓰는 것은 계속 금지됩니다.",
+      "why": "제도권 매수 경로가 새로 열리는 것이지만 개인 한도가 작아 단기 수급 영향은 제한적일 수 있습니다.",
+      "markets": [
+        "코인"
+      ],
+      "impact": "중립",
+      "importance": 1,
+      "tickers": [
+        "BTC",
+        "ETH",
+        "USDT"
+      ],
+      "added": "2026-11-12T04:06:41Z"
     },
     {
-     "ticker": "STX",
-     "name_ko": "씨게이트 테크놀로지",
-     "name": "Seagate Technology",
-     "sector": "컴퓨터 하드웨어·저장장치",
-     "index": [
-      "S&P500",
-      "나스닥100"
-     ],
-     "asof": "2026-11-10",
-     "price": 501.62,
-     "chg1d": -0.89,
-     "high52": 1145.0,
-     "from_high": -56.19,
-     "per": 26.3,
-     "fper": 7.8,
-     "mcap": "$115.2B"
+      "id": "20261112-nvda-board-huang",
+      "title": "엔비디아 이사회, 젠슨 황 CEO 거취 논의…주가는 시간외 7~8%대 하락",
+      "source": "블록미디어",
+      "url": "https://www.blockmedia.co.kr/archives/1164743",
+      "published": "2026-11-12T00:14:00Z",
+      "summary": "뉴욕타임스는 엔비디아 이사회가 사생활 논란에 휩싸인 젠슨 황 CEO의 향후 거취를 논의하는 회의를 열고 있다고 보도했습니다. 월스트리트저널의 해임 준비 보도 이후 엔비디아 주가는 정규장 2.87% 상승 뒤 시간외 거래에서 7~8%대 하락했습니다(연합뉴스·SBS 보도). 백악관에도 정치적 부담이 되고 있다는 분석이 나왔습니다.",
+      "why": "엔비디아는 S&P500·나스닥 시가총액 상위 종목이라 경영 공백 우려가 지수와 AI·반도체 심리에 부담이 될 수 있습니다. 17일 실적 발표 전후 변동성이 커질 수 있습니다.",
+      "markets": [
+        "미국주식",
+        "국내주식"
+      ],
+      "impact": "악재",
+      "importance": 3,
+      "tickers": [
+        "NVDA"
+      ],
+      "added": "2026-11-12T04:06:41Z"
     },
     {
-     "ticker": "AXON",
-     "name_ko": "액손 엔터프라이즈",
-     "name": "Axon Enterprise",
-     "sector": "항공우주·방산",
-     "index": [
-      "S&P500",
-      "나스닥100"
-     ],
-     "asof": "2026-11-10",
-     "price": 302.54,
-     "chg1d": -0.21,
-     "high52": 665.07,
-     "from_high": -54.51,
-     "per": 95.28,
-     "fper": 32.7,
-     "mcap": "$24.6B"
+      "id": "20261112-congress-huang-pressure",
+      "title": "美 공화당서 젠슨 황 사퇴 요구…하원은 강제 소환 경고",
+      "source": "아시아경제",
+      "url": "https://view.asiae.co.kr/article/2026111206563242326",
+      "published": "2026-11-11T21:56:00Z",
+      "summary": "공화당 케빈 크레이머 상원의원이 중국 정보기관 연계 의혹 인물과의 관계를 이유로 황 CEO의 사퇴를 촉구했습니다. 존 물레나르 하원 미중전략경쟁특위 위원장은 비공개 브리핑 요청에 응하지 않으면 소환장을 발부할 수 있다고 경고했습니다. 엔비디아는 국가안보나 기밀이 침해됐다고 볼 근거가 없다는 입장입니다.",
+      "why": "의회 압박이 대중국 반도체 수출 통제 강화 논의로 이어질 경우 엔비디아 등 반도체주의 중국 매출 전망에 부담이 될 수 있습니다.",
+      "markets": [
+        "미국주식"
+      ],
+      "impact": "악재",
+      "importance": 2,
+      "tickers": [
+        "NVDA"
+      ],
+      "added": "2026-11-12T04:06:41Z"
     },
     {
-     "ticker": "ORCL",
-     "name_ko": "오라클",
-     "name": "Oracle",
-     "sector": "소프트웨어(인프라)",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 119.79,
-     "chg1d": 3.18,
-     "high52": 250.25,
-     "from_high": -52.13,
-     "per": 19.14,
-     "fper": 10.7,
-     "mcap": "$362.2B"
+      "id": "20261111-memory-chips-lead",
+      "title": "메모리주가 반도체 반등 주도…마이크론 11.9%·샌디스크 13.7% 급등",
+      "source": "Capp Notes",
+      "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-11",
+      "published": "2026-11-11T21:30:00Z",
+      "added": "2026-11-11T23:33:04Z",
+      "summary": "11일 반도체 반등은 메모리 업체가 이끌었다. 마이크론은 11.89%, 샌디스크는 13.69% 올랐다. 필라델피아 반도체지수는 코어위브 발표 전 6월 고점보다 28% 넘게 빠져 있었다(FXStreet).",
+      "why": "AI 데이터센터 증설이 고대역폭 메모리 수요로 이어진다는 기대가 되살아난 것으로, SK하이닉스·삼성전자 등 국내 메모리주에도 영향을 줄 수 있다.",
+      "markets": [
+        "미국주식",
+        "국내주식"
+      ],
+      "impact": "호재",
+      "importance": 2,
+      "tickers": [
+        "MU",
+        "SNDK",
+        "SOXX"
+      ]
     },
     {
-     "ticker": "INTU",
-     "name_ko": "인튜이트",
-     "name": "Intuit",
-     "sector": "소프트웨어(응용)",
-     "index": [
-      "S&P500",
-      "나스닥100"
-     ],
-     "asof": "2026-11-10",
-     "price": 340.44,
-     "chg1d": 0.65,
-     "high52": 682.27,
-     "from_high": -50.1,
-     "per": 20.7,
-     "fper": 12.6,
-     "mcap": "$91B"
+      "id": "20261111-us-close-ai-rebound",
+      "title": "뉴욕증시, 코어위브發 AI 반등에 나스닥 1.6%·S&P500 1.3% 상승",
+      "source": "TheStreet",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026",
+      "published": "2026-11-11T21:10:00Z",
+      "added": "2026-11-11T23:33:04Z",
+      "summary": "11일 나스닥은 25,466.19(+1.60%), S&P500은 7,619.38(+1.31%)로 마감했다. 전날 물가 지표 충격과 엔비디아 급락으로 하락했던 증시가 코어위브 실적을 계기로 하루 만에 반등했다.",
+      "why": "지난주 AI 매도분을 상당 부분 되돌렸지만, 금리 인상 우려가 남아 있어 반등 지속 여부는 13일 PPI와 17일 엔비디아 실적에 달려 있다.",
+      "markets": [
+        "미국주식"
+      ],
+      "impact": "호재",
+      "importance": 3,
+      "tickers": [
+        "QQQ",
+        "SPY"
+      ]
     },
     {
-     "ticker": "CHTR",
-     "name_ko": "차터 커뮤니케이션즈",
-     "name": "Charter Communications",
-     "sector": "통신 서비스",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 121.2,
-     "chg1d": 2.65,
-     "high52": 254.11,
-     "from_high": -52.3,
-     "per": 10.8,
-     "fper": 2.8,
-     "mcap": "$14.5B"
+      "id": "20261111-coreweave-beat-raise",
+      "title": "코어위브, 3분기 매출 36.6억 달러·연간 전망 상향…주가 24.7% 급등",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-coreweave-surges-25-on-beat-and-raise-quarter/",
+      "published": "2026-11-11T21:00:00Z",
+      "added": "2026-11-11T23:33:04Z",
+      "summary": "AI 클라우드 기업 코어위브가 3분기 매출 36.6억 달러로 예상을 웃돌고 2026년 매출 전망을 130억~133억 달러로 올렸다. 주가는 11일 60.77달러로 24.71% 올랐고 네비우스(+15.44%) 등 같은 업종도 동반 급등했다.",
+      "why": "AI 인프라 수요와 자금 조달 우려를 덜어 주는 실적으로, 최근 급락한 AI·반도체주 반등의 직접적인 계기가 됐다.",
+      "markets": [
+        "미국주식"
+      ],
+      "impact": "호재",
+      "importance": 3,
+      "tickers": [
+        "CRWV",
+        "NBIS",
+        "APLD"
+      ]
     },
     {
-     "ticker": "APP",
-     "name_ko": "앱러빈",
-     "name": "AppLovin",
-     "sector": "광고",
-     "index": [
-      "S&P500",
-      "나스닥100"
-     ],
-     "asof": "2026-11-10",
-     "price": 395.51,
-     "chg1d": -3.53,
-     "high52": 738.01,
-     "from_high": -46.41,
-     "per": 26.13,
-     "fper": 18.2,
-     "mcap": "$131B"
+      "id": "20261111-nvidia-rebound",
+      "title": "엔비디아, 이틀 급락 뒤 반등…그래도 11월 들어 약 14% 하락",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html",
+      "published": "2026-11-11T15:00:00Z",
+      "added": "2026-11-11T23:33:04Z",
+      "summary": "젠슨 황 CEO 관련 의혹으로 이틀 연속 급락했던 엔비디아가 11일 반등했다. 다만 이사회 조사와 의회 압박이 이어지고 있고, 11월 들어 주가는 약 14%, 시가총액은 약 7천억 달러 줄어든 상태다. 장 마감 후 시간외 거래에서는 다시 하락했다(StockTitan).",
+      "why": "CEO 리스크가 해소되지 않아 변동성이 크며, 17일 실적 발표가 다음 분기점이다.",
+      "markets": [
+        "미국주식"
+      ],
+      "impact": "혼재",
+      "importance": 2,
+      "tickers": [
+        "NVDA"
+      ]
     },
     {
-     "ticker": "NRG",
-     "name_ko": "NRG 에너지",
-     "name": "NRG Energy",
-     "sector": "발전(독립발전사업자)",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 97.4,
-     "chg1d": 10.32,
-     "high52": 189.96,
-     "from_high": -48.73,
-     "per": 16.26,
-     "fper": 9.2,
-     "mcap": "$20.5B"
+      "id": "20261111-btc-etf-outflow",
+      "title": "비트코인, 주식 반등에도 7.4만 달러 정체…현물 ETF 4일 연속 유출",
+      "source": "CoinDesk",
+      "url": "https://www.coindesk.com/ko/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day",
+      "published": "2026-11-11T14:00:00Z",
+      "added": "2026-11-11T23:33:04Z",
+      "summary": "비트코인은 약 7.37만 달러 부근에서 움직이며 주식 반등에 동참하지 못했다. 미국 현물 비트코인 ETF는 10일 9,500만 달러가 빠져 4거래일 연속 순유출을 기록했고, 물가 지표 이후 연준 12월 금리 인상 확률은 약 90%로 높아졌다.",
+      "why": "금리 인상 우려와 ETF 자금 이탈이 겹쳐 주식과 코인이 따로 움직이고 있다. 13일 PPI가 다음 변수다.",
+      "markets": [
+        "코인",
+        "거시·금리"
+      ],
+      "impact": "악재",
+      "importance": 3,
+      "tickers": [
+        "BTC",
+        "ETH"
+      ]
     },
     {
-     "ticker": "LVS",
-     "name_ko": "라스베이거스 샌즈",
-     "name": "Las Vegas Sands",
-     "sector": "리조트·카지노",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-10",
-     "price": 40.82,
-     "chg1d": 1.59,
-     "high52": 70.45,
-     "from_high": -42.06,
-     "per": 15.88,
-     "fper": 13.2,
-     "mcap": "$25.6B"
+      "id": "20261111-tsmc-ai-investment",
+      "title": "TSMC, 앤트로픽·오픈AI에 최대 10억 달러 투자 승인",
+      "source": "뉴스핌",
+      "url": "https://www.newspim.com/news/view/20261111001575",
+      "published": "2026-11-11T13:00:00Z",
+      "added": "2026-11-11T23:33:04Z",
+      "summary": "TSMC가 앤트로픽과 오픈AI에 최대 10억 달러 투자를 승인했다는 소식에 대만 증시에서 4.8% 올랐고, 미국 예탁증서도 개장 전 약 5% 상승했다.",
+      "why": "파운드리 1위 업체가 AI 모델 기업에 직접 투자하며 AI 수요에 대한 확신을 보였다는 점에서 반도체 업종 심리에 긍정적이다.",
+      "markets": [
+        "미국주식"
+      ],
+      "impact": "호재",
+      "importance": 2,
+      "tickers": [
+        "TSM"
+      ]
     },
     {
-     "ticker": "ROL",
-     "name_ko": "롤린스",
-     "name": "Rollins",
-     "sector": "생활 서비스(방역)",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-10",
-     "price": 38.42,
-     "chg1d": -0.83,
-     "high52": 66.14,
-     "from_high": -41.91,
-     "per": 34.91,
-     "fper": 31.8,
-     "mcap": "$18.4B"
+      "id": "20261111-oil-rebound-iran",
+      "title": "국제유가 사흘 만에 반등…이란 '농축 핵물질 반출 불가'에 협상 기대 후퇴",
+      "source": "굿모닝경제",
+      "url": "https://www.goodkyung.com/news/articleView.html?idxno=293377",
+      "published": "2026-11-11T12:00:00Z",
+      "summary": "11일(미 동부시간) WTI는 0.57% 오른 배럴당 86.53달러, 브렌트유는 1.39% 오른 92.76달러에 마감해 두 유종 모두 6일 이후 처음 상승했습니다. 이란이 핵물질 해외 반출 불가 입장을 재확인하고 미국의 추가 공격에 보복을 경고하면서 종전 협상 기대가 약해졌습니다. 두바이유 현물은 89.00달러였습니다.",
+      "why": "유가 반등은 물가 부담을 키워 금리 인상 우려를 자극할 수 있고, 항공·운송·화학 등 원가 부담 업종에 불리할 수 있습니다.",
+      "markets": [
+        "원자재·환율",
+        "거시·금리"
+      ],
+      "impact": "혼재",
+      "importance": 2,
+      "tickers": [
+        "WTI",
+        "BRENT"
+      ],
+      "added": "2026-11-12T04:06:41Z"
     },
     {
-     "ticker": "ZTS",
-     "name_ko": "조에티스",
-     "name": "Zoetis",
-     "sector": "제약(동물의약품)",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-10",
-     "price": 82.46,
-     "chg1d": 0.17,
-     "high52": 132.49,
-     "from_high": -37.76,
-     "per": 13.48,
-     "fper": 13.5,
-     "mcap": "$33.5B"
+      "id": "20261111-anthropic-ipo-hope",
+      "title": "앤트로픽 19일 상장 기대가 국내 반도체주 반등에 힘 보태",
+      "source": "한국경제",
+      "url": "https://www.hankyung.com/article/2026111106306",
+      "published": "2026-11-11T07:30:00Z",
+      "added": "2026-11-11T23:33:04Z",
+      "summary": "한국경제는 19일로 예정된 앤트로픽 기업공개(IPO) 기대가 코어위브 호실적과 함께 AI 투자심리를 자극해 국내 반도체 대형주가 장 초반 약세를 뒤집었다고 전했다.",
+      "why": "대형 AI 기업 상장이 AI 투자 사이클에 대한 신뢰를 높일지 주목된다. 상장 일정은 변동될 수 있다.",
+      "markets": [
+        "국내주식",
+        "미국주식"
+      ],
+      "impact": "호재",
+      "importance": 2,
+      "tickers": [
+        "005930",
+        "000660"
+      ]
     },
     {
-     "ticker": "NOW",
-     "name_ko": "서비스나우",
-     "name": "ServiceNow",
-     "sector": "소프트웨어(응용)",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 102.76,
-     "chg1d": 0.77,
-     "high52": 175.0,
-     "from_high": -41.28,
-     "per": 74.2,
-     "fper": 21.5,
-     "mcap": "$106.7B"
+      "id": "20261111-kospi-rebound",
+      "title": "코스피 2.6% 올라 5,375 마감…코스닥 5.6% 급등, 이틀 연속 매수 사이드카",
+      "source": "뉴스핌",
+      "url": "https://www.newspim.com/news/view/20261111001287",
+      "published": "2026-11-11T07:04:00Z",
+      "added": "2026-11-11T23:33:04Z",
+      "summary": "11일 코스피는 136.23포인트(2.60%) 오른 5,375.36, 코스닥은 5.62% 오른 705.10에 마감했다. 외국인이 코스피에서 7,761억원을 순매수했고, 삼성전자는 3.57%, SK하이닉스는 5.36% 올랐다(MTN).",
+      "why": "미국 물가 충격에도 외국인이 반도체 대형주를 사들이며 이틀 연속 반등했다. 외국인 순매수 규모는 매체마다 집계 시점이 달라 차이가 있다.",
+      "markets": [
+        "국내주식"
+      ],
+      "impact": "호재",
+      "importance": 3,
+      "tickers": [
+        "005930",
+        "000660"
+      ]
     },
     {
-     "ticker": "ADBE",
-     "name_ko": "어도비",
-     "name": "Adobe",
-     "sector": "소프트웨어(응용)",
-     "index": [
-      "S&P500",
-      "나스닥100"
-     ],
-     "asof": "2026-11-09",
-     "price": 237.32,
-     "chg1d": -0.83,
-     "high52": 362.71,
-     "from_high": -34.57,
-     "per": 12.68,
-     "fper": 8.7,
-     "mcap": "$92.4B"
+      "id": "20261111-us10y-5pct",
+      "title": "美 10년물 국채금리 장중 5% 재돌파…연준 '빅스텝' 언급까지",
+      "source": "아시아경제",
+      "url": "https://view.asiae.co.kr/article/2026111109545632083",
+      "published": "2026-11-11T01:30:23Z",
+      "summary": "10월 CPI가 전월 대비 0.4% 올라 예상을 웃돌고 연준 인사들이 0.5%p 인상 가능성까지 언급하자 미 국채금리가 급등했습니다. 10년물은 장중 5%를 넘었다가 4.99%로 마감했고, 2년물은 19개월 만에 가장 큰 폭으로 올랐습니다. 11일은 재향군인의 날로 미 국채 현물시장이 휴장했습니다(뉴스1).",
+      "why": "장기금리 5% 안팎은 성장주 밸류에이션과 비트코인 등 위험자산에 부담 요인으로 꼽힙니다. 12월 FOMC 인상 폭 전망이 시장 방향을 좌우할 수 있습니다.",
+      "markets": [
+        "거시·금리",
+        "미국주식",
+        "코인"
+      ],
+      "impact": "악재",
+      "importance": 3,
+      "tickers": [
+        "US10Y"
+      ],
+      "added": "2026-11-12T04:06:41Z"
     },
     {
-     "ticker": "NFLX",
-     "name_ko": "넷플릭스",
-     "name": "Netflix",
-     "sector": "엔터테인먼트",
-     "index": [
-      "S&P500",
-      "나스닥100"
-     ],
-     "asof": "2026-11-10",
-     "price": 63.26,
-     "chg1d": -1.08,
-     "high52": 116.73,
-     "from_high": -45.81,
-     "per": 18.0,
-     "fper": 17.6,
-     "mcap": "$259.8B"
+      "id": "20261111-hankyung-cpi-kospi",
+      "title": "美 10월 CPI 예상 상회…코스피 약보합 출발, 코스닥은 외국인 매수로 강세",
+      "source": "한국경제",
+      "url": "https://www.hankyung.com/article/2026111193136",
+      "published": "2026-11-11T00:10:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "미국 10월 소비자물가지수가 시장 예상을 웃돌면서 연준 추가 긴축 우려가 커졌다. 11일 개장 직후 코스피는 0.27% 내린 5,225선, 코스닥은 1.85% 오른 679선. 전날 뉴욕증시는 나스닥 -0.74%, S&P500 -0.38%(7,520.93), 다우 -0.30%로 마감했고 엔비디아는 -5.47%로 이틀 연속 크게 밀렸다. SK하이닉스 ADR(-3.51%), 마이크론(-1.1%) 등 메모리주도 약세.",
+      "why": "물가 재가속은 12월 FOMC 금리 인상 가능성을 키우는 재료로, 성장주·반도체·코인 같은 위험자산에 부담. 다만 기관 매수로 코스피 낙폭은 제한되는 모습.",
+      "markets": [
+        "국내주식",
+        "미국주식",
+        "거시·금리"
+      ],
+      "impact": "악재",
+      "importance": 3,
+      "tickers": [
+        "KOSPI",
+        "KOSDAQ",
+        "NVDA",
+        "MU",
+        "SK하이닉스"
+      ]
     },
     {
-     "ticker": "PNR",
-     "name_ko": "펜테어",
-     "name": "Pentair",
-     "sector": "산업기계",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 70.2,
-     "chg1d": 3.05,
-     "high52": 109.89,
-     "from_high": -36.12,
-     "per": 18.6,
-     "fper": 13.6,
-     "mcap": "$11.2B"
+      "id": "20261110-gulfnews-brent",
+      "title": "미-이란 긴장 완화 기대에 브렌트유 6% 급락",
+      "source": "Gulf News",
+      "url": "https://gulfnews.com/business/energy/oil-slides-as-iran-strike-fears-ease-brent-falls-1.500741822",
+      "published": "2026-11-10T03:00:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "10일 장 초반 원유 선물이 큰 폭으로 하락했고 브렌트유는 6.17% 내렸다. 미-이란 긴장이 누그러질 것이란 기대가 반영됐지만 상선 운항에 대한 위협은 여전히 남아 있다.",
+      "why": "유가 하락은 물가 압력을 낮춰 금리 인상 우려를 일부 상쇄하는 요인(주식·코인엔 우호적, 정유·에너지주엔 불리). 협상이 틀어지면 재급등 위험.",
+      "markets": [
+        "원자재·환율",
+        "거시·금리"
+      ],
+      "impact": "혼재",
+      "importance": 2,
+      "tickers": [
+        "BRENT",
+        "WTI"
+      ]
     },
     {
-     "ticker": "EXE",
-     "name_ko": "익스팬드 에너지",
-     "name": "Expand Energy",
-     "sector": "석유·가스 개발",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 85.96,
-     "chg1d": 1.61,
-     "high52": 126.62,
-     "from_high": -32.11,
-     "per": 7.4,
-     "fper": 10.8,
-     "mcap": "$19.9B"
+      "id": "20261109-finimize-nvda-probe",
+      "title": "엔비디아, 젠슨 황 CEO 관련 이사회 내부조사 소식에 급락…시장 전체는 반등",
+      "source": "Finimize",
+      "url": "https://finimize.com/content/wall-street-bounced-back-while-nvidias-ceo-questions-hung-over-ai",
+      "published": "2026-11-09T21:00:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "엔비디아가 CEO 젠슨 황과 관련된 내부조사 소식에 9일 5.6% 하락했다. 같은 날 미국 증시 전반은 지난주 AI 매도에서 반등했고, 투자자 관심은 다음 날 발표되는 10월 CPI로 옮겨갔다.",
+      "why": "AI 대장주의 경영 리더십 불확실성은 SK하이닉스·삼성전자 등 국내 반도체 수급에도 직접 연결. 11월 17일 엔비디아 실적 발표가 다음 분기점.",
+      "markets": [
+        "미국주식",
+        "국내주식"
+      ],
+      "impact": "악재",
+      "importance": 3,
+      "tickers": [
+        "NVDA",
+        "SK하이닉스",
+        "삼성전자"
+      ]
     },
     {
-     "ticker": "AKAM",
-     "name_ko": "아카마이 테크놀로지스",
-     "name": "Akamai Technologies",
-     "sector": "소프트웨어(인프라)",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-06",
-     "price": 83.09,
-     "chg1d": 6.74,
-     "high52": 165.45,
-     "from_high": -49.78,
-     "per": 30.89,
-     "fper": 12.2,
-     "mcap": "$12B"
+      "id": "20261110-tokenpost-btc-eth",
+      "title": "비트코인 7만4천달러대, 이더리움 4%대 하락",
+      "source": "토큰포스트",
+      "url": "https://www.tokenpost.kr/news/briefing/435404",
+      "published": "2026-11-09T19:59:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "11월 10일 오전 4시 59분(KST) 기준 비트코인은 전날보다 1.33% 내린 74,826.79달러, 이더리움은 4.57% 내린 2,127.26달러에 거래됐다.",
+      "why": "이더리움이 비트코인보다 하락 폭이 커 알트코인 위험 회피 흐름이 이어지는 모습.",
+      "markets": [
+        "코인"
+      ],
+      "impact": "악재",
+      "importance": 1,
+      "tickers": [
+        "BTC",
+        "ETH"
+      ]
     },
     {
-     "ticker": "BA",
-     "name_ko": "보잉",
-     "name": "Boeing",
-     "sector": "항공우주·방산",
-     "index": [
-      "S&P500"
-     ],
-     "asof": "2026-11-09",
-     "price": 172.38,
-     "chg1d": -0.59,
-     "high52": 254.35,
-     "from_high": -32.23,
-     "per": 18.6,
-     "fper": 79.7,
-     "mcap": "$136.6B"
+      "id": "20261109-reuters-ai-overdone",
+      "title": "모건스탠리·UBS \"지난주 AI 매도는 과도\"",
+      "source": "Reuters (GV Wire)",
+      "url": "https://gvwire.com/2026/11/09/wall-street-rallies-after-last-weeks-ai-rout-nvidia-falls/",
+      "published": "2026-11-09T16:00:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "모건스탠리와 UBS 등은 지난주 AI 관련주 급락이 지나쳤다고 평가했다. 민주당이 장악한 의회에서 데이터센터 개발을 강하게 규제할 위험은 현실화될 가능성이 낮다는 판단이다.",
+      "why": "정책 리스크가 과대 반영됐다는 시각은 AI·반도체 저가매수 근거가 될 수 있음. 실제 규제 논의가 나오면 재차 흔들릴 수 있음.",
+      "markets": [
+        "미국주식",
+        "국내주식"
+      ],
+      "impact": "호재",
+      "importance": 2,
+      "tickers": [
+        "NVDA",
+        "AI 데이터센터"
+      ]
+    },
+    {
+      "id": "20261109-tradingnews-spx-oil",
+      "title": "유가 급락에 S&P500 장중 1.9% 반등…반도체 매수는 엔비디아→AMD로 이동",
+      "source": "TradingNews",
+      "url": "https://www.tradingnews.com/news/sp500-hirts-7517-nasdaq-jumps-578-points-dow-climbs-to-52139",
+      "published": "2026-11-09T15:28:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "9일 오전(미 동부) S&P500은 7,517.64로 1.91% 상승. 브렌트유는 이란 긴장 완화 기대로 94달러대까지 내려와 11월 초 112달러에서 크게 하락했다. 엔비디아는 이사회 조사 소식에 갭하락한 반면 AMD는 9.6% 급등.",
+      "why": "유가 하락이 인플레 우려를 덜어 지수 반등을 견인. 반도체 내에서도 종목별 쏠림이 바뀌는 국면이라 개별 종목 변동성 확대에 유의.",
+      "markets": [
+        "미국주식",
+        "원자재·환율"
+      ],
+      "impact": "혼재",
+      "importance": 2,
+      "tickers": [
+        "SPX",
+        "AMD",
+        "NVDA",
+        "BRENT"
+      ]
+    },
+    {
+      "id": "20261109-bk-kospi-foreign",
+      "title": "외국인 6,930억 순매도에 코스피 5,018선 마감",
+      "source": "Businesskorea",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280833",
+      "published": "2026-11-09T07:00:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "지난주 급락 충격이 이어진 9일 코스피는 장중 등락을 반복하다 약세로 마감했다. 외국인이 코스피에서 6,930억 원을 순매도하며 하락을 주도했고 삼성전자·SK하이닉스의 소폭 반등으로는 지수를 지키지 못했다.",
+      "why": "외국인 수급이 지수 방향을 좌우하는 국면. 엔비디아·미국 금리 뉴스가 외국인 매도 강도에 영향을 주고 있음.",
+      "markets": [
+        "국내주식"
+      ],
+      "impact": "악재",
+      "importance": 2,
+      "tickers": [
+        "KOSPI",
+        "삼성전자",
+        "SK하이닉스"
+      ]
+    },
+    {
+      "id": "20261108-coincentral-week",
+      "title": "이번 주 일정: CPI·CoreWeave·Cisco·AMAT 실적, PPI…엔비디아 실적은 17일",
+      "source": "CoinCentral",
+      "url": "https://coincentral.com/?p=216737",
+      "published": "2026-11-08T12:00:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "11월 9~13일 주간에는 10일 미국 10월 CPI(미 동부 오전 8시 30분), 10일 장 마감 후 CoreWeave 실적, 12일 장 마감 후 Cisco·Applied Materials 실적, 생산자물가와 연준 발언이 예정돼 있다. 엔비디아 실적은 17일.",
+      "why": "이번 주는 물가 지표 → 금리 기대 → AI·반도체 순으로 영향이 전달되는 구조. 일정표는 일정 패널 참고.",
+      "markets": [
+        "미국주식",
+        "거시·금리"
+      ],
+      "impact": "중립",
+      "importance": 2,
+      "tickers": [
+        "CRWV",
+        "CSCO",
+        "AMAT",
+        "NVDA"
+      ]
+    },
+    {
+      "id": "20261107-panda-btc-weekly",
+      "title": "비트코인 주간 -2.1%…중간선거 직후 랠리를 사흘 만에 반납",
+      "source": "Panda Forecast",
+      "url": "https://pandaforecast.com/crypto-news/bitcoin-midterm-bounce-chip-rout-liquidations-etf-outflows/",
+      "published": "2026-11-07T12:00:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "비트코인은 주간 75,916달러로 마감해 직전 주(77,543달러) 대비 2.10% 하락했다. 선거 결과 발표 후 81,196달러까지 올랐으나 증시의 AI 매도가 번지며 상승분을 되돌렸다. 전체 암호화폐 시총은 2.57조 달러, 비트코인 점유율 59.3%.",
+      "why": "코인이 AI·기술주와 동조화되는 흐름이 뚜렷해, 나스닥 방향이 단기 코인 방향에도 영향.",
+      "markets": [
+        "코인"
+      ],
+      "impact": "악재",
+      "importance": 2,
+      "tickers": [
+        "BTC"
+      ]
+    },
+    {
+      "id": "20261105-rtt-crypto-squeeze",
+      "title": "숏 스퀴즈에 암호화폐 상승폭 확대…시총 2.66조 달러",
+      "source": "RTTNews",
+      "url": "https://www.rttnews.com/3710651/cryptos-extend-gains-amidst-short-squeeze.aspx",
+      "published": "2026-11-05T12:00:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "위험자산 전반의 반등과 숏 스퀴즈로 주요 코인이 상승을 이어갔다. 암호화폐 시총은 2.66조 달러로 늘었고 비트코인은 24시간 동안 79,326~80,879달러 범위에서 거래됐다. ETF에서는 IBIT가 2.01억 달러 유출, FBTC가 2.37억 달러 유입.",
+      "why": "선거 결과가 미국 코인 규제에 미칠 영향을 시장이 저울질 중. 이후 같은 주에 상승분을 반납해 단기 반등의 지속력은 약했음.",
+      "markets": [
+        "코인"
+      ],
+      "impact": "호재",
+      "importance": 1,
+      "tickers": [
+        "BTC",
+        "IBIT",
+        "FBTC"
+      ]
+    },
+    {
+      "id": "20261028-wm-fomc-hold",
+      "title": "연준, 기준금리 3.75~4.00% 동결…위원 2명은 인상 주장",
+      "source": "WealthManagement (Bloomberg)",
+      "url": "https://www.wealthmanagement.com/fixed-income/fed-holds-rates-says-more-data-will-help-next-decision",
+      "published": "2026-10-28T18:00:00Z",
+      "added": "2026-11-11T06:10:00Z",
+      "summary": "FOMC가 10대 2로 기준금리를 3.75~4.00%에 동결했다. 쿡 이사와 해맥 클리블랜드 연은 총재는 0.25%p 인상을 주장하며 반대표를 던졌다. 연준은 12월 인상 여부에 대한 명확한 신호는 주지 않았다.",
+      "why": "위원회 내 매파 목소리가 있는 상태에서 물가 지표가 높게 나오면 12월 인상 확률이 빠르게 반영될 수 있음.",
+      "markets": [
+        "거시·금리",
+        "미국주식",
+        "코인"
+      ],
+      "impact": "악재",
+      "importance": 2,
+      "tickers": [
+        "FOMC"
+      ]
     }
-   ]
+  ],
+  "events": [
+    {
+      "id": "20261110-cpi",
+      "date": "2026-11-10",
+      "time": "22:30",
+      "title": "미국 10월 CPI",
+      "note": "발표 완료 — 예상 상회(한국경제)"
+    },
+    {
+      "id": "20261110-crwv",
+      "date": "2026-11-10",
+      "time": "장후",
+      "title": "CoreWeave 실적",
+      "note": "발표 완료 — 매출 36.6억 달러, 연간 전망 상향 → 11일 주가 +24.71%"
+    },
+    {
+      "id": "20261112-csco-amat",
+      "date": "2026-11-12",
+      "time": "장후",
+      "title": "Cisco·Applied Materials 실적",
+      "note": "반도체 장비·네트워크 — 한국시간 13일 새벽 발표 예정"
+    },
+    {
+      "id": "20261113-ppi",
+      "date": "2026-11-13",
+      "title": "미국 10월 PPI",
+      "note": "CPI 예상 상회 뒤 물가 재확인, 금리 인상 경계 속 발표",
+      "time": "22:30"
+    },
+    {
+      "id": "20261117-nvda",
+      "date": "2026-11-17",
+      "time": "장후",
+      "title": "엔비디아 실적 발표",
+      "note": "현지 17일 장 마감 후(회사 공지) — 젠슨 황 거취 조사 속 발표, AI·반도체·코인 심리 분기점"
+    },
+    {
+      "id": "20261119-anthropic-ipo",
+      "date": "2026-11-19",
+      "title": "앤트로픽 IPO(예정)",
+      "note": "한국경제 보도 기준 19일 예정 — 일정 변동 가능"
+    },
+    {
+      "id": "20261119-fomc-minutes",
+      "date": "2026-11-19",
+      "time": "04:00",
+      "title": "10월 FOMC 의사록",
+      "note": "한국시간 기준(이슈온) — 추가 인상 논의 강도 확인"
+    },
+    {
+      "id": "20261122-russia-crypto",
+      "date": "2026-11-22",
+      "title": "러시아 거래소 코인거래 허용",
+      "note": "개인은 BTC·ETH·USDT, 중개기관당 연 30만 루블 한도"
+    },
+    {
+      "id": "20261125-pce-beige",
+      "date": "2026-11-25",
+      "title": "미국 PCE·베이지북",
+      "note": "현지시간 25일 발표(이슈온)"
+    },
+    {
+      "id": "20261126-bok",
+      "date": "2026-11-26",
+      "title": "한국은행 금통위",
+      "note": "기준금리 결정"
+    },
+    {
+      "id": "20261201-msci-rebal",
+      "date": "2026-12-01",
+      "title": "MSCI 변경 적용(MSTR 편출)",
+      "note": "현지 11월 30일 리밸런싱, 12월 1일부터 제외"
+    },
+    {
+      "id": "20261204-jobs",
+      "date": "2026-12-04",
+      "title": "미국 11월 고용보고서",
+      "note": "FOMC 전 마지막 고용지표"
+    },
+    {
+      "id": "20261209-fomc",
+      "date": "2026-12-09",
+      "title": "FOMC 금리 결정 (12/8~9)",
+      "note": "인상 여부 주목"
+    },
+    {
+      "id": "20261210-cpi",
+      "date": "2026-12-10",
+      "time": "22:30",
+      "title": "미국 11월 CPI",
+      "note": ""
+    }
+  ],
+  "drawdown": {
+    "us": {
+      "asof": "2026-11-10",
+      "basis": "52주 고점",
+      "source": "chartrow.com 종목별 페이지(52주 고점·하락률·PER)",
+      "source_url": "https://chartrow.com/lists/stocks-in-a-drawdown",
+      "universe": "S&P500 + 나스닥100 편입 종목(편입 여부: stockanalysis.com 지수 구성 목록)",
+      "threshold": -30,
+      "coverage_note": "후보는 chartrow '하락 상위 50'·'1년 수익률 하위 50'과 marketcrash '52주 저가 근처' 목록에서 뽑아 종목별 페이지로 확인했습니다. 이 세 목록에 들지 않은 -30% 이하 종목은 빠져 있을 수 있습니다. 종목마다 기준일(11/6~11/10)이 다를 수 있어 표에 따로 표시합니다.",
+      "excluded_note": "의류·명품 계열 제외(룰루레몬·나이키 제외됨)",
+      "rows": [
+        {
+          "ticker": "ALNY",
+          "name_ko": "앨나일람 파마슈티컬스",
+          "name": "Alnylam Pharmaceuticals",
+          "sector": "바이오",
+          "index": [
+            "나스닥100"
+          ],
+          "asof": "2026-11-09",
+          "price": 156.61,
+          "chg1d": 0.43,
+          "high52": 479.79,
+          "from_high": -67.36,
+          "per": 7.92,
+          "fper": 14.3,
+          "mcap": "$21B"
+        },
+        {
+          "ticker": "CRWV",
+          "name_ko": "코어위브",
+          "name": "CoreWeave",
+          "sector": "소프트웨어(인프라)",
+          "index": [
+            "나스닥100"
+          ],
+          "asof": "2026-11-09",
+          "price": 48.98,
+          "chg1d": 5.56,
+          "high52": 138.25,
+          "from_high": -64.57,
+          "per": -14.01,
+          "fper": -22.6,
+          "mcap": "$27B"
+        },
+        {
+          "ticker": "SNDK",
+          "name_ko": "샌디스크",
+          "name": "Sandisk",
+          "sector": "컴퓨터 하드웨어·저장장치",
+          "index": [
+            "S&P500",
+            "나스닥100"
+          ],
+          "asof": "2026-11-10",
+          "price": 859.99,
+          "chg1d": -2.99,
+          "high52": 2354.39,
+          "from_high": -63.47,
+          "per": 6.3,
+          "fper": 2.9,
+          "mcap": "$122.4B"
+        },
+        {
+          "ticker": "WDC",
+          "name_ko": "웨스턴디지털",
+          "name": "Western Digital",
+          "sector": "컴퓨터 하드웨어·저장장치",
+          "index": [
+            "S&P500",
+            "나스닥100"
+          ],
+          "asof": "2026-11-10",
+          "price": 289.2,
+          "chg1d": -0.2,
+          "high52": 799.87,
+          "from_high": -63.84,
+          "per": 10.8,
+          "fper": 7.3,
+          "mcap": "$108.3B"
+        },
+        {
+          "ticker": "RKLB",
+          "name_ko": "로켓랩",
+          "name": "Rocket Lab",
+          "sector": "항공우주·방산",
+          "index": [
+            "나스닥100"
+          ],
+          "asof": "2026-11-09",
+          "price": 58.86,
+          "chg1d": 10.91,
+          "high52": 151.0,
+          "from_high": -61.02,
+          "per": -159.6,
+          "fper": 1010.3,
+          "mcap": "$37.2B"
+        },
+        {
+          "ticker": "FICO",
+          "name_ko": "페어아이작",
+          "name": "Fair Isaac",
+          "sector": "소프트웨어(응용)",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 723.76,
+          "chg1d": 2.73,
+          "high52": 1858.91,
+          "from_high": -61.07,
+          "per": 18.53,
+          "fper": 13.8,
+          "mcap": "$15.5B"
+        },
+        {
+          "ticker": "BSX",
+          "name_ko": "보스턴 사이언티픽",
+          "name": "Boston Scientific",
+          "sector": "의료기기",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 44.02,
+          "chg1d": 2.97,
+          "high52": 105.65,
+          "from_high": -58.33,
+          "per": 18.6,
+          "fper": 13.9,
+          "mcap": "$63.8B"
+        },
+        {
+          "ticker": "FIS",
+          "name_ko": "피델리티 내셔널 인포메이션 서비스",
+          "name": "Fidelity National Information Services",
+          "sector": "IT 서비스",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 28.34,
+          "chg1d": -1.36,
+          "high52": 68.37,
+          "from_high": -58.55,
+          "per": 4.2,
+          "fper": 4.4,
+          "mcap": "$14.6B"
+        },
+        {
+          "ticker": "INTC",
+          "name_ko": "인텔",
+          "name": "Intel",
+          "sector": "반도체",
+          "index": [
+            "S&P500",
+            "나스닥100"
+          ],
+          "asof": "2026-11-10",
+          "price": 58.13,
+          "chg1d": -2.09,
+          "high52": 142.33,
+          "from_high": -59.16,
+          "per": -24.5,
+          "fper": 33.5,
+          "mcap": "$309B"
+        },
+        {
+          "ticker": "ARM",
+          "name_ko": "암 홀딩스",
+          "name": "Arm Holdings",
+          "sector": "반도체",
+          "index": [
+            "나스닥100"
+          ],
+          "asof": "2026-11-09",
+          "price": 186.3,
+          "chg1d": 6.69,
+          "high52": 452.7,
+          "from_high": -58.85,
+          "per": 219.2,
+          "fper": 56.7,
+          "mcap": "$198.2B"
+        },
+        {
+          "ticker": "COIN",
+          "name_ko": "코인베이스",
+          "name": "Coinbase Global",
+          "sector": "금융 데이터·거래소",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-10",
+          "price": 132.13,
+          "chg1d": -2.92,
+          "high52": 324.8,
+          "from_high": -59.32,
+          "per": -52.5,
+          "fper": 54.7,
+          "mcap": "$35B"
+        },
+        {
+          "ticker": "CIEN",
+          "name_ko": "시에나",
+          "name": "Ciena",
+          "sector": "통신장비",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 269.33,
+          "chg1d": 10.66,
+          "high52": 637.51,
+          "from_high": -57.75,
+          "per": 58.36,
+          "fper": 22.7,
+          "mcap": "$38.2B"
+        },
+        {
+          "ticker": "PODD",
+          "name_ko": "인슐렛",
+          "name": "Insulet",
+          "sector": "의료기기",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-10",
+          "price": 148.06,
+          "chg1d": -1.17,
+          "high52": 354.88,
+          "from_high": -58.28,
+          "per": 24.1,
+          "fper": 20.4,
+          "mcap": "$10.3B"
+        },
+        {
+          "ticker": "ALAB",
+          "name_ko": "아스테라 랩스",
+          "name": "Astera Labs",
+          "sector": "반도체",
+          "index": [
+            "나스닥100"
+          ],
+          "asof": "2026-11-09",
+          "price": 216.87,
+          "chg1d": 13.72,
+          "high52": 499.06,
+          "from_high": -56.54,
+          "per": 82.17,
+          "fper": 30.5,
+          "mcap": "$37.9B"
+        },
+        {
+          "ticker": "APTV",
+          "name_ko": "앱티브",
+          "name": "Aptiv",
+          "sector": "자동차 부품",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-10",
+          "price": 39.57,
+          "chg1d": -0.85,
+          "high52": 88.93,
+          "from_high": -55.5,
+          "per": 10.42,
+          "fper": 6.5,
+          "mcap": "$8B"
+        },
+        {
+          "ticker": "CSGP",
+          "name_ko": "코스타 그룹",
+          "name": "CoStar Group",
+          "sector": "부동산 서비스",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 31.24,
+          "chg1d": 2.26,
+          "high52": 70.57,
+          "from_high": -55.73,
+          "per": 70.41,
+          "fper": 17.7,
+          "mcap": "$12.6B"
+        },
+        {
+          "ticker": "GLW",
+          "name_ko": "코닝",
+          "name": "Corning",
+          "sector": "전자부품",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-10",
+          "price": 112.13,
+          "chg1d": -3.29,
+          "high52": 271.49,
+          "from_high": -58.7,
+          "per": 44.93,
+          "fper": 24.1,
+          "mcap": "$96.6B"
+        },
+        {
+          "ticker": "ALB",
+          "name_ko": "앨버말",
+          "name": "Albemarle",
+          "sector": "특수화학",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-10",
+          "price": 94.93,
+          "chg1d": -4.23,
+          "high52": 221.0,
+          "from_high": -57.05,
+          "per": 16.44,
+          "fper": 10.9,
+          "mcap": "$11.2B"
+        },
+        {
+          "ticker": "STX",
+          "name_ko": "씨게이트 테크놀로지",
+          "name": "Seagate Technology",
+          "sector": "컴퓨터 하드웨어·저장장치",
+          "index": [
+            "S&P500",
+            "나스닥100"
+          ],
+          "asof": "2026-11-10",
+          "price": 501.62,
+          "chg1d": -0.89,
+          "high52": 1145.0,
+          "from_high": -56.19,
+          "per": 26.3,
+          "fper": 7.8,
+          "mcap": "$115.2B"
+        },
+        {
+          "ticker": "AXON",
+          "name_ko": "액손 엔터프라이즈",
+          "name": "Axon Enterprise",
+          "sector": "항공우주·방산",
+          "index": [
+            "S&P500",
+            "나스닥100"
+          ],
+          "asof": "2026-11-10",
+          "price": 302.54,
+          "chg1d": -0.21,
+          "high52": 665.07,
+          "from_high": -54.51,
+          "per": 95.28,
+          "fper": 32.7,
+          "mcap": "$24.6B"
+        },
+        {
+          "ticker": "ORCL",
+          "name_ko": "오라클",
+          "name": "Oracle",
+          "sector": "소프트웨어(인프라)",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 119.79,
+          "chg1d": 3.18,
+          "high52": 250.25,
+          "from_high": -52.13,
+          "per": 19.14,
+          "fper": 10.7,
+          "mcap": "$362.2B"
+        },
+        {
+          "ticker": "INTU",
+          "name_ko": "인튜이트",
+          "name": "Intuit",
+          "sector": "소프트웨어(응용)",
+          "index": [
+            "S&P500",
+            "나스닥100"
+          ],
+          "asof": "2026-11-10",
+          "price": 340.44,
+          "chg1d": 0.65,
+          "high52": 682.27,
+          "from_high": -50.1,
+          "per": 20.7,
+          "fper": 12.6,
+          "mcap": "$91B"
+        },
+        {
+          "ticker": "CHTR",
+          "name_ko": "차터 커뮤니케이션즈",
+          "name": "Charter Communications",
+          "sector": "통신 서비스",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 121.2,
+          "chg1d": 2.65,
+          "high52": 254.11,
+          "from_high": -52.3,
+          "per": 10.8,
+          "fper": 2.8,
+          "mcap": "$14.5B"
+        },
+        {
+          "ticker": "APP",
+          "name_ko": "앱러빈",
+          "name": "AppLovin",
+          "sector": "광고",
+          "index": [
+            "S&P500",
+            "나스닥100"
+          ],
+          "asof": "2026-11-10",
+          "price": 395.51,
+          "chg1d": -3.53,
+          "high52": 738.01,
+          "from_high": -46.41,
+          "per": 26.13,
+          "fper": 18.2,
+          "mcap": "$131B"
+        },
+        {
+          "ticker": "NRG",
+          "name_ko": "NRG 에너지",
+          "name": "NRG Energy",
+          "sector": "발전(독립발전사업자)",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 97.4,
+          "chg1d": 10.32,
+          "high52": 189.96,
+          "from_high": -48.73,
+          "per": 16.26,
+          "fper": 9.2,
+          "mcap": "$20.5B"
+        },
+        {
+          "ticker": "LVS",
+          "name_ko": "라스베이거스 샌즈",
+          "name": "Las Vegas Sands",
+          "sector": "리조트·카지노",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-10",
+          "price": 40.82,
+          "chg1d": 1.59,
+          "high52": 70.45,
+          "from_high": -42.06,
+          "per": 15.88,
+          "fper": 13.2,
+          "mcap": "$25.6B"
+        },
+        {
+          "ticker": "ROL",
+          "name_ko": "롤린스",
+          "name": "Rollins",
+          "sector": "생활 서비스(방역)",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-10",
+          "price": 38.42,
+          "chg1d": -0.83,
+          "high52": 66.14,
+          "from_high": -41.91,
+          "per": 34.91,
+          "fper": 31.8,
+          "mcap": "$18.4B"
+        },
+        {
+          "ticker": "ZTS",
+          "name_ko": "조에티스",
+          "name": "Zoetis",
+          "sector": "제약(동물의약품)",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-10",
+          "price": 82.46,
+          "chg1d": 0.17,
+          "high52": 132.49,
+          "from_high": -37.76,
+          "per": 13.48,
+          "fper": 13.5,
+          "mcap": "$33.5B"
+        },
+        {
+          "ticker": "NOW",
+          "name_ko": "서비스나우",
+          "name": "ServiceNow",
+          "sector": "소프트웨어(응용)",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 102.76,
+          "chg1d": 0.77,
+          "high52": 175.0,
+          "from_high": -41.28,
+          "per": 74.2,
+          "fper": 21.5,
+          "mcap": "$106.7B"
+        },
+        {
+          "ticker": "ADBE",
+          "name_ko": "어도비",
+          "name": "Adobe",
+          "sector": "소프트웨어(응용)",
+          "index": [
+            "S&P500",
+            "나스닥100"
+          ],
+          "asof": "2026-11-09",
+          "price": 237.32,
+          "chg1d": -0.83,
+          "high52": 362.71,
+          "from_high": -34.57,
+          "per": 12.68,
+          "fper": 8.7,
+          "mcap": "$92.4B"
+        },
+        {
+          "ticker": "NFLX",
+          "name_ko": "넷플릭스",
+          "name": "Netflix",
+          "sector": "엔터테인먼트",
+          "index": [
+            "S&P500",
+            "나스닥100"
+          ],
+          "asof": "2026-11-10",
+          "price": 63.26,
+          "chg1d": -1.08,
+          "high52": 116.73,
+          "from_high": -45.81,
+          "per": 18.0,
+          "fper": 17.6,
+          "mcap": "$259.8B"
+        },
+        {
+          "ticker": "PNR",
+          "name_ko": "펜테어",
+          "name": "Pentair",
+          "sector": "산업기계",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 70.2,
+          "chg1d": 3.05,
+          "high52": 109.89,
+          "from_high": -36.12,
+          "per": 18.6,
+          "fper": 13.6,
+          "mcap": "$11.2B"
+        },
+        {
+          "ticker": "EXE",
+          "name_ko": "익스팬드 에너지",
+          "name": "Expand Energy",
+          "sector": "석유·가스 개발",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 85.96,
+          "chg1d": 1.61,
+          "high52": 126.62,
+          "from_high": -32.11,
+          "per": 7.4,
+          "fper": 10.8,
+          "mcap": "$19.9B"
+        },
+        {
+          "ticker": "AKAM",
+          "name_ko": "아카마이 테크놀로지스",
+          "name": "Akamai Technologies",
+          "sector": "소프트웨어(인프라)",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-06",
+          "price": 83.09,
+          "chg1d": 6.74,
+          "high52": 165.45,
+          "from_high": -49.78,
+          "per": 30.89,
+          "fper": 12.2,
+          "mcap": "$12B"
+        },
+        {
+          "ticker": "BA",
+          "name_ko": "보잉",
+          "name": "Boeing",
+          "sector": "항공우주·방산",
+          "index": [
+            "S&P500"
+          ],
+          "asof": "2026-11-09",
+          "price": 172.38,
+          "chg1d": -0.59,
+          "high52": 254.35,
+          "from_high": -32.23,
+          "per": 18.6,
+          "fper": 79.7,
+          "mcap": "$136.6B"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "source": "chartrow.com 종목별 페이지",
+    "items": [
+      {
+        "ticker": "TSLL",
+        "name_ko": "TSLL (테슬라 2배 레버리지 ETF)",
+        "name": "Direxion Daily TSLA Bull 2X ETF",
+        "type": "ETF",
+        "sector": "레버리지 ETF (TSLA 일일 수익률 2배)",
+        "asof": "2026-11-11",
+        "price": 10.42,
+        "chg1d": 5.79,
+        "high52": 23.74,
+        "low52": 6.7,
+        "from_high": -56.11,
+        "from_high_calc": true,
+        "per": null,
+        "fper": null,
+        "mcap": "운용자산 $3B (2026-07-31 기준)",
+        "note": "일일 2배 추종 상품이라 기간이 길어지면 테슬라 수익률의 정확히 2배가 되지 않습니다(복리 효과). PER은 ETF라 해당 없음.",
+        "url": "https://chartrow.com/quote/tsll",
+        "live": "https://kr.tradingview.com/symbols/NASDAQ-TSLL/"
+      },
+      {
+        "ticker": "LUNR",
+        "name_ko": "인튜이티브 머신스",
+        "name": "Intuitive Machines Inc.",
+        "type": "주식",
+        "sector": "우주항공(산업재)",
+        "asof": "2026-11-10",
+        "price": 11.81,
+        "chg1d": -1.91,
+        "high52": 46.75,
+        "low52": 7.78,
+        "from_high": -74.74,
+        "from_high_calc": false,
+        "per": -14.68,
+        "fper": -68.8,
+        "mcap": "$1.9B",
+        "note": "",
+        "url": "https://chartrow.com/quote/lunr",
+        "live": "https://kr.tradingview.com/symbols/NASDAQ-LUNR/"
+      },
+      {
+        "ticker": "UNH",
+        "name_ko": "유나이티드헬스 그룹",
+        "name": "UnitedHealth Group Inc.",
+        "type": "주식",
+        "sector": "헬스케어(건강보험·의료서비스)",
+        "asof": "2026-11-10",
+        "price": 405.12,
+        "chg1d": 1.89,
+        "high52": 461.62,
+        "low52": 255.97,
+        "from_high": -12.24,
+        "from_high_calc": false,
+        "per": 22.85,
+        "fper": 17.4,
+        "mcap": "$363B",
+        "note": "",
+        "url": "https://chartrow.com/quote/unh",
+        "live": "https://kr.tradingview.com/symbols/NYSE-UNH/"
+      },
+      {
+        "ticker": "161510",
+        "name_ko": "PLUS 고배당주",
+        "name": "PLUS 고배당주 ETF (한화자산운용 · 옛 이름 ARIRANG 고배당주)",
+        "type": "ETF",
+        "sector": "국내 고배당주 ETF",
+        "currency": "KRW",
+        "asof": null,
+        "price": null,
+        "chg1d": null,
+        "high52": null,
+        "low52": null,
+        "from_high": null,
+        "from_high_calc": false,
+        "per": null,
+        "fper": null,
+        "mcap": null,
+        "note": "국내 상장 ETF라 PER·순자산 규모는 자동 수집하지 않습니다. 가격은 한국 장 종가 기준입니다.",
+        "url": "https://finance.naver.com/item/main.naver?code=161510",
+        "live": "https://kr.tradingview.com/symbols/KRX-161510/"
+      },
+      {
+        "ticker": "000810",
+        "name_ko": "삼성화재",
+        "name": "Samsung Fire & Marine Insurance",
+        "type": "주식",
+        "sector": "손해보험",
+        "currency": "KRW",
+        "asof": null,
+        "price": null,
+        "chg1d": null,
+        "high52": null,
+        "low52": null,
+        "from_high": null,
+        "from_high_calc": false,
+        "per": null,
+        "fper": null,
+        "mcap": null,
+        "note": "국내 종목이라 가격·PER·시가총액은 GitHub Actions가 매시간 자동으로 채웁니다(Yahoo Finance·네이버 증권).",
+        "url": "https://finance.naver.com/item/main.naver?code=000810",
+        "live": "https://kr.tradingview.com/symbols/KRX-000810/"
+      },
+      {
+        "ticker": "086790",
+        "name_ko": "하나금융지주",
+        "name": "Hana Financial Group",
+        "type": "주식",
+        "sector": "은행·금융지주",
+        "currency": "KRW",
+        "asof": null,
+        "price": null,
+        "chg1d": null,
+        "high52": null,
+        "low52": null,
+        "from_high": null,
+        "from_high_calc": false,
+        "per": null,
+        "fper": null,
+        "mcap": null,
+        "note": "국내 종목이라 가격·PER·시가총액은 GitHub Actions가 매시간 자동으로 채웁니다(Yahoo Finance·네이버 증권).",
+        "url": "https://finance.naver.com/item/main.naver?code=086790",
+        "live": "https://kr.tradingview.com/symbols/KRX-086790/"
+      }
+    ]
   }
- },
- "watchlist": {
-  "source": "chartrow.com 종목별 페이지",
-  "items": [
-   {
-    "ticker": "TSLL",
-    "name_ko": "TSLL (테슬라 2배 레버리지 ETF)",
-    "name": "Direxion Daily TSLA Bull 2X ETF",
-    "type": "ETF",
-    "sector": "레버리지 ETF (TSLA 일일 수익률 2배)",
-    "asof": "2026-11-11",
-    "price": 10.42,
-    "chg1d": 5.79,
-    "high52": 23.74,
-    "low52": 6.7,
-    "from_high": -56.11,
-    "from_high_calc": true,
-    "per": null,
-    "fper": null,
-    "mcap": "운용자산 $3B (2026-07-31 기준)",
-    "note": "일일 2배 추종 상품이라 기간이 길어지면 테슬라 수익률의 정확히 2배가 되지 않습니다(복리 효과). PER은 ETF라 해당 없음.",
-    "url": "https://chartrow.com/quote/tsll",
-    "live": "https://kr.tradingview.com/symbols/NASDAQ-TSLL/"
-   },
-   {
-    "ticker": "LUNR",
-    "name_ko": "인튜이티브 머신스",
-    "name": "Intuitive Machines Inc.",
-    "type": "주식",
-    "sector": "우주항공(산업재)",
-    "asof": "2026-11-10",
-    "price": 11.81,
-    "chg1d": -1.91,
-    "high52": 46.75,
-    "low52": 7.78,
-    "from_high": -74.74,
-    "from_high_calc": false,
-    "per": -14.68,
-    "fper": -68.8,
-    "mcap": "$1.9B",
-    "note": "",
-    "url": "https://chartrow.com/quote/lunr",
-    "live": "https://kr.tradingview.com/symbols/NASDAQ-LUNR/"
-   },
-   {
-    "ticker": "UNH",
-    "name_ko": "유나이티드헬스 그룹",
-    "name": "UnitedHealth Group Inc.",
-    "type": "주식",
-    "sector": "헬스케어(건강보험·의료서비스)",
-    "asof": "2026-11-10",
-    "price": 405.12,
-    "chg1d": 1.89,
-    "high52": 461.62,
-    "low52": 255.97,
-    "from_high": -12.24,
-    "from_high_calc": false,
-    "per": 22.85,
-    "fper": 17.4,
-    "mcap": "$363B",
-    "note": "",
-    "url": "https://chartrow.com/quote/unh",
-    "live": "https://kr.tradingview.com/symbols/NYSE-UNH/"
-   },
-   {
-    "ticker": "161510",
-    "name_ko": "PLUS 고배당주",
-    "name": "PLUS 고배당주 ETF (한화자산운용 · 옛 이름 ARIRANG 고배당주)",
-    "type": "ETF",
-    "sector": "국내 고배당주 ETF",
-    "currency": "KRW",
-    "asof": null,
-    "price": null,
-    "chg1d": null,
-    "high52": null,
-    "low52": null,
-    "from_high": null,
-    "from_high_calc": false,
-    "per": null,
-    "fper": null,
-    "mcap": null,
-    "note": "국내 상장 ETF라 PER·순자산 규모는 자동 수집하지 않습니다. 가격은 한국 장 종가 기준입니다.",
-    "url": "https://finance.naver.com/item/main.naver?code=161510",
-    "live": "https://kr.tradingview.com/symbols/KRX-161510/"
-   },
-   {
-    "ticker": "000810",
-    "name_ko": "삼성화재",
-    "name": "Samsung Fire & Marine Insurance",
-    "type": "주식",
-    "sector": "손해보험",
-    "currency": "KRW",
-    "asof": null,
-    "price": null,
-    "chg1d": null,
-    "high52": null,
-    "low52": null,
-    "from_high": null,
-    "from_high_calc": false,
-    "per": null,
-    "fper": null,
-    "mcap": null,
-    "note": "국내 종목이라 가격·PER·시가총액은 GitHub Actions가 매시간 자동으로 채웁니다(Yahoo Finance·네이버 증권).",
-    "url": "https://finance.naver.com/item/main.naver?code=000810",
-    "live": "https://kr.tradingview.com/symbols/KRX-000810/"
-   },
-   {
-    "ticker": "086790",
-    "name_ko": "하나금융지주",
-    "name": "Hana Financial Group",
-    "type": "주식",
-    "sector": "은행·금융지주",
-    "currency": "KRW",
-    "asof": null,
-    "price": null,
-    "chg1d": null,
-    "high52": null,
-    "low52": null,
-    "from_high": null,
-    "from_high_calc": false,
-    "per": null,
-    "fper": null,
-    "mcap": null,
-    "note": "국내 종목이라 가격·PER·시가총액은 GitHub Actions가 매시간 자동으로 채웁니다(Yahoo Finance·네이버 증권).",
-    "url": "https://finance.naver.com/item/main.naver?code=086790",
-    "live": "https://kr.tradingview.com/symbols/KRX-086790/"
-   }
-  ]
- }
 }
