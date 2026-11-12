@@ -25,6 +25,8 @@ WATCH = {
     "LUNR": "LUNR",
     "UNH": "UNH",
     "161510": "161510.KS",   # PLUS 고배당주 (KRX)
+    "000810": "000810.KS",   # 삼성화재
+    "086790": "086790.KS",   # 하나금융지주
 }
 SOURCE_NAME = {
     "yahoo": "Yahoo Finance", "fred": "FRED", "coinbase": "Coinbase Exchange",
@@ -88,6 +90,23 @@ def yahoo_recent(sym, days=400):
             last = f"{type(e).__name__} {e}"
         time.sleep(2)
     raise RuntimeError(last)
+
+def naver_info(code):
+    """국내 종목 PER·추정PER·시가총액: 네이버 증권 모바일 API (ETF는 PER 없음)."""
+    try:
+        d = json.loads(get(f"https://m.stock.naver.com/api/stock/{code}/integration"))
+    except Exception as e:
+        return {"naver_error": str(e)[:80]}
+    info = {x.get("code"): x.get("value") for x in d.get("totalInfos", [])}
+    def num(v):
+        import re
+        m = re.search(r"-?[\d,]+(?:\.\d+)?", v or "")
+        return float(m.group(0).replace(",", "")) if m else None
+    per = num(info.get("per"))
+    if per is None and (num(info.get("eps")) or 0) < 0:
+        per = -1.0
+    mv = info.get("marketValue")
+    return {"per": per, "fper": num(info.get("cnsPer")), "mcap": (mv + "원") if mv else None}
 
 def watch_quote(sym):
     pts, meta = yahoo_recent(sym)
@@ -213,6 +232,8 @@ def main(path):
     for tk, sym in WATCH.items():
         try:
             w = watch_quote(sym)
+            if sym.endswith(".KS"):
+                w.update(naver_info(tk))
             out["watch"][tk] = w
             print(f"watch {tk}: {w['yahoo_name']} {w['currency']} {w['asof']} {w['price']} ({w['chg1d']}%) 52주종가고점 {w['high52_close']} → {w['from_high']}%")
         except Exception as e:

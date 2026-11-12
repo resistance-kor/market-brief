@@ -8,12 +8,12 @@
 import json, sys, time, urllib.request
 from datetime import datetime, timezone
 
-UA = "market-brief dashboard (github.com/resistance-kor/market-brief)"
+UA = "market-brief resistance-kor@users.noreply.github.com"  # SEC 요구 형식: 이름 + 연락처
 FORMS = {"10-Q", "10-K", "10-Q/A", "10-K/A", "20-F", "40-F", "6-K"}
 
 
 def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "identity"})
     with urllib.request.urlopen(req, timeout=40) as r:
         return json.loads(r.read().decode("utf-8"))
 

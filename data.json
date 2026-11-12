@@ -1342,6 +1342,48 @@
     "note": "국내 상장 ETF라 PER·순자산 규모는 자동 수집하지 않습니다. 가격은 한국 장 종가 기준입니다.",
     "url": "https://finance.naver.com/item/main.naver?code=161510",
     "live": "https://kr.tradingview.com/symbols/KRX-161510/"
+   },
+   {
+    "ticker": "000810",
+    "name_ko": "삼성화재",
+    "name": "Samsung Fire & Marine Insurance",
+    "type": "주식",
+    "sector": "손해보험",
+    "currency": "KRW",
+    "asof": null,
+    "price": null,
+    "chg1d": null,
+    "high52": null,
+    "low52": null,
+    "from_high": null,
+    "from_high_calc": false,
+    "per": null,
+    "fper": null,
+    "mcap": null,
+    "note": "국내 종목이라 가격·PER·시가총액은 GitHub Actions가 매시간 자동으로 채웁니다(Yahoo Finance·네이버 증권).",
+    "url": "https://finance.naver.com/item/main.naver?code=000810",
+    "live": "https://kr.tradingview.com/symbols/KRX-000810/"
+   },
+   {
+    "ticker": "086790",
+    "name_ko": "하나금융지주",
+    "name": "Hana Financial Group",
+    "type": "주식",
+    "sector": "은행·금융지주",
+    "currency": "KRW",
+    "asof": null,
+    "price": null,
+    "chg1d": null,
+    "high52": null,
+    "low52": null,
+    "from_high": null,
+    "from_high_calc": false,
+    "per": null,
+    "fper": null,
+    "mcap": null,
+    "note": "국내 종목이라 가격·PER·시가총액은 GitHub Actions가 매시간 자동으로 채웁니다(Yahoo Finance·네이버 증권).",
+    "url": "https://finance.naver.com/item/main.naver?code=086790",
+    "live": "https://kr.tradingview.com/symbols/KRX-086790/"
    }
   ]
  }

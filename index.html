@@ -606,18 +606,37 @@
       <details><summary>기준·출처·제외 종목 보기</summary>
       <b>기준</b> ${esc(d.basis)}<br>
       <b>출처</b> <a href="${esc(safeUrl(d.source_url))}" target="_blank" rel="noopener">${esc(d.source)}</a><br>${esc(d.excluded_note||"")}<br>
-      <span class="w">⚠ ${esc(d.coverage_note||"")}</span><br>PER = 주가 ÷ 주당순이익. 후행은 최근 실적, 선행은 향후 예상 실적 기준이며, 순이익이 적자면 "적자"로 표시합니다.</details>`;
+      <span class="w">⚠ ${esc(d.coverage_note||"")}</span><br>PER = 주가 ÷ 주당순이익. 후행은 최근 실적, 선행은 향후 예상 실적 기준이며, 순이익이 적자면 "적자"로 표시합니다.<br>${KR
+        ? "유보율 = (자본잉여금+이익잉여금) ÷ 납입자본금 × 100. 높을수록 회사 안에 쌓아 둔 돈이 많다는 뜻입니다. 부채비율 = 부채총계 ÷ 자본총계 × 100. 둘 다 네이버 증권 재무 자료의 최근 확정 분기 기준입니다."
+        : "미국 기업은 액면가가 매우 작아 한국식 유보율은 의미가 없어 이익잉여금(누적 이익, 마이너스면 누적 결손)을 대신 표시합니다. 현금성자산은 현금 및 현금성자산(괄호는 시가총액 대비). 부채비율 = 부채총계 ÷ 자본총계 × 100(자본이 0 이하면 \"자본잠식\"). 모두 SEC에 제출된 최근 분기 재무제표(10-Q/10-K) 기준입니다."}</details>`;
+    // 미국: us_fin.json(SEC) 값을 티커로 붙임
+    const UF = (state.usfin && state.usfin.items) || {};
+    const fin = r => KR ? r : Object.assign({}, r, (u => u ? {debt_ratio:u.debt_ratio, cash:u.cash_b, retained:u.retained_b, fin_period:u.period} : {})(UF[String(r.ticker).toUpperCase()]));
     // 시가총액 문자열("7조 402억원", "$21B")을 정렬용 숫자(원 또는 달러)로
     const mnum = v => { if (v==null) return null; const t=String(v).replace(/,/g,"");
       if (t.startsWith("$")){ const m=t.match(/\$([\d.]+)\s*([TBM])?/); return m ? parseFloat(m[1])*({T:1e12,B:1e9,M:1e6}[m[2]]||1) : null; }
       const jo=t.match(/([\d.]+)조/), eok=t.match(/([\d.]+)억/); return (jo?parseFloat(jo[1])*1e12:0)+(eok?parseFloat(eok[1])*1e8:0) || null; };
-    const val = (r,k) => k==="mcap" ? mnum(r.mcap) : r[k];
-    const S = state.ddsort, rows = arr(d.rows).slice().sort((a,b)=>{
+    const val = (r,k) => k==="mcap" ? mnum(r.mcap) : k==="debt_ratio" && r.debt_ratio!=null && r.debt_ratio<0 ? 1e9 : r[k];
+    const S = state.ddsort, rows = arr(d.rows).map(fin).sort((a,b)=>{
       const x=val(a,S.k), y=val(b,S.k);
       if (x==null && y==null) return 0; if (x==null) return 1; if (y==null) return -1;
       if (typeof x==="number" && typeof y==="number") return (x-y)*S.dir;
       return String(x).localeCompare(String(y))*S.dir; });
-    const cols = [["name_ko","종목",""],["index","지수","opt"],["sector","업종",""],["price","종가","num"],["high52","52주 고점","num opt"],["from_high","고점 대비","num"],["chg1d","1일","num"],["per","PER(후행)","num"],["fper","PER(선행)","num"],["mcap","시가총액","num"],["asof","기준일","num opt"]];
+    const cols = [["name_ko","종목",""],["index","지수","opt"],["sector","업종",""],["price","종가","num"],["high52","52주 고점","num opt"],["from_high","고점 대비","num"],["chg1d","1일","num"],["per","PER(후행)","num"],["fper","PER(선행)","num"],["mcap","시가총액","num"]].concat(KR
+      ? [["reserve_ratio","유보율","num"],["debt_ratio","부채비율","num"]]
+      : [["cash","현금성자산","num"],["retained","이익잉여금","num opt"],["debt_ratio","부채비율","num"]]).concat([["asof","기준일","num opt"]]);
+    const dim = t => `<span style="color:var(--tx3)">${t}</span>`;
+    const pct = v => v==null ? dim("—") : Number(v).toLocaleString("ko-KR",{maximumFractionDigits:0})+"%";
+    const dr = v => v==null ? dim("—") : v<0 ? dim("자본잠식") : pct(v);
+    const bil = v => v==null ? dim("—") : (v<0?"-":"")+"$"+(Math.abs(v)>=100?Math.abs(v).toFixed(0):Math.abs(v).toFixed(1))+"B";
+    const cashPct = r => { const m = mnum(r.mcap); return (r.cash!=null && m) ? ` <small style="color:var(--tx3)">(${(r.cash*1e9/m*100).toFixed(0)}%)</small>` : ""; };
+    const ft = r => r.fin_period ? ` title="재무 기준 ${esc(r.fin_period)}"` : "";
+    const finCells = r => KR
+      ? `<td class="num mono"${ft(r)}>${pct(r.reserve_ratio)}</td><td class="num mono"${ft(r)}>${dr(r.debt_ratio)}</td>`
+      : `<td class="num mono"${ft(r)}>${bil(r.cash)}${cashPct(r)}</td><td class="num mono opt"${ft(r)}>${bil(r.retained)}</td><td class="num mono"${ft(r)}>${dr(r.debt_ratio)}</td>`;
+    const finCard = r => KR
+      ? `<dt>유보율</dt><dd class="mono">${pct(r.reserve_ratio)}</dd><dt>부채비율</dt><dd class="mono">${dr(r.debt_ratio)}</dd>`
+      : `<dt>현금</dt><dd class="mono">${bil(r.cash)}</dd><dt>부채비율</dt><dd class="mono">${dr(r.debt_ratio)}</dd>`;
     const usd = v => KR ? Number(v).toLocaleString("ko-KR")+"원" : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
     const link = r => KR ? "https://finance.naver.com/item/main.naver?code="+encodeURIComponent(r.ticker) : "https://chartrow.com/quote/"+encodeURIComponent(String(r.ticker).toLowerCase());
     const pe = v => v==null ? '<span style="color:var(--tx3)">—</span>' : v<0 ? '<span style="color:var(--tx3)">적자</span>' : Number(v).toFixed(1)+"배";
@@ -634,6 +653,7 @@
         <td class="num mono chg ${c1}">${r.chg1d>0?"+":""}${Number(r.chg1d).toFixed(2)}%</td>
         <td class="num mono">${pe(r.per)}</td><td class="num mono">${pe(r.fper)}</td>
         <td class="num mono">${esc(r.mcap||"—")}</td>
+        ${finCells(r)}
         <td class="num mono opt" style="color:var(--tx3)">${esc((r.asof||"").slice(5).replace("-","/"))}</td></tr>`; }).join("");
     // 모바일(폭 640px 이하): 표 대신 카드
     const cards = rows.map(r=>{
@@ -644,8 +664,11 @@
         <div class="gauge"><i style="width:${w.toFixed(0)}%"></i></div>
         <dl><dt>종가</dt><dd class="mono">${usd(r.price)}</dd><dt>1일</dt><dd class="mono chg ${c1}">${r.chg1d>0?"+":""}${Number(r.chg1d).toFixed(2)}%</dd>
           <dt>고점</dt><dd class="mono">${r.high52!=null?usd(r.high52):"—"}</dd><dt>시총</dt><dd class="mono">${esc(r.mcap||"—")}</dd>
-          <dt>PER</dt><dd class="mono">${pe(r.per)}</dd><dt>선행</dt><dd class="mono">${pe(r.fper)}</dd></dl></div>`; }).join("");
-    const opts = [["from_high",1,"하락 폭 큰 순"],["from_high",-1,"하락 폭 작은 순"],["chg1d",-1,"1일 상승 순"],["chg1d",1,"1일 하락 순"],["per",1,"PER 낮은 순"],["mcap",-1,"시가총액 큰 순"]];
+          <dt>PER</dt><dd class="mono">${pe(r.per)}</dd><dt>선행</dt><dd class="mono">${pe(r.fper)}</dd>
+          ${finCard(r)}</dl></div>`; }).join("");
+    const opts = [["from_high",1,"하락 폭 큰 순"],["from_high",-1,"하락 폭 작은 순"],["chg1d",-1,"1일 상승 순"],["chg1d",1,"1일 하락 순"],["per",1,"PER 낮은 순"],["mcap",-1,"시가총액 큰 순"]].concat(KR
+      ? [["reserve_ratio",-1,"유보율 높은 순"],["debt_ratio",1,"부채비율 낮은 순"]]
+      : [["cash",-1,"현금성자산 많은 순"],["debt_ratio",1,"부채비율 낮은 순"]]);
     $("#dd-body").innerHTML = `<label class="ddsort">정렬 <select id="ddsel">${opts.map(([k,dir,l])=>`<option value="${k}|${dir}" ${S.k===k&&S.dir===dir?"selected":""}>${l}</option>`).join("")}</select></label>
       <div class="tbl-wrap"><table class="dd"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>
       <div class="ddcards">${cards}</div>
@@ -664,7 +687,8 @@
       // prices.json(매시간 GitHub Actions, Yahoo 종가)이 더 최근이면 가격·등락·52주 범위를 그 값으로 표시
       const q = WQ[it0.ticker], useQ = q && !q.stale && q.price!=null && (!it0.asof || it0.price==null || q.asof >= it0.asof);
       const it = useQ ? Object.assign({}, it0, {asof:q.asof, price:q.price, chg1d:q.chg1d, high52:q.high52_close, low52:q.low52_close,
-                         from_high:q.from_high, from_high_calc:false, closeBasis:true, currency: it0.currency || q.currency}) : it0;
+                         from_high:q.from_high, from_high_calc:false, closeBasis:true, currency: it0.currency || q.currency},
+                         q.symbol && /\.KS$/.test(q.symbol) ? {per:q.per, fper:q.fper, mcap:q.mcap || it0.mcap} : {}) : it0;
       const krw = it.currency==="KRW";
       const usd = v => v==null ? "—" : krw ? Number(v).toLocaleString("ko-KR",{maximumFractionDigits:0})+"원"
                                            : "$"+Number(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -777,6 +801,9 @@
     host.appendChild(sc);
   })();
 
+  async function loadUSFin(){
+    try{ const r=await fetch("us_fin.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.usfin=await r.json(); if(state.data) renderDD(); }catch(e){}
+  }
   async function loadKR(){
     try{ const r=await fetch("kr_drawdown.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; state.krdd=await r.json(); if(state.data) renderDD(); }catch(e){}
   }
@@ -797,7 +824,7 @@
       if (!state.data){ const w=$("#warn"); w.textContent="데이터를 불러오지 못했습니다. 잠시 후 새로고침해 주세요."; w.style.display="block"; }
     }
   }
-  load(true); loadPrices(); loadKR(); setInterval(loadKR, 30*60*1000); setInterval(loadPrices, 15*60*1000);
+  load(true); loadPrices(); loadKR(); loadUSFin(); setInterval(loadKR, 30*60*1000); setInterval(loadPrices, 15*60*1000);
   setInterval(()=>load(false), 10*60*1000);
 })();
 </script>
