@@ -68,6 +68,8 @@
   .seg button+button{border-left:1px solid var(--line)}
   .seg button[aria-pressed="true"]{background:var(--tx);color:var(--bg)}
 
+  .seg.mkt{margin-left:0}
+  .bhead .seg.mkt + .hint{flex:1}
   .grouplabel{font-size:13px;font-weight:700;margin:4px 0 8px;display:flex;align-items:center;gap:8px}
   .grouplabel i{width:10px;height:10px;border-radius:3px;display:inline-block}
   .charts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
@@ -271,7 +273,12 @@
   <section class="block">
     <div class="bhead">
       <h2>주요 지수</h2>
-      <span class="hint">종가 차트(최근 3년 일별·그 이전 주별) · 비트코인·이더리움·솔라나는 실시간 · 마우스를 올리면 날짜별 값</span>
+      <div class="seg mkt" id="mkt">
+        <button data-m="stock" aria-pressed="true">주식</button>
+        <button data-m="crypto" aria-pressed="false">코인</button>
+        <button data-m="all" aria-pressed="false">전체</button>
+      </div>
+      <span class="hint">종가 차트(최근 3년 일별·그 이전 주별) · 마우스를 올리면 날짜별 값</span>
       <div class="seg" id="range">
         <button data-r="30" aria-pressed="false">1개월</button>
         <button data-r="90" aria-pressed="false">3개월</button>
@@ -280,21 +287,25 @@
         <button data-r="0" aria-pressed="false">전체</button>
       </div>
     </div>
-    <div class="grouplabel"><i style="background:var(--stock)"></i>주식</div>
+    <div class="mpane" data-m="stock">
+    <div class="grouplabel"><i style="background:var(--stock)"></i>주식·환율</div>
     <div class="livebar">
       <div class="lbh"><span class="live">미국 지수 실시간</span><span class="note" style="margin:0">TradingView 제공 · 지수 원본 값은 무료 위젯에서 제공되지 않아, 지수를 따라가는 24시간 CFD(FOREX.com)와 ETF(SPY·QQQ, 정규장 23:30~06:00 KST)로 보여 줍니다. 아래 차트는 공식 지수 종가입니다</span></div>
       <div id="tv-tickers" class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
     </div>
     <div class="charts" id="ch-stock"></div>
-    <div class="grouplabel"><i style="background:var(--crypto)"></i>코인</div>
-    <div class="charts" id="ch-crypto"></div>
-    <div class="cind" id="cind"></div>
-    <div class="grouplabel"><i style="background:var(--macro)"></i>금리·환율·원자재</div>
+    <div class="grouplabel"><i style="background:var(--macro)"></i>금리·달러·원자재</div>
     <div class="livebar">
       <div class="lbh"><span class="live">금리·금 실시간</span><span class="note" style="margin:0">TradingView 제공 · 금은 현물(XAU/USD), 아래 차트는 금 선물(GC=F) 종가</span></div>
       <div id="tv-macro" class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
     </div>
     <div class="charts" id="ch-macro"></div>
+    </div>
+    <div class="mpane" data-m="crypto" hidden>
+    <div class="grouplabel"><i style="background:var(--crypto)"></i>코인 <span class="note" style="margin:0;font-weight:400">비트코인·이더리움·솔라나는 실시간(Coinbase)</span></div>
+    <div class="charts" id="ch-crypto"></div>
+    <div class="cind" id="cind"></div>
+    </div>
   </section>
 
   <a href="#news" class="more" style="display:block;text-align:center;text-decoration:none;margin-bottom:8px">뉴스 탭에서 실시간 헤드라인 · 뉴스 분석 · 일정 보기 →</a>
@@ -386,7 +397,7 @@
   const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : "#";
   const arr = v => Array.isArray(v) ? v : [];
   const impClass = v => v==="호재"?"up":v==="악재"?"down":v==="혼재"?"mix":"neu";
-  const ORDER = { stock:["KOSPI","NASDAQ","SP500"], crypto:["BTC","ETH","SOL"], macro:["US10Y","USDKRW","DXY","VIX","GOLD","WTI"] };
+  const ORDER = { stock:["KOSPI","NASDAQ","SP500","USDKRW"], crypto:["BTC","ETH","SOL"], macro:["US10Y","DXY","VIX","GOLD","WTI"] };
   const RANGE52 = new Set(["USDKRW","DXY","VIX"]);  // 사상 최고 대비가 의미 없는 지표는 52주 범위를 표시
   const GCOLOR = { stock:"--stock", crypto:"--crypto", macro:"--macro" };
   const LIVE = {
@@ -432,6 +443,15 @@
     return Object.assign({}, s, {points: pts});
   }
   function priceSeries(){ return (state.prices && state.prices.series) || {}; }
+  // 주요 지수: 주식 / 코인 / 전체 보기 (선택은 이 브라우저에 기억)
+  function setMkt(m){
+    document.querySelectorAll("#mkt button").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.m===m)));
+    document.querySelectorAll(".mpane").forEach(p=>{ p.hidden = !(m==="all" || p.dataset.m===m); });
+    try{ localStorage.setItem("mb-mkt", m); }catch(e){}
+    Object.values(charts).forEach(c=>{ try{ c.resize(); }catch(e){} });
+  }
+  document.querySelectorAll("#mkt button").forEach(b=>b.addEventListener("click",()=>setMkt(b.dataset.m)));
+  try{ const m = localStorage.getItem("mb-mkt"); if (m && m!=="stock") setMkt(m); }catch(e){}
   function renderCharts(){
     const P = priceSeries();
     for (const g of ["stock","crypto","macro"]){
