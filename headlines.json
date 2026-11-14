@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-14T14:46:53Z",
+"updated_at": "2026-11-14T15:23:57Z",
 "keep_hours": 36,
 "feeds": [
 {
@@ -15,17 +15,17 @@
 {
 "feed": "연합뉴스 경제",
 "ok": true,
-"count": 113
+"count": 107
 },
 {
 "feed": "구글뉴스: 뉴욕증시",
 "ok": true,
-"count": 74
+"count": 72
 },
 {
 "feed": "구글뉴스: 코스피",
 "ok": true,
-"count": 26
+"count": 27
 },
 {
 "feed": "CNBC Markets",
@@ -40,7 +40,7 @@
 {
 "feed": "CoinDesk",
 "ok": true,
-"count": 16
+"count": 17
 },
 {
 "feed": "구글뉴스: 비트코인",
@@ -49,6 +49,30 @@
 }
 ],
 "items": [
+{
+"title": "증시 운명 가를 '격동의 한 주' 시작된다 [월가 업&다운]",
+"url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KWnk3cDlxbE9kSnFRYUhWZTdxTG15WlJGcVlrenJzcGEzNDNMVHlHcUMtOHJGSDVFRTVuTmJNYUwwR3haSDNEWFdJMkxLbEZCOUg4d193NUhmZw?oc=5",
+"source": "한국경제",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-14T15:11:13Z"
+},
+{
+"title": "UK, Singapore, and Thailand central banks test cross-border FX settlement as stablecoins gain ground",
+"url": "https://www.coindesk.com/policy/2026/11/14/uk-singapore-and-thailand-central-banks-test-cross-border-fx-settlement-as-stablecoins-gain-ground",
+"source": "CoinDesk",
+"feed": "CoinDesk",
+"cat": "coin",
+"published": "2026-11-14T15:00:00Z"
+},
+{
+"title": "블랙록 비트코인(BTC)·이더리움(ETH) ETF 닷새간 1조 3,457억 원 순유출…IBIT서만 9,688억 원",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE01YjJNMUh6X1NhMVBDa1h1TFdNUk41YUFtTjlhREZ4MkREWmZIMlIxZDFpcm9UbV9EVzBzTTNrSDJtekljTlUza2dR?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-14T14:52:01Z"
+},
 {
 "title": "[주간증시분석] 코스피 5,500 찍고 5,290 마감…엔비디아 실적에 달린 반등의 지속력",
 "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1SdEZsRDRxeTI0bDB2NWNxdEVKYXMzLUlSWklGZzBtNXR4X3AwcDBISG9KR1ktQVVaT2RUcWpPVjc3ZURLcHEycUh0ZmFQOG5oRXBLVWV3ZUZKUF9Fc015SEh1d0RIZ3JlMURvSUtZVQ?oc=5",
@@ -234,14 +258,6 @@
 "published": "2026-11-14T12:02:14Z"
 },
 {
-"title": "USDT 시총 60일 새 66억달러 감소...FTX 붕괴 때보다 큰 폭",
-"url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBhSU9wRDRaVE1wQmpRLWduX25JZ21TeHpQSGduQTEwbGtKcjI5UV9Camt2TXM0ck5TcU1XZkhicFAydElZc1hWQU91V1R4ckdlX3VnY3RReHNEcFNWYlZOMGtoOWdCLXNFTkJNTWFGb3QtZTQ?oc=5",
-"source": "디지털투데이",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-14T11:55:11Z"
-},
-{
 "title": "\"비트코인 하락, 앤트로픽 IPO 전 투자자금 이동 때문\"",
 "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNN0pNUEN1T2xXakM2eGhBYnRmeVhOUjB2ZnhmWFVkSUZlTmwxeUVvMTlIb3pmSXd1MGtsZ2d5Sjl4Sjk2c18yQ21xclV5ZUktRWMyWXY3eUdoa0NCVnpBMEdRblVEQXdab0dnOVB5YmRaOEtINFBZZXNrWWUtVm1XVA?oc=5",
 "source": "이데일리",
@@ -394,14 +410,6 @@
 "published": "2026-11-14T09:12:42Z"
 },
 {
-"title": "비트코인 67K 하회…가상자산 청산액 656M 달러 기록",
-"url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPclZBMGI0ODNIb2xUZUJDMGlNYzRhTUhEaC1pMHkxV1ltZlhyNl9WU1BmYWhyTTV2X2RRRWhLaEhKeGIxQnA4RkcweFhCMWxULXZmaWtYcGo4TU80b1lCSk16dFhyUUQtSjRQNVViajhBYkpwT3pqWjBDSjEyN0FPdDFLQklKdVZSQmFOWE5IaXBQbURRNXhraDJ6SHhBcER2aUxXd0t1VTNJc1FidTE1RTVjQnY0a05XUUxmRUItSUVYUlRBM2ZrcFFWTHcycVA1?oc=5",
-"source": "Traders Union",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-14T08:52:22Z"
-},
-{
 "title": "\"美 상원 은행위원장에 엘리자베스 워런 유력\"…업계 '초긴장'",
 "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9feDUxUDR4MHQ0b1dURzg0allpSmFEdmZ2OGE0VmFfMHA5SS1NeXdKdHBKWERQb3ZWbDRWUEpaZU5RcXZsTDNRM1VzRHg5OWxi?oc=5",
 "source": "블루밍비트",
@@ -416,6 +424,14 @@
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-14T08:38:52Z"
+},
+{
+"title": "[증시 동향] 반등은 했지만···‘젠슨 황’ 리스크 변수",
+"url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10aXdqaGwtaUZVN1BldjRYZ1UzM3hNZjMtNGF0ajFhV29XM2twQW5fOXE1ZGFBZHEyRkNmNkRHM19Fb1FFUkRoZzlZaVlBeG1lcFRKQkcyN3c1SXZNeFhaWVQ1Rkx2LXd6YU5jNDRUc1hWOW400gF0QVVfeXFMTXRpd2pobC1pRlU3UGV2NFhnVTMzeE1mMy00YXRqMWFXb1cza3BBbl85cTVkYUFkcTJGQ2Y2REczX0VvUUVSRGhnOVlpWUF4bWVwVEpCRzI3dzVJdk14WFpZVDVGTHYtd3phTmM0NFRzWFY5bjQ?oc=5",
+"source": "이뉴스투데이",
+"feed": "구글뉴스: 코스피",
+"cat": "stock",
+"published": "2026-11-14T08:11:10Z"
 },
 {
 "title": "‘젠슨황 스캔들’에 서학개미들이 1000억원 ‘폭풍 매수’한 종목은",
@@ -747,7 +763,7 @@
 },
 {
 "title": "뉴욕증시 기술주 약세 속 혼조···국제유가도 ‘널뛰기’",
-"url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ya2toRG9QZE84b1ZZUmo1QVU0bmhzdkRzVHlaa2RLVGdGcDlrLXVEeWh1dDVTWHVvZEl6amtHTFB5SF9uTGxhRV8yWmFPNDA1QzNSMlY1SkVfdWd1RlVZQ3dn?oc=5",
+"url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4wbzlyTjhQTVl3WnNJRC1qUTR3T19WTmNwSjJyeVhLdGpERl9JTVZsbExYSC1MVGQ1RkpnUXFLdWlSMkZQaXdxaTRrTjZTaVZjeTZYRm9YWlpscU01THhUR0lsaw?oc=5",
 "source": "에너지경제신문",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
@@ -800,14 +816,6 @@
 "feed": "연합뉴스 경제",
 "cat": "stock",
 "published": "2026-11-14T02:00:00Z"
-},
-{
-"title": "뉴욕증시 혼조 마감-반도체·AI 기술주 약세에 나스닥 0.91% 하락",
-"url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFByOHFJdWFEYUdTUm1QUUNxUGl0TU5SamRCV2pZZUV3Qnd0RkJlQ1NtT2JWREZtaTl3Z1lLTGRlYlB0cVA1V0htQlVkeWxwU2Nxc3FGbTRJT1JRalQ1V3NHTmFONzB1TTFjamQtN0tn?oc=5",
-"source": "미디어파인",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-14T01:51:12Z"
 },
 {
 "title": "11월 2주차 SK하이닉스 주가 131만원 터치 후 하락 마감",
@@ -1059,7 +1067,7 @@
 },
 {
 "title": "월가 달구는 K-뷰티…아모레·파마리서치 담은 ETF, 뉴욕증시 상장 - 머니투데이",
-"url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4tazIyQ0drQnhmLUc4TmQxU2pHd0NRNC16NGZmeVlTOEtEMlU2YnM0VWZvTEF0OTlaUXVhOHZCOG00MEI2TU9vYk9oMDlnVmdCTkR1R1RjVDNRc2ptSndLdTNnaE5SSUhMV2ZaN2NjVXZNX1BMbWfSAXtBVV95cUxOaGE1UFIxRlVEeW1femlHdjQ1OUY2WERYRnAwUm1NOHB2OFNIaTk0OWFWODBQUVJqOFBjbGZMZGtVdlkxaGs0cWVJeVhMMHFnUndYYkNrUHJYdExRSWttUjJuZGlGMG42NTlTSFBzaUI2VjMzY3hkTHcxZ0k?oc=5",
+"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1jSVh1UV80LVFQYmxBSWIxd3J3ZjZ3UW9hdlNFLTdvZmduUHZ1OW1fUDR1M3g3TWZvS1lJa1p0Yi03WWZGbzZHYkZUYU5FTHN6NUstTzRPZnJFbG9IbTBEdHhBeG1oQk5f0gFuQVVfeXFMUHRTUnQ5VHdiOTZSM29aSFVzTFEzekFwZmdVMWE1dFB1eGlqQUozMkcwN0h2UWd5MlY2dEFwbXlzNTNGV0dmd21Zd3VPbVNpZkhPSW1UYjItUGhkMG5peC1PX1VNSVFVWkdTc0lqMEE?oc=5",
 "source": "머니투데이",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
@@ -1154,6 +1162,14 @@
 "published": "2026-11-13T22:16:58Z"
 },
 {
+"title": "코스피, 한달새 10% '뚝'…내주 '엔비디아·美中회담·연준' 주목",
+"url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5oaUhlbnd3bnpYelZESk5wR3NPczl0Q09ZTWlCUE1rZHV3NEVieDVQN2ItV2lReDdUUDREQUE1UlBuSEFRd1Zud2d3bzhNbjdkbzdrVFlVTGFBS3laMzRaWFZlLWoxSVVhdzdXNVJJWGo0UQ?oc=5",
+"source": "KB Think",
+"feed": "구글뉴스: 코스피",
+"cat": "stock",
+"published": "2026-11-13T22:15:00Z"
+},
+{
 "title": "뉴욕증시, 다우지수만 0.1% 상승…엔비디아 2%↓, 하락 지속(종합)",
 "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VVnB2UXhZcUlKbm9ORGlTUEw4R3pEOGpDcVI2WVFTZ2lVVWl3c0hFYUwxMk5jWXRWdHZjcVVXNU8zYW5WaWl3R2VZZjlTWElZZ0xWZFlTZEd5SzTSAWBBVV95cUxPYzI3aFBvQlpEOUhQdFFfNE5MUkVNTU9HM2xiZWVIYzliUlR2ZjNRYW9UQUNUNm9jYlJ6VU1wWnRxUFByZXVyYVU3RXluejVaN0kwX0VSMFpiXzlKUE5yT0E?oc=5",
 "source": "연합뉴스",
@@ -1232,22 +1248,6 @@
 "feed": "연합뉴스 경제",
 "cat": "stock",
 "published": "2026-11-13T22:01:00Z"
-},
-{
-"title": "화장품 사던 미국인들, 이젠 주식까지 산다…`K뷰티` ETF 뉴욕 증시 상장",
-"url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ubzlqRi13cURVLS16U2JWLUp2TXZrSmJBNzdLRV9lUUlBcjlYNzVJSFBId1pqMllZUXlIVFNGZjdLYlE1d3lUQl82dW1zei1uZmN1SkdSVU1QZ0lEUXN0Ukh3?oc=5",
-"source": "매일신문",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-13T22:00:57Z"
-},
-{
-"title": "[신상잇슈] 사조푸디스트 '케어포유 가루쌀 치킨'·오뚜기 '슈퍼레드 케첩'",
-"url": "https://www.yna.co.kr/view/AKR20261113076500030",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-13T22:00:04Z"
 }
 ]
 }
