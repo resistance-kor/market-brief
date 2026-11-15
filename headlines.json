@@ -1,11 +1,11 @@
 {
-"updated_at": "2026-11-15T14:29:50Z",
+"updated_at": "2026-11-15T15:24:23Z",
 "keep_hours": 36,
 "feeds": [
 {
 "feed": "한국경제 증권",
-"ok": true,
-"count": 28
+"ok": false,
+"error": "HTTPError"
 },
 {
 "feed": "매일경제 증권",
@@ -15,12 +15,12 @@
 {
 "feed": "연합뉴스 경제",
 "ok": true,
-"count": 76
+"count": 75
 },
 {
 "feed": "구글뉴스: 뉴욕증시",
 "ok": true,
-"count": 20
+"count": 21
 },
 {
 "feed": "구글뉴스: 코스피",
@@ -49,6 +49,62 @@
 }
 ],
 "items": [
+{
+"title": "역대급 실적에도 엔비디아가 늘 하락했던 진짜 이유ㅣ월가는 이렇게 읽는다(3화) [매플 인뎁스]",
+"url": "https://www.mk.co.kr/news/stock/12209208",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-15T15:32:41Z"
+},
+{
+"title": "AI가 끌고 제약·상사가 밀고…日 주요 상장사 순익 6년 연속 최대 전망",
+"url": "https://www.mk.co.kr/news/world/12209199",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-15T15:13:16Z"
+},
+{
+"title": "[넥스트 뉴욕증시] 엔비디아 3분기 실적 발표(17일) 및 앤트로픽 나스닥 상장(19일) 앞둔 'AI 빅위크' 개막",
+"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB3d1Z5M09FR3FUei1ELUw0eWdTREhWR2xfdEM3NkRiZElENlNZYUREbWhoVnpzNmx1bHZPMFdWeFdFN2JualZfVEhYNFR6YVIyeUtUb2xTcHhhT1M2aTJYLWdKdGRfNE5S?oc=5",
+"source": "CBC뉴스",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-15T15:00:00Z"
+},
+{
+"title": "\"한국은 왜 코인에 열광할까\"…이더리움 창업자가 내놓은 뜻밖의 답",
+"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YdUgtMDNVT3QxVXVraHZlRVZQek1BZnlZdkM1Umx2SkRWcHdLUnlxVi15ZzE2N3dGWDRBVHlSM0RwYkUtS2hLZXAyVEg5MFF0TkUxbTRteURnWmRPZmFOVdIBeEFVX3lxTFAtam0xOUtNSlQzX2ppVzhfaEpmMnlxMjJKRGpRWDlFLXJpQ0tuZTlYQ0J5Zl9rM2l6LVQtTlIyWVdWN19aUFdJbThkNTlySlBpak9reXJCVklCUEt4cFZKVzNVdzA2djc4QmxMYTZYVHdLS2xVNDZHVw?oc=5",
+"source": "뉴시스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-15T15:00:00Z"
+},
+{
+"title": "비트코인 약 3개월 만에 7만달러 밑으로…13일 6만8000달러대, 연초 대비 20%↓",
+"url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9QcnhucjI1dEhyVE9GcTJjTHp1S2dDQ0lYY0x5VUZPNHhYM29hTlFwaGR6dkV4SzJkY1ljQlRhV1ZxX1p2YzJPT2Q4UFM0UXBoVDBITXkwR0JpWGlRbGdjUjROMnJEWl9rRzdZ?oc=5",
+"source": "ISSUE ON (이슈온)",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-15T14:44:37Z"
+},
+{
+"title": "폐석탄 매립지에서 부채에 허덕이던 비트코인 ​​채굴 회사를 구해낸 37세 CEO의 초상.",
+"url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObDNGcVIyc2h2M21MN0syNjZyeERFbHozcF96ME14TzNVdEhZd1IyeVZ0MkZHOWZ6T3NROEU4WU9Ic240bTYwTk1DTUlaZUVHblJTSHk2Z29ETEI4TUdkNDA2N0hFS3hhSzFGdXg2NXdkZkdBNWkxYUtTbVVkNWRsY1VwZjhCalZQOG1NYWYxaWZKc3lVbUVXQnpIRHpUbEVFUUlNdm5JdTlvLUU?oc=5",
+"source": "Vietnam.vn",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-15T14:42:14Z"
+},
+{
+"title": "이번주 3대 이슈, 엔비디아·연준·앤트로픽…디지털자산 변동성 키울 것",
+"url": "https://www.blockmedia.co.kr/archives/1166085?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-15T14:30:43Z"
+},
 {
 "title": "돈냄새 귀신인 글로벌 큰손들…엔비디아 판 돈으로 인텔·하닉ADR 샀다",
 "url": "https://www.mk.co.kr/news/stock/12209538",
@@ -88,14 +144,6 @@
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-15T13:06:55Z"
-},
-{
-"title": "코인원 고객상담 수탁사 해킹…주민번호·계좌번호 등 개인정보 유출",
-"url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5pQTFnYW95el9zM2o4X1Z5SUY0cWVkX2p3TzI2UU1La2t5LUhKaGNOYXBVeURaRGlEZHBPUS1maXpNV2ludkFIZklXUjVZYzFIdExXNWxB?oc=5",
-"source": "지디넷코리아",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T13:06:14Z"
 },
 {
 "title": "캔톤(CC) 0.0804달러 선 지킬까…시장 전반 약세에 낙폭 확대",
@@ -160,6 +208,14 @@
 "feed": "블록미디어",
 "cat": "coin",
 "published": "2026-11-15T12:32:33Z"
+},
+{
+"title": "2026.11.09 - 비트코인 시황 및 팀엘리트 공식브리핑",
+"url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeW5mRTlwVkl0WWNVYmNKcDg5NGlmTlNXNEJrYkpOdzVjenduemlVY0lsLURvT1diNl9xc0JXTDg3S1lTeG1MVS1Za1RGUmpWWnpzQms1eHI1UWFxSTdQNUFGTk9vcnpTaHNTRFVnYlE4TmttQVNCeE5NeXpyUFlUM09raGlGdHJ0VW5JbVN5NA?oc=5",
+"source": "네이버 프리미엄콘텐츠",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-15T12:23:00Z"
 },
 {
 "title": "굽네치킨 오너가 2세 회사, 부당 지원 의혹…공정위 현장 조사",
@@ -242,14 +298,6 @@
 "published": "2026-11-15T11:01:23Z"
 },
 {
-"title": "\"이런 폭락장 뒤엔 항상 반전 있었다\"…1년 뒤 웃을 종목은 [한경우의 케이스스터디]",
-"url": "https://www.hankyung.com/article/2026111350516",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T11:00:01Z"
-},
-{
 "title": "비트코인 62K 급락 놓고 ‘설왕설래’ 의도적 매도설까지 등장",
 "url": "https://www.blockmedia.co.kr/archives/1166089?utm_source=general&utm_medium=rss",
 "source": "블록미디어",
@@ -264,6 +312,14 @@
 "feed": "블록미디어",
 "cat": "coin",
 "published": "2026-11-15T10:36:43Z"
+},
+{
+"title": "비트코인, 3개월 만에 6만 2000달러까지 뚝…11월에만 16% 내려간 이유는? 📉",
+"url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB2bWhXT0tFVGNEdl9Xbjl1cDZFcnROMTlITExEcHNKVmRPX1lWcHNqS0MxZ05maEFLMkNoVGotQ2Z5TFhTdG10cXZJUVBJUHJKd3ZV?oc=5",
+"source": "뉴닉",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-15T10:16:06Z"
 },
 {
 "title": "비트코인 반토막, 끝인가 기회인가?",
@@ -306,30 +362,6 @@
 "published": "2026-11-15T09:36:21Z"
 },
 {
-"title": "앤트로픽 상장일 시총에 관심 [한경 프리미엄9 TODAY]",
-"url": "https://www.hankyung.com/article/2026111575501",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T09:31:21Z"
-},
-{
-"title": "ETF 시장 커질수록 개별 종목 주가는 흔들릴 수도",
-"url": "https://www.hankyung.com/article/2026111574861",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T09:30:04Z"
-},
-{
-"title": "쏠림형 상품 된 ETF…'톱2, 톱10' 붙어야 인기",
-"url": "https://www.hankyung.com/article/2026111574871",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T09:29:54Z"
-},
-{
 "title": "[주말리뷰] 11/09~11/13 코스피 +4.56% · 코스닥 +8.60% | 다음주 관심 코스닥",
 "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbVJ2S3VCcEdibW5jZ24yblY1cl9GdUJTbU4wVHQxT0tCSFNSZGFiZEhVei1mbHl1bVphWW5uZzhGUUdaanpKcW1TakQ3ZVh6emlkbU1malZPQllGam9FanNZRWtWT3BXWTNtc3hfSnVfS2p3MEFSR3ZFZWkwZVNVdldMaC0xaDdZUUxpS2tyemU?oc=5",
 "source": "네이버 프리미엄콘텐츠",
@@ -354,14 +386,6 @@
 "published": "2026-11-15T09:00:00Z"
 },
 {
-"title": "반도체 패권 전쟁…한국의 길 찾는다",
-"url": "https://www.hankyung.com/article/2026111575401",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T08:52:26Z"
-},
-{
 "title": "업비트 테더 거래량, 바이낸스의 2%…국경없는 코인에 ‘국내 잣대’[S마켓 인사이드]",
 "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ESk85U0J2VlhsM0pFTGVqY0pLQnNiazlaeEp0SVBaU0VocTU5NjdQay16X3lqRnh5YTFRMUpmdmc2QzZkSXJ6M0FlTjlpTUJhNGc?oc=5",
 "source": "서울경제",
@@ -370,44 +394,12 @@
 "published": "2026-11-15T08:49:18Z"
 },
 {
-"title": "\"진짜 체력은 여기\"…하락장에도 뭉칫돈 들고 몰려간 곳",
-"url": "https://www.hankyung.com/article/2026111575441",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T08:48:49Z"
-},
-{
 "title": "[뉴욕환시-주간] 매파 연준 속 맥 못추는 유로…日 '160엔' 개입 경계감 |",
 "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5kQXdGZ093YUdhb1h6RG9ORDVIWWR4X2xYUEU2SFVNeFNoLXFtU1ZFOHhxdGVqS0FWYVRuZk4tckV6MEhCQ3BDSUczejl5eEdycjAzMEZaUHNuTkRuUDBBbTdPTFhpbkxnS0VqdGFpbEVqR0Uz?oc=5",
 "source": "연합인포맥스",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-15T08:47:52Z"
-},
-{
-"title": "조정장에도 ETF엔 돈 몰린다…'순자산 1조 이상' 84개",
-"url": "https://www.hankyung.com/article/2026111574881",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T08:47:43Z"
-},
-{
-"title": "반도체 소부장 '날개'…급락 후 저가매수 몰려",
-"url": "https://www.hankyung.com/article/2026111574731",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T08:39:38Z"
-},
-{
-"title": "증시 산업지도 대격변…코스피200 '리밸런싱' 판도 바뀐다",
-"url": "https://www.hankyung.com/article/2026111574411",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T08:36:49Z"
 },
 {
 "title": "금융당국 주관 공인회계사 시험에도 AI 부정행위…\"대응책 마련\"",
@@ -456,30 +448,6 @@
 "feed": "매일경제 증권",
 "cat": "stock",
 "published": "2026-11-15T08:30:34Z"
-},
-{
-"title": "환율·채권, 美 긴축 경계…환율 1330원대 줄다리기",
-"url": "https://www.hankyung.com/article/2026111574521",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T08:29:01Z"
-},
-{
-"title": "뉴욕·상하이 증시, 엔비디아 실적 발표…AI주식 향방 좌우",
-"url": "https://www.hankyung.com/article/2026111574511",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T08:28:08Z"
-},
-{
-"title": "예전만 못한 TDF 수익률…성과 보여주는 '샤프지수' 보라",
-"url": "https://www.hankyung.com/article/2026111574101",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T08:27:56Z"
 },
 {
 "title": "리플(XRP) 현물 ETF 18억 달러 몰렸는데 가격은 60% 폭락…기관 매수 효과 어디로?",
@@ -642,14 +610,6 @@
 "published": "2026-11-15T06:36:22Z"
 },
 {
-"title": "역대급 실적에도 엔비디아가 늘 하락했던 진짜 이유ㅣ월가는 이렇게 읽는다(3화) [매플 인뎁스]",
-"url": "https://www.mk.co.kr/news/stock/12209208",
-"source": "매일경제 증권",
-"feed": "매일경제 증권",
-"cat": "stock",
-"published": "2026-11-15T06:32:41Z"
-},
-{
 "title": "스트래티지 MSCI 퇴출에 비트코인 7만달러선 붕괴…연말 반등할까",
 "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB1dEVkdXVfU3k1d3VyZGVTV1BPMkVIWTAxdzQ1NGxWYVFpcDhzZEkwVERLYWNPSGVQV3hIWERUUkozR2xoVy1ma0g0LUE2cHFyX2FHSGF2eUhLUnBSXzV0WlpnbUlnZWdobEdzZUs3OUZOWkRT?oc=5",
 "source": "대한경제",
@@ -658,20 +618,20 @@
 "published": "2026-11-15T06:29:50Z"
 },
 {
+"title": "한국 화장품·미용 테마 ETF 뉴욕증시 상장",
+"url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9uZ0k2SndMc055MGlYTG9VWVRPZmlsdEk1dzFIUmszUTNnQWp3TjlfLXZZckJvQ2J0NzBSYVRHMDAwS2pteFdUSF9TQQ?oc=5",
+"source": "뉴스1",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-15T06:28:21Z"
+},
+{
 "title": "9000만원 내준 비트코인 세달 만에 최저…금리·수급 겹악재 덮쳤다",
 "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1obWhJZG9KZmNkbEtaQXczc2s5Y09rWjdCUnlMY2hFam9CRVVVcF8yTUZveDJIdFB0b2JoNVNhQjU5bEdCNko2ZnRVaGl4RkRrWU1OeG1DY0jSAVRBVV95cUxNT0NkWUVmeFFnUDdxNmk3S3pHdndIYWtCZUE3MS1qNmRQd0pGc2M2TlBDQnphSXVaTWlPdXA0b0lJUU5oeWR0RzFYTklzQ3Nfc3dNSHo?oc=5",
 "source": "세계일보",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-15T06:28:06Z"
-},
-{
-"title": "코인원도 고객 개인정보 유출…거래소별 내 정보 유출 여부 확인 방법은?",
-"url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GTUFBNlkyX3R0aUgwaE40NDJzOXNMaUZScGQ5a0M3cEpzMzdhMDBOWWhsMlVSMWk5SXU0Y1lRbFpHWnY3UGVtRG9ackxGd2pIbnE0Y0RhMEQ4dktVSEhzaEFxQV9Hdw?oc=5",
-"source": "일요신문",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T06:24:00Z"
 },
 {
 "title": "[서학개미 레이더] 비트코인(BTC) 6만 2,000달러 밀려, 앤스로픽(ANT) IPO 앞두고 자금 이동",
@@ -688,14 +648,6 @@
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-15T06:15:00Z"
-},
-{
-"title": "AI가 끌고 제약·상사가 밀고…日 주요 상장사 순익 6년 연속 최대 전망",
-"url": "https://www.mk.co.kr/news/world/12209199",
-"source": "매일경제 증권",
-"feed": "매일경제 증권",
-"cat": "stock",
-"published": "2026-11-15T06:13:16Z"
 },
 {
 "title": "비트텐서(TAO) 179.49달러 지지선 지킬까…청산 여파에 10% 급락",
@@ -722,14 +674,6 @@
 "published": "2026-11-15T06:10:00Z"
 },
 {
-"title": "ETF 자금 유출과 약세 기술적 지표가 이어지는 가운데 비트코인은 $61,784 지지선을 지킬 수 있을까?",
-"url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ3ZIWnBuZExCMklLZFFQZnB0dUZXUlh4Z3FfT2ZFdFN2TVd4ajdEVE9GX2RNWWdNOUZIZlVXbklBei1XeEFyUHJqQmg4akM1UDRGUm13U0s0bjBjZzlTVUVockZoRTQ1Y1daVTA0YWwxZFR1NTZJRHdVNkt4Zk5HUXBzdTFoNEJrZU5qWTh0WTJXZFN2SW9vWmhFZlNMVl8wZ3NR?oc=5",
-"source": "Traders Union",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T06:07:43Z"
-},
-{
 "title": "비트코인(BTC) 6만 2,000달러 지지선 지킬까…ETF 자금 이탈·롱 청산 부담",
 "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1GdHZ6b2FTLUNEZE5HanVmVDlYa2FVa3VfTGtST3JwdDUzOS0yNlFRUFFwREJuQjRxV3Uxd3FveW1ieTlWcWxNUXdR?oc=5",
 "source": "코인리더스",
@@ -744,14 +688,6 @@
 "feed": "블록미디어",
 "cat": "coin",
 "published": "2026-11-15T06:06:49Z"
-},
-{
-"title": "이더리움(ETH) 1,802달러 회복할까…ETF 자금 이탈에 롱 청산 겹쳐",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9hS0gxZ2dMb3JqRS0wQ3pSamtDSHgtal95Q20ySmR3SWE5OEJpMHJwMmFCLWdwekJGckRnMDh0U1B1U1BwY19samdn?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T06:06:21Z"
 },
 {
 "title": "엔비디아 실적·앤트로픽 상장 겹친다…뉴욕증시 'AI 빅위크'",
@@ -800,14 +736,6 @@
 "feed": "연합뉴스 경제",
 "cat": "stock",
 "published": "2026-11-15T06:00:00Z"
-},
-{
-"title": "리플(XRP) 1달러 붕괴·일주일 새 18% 폭락…다음 지지선 0.90달러도 무너지나?",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1ZSEdaUVpJVldrR0pKb01QSTI3NHA5N0FkNWdLWlFPVy1sNjREZ2RSM1lieWs4RWFPXy1xTnBJeHoxYWlpRmtYeUFn?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T05:54:00Z"
 },
 {
 "title": "비트코인 가격이 폭락했다.",
@@ -954,14 +882,6 @@
 "published": "2026-11-15T05:00:01Z"
 },
 {
-"title": "'빅스텝' 공포 가상자산 시장 강타…비트코인 6만달러대 후퇴",
-"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nR2llUS1yMWQ4c3paOTNYQWhhUnNJMXdSVWF1N2cxcy1xdDlweS14LWc4VzIwMjdBcUNVclBHVTE0OXRzMmVnRHFhSnJmVFdpeTNHWkVNSlpUdzhWQzdTMA?oc=5",
-"source": "메트로신문",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T04:50:40Z"
-},
-{
 "title": "[현장] \"예쁜지보다 안전부터\"…참사 딛고 입주 앞둔 화정 아이파크",
 "url": "https://www.yna.co.kr/view/AKR20261115028000054",
 "source": "연합뉴스 경제",
@@ -976,30 +896,6 @@
 "feed": "구글뉴스: 코스피",
 "cat": "stock",
 "published": "2026-11-15T04:21:00Z"
-},
-{
-"title": "노후자금 고민했는데…15조9000억 몰린 연금상품의 비밀",
-"url": "https://www.hankyung.com/article/202611157096i",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T04:04:52Z"
-},
-{
-"title": "원화 강세에 '캪틴큐'까지…롯데칠성, 4분기 이익 컨센서스 70%↑",
-"url": "https://www.hankyung.com/article/202611157097i",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T04:01:27Z"
-},
-{
-"title": "불륜에 무너진 젠슨 황…\"잡스 때와는 다르다\" 말 나온 이유 [노정동의 어쩌다 투자자]",
-"url": "https://www.hankyung.com/article/2026111350356",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T04:00:03Z"
 },
 {
 "title": "노동부, 추운 겨울 앞두고 이주노동자에게 겨울옷·작업복 나눔",
@@ -1122,22 +1018,6 @@
 "published": "2026-11-15T02:33:50Z"
 },
 {
-"title": "증시 폭락 후 초고수는 \"반등에 베팅\"…'레버리지·급락주' 담았다",
-"url": "https://www.hankyung.com/article/202611157013i",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T02:21:51Z"
-},
-{
-"title": "코인원 \"외주업체 해킹으로 이름·계좌번호 등 고객 정보 유출\"",
-"url": "https://www.hankyung.com/article/2026111570777",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-15T02:18:21Z"
-},
-{
 "title": "[속보] 재경부 \"AI 부정행위자 합격증 효력 중단 논의 중\"",
 "url": "https://www.yna.co.kr/view/AKR20261115021900002",
 "source": "연합뉴스 경제",
@@ -1248,6 +1128,126 @@
 "feed": "연합뉴스 경제",
 "cat": "stock",
 "published": "2026-11-15T02:00:00Z"
+},
+{
+"title": "[연합뉴스 이 시각 헤드라인] - 10:30",
+"url": "https://www.yna.co.kr/view/AKR20261115016000011",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-15T01:30:00Z"
+},
+{
+"title": "세무사 수석합격자, AI 부정행위 시인…경찰에 자수",
+"url": "https://www.yna.co.kr/view/AKR20261115016200530",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-15T01:15:38Z"
+},
+{
+"title": "[미국증시 레이더] 뉴욕증시, 엔비디아 실적·앤트로픽 상장 주목…AMD 8%대 급락, 반도체주 흔들",
+"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE03TmRZaXBULWVqWmV1T2ZzOVFfTHkySldwazZZNUZ5b3J6dUtsVURNMExEYUdnRXFBNVpCNkRwdjhWRTIwTTVsRE80TDlvN25qQzRweXMyWVBVWnhVUktObmMzTmhZa1FP?oc=5",
+"source": "CBC뉴스",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-15T01:10:00Z"
+},
+{
+"title": "LH, 건설업계와 공공주택 신속공급 간담회…\"민간 협조 필요\"",
+"url": "https://www.yna.co.kr/view/AKR20261115017000003",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-15T01:02:57Z"
+},
+{
+"title": "’9천피’에 발행된 ELS, 내달 만기 도래…원금 손실 경고",
+"url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XX21ZZmFaWnRVWG5MckIxVW9wN2g3ZEE3azFOejViMkFtamcwU1JjOE9lMHpVVE1xU2ZwVHR2UUdPTlZwdVE5RDJRQkRlaU81eUhmY3JobHVWUUdyZHQzaWw4UVRNWXc?oc=5",
+"source": "연합뉴스TV",
+"feed": "구글뉴스: 코스피",
+"cat": "stock",
+"published": "2026-11-15T00:56:00Z"
+},
+{
+"title": "롯데건설, 청담르엘로 2026 대한민국 조경대상 수상",
+"url": "https://www.yna.co.kr/view/AKR20261115015500003",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-15T00:46:06Z"
+},
+{
+"title": "나스닥 23시간 거래 초읽기…韓증시 '머니무브' 촉각",
+"url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBKVUhkZWY4c21pck9yVUtILTVTRkFXbjBMUVBCRTN3Q0xBYVBuQV95bmtycjZMUzFwUEtfNEF3NkhtSTVFMGtxNy14Qlh5anJ0M1duMg?oc=5",
+"source": "이투데이",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-15T00:44:00Z"
+},
+{
+"title": "무보, 슬로바키아 수출입은행과 원전·에너지 금융협력 강화",
+"url": "https://www.yna.co.kr/view/AKR20261115013600003",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-15T00:25:24Z"
+},
+{
+"title": "한-투르크메니스탄 세관상호지원협정 발효…무역·통관 협력",
+"url": "https://www.yna.co.kr/view/AKR20261115013300002",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-15T00:16:38Z"
+},
+{
+"title": "담양 전원주택단지 주차장 부지에 음식점 입점…주민 반발",
+"url": "https://www.yna.co.kr/view/AKR20261113138100054",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-15T00:05:00Z"
+},
+{
+"title": "삼성전자·KB금융·현대차 상승, 레인보우로보틱스 9%대 급등…코스피·코스닥 엇갈린 흐름, 뉴욕증시는?",
+"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ncTBWdURfdHhUYUdBUTd2MVhIUTlPVDQ0V2FhVEZGZTF3ckRtdnJ0ZGdCbUZyRnlfaERZd2pMN2NWM0lCYmpHUWxEdWVDSlBjQi16U3JNUEdRWFVwVC01dmxlUm9SY3R2?oc=5",
+"source": "CBC뉴스",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-15T00:05:00Z"
+},
+{
+"title": "[게시판] 우리은행, 자원순환 캠페인으로 폐전자제품 85t 수거",
+"url": "https://www.yna.co.kr/view/AKR20261113160400002",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-15T00:00:04Z"
+},
+{
+"title": "국민은행 \"영업점 방문 없이 상속 서류 접수·예금 지급\"",
+"url": "https://www.yna.co.kr/view/AKR20261114042900002",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-15T00:00:03Z"
+},
+{
+"title": "주택공급 속도내는 정부…수도권 전세수급은 여전히 불균형",
+"url": "https://www.yna.co.kr/view/AKR20261115004300003",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-14T23:05:51Z"
+},
+{
+"title": "웹툰작가·배달기사·검침원…공통소망은 '표준계약서 의무화'",
+"url": "https://www.yna.co.kr/view/AKR20261114048800004",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-14T23:00:01Z"
 }
 ]
 }
