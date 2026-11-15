@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-15T18:01:52Z",
+"updated_at": "2026-11-15T18:48:17Z",
 "keep_hours": 36,
 "feeds": [
 {
@@ -20,7 +20,7 @@
 {
 "feed": "구글뉴스: 뉴욕증시",
 "ok": true,
-"count": 17
+"count": 16
 },
 {
 "feed": "구글뉴스: 코스피",
@@ -49,6 +49,22 @@
 }
 ],
 "items": [
+{
+"title": "[금주의 빗썸 투자자 픽] 마이쉘 59.14% 상승",
+"url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5VM2ZBMi00Rl96S0xZbzFzRXNRRjVxblRyX054amlELWpVc0ZYeHZTZVk4NUFxck10a3FEeTBNN0hTTEh4dDl4d0pNSUJ4dVlwYVk1a1ZFTHQzX1J4V2F5Q3VQSEJ0UUlucEpMNA?oc=5",
+"source": "경향게임스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-15T18:16:08Z"
+},
+{
+"title": "북한, 해킹 코인으로 ‘미사일 부품’ 사들이나",
+"url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeGxDcUZNcWRhZ0U4aFpnWTluMkIyV2d5MENNSDFJQzl0NGNvc005cU04ckhrcm9jVmdqTmJ3LWpfRWVHSmZzdFNIVFJCczFNNXRtNkpNUk1mUWh2RGlFMlRYZ08yZXZOZ1RFaTlsSTZjR1B6RXhZOHZaT3E4VGR4a3c3V0FvZw?oc=5",
+"source": "조선일보",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-15T18:00:00Z"
+},
 {
 "title": "[단독] 코스피 3분의1이 대주주지분 과반·저PBR",
 "url": "https://www.mk.co.kr/news/stock/12209373",
@@ -111,7 +127,7 @@
 "source": "Benzinga",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
-"published": "2026-11-15T17:04:28Z"
+"published": "2026-11-15T17:09:46Z"
 },
 {
 "title": "미국발 비트코인 수요 약화 속 매수 주체는",
@@ -128,6 +144,14 @@
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-15T16:55:08Z"
+},
+{
+"title": "중동 긴장에 비트코인 8만 달러 아래로…“추가 하락 가능성” [디센터 시황]",
+"url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1VaFdZWG85cF9BSU9KdDROdHFVRGRpVTY4UE9MT251ck9ldDFTdS1vdzFsWjQ1TWpmVlV0QzN0WmxoSTV1cGY0cmFMRHM4ZDFKX3F30gFTQVVfeXFMTVVoV1lYbzlwX0FJT0p0NE50cVVEZGlVNjhQT0xPbnVyT2V0MVN1LW93MWxaNDVNamZWVXRDM3RabGhJNXVwZjRyYUxEczhkMUpfcXc?oc=5",
+"source": "서울경제",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-15T16:45:15Z"
 },
 {
 "title": "코인베이스(COIN), 연방 신탁은행 인가...비트코인(BTC) 현물 ETF 80% 이상 수탁",
@@ -834,6 +858,14 @@
 "published": "2026-11-15T06:10:00Z"
 },
 {
+"title": "ETF 자금 유출과 약세 기술적 지표가 이어지는 가운데 비트코인은 $61,784 지지선을 지킬 수 있을까?",
+"url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ3ZIWnBuZExCMklLZFFQZnB0dUZXUlh4Z3FfT2ZFdFN2TVd4ajdEVE9GX2RNWWdNOUZIZlVXbklBei1XeEFyUHJqQmg4akM1UDRGUm13U0s0bjBjZzlTVUVockZoRTQ1Y1daVTA0YWwxZFR1NTZJRHdVNkt4Zk5HUXBzdTFoNEJrZU5qWTh0WTJXZFN2SW9vWmhFZlNMVl8wZ3NR?oc=5",
+"source": "Traders Union",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-15T06:07:43Z"
+},
+{
 "title": "비트코인(BTC) 6만 2,000달러 지지선 지킬까…ETF 자금 이탈·롱 청산 부담",
 "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1GdHZ6b2FTLUNEZE5HanVmVDlYa2FVa3VfTGtST3JwdDUzOS0yNlFRUFFwREJuQjRxV3Uxd3FveW1ieTlWcWxNUXdR?oc=5",
 "source": "코인리더스",
@@ -858,14 +890,6 @@
 "published": "2026-11-15T06:05:27Z"
 },
 {
-"title": "솔라나(SOL) 68.84달러 지지선 지킬까…ETF 자금 이탈에 하락 압력",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE03bXRFWmxaTjZHN0t4S3ZXZU9VdkxsMkdNSU4xaGRVMEIxMUxkcTJvZmtkTEliRVJ3aEM3UXIzNngzRnZKa21ISy1n?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T06:04:59Z"
-},
-{
 "title": "시바이누(SHIB) 0.000003700달러 지지선 지킬까…연준 긴축 우려에 밈코인 약세",
 "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5ac29ORlN2cXRhMFJYeFBFck9wYmJFakdMT2xKNlBEVDc2YVpBZXZLYk1YcGc3VzJYY253eEFYNlk1bUx3SzhkQnlB?oc=5",
 "source": "코인리더스",
@@ -882,36 +906,12 @@
 "published": "2026-11-15T06:02:35Z"
 },
 {
-"title": "비트코인 가격이 급락하며 4개월 만에 최저치를 기록했습니다.",
-"url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5GRmVEQ3JNUHFwbWJqOHJyM29pc3JxVGRlSTV6VG5MZF9ubEM1OTZ2czc0aUJwcTdLcTdlX1dnUmVyRExfYnYwbG05bjRIRTFNRGc1NU8xbUJ3RWN5SkZ1c1pLZmctcElRa1MxSjlwYjVkV1RhOGx0RWdfWQ?oc=5",
-"source": "Vietnam.vn",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T06:01:04Z"
-},
-{
 "title": "[연합뉴스 이 시각 헤드라인] - 15:00",
 "url": "https://www.yna.co.kr/view/AKR20261115030400011",
 "source": "연합뉴스 경제",
 "feed": "연합뉴스 경제",
 "cat": "stock",
 "published": "2026-11-15T06:00:00Z"
-},
-{
-"title": "비트코인 가격이 폭락했다.",
-"url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ITTdRV1JGTjVkZ2s5SmlSM2pRc0RXQnI1XzB0ek10M0JoUUpNU3kwSFVxSHZLZnM2SURibHNzWjMzSGVWSm45RXpVR05VcERfeVZkb2lxeGpFTGM?oc=5",
-"source": "Vietnam.vn",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T05:50:55Z"
-},
-{
-"title": "비트코인 고래 4만 7,000개 매수에도 급락…5만 7,000달러까지 무너지나?",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5aWTNqNzRhWFBmdXh4WmpyN3RmQTFHQ0M4ajZsSEdkVEk1MzlyUzItT1ZpaE53Sl9fSmJDOElXVmtwYnEyZlBxX21n?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-15T05:50:00Z"
 },
 {
 "title": "[다음 주 증시 전망] 엔비디아, 직전 두 분기 매출 전망치 5% 안팎… 시장 눈높이는 0.7%, 코스피 5300 공방 가를 17일",
