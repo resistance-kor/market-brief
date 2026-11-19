@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-19T20:08:33Z",
+"updated_at": "2026-11-19T21:18:34Z",
 "keep_hours": 36,
 "feeds": [
 {
@@ -25,12 +25,12 @@
 {
 "feed": "구글뉴스: 코스피",
 "ok": true,
-"count": 86
+"count": 85
 },
 {
 "feed": "CNBC Markets",
 "ok": true,
-"count": 1
+"count": 3
 },
 {
 "feed": "블록미디어",
@@ -49,6 +49,198 @@
 }
 ],
 "items": [
+{
+"title": "[뉴욕증시 마감] 앤트로픽 상장에 증시 하락…다우 1100p, 나스닥· S&P 2%↓",
+"url": "https://www.blockmedia.co.kr/archives/1168341?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-19T21:17:22Z"
+},
+{
+"title": "비트코인 폭락 끝나간다?…엘리엇 파동 분석가 \"하락 국면 막바지에 접어들었다\"",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE82XzNSX1VGcjJOV2kwT1FRTTRFUDV5eTZrdTlfQ2tqUmlhLWUxdjhhV3pmazlIRnlvYkI0NDdtYUJUUWFMVlNkdlNB?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T21:14:00Z"
+},
+{
+"title": "[속보]앤스로픽 증시 입성에도 일제히 하락 마감",
+"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YNGk2dExyYWlKeC1qSlBxY3ljSkxWeTV0cE9Ba1NOZ09kNXFDeDN2U0FNTms1Rm81ZFJQbnFqYThmN2ZuSmcyZ0RMZFJ0N0llc2lYa0ZBS296djdxRTk3UA?oc=5",
+"source": "아시아경제",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-19T21:08:55Z"
+},
+{
+"title": "[속보]앤스로픽 상장 첫날 뉴욕증시 2%대 급락…다우 5만선 붕괴",
+"url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTW41cmRfcEREbzJHZm1KaDJUalJwN3RtQzNOdXJRR09jbjBzNnIxZ0R1SUREZ2ZCVGRmX2FDZ1JwakR1Nkw0cDU5ejJLU0V5amNGOGdYWm16c29pd1BYZGVTd0xuN29fbG12RHNpbVAyVnU4MFZwTmhJQ0JBenpHeQ?oc=5",
+"source": "이데일리",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-19T21:08:43Z"
+},
+{
+"title": "뉴욕증시, 하락세로 마감…나스닥 2.25%↓",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBzMHB6Y2FYNHdjc0NibWhvNUl3VHhhSFJRNlZBMFJCU1FUOUNRNXgzMWYtaXBtdDRabzJLTmZCc1NZZFpHTTZnU0xDalRraGxj?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-19T21:07:39Z"
+},
+{
+"title": "[속보] 뉴욕증시, AI주 약세에 하락…나스닥 2.25%↓",
+"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02VlR6NkNwUDNrV2JPUzNYMG9XZXlENXRDSkZGLXhDVkxGdk1UMGNyNV9FUENpU09jNG9VS3hyTmNrUHo2SGljSEx6WG9GS0pGeExRd01fOUJRUmp2cjU1a9IBeEFVX3lxTFBjc1JtNEljZzJMdm5Ja1d2Sm84bGNxNEpqdi1vNklvZExxNDZHVmRNM2xPVmNuYTR6dnR1T3d5R2FhNkh1ZVhsUDJnQVhhQWlhV3dXVzh6UHp6eGdDQ243T0FnalVuOFRTVjlTb3RMWTVnTGVxSEpiMA?oc=5",
+"source": "뉴시스",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-19T21:05:00Z"
+},
+{
+"title": "VanEck 비트코인 ETF, 2027년 2월 Gemini 수탁 계약 종료",
+"url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zOXU3YzFra0hDeklYRGoyb252dEVJWXlqOW1ubG54RjF6YTZhNHBuOW9iR0ppT0U3YW5wWk9ScnM2OWJnMy02R0QyZWV1aUJXZ1I2a21xczAtUEVvTW1pcWpPUGZ6Mjg1WlNnWjdnMA?oc=5",
+"source": "Investing.com 한국어",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T21:03:00Z"
+},
+{
+"title": "[속보] 나스닥 2%대 급락…앤트로픽 상장에 자금 빨아들이는 '블랙홀'",
+"url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBJVld3dmRZbmx0aW5ad09uTjAtRUMwVzcwUEw1NTd2SjFrZFFITHJaRnItSTE4WWtoN09KS3ZOcVVfdUllbU93amVVSnBtVEg1NXduYUJ1UGk5U2JhdkJRTmR2d1ZtaFU?oc=5",
+"source": "뉴스1",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-19T21:01:12Z"
+},
+{
+"title": "10월 생산자물가 0.1% 하락…사과 29.2%·돼지고기 12.8%↓",
+"url": "https://www.yna.co.kr/view/AKR20261119157000002",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-19T21:00:02Z"
+},
+{
+"title": "외국인 10월 국내 주식 26조원 팔았다…2개월째 순매도",
+"url": "https://www.yna.co.kr/view/AKR20261119169500002",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-19T21:00:01Z"
+},
+{
+"title": "이코노미스트 \"2027년은 포스트 트럼프 시대\"...AI·부채·지정학 위기 경고",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1LaDZIQ0xNQUxRX3dFV0kzUF91WlZwS0I5S1pkT0hIMzBEY3cwa0dVU2hVMEVOd3I3UU5JT2FUeXYxYXZBWXhJd0NR?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T21:00:00Z"
+},
+{
+"title": "비트코인 $62000 이하 하락…상원, 이란 전쟁권한 결의안 부결",
+"url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4xRGVqTll4ZjdBVEwta3VsOEEzSHFwcHh0MmRvbnh3T3ZmNy1JZTRxZDFTeU1mOWJoVXMyTzBDbDkyLTJqNVNJZVlqdFVlaDRNUmU0SHljZG80LW9LdzdvSXdMX1BQU2J3Y1JlbHk4bnJMSFFwbGtaNA?oc=5",
+"source": "BeInCrypto",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T20:58:31Z"
+},
+{
+"title": "[뉴욕 코인시황/마감] 앤트로픽 IPO 후폭풍에 비트코인 6만2000달러 후퇴",
+"url": "https://www.blockmedia.co.kr/archives/1168334?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-19T20:57:38Z"
+},
+{
+"title": "반에크 비트코인 ETF, 제미니와의 수탁·청산 계약 해지 통보",
+"url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1rdnBOeVM3elZ6QUEwVGJ1eER2eGU2Z3o1R1F3WkNhS3lfeUQxSnVLaE5yRnlLMHRMcmJGS0E2QUctbGFjcEtQTmZ4b2ZiR2dLX3VjaGVPOGFQb212Zk92UFR0Z09BbEZFNW1aR2QyU001Zw?oc=5",
+"source": "데이터투자",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T20:54:06Z"
+},
+{
+"title": "이더 600만 개 쥔 비트마인…8조 원대 적자, 주가 반토막 육박",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1nXzdYS0dUalY4elB3VjZzaU8yRjZ0Y1UtcnNWZzlUWFBMVUJubFBEbXNuSlMwUV9ZVVZhaGZjOU5JY3VVcHRYTEFB?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T20:52:28Z"
+},
+{
+"title": "“여태껏 숨참고 기다렸습니다”…한한령 빗장 풀리자 용틀임한 종목들",
+"url": "https://www.mk.co.kr/news/stock/12213954",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-19T20:47:42Z"
+},
+{
+"title": "스테이블코인 2930억달러로 뚝…코웬이 비트코인 급락 점친 이유",
+"url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeFVHWHRGaUZVZGhET0xnZV81MkpPRzBXS1puTW56TDlIcjJrVkdWaFlqcDJTalpzZFIxaEVzUVVrVmktMDk3bEwtQmpHZGpZbE9BMjFDOE1GQmZ1MFNzMXpnZnhuVVBfQzdHcTl6WE1LN2x0bG1obllRSl9vR0dJV0FWTnNvZGlW?oc=5",
+"source": "글로벌이코노믹",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T20:45:00Z"
+},
+{
+"title": "비트코인 6만5700달러 저항에 막혔다… “6만3300달러 회복 못하면 추가 하락”",
+"url": "https://www.blockmedia.co.kr/archives/1168324?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-19T20:43:16Z"
+},
+{
+"title": "비트코인(BTC), 6만2000달러 일시 반납",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9DVDdSdEtIZjJrU1B0cU1XTThZRkQ2NjhqZUM1NzNmVkhUcncycC1heFJtR3U5c3ZYdXR2TGxYYWdhempxVmIwSVhrVkMtempQ?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T20:32:05Z"
+},
+{
+"title": "비트코인 6주 연속 내렸는데 \"회복 중\"…마크 유스코가 짚은 이유",
+"url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOc3lyZGo4eEtQZ09LSzJpTkhNbzhfS3dfVUNOUU5CbjdrR0U0VDJwT2ZWU2lxVUREbnBpRVY5SDFnTUxmSlNYZEpJWkVMWGc0eGpXaF9yMXpDYlVJdnJvWWRuSFlJdFRpd0Rna1ppb1ZtWkV1Z2xDU285cVhfZ3pJQ1Z6eE4xeERQ?oc=5",
+"source": "글로벌이코노믹",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T20:30:00Z"
+},
+{
+"title": "창펑자오 \"SBF에 FTX 기밀 거래정보 요구했다는 증거 없어\"",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBzUjJ4UEdvUHZBWTlEWjRaRWVjaWxIQUlQaE9mSjR5b3ZWZTNqQ2s0ZmRKbUlrYkZ5QjkydHpEZFJvX0Z5V3RhQ1FrRG9xQW5O?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T20:26:50Z"
+},
+{
+"title": "Peterson: Nvidia’s leadership crisis tests the chipmaker’s role as the ‘central bank of AI’",
+"url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+"source": "CNBC Markets",
+"feed": "CNBC Markets",
+"cat": "stock",
+"published": "2026-11-19T20:21:10Z"
+},
+{
+"title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+"url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
+"source": "CNBC Markets",
+"feed": "CNBC Markets",
+"cat": "stock",
+"published": "2026-11-19T20:18:47Z"
+},
+{
+"title": "[월가 레이더] 앤스로픽 상장 첫날 17% 급등에도 다우 1000포인트 폭락…AI주 투매",
+"url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE53eHlCd1hFMlloWFotZm80OVR3UzRSZ25OMUs2cndxamNaa1NBdHRNYV9UTTlNenFhaGJIQUJWdFJ4blFfRllPVHNzbGlFTm9rUlNJM084MGJLRkE4cnc?oc=5",
+"source": "포커스온경제",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-19T20:17:47Z"
+},
 {
 "title": "비트코인 양자컴퓨터 방어 기술 공개… “거래 비용·보안 위험 여전”",
 "url": "https://www.blockmedia.co.kr/archives/1168316?utm_source=general&utm_medium=rss",
@@ -154,14 +346,6 @@
 "published": "2026-11-19T19:03:23Z"
 },
 {
-"title": "칼시, 35개 주와 도박중독 명단 공유 추진…규제 공백 메운다",
-"url": "https://www.blockmedia.co.kr/archives/1168252?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-19T19:01:53Z"
-},
-{
 "title": "벤자민 코웬 \"비트코인(BTC), 3만 달러대 가야 온체인 지표 초기화\"",
 "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE13blhBSUxINVVkOWZtR2thSjE5UzBtZ2lRVjBZckxhOUFlNHhCWWwtdGhCdDlXUGlrWV9TaGw5SnRTTXNyTXNwdkpR?oc=5",
 "source": "코인리더스",
@@ -224,14 +408,6 @@
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-19T18:00:23Z"
-},
-{
-"title": "앤트로픽 상장 후 매도세…엔비디아·증시·BTC 동반 약세",
-"url": "https://www.blockmedia.co.kr/archives/1168288?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-19T17:59:32Z"
 },
 {
 "title": "6만 2천 달러 지켰지만…ETF서 하루 4,153억 털렸다",
@@ -346,14 +522,6 @@
 "published": "2026-11-19T17:08:53Z"
 },
 {
-"title": "앤트로픽, 나스닥 첫 거래가 111.50달러…공모가 대비 34.3% 급등(상보)",
-"url": "https://www.blockmedia.co.kr/archives/1168267?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-19T17:06:13Z"
-},
-{
 "title": "Anthropic gains after IPO, but pulls off highest levels",
 "url": "https://www.coindesk.com/markets/2026/11/19/anthropic-opens-for-trade-at-usd11-50-up-34-from-ipo-price",
 "source": "CoinDesk",
@@ -455,7 +623,7 @@
 "source": "Chosunbiz",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
-"published": "2026-11-19T15:30:00Z"
+"published": "2026-11-19T15:33:26Z"
 },
 {
 "title": "뉴욕증시, 앤트로픽 거래 앞두고 기술주 강세…나스닥 1.42%↑",
@@ -532,14 +700,6 @@
 {
 "title": "뉴욕증시 일제히 상승…나스닥 482포인트 급등, 앤트로픽 상장 촉각",
 "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ZRGhaQkZnWk15cXN5WjlRdzRUTEhzMmhmN040d20xZU4zNGFXN24xUjVoYVdVVnMzeXh0X2J1ZkNFMy1zLXo4dU1PSVo0Z3BVdW4tWlRPNDBueHROdVUtemJfUlN5NWRa?oc=5",
-"source": "CBC뉴스",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-19T15:00:00Z"
-},
-{
-"title": "[증시마감] 장중 18만 원대·111만 원대까지 밀렸다가 극적 반전… 앤트로픽 상장 앞두고 웃은 삼전·하닉",
-"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWS3J1NG1OQTRwOGlwLVJPNDE0STJQeEtTSTlDZnNmbUo1c3NYdVdKOWhpY0VXN01aQTR5dFFOOE1sWUNpYjFjY3lfQklXa1BfT2lJdjdKY2xmZldzbkRtSHBMMGxJLVFy?oc=5",
 "source": "CBC뉴스",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
@@ -672,14 +832,6 @@
 "feed": "CoinDesk",
 "cat": "coin",
 "published": "2026-11-19T13:11:31Z"
-},
-{
-"title": "[시세] 아스터(ASTER) 5.86% 하락…0.5126달러 지킬까",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBqRlY2VWdVd0dUY1oyYU8zVFp5a2tmbzQ2bWhhbllDUjZmWXF1U2FJUjc2RGNrMUs1TmNIa19vcXFMMDZFYzdzYjN3?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T13:04:11Z"
 },
 {
 "title": "앤트로픽 드디어 나스닥 데뷔…외인 K증시 돌아올까 [분석+]",
@@ -842,14 +994,6 @@
 "published": "2026-11-19T11:57:58Z"
 },
 {
-"title": "“여태껏 숨참고 기다렸습니다”…한한령 빗장 풀리자 용틀임한 종목들",
-"url": "https://www.mk.co.kr/news/stock/12213954",
-"source": "매일경제 증권",
-"feed": "매일경제 증권",
-"cat": "stock",
-"published": "2026-11-19T11:47:42Z"
-},
-{
 "title": "North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
 "url": "https://www.coindesk.com/business/2026/11/19/north-korean-hackers-used-sky-s-stablecoin-system-putting-billions-at-freeze-risk",
 "source": "CoinDesk",
@@ -872,78 +1016,6 @@
 "feed": "매일경제 증권",
 "cat": "stock",
 "published": "2026-11-19T11:08:44Z"
-},
-{
-"title": "Anthropic’s $107 billion sale set to top SpaceX’s IPO as tokenized stocks gain traction",
-"url": "https://www.coindesk.com/markets/2026/11/19/anthropic-s-usd107-billion-raise-set-to-surpass-spacex-s-ipo-haul",
-"source": "CoinDesk",
-"feed": "CoinDesk",
-"cat": "coin",
-"published": "2026-11-19T11:06:13Z"
-},
-{
-"title": "아이리스(IRYS) 28.22% 급등…업비트 비트코인·리플·이더리움은 1% 안팎 상승",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1HazRNbExWdEowYmc4dkFsM3dlTVZEV3g5WUF1NWlmUFN0dFhicHYyZjlveGoyVmhiRkhHeXNnTEx3d3JGSG9LZUdn?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T11:01:44Z"
-},
-{
-"title": "비탈릭 부테린 \"코인도 부동산처럼 여겨져야…장투 문화 필요\"",
-"url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aMnEwbUotY043S1RpcXoxY0pXYkp4ZTNmQldJeEVVZ1dac0d3R0VIazhiX2FLcmloaEE1X0UxTGFheHZhLXN2YjlMd0loMTR1YTNtMk1WZjFicVhod25kalRkbGFBWHp0VWRwR3R4LTlqU3M?oc=5",
-"source": "디지털투데이",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T11:00:00Z"
-},
-{
-"title": "Financial firms must act now as quantum computers grow ‘highly advanced,’ IOSCO warns",
-"url": "https://www.coindesk.com/tech/2026/11/19/banks-and-blockchains-lag-on-quantum-defense-as-encryption-risks-loom-watchdog-warns",
-"source": "CoinDesk",
-"feed": "CoinDesk",
-"cat": "coin",
-"published": "2026-11-19T10:55:29Z"
-},
-{
-"title": "\"2022년 폭락장과 닮았다\"…비트코인 200주선 붕괴에 연준 금리 인상 공포 확산",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9YWHlnS2ZqalZyamZtOXR1UDgyQTlWM0pUZlpiUHFBQ1hmWmJhVTZGRTl1MUFlNzBzaWxxTUlUSXJ6UXBSUXJtWUJB?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T10:52:00Z"
-},
-{
-"title": "Live updates: Bitcoin falls as strong Anthropic opening fails to lift animal spirits",
-"url": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech",
-"source": "CoinDesk",
-"feed": "CoinDesk",
-"cat": "coin",
-"published": "2026-11-19T10:48:26Z"
-},
-{
-"title": "Singapore settles $77.5 million tokenized bill sale in local CBDC",
-"url": "https://www.coindesk.com/business/2026/11/19/singapore-settles-usd77-5-million-tokenized-bill-sale-in-local-cbdc",
-"source": "CoinDesk",
-"feed": "CoinDesk",
-"cat": "coin",
-"published": "2026-11-19T10:39:36Z"
-},
-{
-"title": "비트코인 6만 달러 붕괴 경고…가상자산 7주 연속 하락, 앤트로픽 IPO가 반전 이끌까?",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE8zTXlJOWwxWV9lUHVJSmdvUWM4YVR5MmUwV2tueTA5ZUpyOG52ZHFzc0l0MmtoeDl1WXZydUVaa1BBTEZKQWhQZW1B?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T10:38:00Z"
-},
-{
-"title": "앤트로픽 813억 달러 IPO에 나스닥 선물 급등! 비트코인도 6만 3,800달러 회복",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1uVVI0SURvYVBrdktvbFM4bmhMa0x1WENwX0NmcmZCVHUwY0RBNTVhRDA2VzFNYzZiSGtIT1VfTHZKc1hJWDRYSTNn?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T10:35:00Z"
 },
 {
 "title": "엔터·미디어·여행주, 한중 관계 해빙에 줄줄이 상한가",
@@ -1176,78 +1248,6 @@
 "feed": "매일경제 증권",
 "cat": "stock",
 "published": "2026-11-19T09:02:06Z"
-},
-{
-"title": "[연합뉴스 이 시각 헤드라인] - 18:00",
-"url": "https://www.yna.co.kr/view/AKR20261119153400011",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-19T09:00:00Z"
-},
-{
-"title": "이찬진, 금감원 직원 '닮고 싶은 상사'로 뽑혀…총 19명 선정",
-"url": "https://www.yna.co.kr/view/AKR20261119162300002",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-19T08:59:27Z"
-},
-{
-"title": "KB증권, 지역관광 AI 펀드에 20억 출자",
-"url": "https://www.hankyung.com/article/2026111983426",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-19T08:57:45Z"
-},
-{
-"title": "LG생활건강, 정기 임원인사…전무 승진 2명·상무 선임 1명",
-"url": "https://www.yna.co.kr/view/AKR20261119157700030",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-19T08:54:56Z"
-},
-{
-"title": "수출 1조달러 기념…내달 3일 한강 밤하늘에 드론 1천대 뜬다",
-"url": "https://www.yna.co.kr/view/AKR20261119162000003",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-19T08:54:45Z"
-},
-{
-"title": "코스피, 앤트로픽 상장 앞두고 1.4% 상승 마감",
-"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1EX0Rmb0RlV0FyREdlaXFDaG53RFFTU0Y3SXAzdm1YUWVzVmlGVzVjQ3dWSnRJMEtQaE9MWHdCSWJJR25SLV8ydWdmU0h0WGd6VmFRQzlLT1RSWFF2QUZuTWthTnNaNERkOUp4YW85LTjSAXRBVV95cUxOZDVUQjBTdE5XTjg4aEc3VGRwekJYcG9heThoQ2duNGJfQm9INHRRWndLVVBORVplbS1QU1JmTHpfUlZaZ0dFU2c2WGVBNHd6WGp5MHZ3bUpKbkN1MmZERFRDV1EwUDJLOVNvdFE1bldmTDEycQ?oc=5",
-"source": "포인트데일리",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-19T08:54:15Z"
-},
-{
-"title": "코스피, 수능날 5000선 붕괴 딛고 반등…1.39% 상승 마감",
-"url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xMV9zZ05wN0VJX29GLTR4Y1Zvbi1Ed3ZYcXM5RExFanp3akRia0RHZ0swWEV6cUtpRFk3RkZIOWp1X0NRLTlZWFcxd0hiSkd0eHc?oc=5",
-"source": "더나은미래",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-19T08:54:00Z"
-},
-{
-"title": "GTA6 게임만 파는 게 아니다 [한경 프리미엄9 TODAY]",
-"url": "https://www.hankyung.com/article/2026111982221",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-19T08:53:52Z"
-},
-{
-"title": "HLB·HLB생명과학, 합병 재추진…\"사업 경쟁력 강화\"",
-"url": "https://www.yna.co.kr/view/AKR20261119161600017",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-19T08:53:38Z"
 }
 ]
 }
