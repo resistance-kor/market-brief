@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-19T17:58:19Z",
+"updated_at": "2026-11-19T19:02:19Z",
 "keep_hours": 36,
 "feeds": [
 {
@@ -25,7 +25,7 @@
 {
 "feed": "구글뉴스: 코스피",
 "ok": true,
-"count": 85
+"count": 86
 },
 {
 "feed": "CNBC Markets",
@@ -49,6 +49,54 @@
 }
 ],
 "items": [
+{
+"title": "칼시, 35개 주와 도박중독 명단 공유 추진…규제 공백 메운다",
+"url": "https://www.blockmedia.co.kr/archives/1168252?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-19T19:01:53Z"
+},
+{
+"title": "미 SEC 위원 후보 \"토큰화 정책, 규제 예외 아닌 정식 규정 마련했어야\"",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5RQ1Bzd1BpQ2hnbV85aVNJZ1paSTVlUFRJX3RVMk5vdk5ZWC04TGtUOVBCcEtuN2FUUkxGb2pMbXdFTVNadGlqbnpJQXNqeTR1?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T18:53:18Z"
+},
+{
+"title": "MSCI가 스트래티지 내쳤다…‘기업 아닌 펀드’ 판정",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5RRm1ZdklGajZTSWFJYzVpNXZsYk4zRDNuUzNCajY1czBGTUpENy1Tem82dU5TQlR6MHNoT2hNZ2xkQnNCbHpWNVV3?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T18:52:03Z"
+},
+{
+"title": "Trump's Democratic SEC pick suggests tokenization policy deserves full rule process",
+"url": "https://www.coindesk.com/policy/2026/11/19/trump-s-democratic-sec-pick-suggests-tokenization-policy-deserves-full-rule-process",
+"source": "CoinDesk",
+"feed": "CoinDesk",
+"cat": "coin",
+"published": "2026-11-19T18:15:56Z"
+},
+{
+"title": "비트코인 62,000달러 저점 부근: 과매도 RSI, 이더 흐름과 BTC/금 단서 - 뉴스 및 통계",
+"url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSXZEdnd0TDRrMFl3ckEzaGhOOENkUXZNd25YMzZTXzdXVEdMUUVySF9qdVlwQXktU1FrREdwNU5iMVVOaDNUQVFybmF6UUdHZWxIamt0RjlYbEFhQW52UHFJZ182aHQxWlhNM0NWaUt4Y2RDSVByTzJ5dWFxbzJSRGZQdW1fcThlV3c2UEFJR01nVktOdVA3dDE1Uk1fRkhDSkJBMEk2M1N5aTB5Y3lwSU5JTVo?oc=5",
+"source": "IndexBox",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T18:00:23Z"
+},
+{
+"title": "앤트로픽 상장 후 매도세…엔비디아·증시·BTC 동반 약세",
+"url": "https://www.blockmedia.co.kr/archives/1168288?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-19T17:59:32Z"
+},
 {
 "title": "6만 2천 달러 지켰지만…ETF서 하루 4,153억 털렸다",
 "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFA1elNhb3dTc2lsdGlVLUJpQjVVUldHY2c1RFMzbXBqTEQ2YVQtT2Q0OGtfR2RaaE5HdWl6dHRPTVhNQmhiMDQ1elh3?oc=5",
@@ -154,14 +202,6 @@
 "published": "2026-11-19T17:23:57Z"
 },
 {
-"title": "지난 1시간 1.03억 달러 규모 선물 포지션 강제 청산",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1lR3dXdDhiVjM4NlhNeklzM0dvT19LbmNQY2xVandCRkZ3SEtRekpIdTYwbjhPTjd2Q0NScm9xV0hOOFZ3WFBfejJR?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T17:22:08Z"
-},
-{
 "title": "뉴욕증시, 하락세로 전환…나스닥 1.50%↓",
 "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1kSDFveG9Kem5qcUdacHVHSGVPU00tdXRSVkRCRl9xYnEwUXo2cHVtZl9zcGktd0JPTmxhTnVNdDUyMnloaW5JZGJWVVA0RFRp?oc=5",
 "source": "블루밍비트",
@@ -243,7 +283,7 @@
 },
 {
 "title": "뉴욕 증시, 앤트로픽 나스닥 상장 앞두고 상승 출발",
-"url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1MV2E5ajJ0R2FaQ2NqekRVa3ktRWRUU2dtaDU4UHMyWVZBZkNVbWd5SzgzRVRTMklPRU50cEsxOXg4Rzk4aE9XdmpDR01oZjRDV0ZhV3JMTHVQdFl5Rnc?oc=5",
+"url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBwNUVNaExfckNCMlpxVHZEZzktVm5PeC1zRjJQV3hvOFNUTnJBMmFxOWlFajF1cExmWWJwNWJpWUE5Z0p6TkM5QlhOdzhRX2d5QUhBMERPVmxpWnJFaFJKUF81Q0NWRl9MM1lfMlg3RTZXNU9qTmc?oc=5",
 "source": "YTN",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
@@ -378,14 +418,6 @@
 "published": "2026-11-19T15:18:38Z"
 },
 {
-"title": "앤트 인터내셔널, 싱가포르 첫 토큰화 예금 기반 MMF 결제 도입",
-"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5jS1lhMmRMd0FfU2Q1ZGVrbW9MMm9jdUYyVUxjNWE1cVl2TUdxUGcwQUZuVmJhTXlLU1lwUFFLWGJuYXZsc1B3MkQ2aTY3S1Z4?oc=5",
-"source": "블루밍비트",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T15:18:29Z"
-},
-{
 "title": "모간운용·피델리티 투자 노하우 한눈에…한국투자증권 ‘독점 글로벌 리서치’",
 "url": "https://www.mk.co.kr/news/stock/12213613",
 "source": "매일경제 증권",
@@ -400,14 +432,6 @@
 "feed": "블록미디어",
 "cat": "coin",
 "published": "2026-11-19T15:14:20Z"
-},
-{
-"title": "아모데이 CEO “압력 굴하지 않고 AI 안전 우선”",
-"url": "https://www.blockmedia.co.kr/archives/1168192?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-19T15:12:13Z"
 },
 {
 "title": "뉴욕증시, 앤트로픽 상장 기대에 일제히 상승 출발…나스닥 1.55%↑",
@@ -464,14 +488,6 @@
 "feed": "매일경제 증권",
 "cat": "stock",
 "published": "2026-11-19T14:55:11Z"
-},
-{
-"title": "앤트로픽 IPO에 1200개 기관 몰려…절반 빈손",
-"url": "https://www.blockmedia.co.kr/archives/1168170?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-19T14:53:49Z"
 },
 {
 "title": "고점서 64% 빠진 이더리움…‘저평가, 담는다’",
@@ -656,6 +672,14 @@
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-19T12:46:30Z"
+},
+{
+"title": "5000선 내줬던 코스피, 수출 1조 달러 소식에 반등…5137.89 마감 - https://www.theconnectmoney.com/",
+"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Qbm85d1N6VUU4U1RTR1hCZjF2RzRVMGRhMW1jd2xic19fd0kyODVjblJPTmY3VElJZGVtRmx0am9HdU9xWnQ4VXRReDZtWVVmck94QnlmWTZfazFPcGROUw?oc=5",
+"source": "구글뉴스: 코스피",
+"feed": "구글뉴스: 코스피",
+"cat": "stock",
+"published": "2026-11-19T12:45:00Z"
 },
 {
 "title": "'클로드' 만든 앤트로픽, 공모가 83달러…143조원 '역대급' IPO",
@@ -938,14 +962,6 @@
 "published": "2026-11-19T10:02:52Z"
 },
 {
-"title": "4대 거래소 비트코인 김프 평균 '1.91%'",
-"url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ybE5Md2tVVWJ1aUp0V2xEazVyYUMzc0FoajBaVWcyMDVoQWZWZloxMUJkMkhpUmo4NmZJc1p2VTJRNGdKcHdlME1XOFNoV0FQVmRuNnZPeWtrMkJoWFk3LWJ4a0VHWWRZTGdzYXBOaFhoQQ?oc=5",
-"source": "디지털애셋",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T10:00:00Z"
-},
-{
 "title": "서초구, 재초환 부과기한 국토부 해석에 유감…\"제도 폐지해야\"",
 "url": "https://www.yna.co.kr/view/AKR20261119168400004",
 "source": "연합뉴스 경제",
@@ -1040,14 +1056,6 @@
 "feed": "구글뉴스: 코스피",
 "cat": "stock",
 "published": "2026-11-19T09:26:06Z"
-},
-{
-"title": "비트코인 28% 폭락 뒤 대반등 오나?…앤트로픽 IPO 앞두고 스페이스X 상장 당시 재조명",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4yQnVURmhrdmt6QVd2c3dzYjlXeHRxT0JneXhmREhRamtETkJ5XzRZMkg5bDhEQ3FUSzRDM0JrTXdvSTFfb1htb2FB?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T09:19:00Z"
 },
 {
 "title": "회사 만든 지 6년 만에…'몸값 2000조' 찍은 괴물 기업 정체",
@@ -1240,14 +1248,6 @@
 "feed": "연합뉴스 경제",
 "cat": "stock",
 "published": "2026-11-19T08:47:52Z"
-},
-{
-"title": "코스피, 한한령 완화·수출 1조달러 돌파에 1.39% 상승…5137.89에 마감",
-"url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5Z3FKanU4dElGMzZQdVJRXy02SC1ncmVMWEhoaVBTek5DMkJuSE5LUGlIT2h2QmtVMWVBbDExcDM3NnBtRkpsQ2FfeFpvSzFiTzI0b1lKcnVVN3ZMcDZ3Ym1OaXQwaGVtT0UxdzEtTHZlUQ?oc=5",
-"source": "인더스트리뉴스",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-19T08:47:06Z"
 }
 ]
 }
