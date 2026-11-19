@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-19T11:41:36Z",
+"updated_at": "2026-11-19T12:48:01Z",
 "keep_hours": 36,
 "feeds": [
 {
@@ -25,12 +25,12 @@
 {
 "feed": "구글뉴스: 코스피",
 "ok": true,
-"count": 81
+"count": 82
 },
 {
 "feed": "CNBC Markets",
 "ok": true,
-"count": 3
+"count": 2
 },
 {
 "feed": "블록미디어",
@@ -49,6 +49,126 @@
 }
 ],
 "items": [
+{
+"title": "리플(XRP) 1달러도 넘기 힘들다?…기관 자금 이탈에 개인투자자까지 거래 축소",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE50VjVnVE4wMmtMZGU1LWR1YzIxNmEwT1JjLXFWYVd0T0FpOU9SY3hwdWpRaGk4Qjd0VTVSVUQyclRDNXptU1hKUXVB?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T12:44:00Z"
+},
+{
+"title": "Trump Media wants to clear $884 million of debt without selling its bitcoin",
+"url": "https://www.coindesk.com/markets/2026/11/19/trump-media-wants-to-clear-usd884-million-of-debt-without-selling-its-bitcoin",
+"source": "CoinDesk",
+"feed": "CoinDesk",
+"cat": "coin",
+"published": "2026-11-19T12:40:12Z"
+},
+{
+"title": "트럼프 미디어, 비트코인(BTC) 매각 없이 8억 8,400만 달러 부채 청산 목표",
+"url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWkhyYjNTUV9oYkNKTkROa3lVNFFWQUdSU3JlSWgta0pHT2t1OGNBZk16bEJ4eE84c3VCWUJOWENVZWI1TVZqakdoNWlNaHVta1ZPaVYwV3B2ZnUwTGN0Vko5UDhZSGhLRklIcE94NDN1RlhqemRibjd3ZGV5M1dXOEVKSnBfRUNzb1RZcFppNTlEaGFOVjdlUU5PanNtSGpVX043YUhWb2R0SS1UblFDRWhKZjQydi1NcC1lNlpJX3oyUQ?oc=5",
+"source": "CoinDesk",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T12:40:12Z"
+},
+{
+"title": "뉴욕증시 프리뷰, 나스닥 선물 2%대 급등…앤스로픽 역대 최대 IPO에 AI주 동반 반등",
+"url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE05R2xXNlo5UXMtdmx1cHEyZVNBempqeW9tTkRaVVhnUkZkeUQwRENyYUVzN0I1TGtVMTgwQmZSWUVCNWMza0JtSkZtWEFoX1lpd2NsVDhqbldRcjNu?oc=5",
+"source": "뉴스핌",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-19T12:36:00Z"
+},
+{
+"title": "비트코인 한 달 새 24% 급락…“AI가 자금 빨아들인다” 코인쉐어즈 CEO 경고",
+"url": "https://www.blockmedia.co.kr/archives/1167987?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-19T12:30:29Z"
+},
+{
+"title": "부동산 전략, 금리가 모든 것 결정…‘고급자산’ 저가매수기회 왔다 [GAII 2026 Live]",
+"url": "https://www.mk.co.kr/news/stock/12213494",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-19T12:22:48Z"
+},
+{
+"title": "Bitcoin ETF outflows show waning crypto appetite ahead of Anthropic's Nasdaq debut",
+"url": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
+"source": "CoinDesk",
+"feed": "CoinDesk",
+"cat": "coin",
+"published": "2026-11-19T12:20:39Z"
+},
+{
+"title": "누적 1조 원 돌파한 업비트 ‘코인모으기’, 고객 감사 이벤트 연다",
+"url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBlY1Rvci14RDlsbnlmZXJqR2xwN0g4dGV4bXNPMWtUeEY1N0xKSC1CYy12WkR3WnJBdkQzZGZFTDQ3SE5BeEdFdFRTcHhKd3k3c3E5dFh2XzhiQUFFSGQ2TUtJZ1p2RjlTYjZj?oc=5",
+"source": "마일드경제",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T12:10:49Z"
+},
+{
+"title": "Bitcoin holds above $63,750 but Fed rate-hike threats loom large",
+"url": "https://www.coindesk.com/markets/2026/11/19/bitcoin-holds-above-usd63-750-but-fed-rate-hike-threats-loom-large",
+"source": "CoinDesk",
+"feed": "CoinDesk",
+"cat": "coin",
+"published": "2026-11-19T12:08:06Z"
+},
+{
+"title": "비트코인·이더리움·리플 일제히 반등! ETF 3억 달러 유출에도 저가 매수세 유입",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0yVWhuSGZmdUJXbklSTDhPel9YWDBvdzJxZHF2UGpmUjhNX2FjZmZJajNhVFlaakxHUmtiS3lzQXJWUWIwOGJha1dB?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T12:08:00Z"
+},
+{
+"title": "퍼미라 “AI 시대 ‘사업 재설계’가 PE 성패 가른다” [GAII 2026 Live]",
+"url": "https://www.mk.co.kr/news/stock/12213493",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-19T12:07:52Z"
+},
+{
+"title": "앤트로픽 IPO 끝나면 비트코인 폭등하나?…리플 CEO, 가상자산 반등 가능성 제기",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9TaUZmR0FBQXF1eUI3Y0xwM0stSE9nM0NZclFuQXZBN0thcXhnNHI0OWl1U1BYTXRsd3NmOE1pMEl0VUVTUXZSZGxR?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T12:06:00Z"
+},
+{
+"title": "[뉴욕증시마감] 상승분 반납하고 밀린 엔비디아와 엇갈린 반도체주… AI 투자 불안과 연준 긴축 예고가 부른 혼조",
+"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5kRUpQUHNTRGVaY0pwRExQcVMycGhtdU1vTERxNWhSdmFTVnpmaVJXX3JHbDN5NS1xOEE5MWE0bTkwN0NGQmhISUxKeEEtc1dPaDN5S1Z0THRCSUxaQ1dqMy1CZ3J2eGFo?oc=5",
+"source": "CBC뉴스",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-19T12:00:00Z"
+},
+{
+"title": "“여태껏 숨참고 기다렸습니다”…한한령 빗장 풀리자 용틀임한 종목들",
+"url": "https://www.mk.co.kr/news/stock/12213954",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-19T11:47:42Z"
+},
+{
+"title": "스페인 출신 비둘기파, 유럽 통화정책 이끈다",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE56VUwtbG5XdVlFVkdOcTRUVnZfV0hhTEd4UkJvM3NDc0pUYzd3LXBQenVfWkpZdDJjXzBkRm1VYUpYWXZUTmo4N1EyYU1fMllT?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T11:45:36Z"
+},
 {
 "title": "63억달러 해킹에도 ‘이상 무’…바이낸스, 자금 유출 진정·거래량 1위 수성",
 "url": "https://www.blockmedia.co.kr/archives/1167953?utm_source=general&utm_medium=rss",
@@ -90,7 +210,7 @@
 "published": "2026-11-19T11:08:44Z"
 },
 {
-"title": "Anthropic’s $107 billion raise set to top SpaceX’s IPO as tokenized stocks gain traction",
+"title": "Anthropic’s $107 billion sale set to top SpaceX’s IPO as tokenized stocks gain traction",
 "url": "https://www.coindesk.com/markets/2026/11/19/anthropic-s-usd107-billion-raise-set-to-surpass-spacex-s-ipo-haul",
 "source": "CoinDesk",
 "feed": "CoinDesk",
@@ -114,7 +234,7 @@
 "published": "2026-11-19T11:00:00Z"
 },
 {
-"title": "‘Highly advanced’ quantum computers could crack financial encryption in five years",
+"title": "Financial firms must act now as quantum computers grow ‘highly advanced,’ IOSCO warns",
 "url": "https://www.coindesk.com/tech/2026/11/19/banks-and-blockchains-lag-on-quantum-defense-as-encryption-risks-loom-watchdog-warns",
 "source": "CoinDesk",
 "feed": "CoinDesk",
@@ -594,16 +714,16 @@
 "published": "2026-11-19T08:46:57Z"
 },
 {
-"title": "부동산 조정은 일생일대 기회 … 싱가포르 호텔 등 주목을",
-"url": "https://www.mk.co.kr/news/stock/12213880",
+"title": "AI 옥석가리기 필수 … PE, 자금 회수방법 미리 세워야",
+"url": "https://www.mk.co.kr/news/stock/12213879",
 "source": "매일경제 증권",
 "feed": "매일경제 증권",
 "cat": "stock",
 "published": "2026-11-19T08:46:56Z"
 },
 {
-"title": "AI 옥석가리기 필수 … PE, 자금 회수방법 미리 세워야",
-"url": "https://www.mk.co.kr/news/stock/12213879",
+"title": "부동산 조정은 일생일대 기회 … 싱가포르 호텔 등 주목을",
+"url": "https://www.mk.co.kr/news/stock/12213880",
 "source": "매일경제 증권",
 "feed": "매일경제 증권",
 "cat": "stock",
@@ -733,6 +853,14 @@
 "title": "[코인브리핑] '빅스텝' 언급에…비트코인 8600만원대",
 "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yRlg1TFlIUU95Ykc4WjZuUzFjWWZEdGQzdk9aZXNLTkVveGV5aUZoc04zR1NrTXRpSWtId19xUXhjTldtN0Zpa0JBdWFWTzdlOVY5TGRac2FERW52Qmc?oc=5",
 "source": "아시아타임즈",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T08:36:00Z"
+},
+{
+"title": "[인기 검색 코인 톱15] 비트코인·XRP 약세, 아이리스 50.99%·펄 23.32% 급등",
+"url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1QWlJBWkh0eXRzVENrTTYtVjNyNlNFRDJ4aVJ3LUdSY09Zc0pYRDJ0Q1hyTk1CalQ4N3RJcVVxS3ZGT2VjUF9IVDRlZHZqdmpxYXU1OQ?oc=5",
+"source": "이투데이",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-19T08:36:00Z"
@@ -890,14 +1018,6 @@
 "published": "2026-11-19T08:21:25Z"
 },
 {
-"title": "[단독]빗썸 “점유율 1위”에...업비트, 하루새 재역전",
-"url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1hV0dIbE9ldENDNGZvYjVvUVVLcDJ4ZmRsaVdLdVFWbjVjd29SSFlMLVNpbUttd21zWEw0ZjVpOXk5ZFZTeXZGRVZVTTlMNmFjWXfSAVNBVV95cUxQajU0dVd2SmVGelZFRjd5bzU3NndpTFBFaU1JSDV3NzVaSFhmdGxmTzNWQk5XdWdBa0ZEZ3llTmEtME9BZFRqWmd0X2pDRXpZLWkxOA?oc=5",
-"source": "서울경제",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T08:20:57Z"
-},
-{
 "title": "코스피, 반도체주 반등에 5130선 마감···코스닥 3%대 급등",
 "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBEUnh6RWhfV1Y5ZmNUTXdocEo2ZUxHWVJ1bUdzVE1YZEkza3M3dnZhdzFBNmJVd3UtelQydDJOeDlPbks0R3pFdWRWYlhWZzdISjljOFFETlNjTWlOaE5PWVRVNEZFQ2dQc3c?oc=5",
 "source": "서울파이낸스",
@@ -954,52 +1074,20 @@
 "published": "2026-11-19T08:12:31Z"
 },
 {
-"title": "앤트로픽 오늘밤 나스닥 입성…증시 짓누르던 수급불안 완화될까(종합)",
-"url": "https://www.yna.co.kr/view/AKR20261119069951008",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-19T08:12:31Z"
-},
-{
-"title": "\"AI 희망 보인다\"에 기술주 선방, 코스피·코스닥 장 초반 부진 털고 상승 마감",
-"url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBqTFhIUkNFUUVENDllc1dfQUZBRTNhRDdjQnVfUkJJS0tONHQtYU84N3RuSlB0NlhMbURTQm0xREpoWExfSk5NYm8tZUNreXF3Ykp1cW9rTE85UzdYQ1EtNF9BQjFNY01TNUxtcjlhZ1dodw?oc=5",
-"source": "오피니언뉴스",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-19T08:12:25Z"
-},
-{
-"title": "코스피 1.39% 상승... 中 ‘한한령’ 완화 기대감에 엔터·콘텐츠주 폭등",
-"url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZlBzdVBZaVhtaFFqeTZJd2UxbnAzY1doNzlJcXdhZUQzV216VC01SENVS3MybmVYYlg3cDExQjJkMTM0SlZmOWstV3hkeVFMZWdLNC0xRzhQNUh5MDhnc1ZnbU1BRDJQb3k5dG1wQ3FDSkVUYTBFajhsWjhPbHhFUw?oc=5",
-"source": "조선일보",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-19T08:12:22Z"
-},
-{
-"title": "(마감시황) 코스피, 상승 전환에 5,100선 안착…코스닥도 3%대 급등",
-"url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE81eVU0TkhieVJPeS02OFNnRk1aSzRpN0hNazJ2dDZBWmxlTkZ0emZGZG5FOGowcEI5bUdGOGdON3o5QUJnR19HSk5sNHhKOG9IdjVRcUhtWXZmdDhqT2c?oc=5",
-"source": "뉴스투데이",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-19T08:12:00Z"
-},
-{
-"title": "[마감시황] 코스피 1.4%·코스닥 3.3% 상승…삼전닉스 동반 반등",
-"url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5nX2daZDRSdUs1ZWl4REFrM1RSS1JRU1dNLWZNd21CSTROcnZxVjVKeWZqdEFtTHdMOUZDc2ZVNWNLZXJ3TGRPb05pYUFhWkRGaFNDTVhFclZRWEZnZC1zV0xJZVp0c3Z4Z0NfbdIBcEFVX3lxTE0tT1lTcVJraXZfUWxYQ3JCUGZqZUFIMjRxaWhPNW1ZREJTeGRmaHJUU0VReWpPOTdWUEVoOG42OHZhRU1STHctcHpraEIzeWhGc2NSSHE0bmlVUDJhTkdtOVZuTUVJbnVobHZIb1Bnc3g?oc=5",
-"source": "남도일보",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-19T08:12:00Z"
-},
-{
 "title": "업비트 ‘코인모으기’ 1조 원 돌파... 두나무, 프로탁구·LCK 후원으로 스포츠 ESG",
 "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5aX2JUWWxkQUExdURKcFNKY00tb2k3WjhDdDVHRE51QkpET3BSdUtoTXFHSWU0THZZaGNhNVRSWGZxbmxqTHFienZjZ1MzWFBxNGhsTU1GTkIyVlV0SUs1VndzZXc3X19xMzNfZzg4WQ?oc=5",
 "source": "STN SPORTS",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-19T08:10:58Z"
+},
+{
+"title": "한국만 쏙 빠졌네…세계 개미, 비트코인까지 팔아 \"마지막 축제\" 올인[앤스로픽 IPO]",
+"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1UOUN5a0JKX1VocjlnRG1CXzdhLUlJUWtWbi1KcURvZm9rT01CdE9HTjg4NmZ0TnRQdDB4RnVhbllSWnRfU1lJYTRKUHFhU1lnaDVHcUsxMjdraUd6V2hsSQ?oc=5",
+"source": "아시아경제",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-19T08:00:00Z"
 },
 {
 "title": "골드만삭스, 12.8억 달러 규모 비트코인 ETF 지배, 121% 증가",
@@ -1032,14 +1120,6 @@
 "feed": "블록미디어",
 "cat": "coin",
 "published": "2026-11-19T07:20:32Z"
-},
-{
-"title": "비트코인·이더리움 ETF서 하루 3.4억달러 이탈…블랙록이 유출 주도",
-"url": "https://www.blockmedia.co.kr/archives/1168018?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-19T07:02:40Z"
 },
 {
 "title": "[ETF 특징주] 비트코인 현물 ETF 'IBIT' 보름새 23억달러 순유출",
@@ -1168,86 +1248,6 @@
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-19T05:43:21Z"
-},
-{
-"title": "Ethereum block builders received the most in a $3.4 million vault hack, data shows",
-"url": "https://www.coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows",
-"source": "CoinDesk",
-"feed": "CoinDesk",
-"cat": "coin",
-"published": "2026-11-19T05:39:06Z"
-},
-{
-"title": "가상자산 거래소는 적자, 비트코인은 약세…시장 반등 어렵나",
-"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1aMVR3eGlMVGx4SnUxS3Bod1dZWDhrN0dRT3dNT2JQVEMzakNIdlIzQ2l2QTcyS1ZRVEE0TmNmQWtiOHRYNS0xb1B4TVdyZDBZS1Izcm91NDN2YXJua0RVLQ?oc=5",
-"source": "메트로신문",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T05:39:04Z"
-},
-{
-"title": "비트코인도 현금도 만능 아니다…부자들이 비상사태 때 자산 지키는 법",
-"url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBVeThwbFFIcXZRWUFYVkhfMHdDNVdLSWpDTG8ySkN4cDMzamRYUC1yWVlVVVlCSXpGSmJLQTVXSVdpQUxEbldROUoxVjRhTE9pTzVOd3FnUmFhNmFtQmNGVTZHTzVvVkhZQUtQVW5oWmlPcFE?oc=5",
-"source": "디지털투데이",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T05:38:17Z"
-},
-{
-"title": "업비트, '코인모으기' 누적 1조원 기념 이벤트…최대 200만원 비트코인 지급",
-"url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tVlNJUG9YQ0g1aEFfaFdsWEpTMnVaYkwwLUVEeklTVHRnaW0tdWg3RW5jUm15ODNyY0FERFBNTmREUFNETFcxODFMQU4yZm5rU2czUFk2VTdRZw?oc=5",
-"source": "파이낸셜뉴스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T05:14:41Z"
-},
-{
-"title": "미국 비트코인 현물 ETF, 하루새 3억650만달러 순유출",
-"url": "https://news.google.com/rss/articles/CBMickFVX3lxTE56S3FaSElpMFgweVRWTF9vY21SY3BsM09CVUl4OW5HbVlZLTRLNXI1OVV1czlxY0U5UGRqcUNtRHhiWGhiOHlmU2lhbnJsTTNPdWF5N0hsUTh6TnZoekk3bmhjQWVLSkJmdXBKdEFyV09ydw?oc=5",
-"source": "디지털애셋",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T05:05:00Z"
-},
-{
-"title": "비트코인 점유율 60% 붕괴에도 알트장 '실종'…자금은 스테이블코인·시장 밖으로",
-"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBaMWZCa2lJUkdtclU5R3RfUDVjTjNrend5bmtzZFNxUEtWaldMOUFqVlFadS1vRzkwYS1nUjNXVnJVNF8tcXZlWTlfLTIxRGt2R05qWXNGZFhqNUpfc2dhYS13dm8tdmpZOTJnUkRvQVg?oc=5",
-"source": "블록체인투데이",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T05:01:07Z"
-},
-{
-"title": "비트와이즈 CEO, 은행 먹통 사태에...\"스테이블코인·비트코인(BTC) 들고 있어라\"",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBkVmVJek9id3p0SmUtZXJrTjZPNllxaGpGbG9XWFY3WjVtSlJFMW1ieUkzdVJCamRSMFlyTTRVYTdacW1MdnhMZWFR?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T05:00:00Z"
-},
-{
-"title": "업비트, '코인모으기' 1조원 돌파 기념 고객 감사 이벤트",
-"url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE8tczNHdG9tSmNXNDdnZWhEUHV6eGFIYmYzUXBjTVVYelE5Ti1yZkw0Ul9EQ0cwb1ZId3hIZWdHR29tUXl0dWNBX0xCUEQ?oc=5",
-"source": "전자신문",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T04:47:12Z"
-},
-{
-"title": "Bitcoin miner that sold its last BTC warns it may run short of cash for $1.2 billion AI deal",
-"url": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal",
-"source": "CoinDesk",
-"feed": "CoinDesk",
-"cat": "coin",
-"published": "2026-11-19T04:46:10Z"
-},
-{
-"title": "마지막 비트코인을 매도한 비트코인 채굴업체, 12억 달러 규모 AI 거래 자금 부족 경고",
-"url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLWxCYmRtUjdhYU5rZklycFVkSFpGQnd5Sm15SV83S2ViN2pZM2szRWtxRVVnSGVTLWN5T2pnNjlpZGxiZUxKZDFaWlhoN2lmMkttRG1EX3VnbWdpdnRQREVKeVcxOWVJUnhkRmNrSFY3VDZhN0h5UjdmalFMc0lRdThQc3duUW5HVzRpYTRZZ1NtaGV3SDNsWnU3MG1XMmg2cmhqbmNCRHBvVnlnNGpnbVc5QUZNM2VnV0JvOWprMGdPN3ZZTVk3bF9EbXROQzN6ajU4UXE1MXo?oc=5",
-"source": "CoinDesk",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-19T04:46:00Z"
 }
 ]
 }
