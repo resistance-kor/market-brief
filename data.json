@@ -1,17 +1,274 @@
 {
  "meta": {
-  "updated_at": "2026-11-20T13:21:58Z",
-  "headline": "'검은 금요일' 코스피 5.21% 폭락 4,869…AI·반도체 투매 아시아 확산, 비트코인 6.1만 달러대",
+  "updated_at": "2026-11-20T22:26:43Z",
+  "headline": "나스닥 5.3% 폭락·엔비디아 14%↓…S&P500·다우 조정 진입, 비트코인 6만 달러 붕괴",
   "bullets": [
-   "코스피 4,869.96(-5.21%)·코스닥 645.68(-5.71%)로 10개월 만에 최저, 양 시장 매도 사이드카…외국인·기관 2조원 순매도, 삼성전자 -7%·SK하이닉스 -5.9%.",
-   "미 선물은 나스닥100 -1.6%, AMD 장전 7% 추가 하락…19일 다우 4일 연속 1%↑ 하락(2018년 이후 처음), VIX 29.5로 3월 이후 최고.",
-   "비트코인 사흘째 하락해 6.1만 달러대, 공포·탐욕 지수 12; 19일 현물 ETF 5.82억 달러 유출, IBIT 출시 후 최대 유출, 스트래티지 mNAV 1 미만.",
-   "원·달러 1,336.2원(+6.2원, 장중 1,340원), 미 10년물 5.05% 부근, 금 3,580달러대·WTI 81달러대로 동반 약세.",
-   "다음 변수: 오늘 밤 미시간대 소비심리·월러·쿡 연설, 25일 PCE, 26일 한은 금통위, 12월 4일 고용보고서."
+   "나스닥 5.28% 급락한 22,617로 올해 상승분 반납, S&P500 6,910(-3.7%)·다우 조정 진입…엔비디아 -14%, 필라델피아 반도체 -10.7%, VIX 35.9.",
+   "비트코인 4개월 만에 6만 달러 붕괴해 5.89만 달러, 이더리움 1,615달러…하루 청산 약 15억 달러, 공포·탐욕 지수 12, 19일 현물 ETF 5.82억 달러 유출.",
+   "20일 코스피 4,869.96(-5.21%)에 이어 미 반도체 투매로 월요일 삼성전자·SK하이닉스 부담 우려…외국인은 주식 팔고 채권 7.4조원 순매수.",
+   "안전자산 쏠림에 미 10년물 4.91%(전일 5.05%)로 하락, 단기물 강세 속 12월 동결 관측도…쿡 이사는 인상 필요; 금 4% 급락 3,527달러, WTI 83.6달러.",
+   "다음 변수: 24일 ADI·워크데이 실적, 25일 PCE·베이지북, 26일 한은 금통위·미 추수감사절 휴장, 12월 4일 고용, 12월 8~9일 FOMC."
   ],
   "schedule": "매일 07:19 · 22:19 (KST)"
  },
  "articles": [
+  {
+   "id": "20261121-nvda-14pct-low",
+   "title": "엔비디아 14% 급락해 52주 신저가…호실적에도 AI 거품론 확산",
+   "source": "머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9uVUxMeGhDV2tQRTBCMVFmMERMTlFvODExN0Jpd1UwTF9LZFU0SDJpa011MDRSMDh6ZzhsQlQ3Z2Vja1pLQVlFcmg3ZGhpb3hEaDJQZWZ0TzV1TG1ZRlRYaVR6QVc5R2xsZDhKZGlOdkE4NDJhU0HSAXtBVV95cUxQQ051RnFWbDMtbkZCWkM4dU0ta25xWUZDZ2pLWGdSNXltaDNpVUJPdEkzXzBmdlFhVlpZOUFBdzUyeUwtVmlOdk1IVWlHSnVWV2x2OC1ULVdWTUNreVpCTDk0a0pVcEM0TjNXYk5WZGFubDYzM0cyQU9YQjg?oc=5",
+   "published": "2026-11-20T21:35:09Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "엔비디아 주가가 하루 새 약 14% 떨어지며 52주 최저치로 내려앉았다. 17일 시장 예상을 웃돈 실적을 냈지만 CEO 공백, SEC 공시 조사, 대중 규제 부담에 AI 투자 회의론까지 겹치며 매도세가 몰렸다.",
+   "why": "AI 인프라 대표 종목의 급락은 HBM·서버 공급망에 속한 SK하이닉스·삼성전자 등 국내 반도체주 심리에도 직접 부담이 될 수 있음.",
+   "markets": [
+    "미국주식",
+    "국내주식"
+   ],
+   "impact": "악재",
+   "importance": 3,
+   "tickers": [
+    "NVDA",
+    "000660.KS",
+    "005930.KS"
+   ]
+  },
+  {
+   "id": "20261121-sox-107-panic",
+   "title": "필라델피아 반도체지수 10.7% 폭락…반도체주 '패닉' 장세",
+   "source": "연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE80eDZGbTc5SElQUjFZa2pXVThlaXJWZS1sMjNPSERIc2NieHcxaHZ3NUtSSHFBNV81N2J2OWh2dlBtT3V5Y1h0NURsUDM1Q2FTbFEtdkxDYlVpOEhrQUhJSzhmNnp2NE10bDh2VF9lWFjSAXRBVV95cUxOSENCNzRVSnpVSk1YNTZuWFhxaW9KTExHeS02SDhUeDN2R2hub2EwUlF1dW83N2YwTVUxb1gzSHNMbHhFOHJvalVQV2tCYVVlWVJtTlNEVk9JU1JncnBZWmw5c2QweUFpNFJrNHZiazk1QjdlbA?oc=5",
+   "published": "2026-11-20T21:10:21Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "20일 미국 반도체 업종 전반에 투매가 쏟아지며 필라델피아 반도체지수가 10.7% 급락했다. 연합인포맥스는 업황 전망이 불투명해진 이른바 시계 제로 상황이라고 표현했다.",
+   "why": "같은 날 코스피가 이미 5% 넘게 빠진 상황에서 미 반도체지수 두 자릿수 하락이 더해져 월요일 국내 반도체 대형주에 추가 하락 압력이 이어질지 주목됨.",
+   "markets": [
+    "미국주식",
+    "국내주식"
+   ],
+   "impact": "악재",
+   "importance": 3,
+   "tickers": [
+    "SOX",
+    "NVDA",
+    "AMD"
+   ]
+  },
+  {
+   "id": "20261121-foreign-kr-bond-buy",
+   "title": "외국인, 한국 주식 팔면서 채권은 7.4조원 순매수",
+   "source": "매일경제",
+   "url": "https://www.mk.co.kr/news/stock/12215101",
+   "published": "2026-11-20T21:09:59Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "외국인 투자자가 국내 증시에서 대규모 매도를 이어가는 가운데 국내 채권은 7조4천억원어치를 사들였다고 매일경제가 전했다. 주식 시장의 바닥이 어디인지에 대한 논쟁도 함께 커지고 있다.",
+   "why": "외국인 자금이 한국 시장을 완전히 떠나기보다 위험자산에서 채권으로 옮겨가는 흐름으로 볼 수 있어, 주식 수급 부담은 이어지되 환율 급등은 일부 완충될 수 있음.",
+   "markets": [
+    "국내주식",
+    "원자재·환율",
+    "거시·금리"
+   ],
+   "impact": "혼재",
+   "importance": 2,
+   "tickers": [
+    "KOSPI",
+    "USDKRW"
+   ]
+  },
+  {
+   "id": "20261121-ust-shortend-rally",
+   "title": "美 국채 단기물 주도 강세…기술주 패닉에 '12월 동결' 관측 고개",
+   "source": "KB Think",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBvYlJQWjM2TUI1YzVkMXBINkVJMlJkSzF4WWRjNFBJQ05aUFRCZFY5ZGYzYjFnM2FjTndrb1NCOVpVRGp3dDVrQ3VMYWlrNDRvdFMwY2xWTUQ4NFo1aHkyeW0tbmkxZ1dVNXFoMzZOS19Idw?oc=5",
+   "published": "2026-11-20T21:07:15Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "주식 급락으로 안전자산 수요가 몰리며 미 국채 가격이 크게 올랐고 특히 단기물 금리가 큰 폭으로 내렸다. 10년물 금리는 최신 시세 기준 4.91% 수준으로 전날 5.05%에서 떨어졌으며, 시장 일각에서는 12월 금리 동결 가능성이 거론되기 시작했다.",
+   "why": "연준 인사들의 매파 발언과 달리 시장이 금융 불안을 근거로 동결 쪽 기대를 일부 반영하기 시작해, 다음 주 PCE와 연준 발언에 따른 금리 변동성이 커질 수 있음.",
+   "markets": [
+    "거시·금리",
+    "미국주식"
+   ],
+   "impact": "혼재",
+   "importance": 2,
+   "tickers": [
+    "US10Y",
+    "US2Y"
+   ]
+  },
+  {
+   "id": "20261121-nasdaq-528-correction",
+   "title": "나스닥 5.28% 폭락해 올해 상승분 반납…S&P500·다우 조정 진입",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html",
+   "published": "2026-11-20T21:05:00Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "20일 뉴욕증시에서 AI 관련주 투매가 번지며 나스닥 종합지수가 5.28% 급락해 22,617선으로 밀렸고 2026년 연간 상승분을 모두 잃었다. S&P500은 약 3.7% 내린 6,910선에서 마감했고, 다우와 함께 고점 대비 10% 이상 하락한 조정 국면에 들어섰다.",
+   "why": "미국 대표 지수가 동반 조정에 들어서며 위험자산 전반의 투자심리가 크게 위축된 상태로, 다음 주 아시아 증시와 코인 시장에도 매도 압력이 이어질 수 있음.",
+   "markets": [
+    "미국주식",
+    "국내주식",
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 3,
+   "tickers": [
+    "^IXIC",
+    "^GSPC",
+    "^DJI"
+   ]
+  },
+  {
+   "id": "20261121-btc-below-60k-liq",
+   "title": "비트코인 4개월 만에 6만 달러 붕괴…5.8만 달러대, 청산 15억 달러",
+   "source": "블록미디어",
+   "url": "https://www.blockmedia.co.kr/archives/1168815?utm_source=general&utm_medium=rss",
+   "published": "2026-11-20T21:01:35Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "미국 기술주 급락에 위험회피가 번지며 비트코인이 7월 이후 처음으로 6만 달러 아래로 내려가 5.8만 달러대까지 밀렸다. 하루 새 암호화폐 레버리지 포지션 약 15억 달러가 청산됐고, 비트코인은 7주 연속 주간 하락 흐름을 이어가고 있다.",
+   "why": "주요 지지선이 깨지면서 7월 저점 재시험 가능성이 거론되며, 공포·탐욕 지수 12의 극단적 공포 국면이 이어지고 있음.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 3,
+   "tickers": [
+    "BTC"
+   ]
+  },
+  {
+   "id": "20261121-dprk-binance-launder",
+   "title": "북한 연계 해커, 바이낸스 탈취 비트코인 1.49억 달러 이상 세탁",
+   "source": "블루밍비트",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9nUzVIbFc1bFJsWTJtZ25acnZDNGVCajc0MEdDbDJHSUtmM2gyLUt1b0JIU3ZZYkJTVEVnZHNuWjgyZHY3SzlvYTNyRzNHekdU?oc=5",
+   "published": "2026-11-20T20:16:16Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "바이낸스 해킹 자금을 북한 연계 해커가 비트코인 형태로 1억4,900만 달러 넘게 세탁한 것으로 파악됐다. 블록미디어는 해커가 이더리움을 비트코인으로 바꾼 뒤 코인조인 방식으로 추적을 피하고 있다고 보도했다.",
+   "why": "탈취 자산이 시장에 매도 물량으로 나올 수 있다는 우려와 거래소 보안 불안이 약세장 심리를 더 무겁게 할 수 있음.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 1,
+   "tickers": [
+    "BTC",
+    "ETH",
+    "BNB"
+   ]
+  },
+  {
+   "id": "20261121-gold-4pct-drop",
+   "title": "금값 4% 급락…증시 폭락에 포지션 처분, 3,500달러선 위태",
+   "source": "연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1valEzcWpaeFZBandsSkJDeE1JcGJBN2hBOVA2SkR2cndSYlN1QWRWVzVzWU9uRGowci1JNkpTR0Z0VkJfSUhRMFpGdHcyTlh1VVpDVVc4UEF0S3FTTWJ3ZDk5WElmM3NfNE5TVU1McFo?oc=5",
+   "published": "2026-11-20T19:41:20Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "증시 급락으로 손실을 메우려는 포지션 정리 매물이 나오며 금 가격이 하루에 약 4% 떨어졌다. 최신 시세는 온스당 3,527달러 수준으로 3,500달러 선에 다가섰다.",
+   "why": "위기 때 안전자산인 금까지 함께 팔리는 것은 현금 확보 수요가 강하다는 신호로 해석될 수 있으며, 금 연동 자산과 원자재 투자심리에 부담.",
+   "markets": [
+    "원자재·환율"
+   ],
+   "impact": "악재",
+   "importance": 2,
+   "tickers": [
+    "GOLD"
+   ]
+  },
+  {
+   "id": "20261121-trump-overseas-dc-tax",
+   "title": "트럼프 \"해외에 데이터센터 짓는 미 기업에 막대한 세금\"",
+   "source": "블록미디어",
+   "url": "https://www.blockmedia.co.kr/archives/1168769?utm_source=general&utm_medium=rss",
+   "published": "2026-11-20T19:22:09Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "트럼프 대통령이 해외에 데이터센터를 건설하는 미국 기업에 큰 세금을 매기겠다고 언급했다. 구체적인 세율이나 시행 시점은 제시되지 않았다.",
+   "why": "빅테크의 해외 AI 인프라 투자 비용이 늘어날 수 있다는 우려로 이미 약세인 클라우드·AI주의 불확실성을 키울 수 있음. 실제 입법 여부는 미정.",
+   "markets": [
+    "미국주식"
+   ],
+   "impact": "악재",
+   "importance": 2,
+   "tickers": [
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "META"
+   ]
+  },
+  {
+   "id": "20261121-jpm-btc-mining-cost",
+   "title": "JP모건 \"비트코인 채굴 원가 8.6만 달러\"…시세는 6만 달러 하회",
+   "source": "블록미디어",
+   "url": "https://www.blockmedia.co.kr/archives/1168787?utm_source=general&utm_medium=rss",
+   "published": "2026-11-20T19:19:16Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "JP모건은 비트코인 채굴 원가를 약 8만6천 달러로 추정했다고 더블록을 인용해 블록미디어가 전했다. 현재 시세가 6만 달러를 밑돌아 원가보다 크게 낮은 상태다.",
+   "why": "시세가 채굴 원가를 밑돌면 수익성이 낮은 채굴업체의 비트코인 매도나 가동 중단이 늘 수 있어 채굴주와 공급 측면을 함께 볼 필요가 있음.",
+   "markets": [
+    "코인",
+    "미국주식"
+   ],
+   "impact": "악재",
+   "importance": 1,
+   "tickers": [
+    "BTC",
+    "MARA",
+    "RIOT"
+   ]
+  },
+  {
+   "id": "20261121-gop-regret-split",
+   "title": "美 공화당 지도부 \"스테이블코인법·시장구조법 분리 추진 후회\"",
+   "source": "블루밍비트",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ESmNKUWp3ZUFXbzc2QUxJMVhfMmlLcjVqUmMzZVo2c09PQ3VXV3ZkdmhwM08tQTNyUXJOYjBsWkctVEFRcTZ5dE50U1ZoaFEw?oc=5",
+   "published": "2026-11-20T19:11:21Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "미국 공화당 지도부가 스테이블코인 법안과 암호화폐 시장구조법을 따로 추진한 것을 후회한다고 언급했다. 시장구조법(CLARITY 법안) 처리가 지연되고 있는 상황과 맞물린 발언이다.",
+   "why": "코인 업계가 기다려 온 시장구조법의 연내 통과 가능성이 낮아 보인다는 신호로 해석될 수 있어 규제 기대감에는 부정적.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 1,
+   "tickers": []
+  },
+  {
+   "id": "20261121-eth-below-1700",
+   "title": "이더리움 1,700달러 지지선 붕괴…4개월 만에 최저",
+   "source": "코인리더스",
+   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5aNE1YaklUM1d4NloyZUlYUmR6ZDZ2M1VOWWdtLTNhWk9qSllrbm5FWlA4UmF6QlBsSmQ4MzBNNGFlS0ZZWmxPVXNR?oc=5",
+   "published": "2026-11-20T18:53:37Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "이더리움이 1,700달러 선을 내주며 4개월 만의 최저 수준으로 떨어졌다. 최신 시세 기준으로는 1,615달러 부근에서 거래되고 있다.",
+   "why": "비트코인보다 하락 폭이 커 알트코인 전반의 약세가 이어지고 있으며, 펀딩비도 마이너스로 돌아서 매도 우위 포지션이 쌓인 상태로 보임.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 2,
+   "tickers": [
+    "ETH"
+   ]
+  },
+  {
+   "id": "20261121-cook-hike-needed",
+   "title": "쿡 연준 이사 \"물가 하락 증거 거의 없어…금리 인상 필요\"",
+   "source": "Reuters (Investing.com)",
+   "url": "https://www.investing.com/news/economy-news/feds-cook-says-rate-hikes-needed-to-lower-high-inflation-5042321",
+   "published": "2026-11-20T17:18:00Z",
+   "added": "2026-11-20T22:26:43Z",
+   "summary": "리사 쿡 연준 이사는 20일 현재 정책금리가 충분히 높지 않다며 높은 인플레이션을 낮추려면 금리 인상이 필요하다고 밝혔다. 그는 인상을 미룰수록 대응이 늦어질 위험이 있다고 지적했고, 성장과 고용은 견조하다고 평가했다.",
+   "why": "월러 이사에 이어 쿡 이사까지 인상 필요성을 강조해 12월 8~9일 FOMC 인상 가능성이 유지되며, 금리 부담이 성장주와 코인에 계속 작용할 수 있음.",
+   "markets": [
+    "거시·금리",
+    "미국주식",
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 3,
+   "tickers": [
+    "FOMC"
+   ]
+  },
   {
    "id": "20261120-oil-third-weekly-drop",
    "title": "유가 3주 연속 주간 하락 전망…WTI 81달러대·브렌트 90달러",
@@ -3679,14 +3936,14 @@
    "id": "20261121-waller-cook",
    "date": "2026-11-21",
    "title": "월러·쿡 연준 이사 연설",
-   "note": "현지 20일 — 월러는 앞서 12월 0.5%p 인상 가능성 언급"
+   "note": "발표 완료 — 쿡 '물가 하락 증거 거의 없어 금리 인상 필요'(Reuters), 월러는 12월 0.5%p 인상 가능성 재차 언급(Fortune)"
   },
   {
    "id": "20261121-umich",
    "date": "2026-11-21",
    "time": "00:00",
    "title": "미시간대 소비심리(확정)",
-   "note": "현지 20일 10시 발표(Stockopedia) — 기대인플레이션 확인"
+   "note": "현지 20일 발표 — 확정치는 미확인, 예비치 51.0·1년 기대인플레 4.3%(StockAnalysis)"
   },
   {
    "id": "20261122-russia-crypto",
@@ -3760,7 +4017,7 @@
    "id": "20261209-fomc",
    "date": "2026-12-09",
    "title": "FOMC 금리 결정 (12/8~9)",
-   "note": "인상 여부 주목"
+   "note": "인상 여부 주목 — 쿡·월러 인상 지지, 20일 증시 급락 뒤 채권시장 일각서 동결 관측도(KB Think)"
   },
   {
    "id": "20261210-cpi",
