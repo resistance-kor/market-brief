@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-21T03:20:55Z",
+"updated_at": "2026-11-21T04:23:46Z",
 "keep_hours": 36,
 "feeds": [
 {
@@ -25,7 +25,7 @@
 {
 "feed": "구글뉴스: 코스피",
 "ok": true,
-"count": 77
+"count": 78
 },
 {
 "feed": "CNBC Markets",
@@ -50,12 +50,156 @@
 ],
 "items": [
 {
+"title": "비트코인 가격 어디까지 하락…분석가 전망",
+"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LOFNNOVZ2QTRLUzZGZlpnSHVQdHRvMU1DTzc1OGZObWh6c042Vm1uSXJKX1hQUUtSSGxpYloyblIxV25ZcDQxSmVzU2FkSFp0MjFpQTkwYmNmSGN3T2FSeXFEb2ZFc1li?oc=5",
+"source": "BeInCrypto",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T04:19:24Z"
+},
+{
+"title": "지난 1시간 6.35억 달러 규모 선물 포지션 강제 청산",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5iVjdad2l0NUxMZ2lwXzB3MFZaVkJuMUotVkFELVpPMXZUeHZVb1JJcERtbXZwYmZhMkZZQUZNZk16TG1kNXZXUFdn?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T04:17:08Z"
+},
+{
+"title": "Bitcoin tanks below $57,000 for the first time in two years, and its not alone",
+"url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone",
+"source": "CoinDesk",
+"feed": "CoinDesk",
+"cat": "coin",
+"published": "2026-11-21T04:10:07Z"
+},
+{
+"title": "스트래티지 \"비트코인 보유분 전량 담보 설정 없어…순준비금 350억달러\"",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9hQk1uWW1iSUJkOGw0cE5lXzNhT0YyZHRhYjV6T1JBbjJITUJKRzRxNkRsTFp2NjRFOGV0Q3V0b2t5T1VkdHRSMEppNE4wS0Nm?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T04:10:01Z"
+},
+{
+"title": "비트코인 5만7000달러선 붕괴…”단기 조정 국면 진입”",
+"url": "https://www.blockmedia.co.kr/archives/1168913?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-21T04:05:41Z"
+},
+{
+"title": "[코인 예측] 비트코인(BTC) 5만 달러 하락 확률 50%…하루 새 27%p 뛰었다",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5VbWlwczktSDBqRWxNREdwNVE2WE14WlFCUEJZZFZ6TlBKX0RKc1ZISmJtSGVaOTV4VllCeHFqNFc1ejdqS1prUjhB?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T04:02:16Z"
+},
+{
+"title": "BNK금융 임직원, 부울경서 해양생태계 보전 '사회공헌의 날'",
+"url": "https://www.yna.co.kr/view/AKR20261121033200051",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-21T04:01:40Z"
+},
+{
+"title": "엔소(ENSO) 10.49% 급등…업비트 원화마켓 273개 종목은 하락",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE00TmZTWGR6Yk5Ya2tHN1d0OUVsTjhlUTkxa2dlMVpBclctb0t0SWx2Z2FURmREbGE0NFVzNlZVT29vRDVYV1ZHenhR?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T04:01:09Z"
+},
+{
+"title": "HYPE 최대 롱 고래, 청산 피하려 500만달러 추가 투입",
+"url": "https://www.blockmedia.co.kr/archives/1168900?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-21T03:59:44Z"
+},
+{
+"title": "비트코인, 8000만원선 붕괴…AI발 위험회피에 '극단적 공포'",
+"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXejY2a2Zzb3U3MkozOWVZdG9TTmhvNEtKU3ZzR2REYko0eXlZTGtRRVJhNWx2N2l3QmppOFFqRGNwcHBCdElQRkRmVUNQODVwX2stVE9XR0FQdktORjMxOdIBeEFVX3lxTE5fbDRKRVRYUlBIRm84VlYxMElTclRaY19EWXgzQWRyTGVJX0xwVk9jSndsNTE4VkkyZmFBU2tsaGd3Z0x3Zl9OZ3h1RUliejBZNWRDcVhGNHY2NHZ1Z1FIYnljN1FCdFd2WjNoQW55b3NQSTNMbWxOTQ?oc=5",
+"source": "뉴시스",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-21T03:58:41Z"
+},
+{
+"title": "지난 1시간 4.16억 달러 규모 선물 포지션 강제 청산",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9QSUtkTWVDa1BhQllrZlBNMlVYSEVfcmJra1NiX0h3SkpseW40NldrUnRJSGRBWEZtbXhBaHVTMkROV2ZVaHRUVzln?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T03:46:08Z"
+},
+{
+"title": "비트코인, 5만7000달러선 하회",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBNZDZxS1RsNVNoWjdhU0oteHN4a1d3NWJPdzNNVEV2UnBGVjhJTm5aOTJwLUlDTXNGQ2tVMVh5ZW5zM0xKd0EyeUU2T1phM0JR?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T03:44:41Z"
+},
+{
+"title": "[BTC/USDT] 시세 급하락 (바이낸스)",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE14aXRWWmczNnJ1bmlISVhMZ3ZyUXNRcE9YelBGZnpwWEFlMXAzMjhxYVV5dWhjbW9HN2FFZ25KempCNldOaUNFNUpmQUZmVnNt?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T03:32:16Z"
+},
+{
+"title": "트럼프 “中엔 구형 칩만”…반도체주·비트코인 동반 급락",
+"url": "https://www.blockmedia.co.kr/archives/1168893?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-21T03:31:59Z"
+},
+{
+"title": "'AI 거품' 우려에 나스닥 5.3% 폭락",
+"url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE43MHdDQThTY1ltUktYTVZNVE10YnVuNmtfYVdoN3pobVIyTjhQUGktcDJGczd2eFRkT29wZ1N0dnRLSWRSWGYwYlF3NC1OaGUydG4w?oc=5",
+"source": "캐나다 한국일보",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-21T03:30:23Z"
+},
+{
+"title": "[블록체인 금융 플랫폼 출시] 수이 기반 비트코인 금융 플랫폼 ‘하시’ 메인넷 출시…20여 개 기업 참여",
+"url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBINkhibDA0SVZZTW1Tc2RNTTdldGJNcFJJczhtZkJSQ0ZvM0pyZjlWQTZ2QWt6RzBaV0tWOGN6T1laUUdSRWx5VkRpTC03eVVkVHphVkZrVDBKaXJIS0xCbzIzdUJhZWdUSXlTTE1B?oc=5",
+"source": "코리아포스트 한글판",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T03:30:00Z"
+},
+{
+"title": "비트코인 6만달러 붕괴…고점 대비 ‘반토막’…비트코인 7주째 하락…기관 자금도 썰물처럼 빠졌다",
+"url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE45MzBEOXVrckN6amtsd2pJZ2M3eU5DOXQ5WHdhSW9iejIwUTlDX0RJSmU1TEhWVF9aTVdUU2lnQjctTFNHdGhudDNQaw?oc=5",
+"source": "재경일보",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T03:13:00Z"
+},
+{
 "title": "악재 겹겹이 쌓인 비트코인…고점 대비 ‘반토막’",
 "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1KWTBrLXMzVFdVNUdTeTVUZFRZdFNpNDJrMDI5RnlFY3JEaE4zX0k4d0N3M21jU0lkUURmNVBCNmdwSGpmU2s4Z2dUM1o1XzFYc3pGTWIza01hZ0Q1Y2FnSHdxV25aQkY5VUsxVA?oc=5",
 "source": "뉴시안",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-21T03:09:40Z"
+},
+{
+"title": "반토막 났는데 \"주가 더 빠진다\"…하이닉스 결국 터졌다 [종목+]",
+"url": "https://www.hankyung.com/article/2026112113316",
+"source": "한국경제 증권",
+"feed": "한국경제 증권",
+"cat": "stock",
+"published": "2026-11-21T03:08:50Z"
 },
 {
 "title": "뉴욕증시 '검은 금요일'…나스닥 5.28% 폭락",
@@ -66,12 +210,12 @@
 "published": "2026-11-21T03:07:03Z"
 },
 {
-"title": "美 나스닥 5%대 하락에 반도체지수 10%대 폭락, 韓 증시 ‘충격파’ 우려 커져",
-"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9IVE1HQ29MaFR4dzJkRHZOMEJWbnpMOThMMVJpRHZOUmxVOW80YUVjOGl5LWZ1X1hoM2QtZ2lOWFRTMDM3SXQ1LVdJWjkxYVJ2UXU2WVdmWVVPeFdkcnVrM3VtVi1GYUxf?oc=5",
-"source": "전한길뉴스",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-21T03:04:32Z"
+"title": "나스닥, 기술주 매도에 5.3% 폭락…비트코인·금도 와르르",
+"url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE14TGMxbDlNS2ZSb1puZWllekZUTi10Y0JoWjhTTW16SFY5RlhWT2toU2d0TFJ6N2tqTUxhSllxVzFITWlCWWVUUmFkeGdMSkR2akpmMg?oc=5",
+"source": "JTBC",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T03:05:00Z"
 },
 {
 "title": "[업비트 TOP10] 엔소(ENSO) 22% 급등 1위…10% 넘게 오른 종목은 1개",
@@ -146,14 +290,6 @@
 "published": "2026-11-21T02:30:00Z"
 },
 {
-"title": "윈터뮤트 \"美 가상자산 업계 로비 전략 재정비해야…전통 금융권에 밀려\"",
-"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE90YXFvbDBMN2ZaR25uS3o5QkN1UGY1VkV0QUJWYlJUNVRrRkZzZFB3NVl0SmVGenV4Mkd0b2t5Rm5Mc2dGbUswZ2V6Zk9uUjVt?oc=5",
-"source": "블루밍비트",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-21T02:26:19Z"
-},
-{
 "title": "[부고] 이창봉(삼성증권 이사)씨 장모상",
 "url": "https://www.yna.co.kr/view/AKR20261121029200008",
 "source": "연합뉴스 경제",
@@ -168,14 +304,6 @@
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-21T02:12:40Z"
-},
-{
-"title": "소닉, S토큰 실제 공급량 기존 발표보다 48% 많아…발행 오류 확인",
-"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5QN3dhS2RYSE4tdm5VckRUX3dYVUdXQWZXdFJ1V2RJSHZJQmtqX3Bxdm1vakxoeFNtWlI5cm5xS2V6ZFdMR0dxdmRYMWlpZk9v?oc=5",
-"source": "블루밍비트",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-21T02:07:16Z"
 },
 {
 "title": "나스닥 5% 폭락…시험대 오른 국내 증시, 반등 열쇠는 [다음주 주요 변수 미리보기]",
@@ -211,19 +339,11 @@
 },
 {
 "title": "[해외시황] 뉴욕증시, AI 투자 우려·반도체株 급락에 '하락'…나스닥 5.28%↓",
-"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GeVh2RXZKOWp0NlFnWFdRVWN3Z0ZKNVpkQVZVNnhEREt5S1VPbDBpRk5GZ2RCbTh6Y0w5cUs0Mm9NSFV3bkU5S2RRTFR1U0tEUGNkSUFUZGJNRUI2Umk1bQ?oc=5",
+"url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40N1BWeXprVHF3elQ0bGF3TXc0ajNPZGJXQk80T3BrTTctSzJUWjRlVTJ1OVB0ZENKNk9iVjNvd2x5R1BxeTRBbVNOMGVTSHBlMGwzcVF6SnJhR1ljR2ZtQkpoUHIxU0NwSng3Rw?oc=5",
 "source": "프라임경제",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-21T01:55:02Z"
-},
-{
-"title": "글로벌 증시, AI 투자 자금조달 경쟁에 급락…주식·채권 공급 부담 가중",
-"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ZMmVHcXE2Z2liUUdzV3d1NDd2aGlSS210cHlnRkFSdHc5NUFkWElYNU5LeV9pVDRtN0xqRkMzQTZVSU1yZzVhUDRQQkVTSW9E?oc=5",
-"source": "블루밍비트",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-21T01:50:14Z"
 },
 {
 "title": "나스닥 5.3% 폭락…AI 투자 불안에 美증시 ‘검은 금요일’",
@@ -330,12 +450,28 @@
 "published": "2026-11-21T01:12:03Z"
 },
 {
+"title": "[뉴욕증시 주간결산] 나스닥 한 주 10%↓…AI주 투매에 S&P500·다우 조정 국면",
+"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1uOVVuY0RVLUNjNGpmRVluWjJPMndpQUZsVzA4LU5SZzJPdE1kRlBLcGdEQVE4WXBfWEFSRXpKU09QckU1WkRFZ2o4SEhHcFJScmNvWmhrQ3dlQkpCczNfemF0SFNwY0ZRU1Y0UGFadDDSAXRBVV95cUxONUhEYlM5Vk1GQjhmY0N5S0p5cmF4RWhiQXBSTWVncWVKN3NUVjJuaHhHd2RvSEliM1FEeDh2WXdZWVNDbEN3TUlXRjF2amtaOUt2amR3dGt6ZXY5TU9zZjFZRmxibTlzRWNJZjl4NlpCSHhURg?oc=5",
+"source": "더페어",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-21T01:08:13Z"
+},
+{
 "title": "AI 열기 식자 美반도체주 시총 한 주 만에 2.3조달러 증발",
 "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SSTEwWWQtSExoOWY4U25vN1RXR3lmdVNpSG1LNHhvTFJMUTN6bnFPVk5mWWlQRzRXdUxPMFZ3ZDc4aEFJSHB5NmVVZy0zTzdmdFVEbw?oc=5",
 "source": "이투데이",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-21T01:03:00Z"
+},
+{
+"title": "AI주 투매에 나스닥 5.28% 폭락…올해 상승분 모두 반납",
+"url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YMW5kZEd6WWxIeWNUTEtfWDk4VEt5Zk1kaXNhbXpIOGctenZnYkJKVDUxWjZCZndIaTc2YV9Lbk44TWtHUGFTUlhnalVVcV9LMEV5TGIzR0puQ29HZG02bW1kSjJpNHgzd1E?oc=5",
+"source": "경북도민일보",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-21T01:00:59Z"
 },
 {
 "title": "[바이오사이언스] 바이오의약품 임상 승인 203건…분기마다 증가",
@@ -514,28 +650,12 @@
 "published": "2026-11-21T00:11:14Z"
 },
 {
-"title": "[시세] 니어 프로토콜(NEAR) 11% 급락…2.84달러, 3.03달러 회복 관건",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9ub0JKTnJXeTNSUmRqYTJYeklCbWpfczloZ2M4ZU5QOXV1X2RwWmk3SXgxZzFmenBsdUxtejk0VE1oaXh1cVBjWnd3?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-21T00:09:20Z"
-},
-{
 "title": "전문가 “비트코인, 2027년 대호황 가능성”···연준의 공격적 금리인하 기대",
 "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNS3FUdFlKM1pqQ2oyc1Z4UC1kZUNrLVNXMXpyQVJJQmlteWM4NElFYTlQcm1RR0RlQ1lWbnp6dFZsTkoxTXpoYVYyS2E1SGRvMWQtdW9wSU44YXZYaGlOTG1yM0l2S0NYUWo0WEdfVE5sSHdNOFJSY19XZmFpcW5qOGlzVW5NbkpOOHpZVXBGbWFwbTdMVno0a3dLaDQ2T2NDcUQzRWRfOGd3QUpKZk54LTU2VWtQRVIwY2x4bVRNelg2NWFranZjbDJVQnYwakx5T1k4WXJ1REI0M280RDNqTGJobXdBeEgwaTFscmo3enBaWm1BNnpfeFdfR29jdVo2TFVjQV9SUXoyMkdhcmh0M3hSNHlIY1JFbjlBbXNOaEFjQm13RnVfQg?oc=5",
 "source": "Benzinga",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-21T00:08:44Z"
-},
-{
-"title": "[뉴욕마켓워치] 나스닥, 코로나 이후 최악의 한주…증시 패닉 속 채권↑달러↓ |",
-"url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE45THpnUGdsNEJFU3NSakozakZUX1hOUlJTTlFIWFk0TnBnZXQwMzR2UkdhQkFBUXJ2dFhRcmtEY0t5dVF0d2tydkUyWXdwR056R3hxV3o4dEJUa254R2V5OGRiMDJYUDAxLTNpZ1ZOcThRa09u?oc=5",
-"source": "연합인포맥스",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-21T00:08:31Z"
 },
 {
 "title": "[시세] 바이낸스코인(BNB) 6.96% 급락…539.27달러, 566.98달러 회복 관건",
@@ -554,20 +674,20 @@
 "published": "2026-11-21T00:06:24Z"
 },
 {
+"title": "[뉴욕마켓워치] 나스닥, 코로나 이후 최악의 한주…증시 패닉 속 채권↑달러↓",
+"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IdEtnRk94djJMSHhRNHRZZzZzSGM2QjA4UUpRVWs3S1ZWT2NJVXNuSWlZeUNfRUMzYTdWelZIUXZONUhaMndPdWxkUGgtVnI1MWFZVE16VGhDVUs0YU9QWFBURGpGbHdhN0d1U3VOckc?oc=5",
+"source": "연합인포맥스",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-21T00:04:58Z"
+},
+{
 "title": "비트코인, 4개월 만에 6만 달러 붕괴…ETF 자금 이탈에 '휘청'",
 "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5TMUFqTEJJZkFMU0l2SGlSMGx6eDkzSjA5SUxva3puZFM2YnZ3eURqMnkzLWo2LW1CX01sNEpiUXNsaElKVE1mSzFkenFadWhuWkdZdFUwdlkyM3hSUGpvVS1UQUFMUQ?oc=5",
 "source": "뉴스1",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-21T00:04:38Z"
-},
-{
-"title": "비트코인 채굴 수익성 다시 악화…난이도 8.5% 상승 전망",
-"url": "https://www.blockmedia.co.kr/archives/1168854?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-21T00:03:14Z"
 },
 {
 "title": "[주간코인] 코인 팔고 채권으로…비트코인 ‘바닥 실종’",
@@ -618,6 +738,14 @@
 "published": "2026-11-21T00:00:00Z"
 },
 {
+"title": "나스닥 5.28% 폭락…앤트로픽도 하루 만에 공모가 수준 하락",
+"url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQMXducFhxSHY2b1BuWkdjQllVSjI0LVRzQjFMMktxSDE2eE1BNFc2NUJUN3N4eU9qdi13RXhEbUlTVGM1WHNGVVhBWWNfZVYtczFMZGdqd25idm8zaHdNZ2tJMjlud3dtc2x6MGtNMmtzUWp5VG41NjRjNVlsVk1sY2Jn?oc=5",
+"source": "한겨레",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-20T23:56:00Z"
+},
+{
 "title": "아메리칸 익스프레스 뉴욕 증시서 3% 넘게 하락 마감 : 기업주식정보",
 "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE04eFVIaktYWlR3Q0tnZ19aQ1UzWmtCM1lCaXFYWUxOYlJBUDhaVTNpakVUUzZYV2MxVmFxRTVGOUlicHJja1lReUVwWQ?oc=5",
 "source": "재경일보",
@@ -632,14 +760,6 @@
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-20T23:49:16Z"
-},
-{
-"title": "DDC 주식 ‘7.99대 1’ 병합…853만 주로 줄어든다",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1NOE8wREpIdmEyM25TMGs5N2psWWNiY3BHNUlBZUd4Snk4X1hSYklKc3F0eDI5QU1tVHhjTDIwSHpxUHpxS3FUT0h3?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-20T23:48:25Z"
 },
 {
 "title": "'고점 대비 반토막' 비트코인 6만 달러 붕괴...이더리움도 6.5% 급락",
@@ -696,14 +816,6 @@
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-20T23:30:01Z"
-},
-{
-"title": "리플 CEO “앤트로픽 IPO 때문에 XRP·비트코인 판 것”",
-"url": "https://www.blockmedia.co.kr/archives/1168838?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-20T23:29:27Z"
 },
 {
 "title": "美 뉴욕증시 급락…나스닥 5.28%·엔비디아 14% 폭락",
@@ -778,6 +890,14 @@
 "published": "2026-11-20T23:21:00Z"
 },
 {
+"title": "[뉴욕환시] 달러 소폭↓…기술주 투매에 급락 후 보합권 반등",
+"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Yd2ZKWS1lcTdyZnlxd0tncFZMZTlpRUNZOGhLeW51TDF4aS1Uenh1eldqOHhrMHU4dm1NUlBmOFZqUUFHai1Fb0VxZDdWRE5rN0tPTDQzeG00amxxaHZfcGZpSEU0WTVpdnJwejQtWUE?oc=5",
+"source": "연합인포맥스",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-20T23:20:56Z"
+},
+{
 "title": "'최대 비트코인 ETF' 블랙록 IBIT, 앤트로픽 IPO에 '역대최대' 순유출",
 "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNFhSWkg0X1NLUDBwRm84eU9KS2IwbWFrYm83RzUyR1VneTlXTUNSSUh4U1lPN0Q4WmJNbGlDbWZ6Qzk5NHNkeEZRUVh0R2puZnRHVFVDa3NlQ1lxWjRnRENtaFE5NE9XTXBURlZldENyRFFGcGY5REVWUU8xV0kxNQ?oc=5",
 "source": "이데일리",
@@ -818,28 +938,12 @@
 "published": "2026-11-20T23:03:35Z"
 },
 {
-"title": "[코인 예측] 비트코인(BTC) 6만 달러 붕괴, 5만 5,000달러 확률 45%로 27%p↑",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE16dXp6Xy11S0NDWEw3V0ZuOE9lTG1mak1sbjU2TGdleFltSUFvWWQxcGd4Vk5VazRkR1hNWE9KdXlMMFE1cUh5djVR?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-20T23:02:58Z"
-},
-{
-"title": "'부자아빠, 가난한아빠' 저자 \"비트코인 급락, 추가 매수할 기회\"",
-"url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbElQVUdWa3ZXcDlSSGJzNURKQjlPSS1fS1NhUUFyS0pCWHYtUUJvTFVhbmozN1BOMkp1YzBKOWhDX3VCa094Q1REOGZXQzdrdWNfWFFITmVHZnhxbGZxdlZMU050YnVraFBGRGc3d2tfVE9qZFoxZTh4M01TUHdEbQ?oc=5",
-"source": "이데일리",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-20T23:01:34Z"
-},
-{
-"title": "비트코인(BTC) 3.36%·이더리움(ETH) 6.44% 하락…업비트 85% 종목 내렸다",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB3LTNKTUFudG5kNm9jTmt0bmxkNzZyVy04UUJmYXY3cGhHMUU5SDlWN2pQbzJLTWNqSHMwNjFCR1FveXJrVkdNMGV3?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-20T23:01:31Z"
+"title": "[뉴욕증시 마감] 나스닥 5%↓·엔비디아 14%↓…S&P500·다우 조정 국면",
+"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XS0pPeTFMV1pGVzZKZm9NcDdqcUQtdFlqREprRzBTZS1DTl8zNGJOYm82aUZhZlNrcXYyc1FjOUsyU3E0X25lQXRxZVdhUU1JUURUSjVlMWpRd2dhN0JscjZfQ0c0cjQ1VE5SZ3NzSlrSAXRBVV95cUxNRWlSSGZFdWEwUkJydUJRUDZkVjBwdmQzRTlfdzEtV0pZR0tPamoxVF9EZTR3R2lOSzFGVjZ1b3VsQVZfY0dsTkNZdmNpRDU5Vk5rQ2tIUHhyVDQyM2NZaW56S3hxLVIzbGNBSkF0SWFiMHBZbw?oc=5",
+"source": "더페어",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-20T23:02:37Z"
 },
 {
 "title": "[오늘의 글로벌마켓] 뉴욕증시, AI 우려에 3대지수 폭락...나스닥 5.3%↓",
@@ -850,36 +954,12 @@
 "published": "2026-11-20T22:54:01Z"
 },
 {
-"title": "Kalshi races to get ahead of New York order that could shut down exchange",
-"url": "https://www.coindesk.com/policy/2026/11/20/kalshi-races-to-get-ahead-of-new-york-order-that-could-shut-down-exchange",
-"source": "CoinDesk",
-"feed": "CoinDesk",
-"cat": "coin",
-"published": "2026-11-20T22:51:14Z"
-},
-{
-"title": "기요사키 “비트코인 폭락 기다렸다”…추가 매수 예고",
-"url": "https://www.blockmedia.co.kr/archives/1168835?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-20T22:49:23Z"
-},
-{
 "title": "나스닥, AI주 ‘패닉셀’에 5.3% 폭락...올 수익률 마이너스 전환 [데일리국제금융]",
 "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56bnFSbVdPbXJnVlc2R3drZlZROXRYLWRaTGtFNll4eHdpZk5yd3g5N3ppQ2l4NS03OUR1U05DZFUxNnBpcWRUY3lGblRxeGNIRnfSAVNBVV95cUxNRGZBcGZXaUlPdXpkSFBGUzJFMXllZ3NhWVB3clcxVjFJOTFYaWpuMzZJbTEySFRydHVuNl9nRHMyTjFpQzZrZk5FeEJZUDRxbVhxSQ?oc=5",
 "source": "서울경제",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-20T22:47:29Z"
-},
-{
-"title": "비트코인 4달 만에 6만달러 아래로…2022년 이후 최장 약세",
-"url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0xSTE3blBINXZjZUE3cElPYkZjYmRDNzQ3ZDB3cF8xWWdreFpCelR5cDFzN0lsdkpOcF9fNkJUOWNCTm5mQXcxQUVrRmpUOUdJSjBnX0ZrbXnSAVhBVV95cUxNMUkxN25QSDV2Y2VBN3BJT2JGY2JkQzc0N2Qwd3BfMVlna3haQnpUeXAxczdJbHZKTnBfXzZCVDljQk5uZkF3MUFFa0ZqVDlHSUowZ19Ga215?oc=5",
-"source": "SBS Biz",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-20T22:47:00Z"
 },
 {
 "title": "뉴욕증시, 엔비디아 14% 폭락·AI 투자 쇼크···나스닥 5.28% 추락",
@@ -898,22 +978,6 @@
 "published": "2026-11-20T22:46:00Z"
 },
 {
-"title": "비트코인 4개월 만에 6만달러 붕괴⋯“저가매수 기회” vs “75% 조정”",
-"url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE40UlFJb2J0TGJ5dFpZS2pzX3NZU0g3Q1kxVlg5bTR2Vi1YaEtPQkVpeXJvaHZTSmNOY1FhdmVxQmhTQmhiWVl1TmN1ZUxnRjIzM1RLNw?oc=5",
-"source": "이투데이",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-20T22:43:00Z"
-},
-{
-"title": "\"월가 AI 투자 무너진다\"…나스닥 5.3% 급락 '검은 금요일'",
-"url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwUXprWjZPVURCekNwamxURUZaQ0VqVmlJSDlqZDB6Wk51YUpJUU42SjVCaDBuaUlmZ0pzNk1zZXJGTXVUV1FNQkRIQ2hpd2FiSEtDVERqXzk?oc=5",
-"source": "뉴스1",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T22:29:10Z"
-},
-{
 "title": "[지난밤 뉴욕에선] 나스닥 5.28% 급락…다우·S&P500도 조정장",
 "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBid2h2RE05a1c4MnBwdUVMdm05WFh3RjFFWE9rX1R5OUxqdnVJTUdFbXFfNmozal9kSE5haFoyX25BNS13NnQ4YVN1bUtaS0J4ci1ybXozSi1reGhuU25rQjZLYTJLdlVRQUhpRVlRMUZQM3PSAXdBVV95cUxNRzZZd0pLQnB2TWVYOWtpX3c0bGdEdmxLTUlwV0xSYVUxUVlLMW9QYlJMbXliZk9WUDczdnFfRjFlYWFlNFo3REhDSllYZVA2X1dPZUY0Si1BYjF6UmRrQXI4OWRna1dXdkE1R3N3ZXBzZjBDbkpkaw?oc=5",
 "source": "스트레이트뉴스",
@@ -930,28 +994,20 @@
 "published": "2026-11-20T22:27:04Z"
 },
 {
-"title": "7주 연속 하락세 탄 비트코인...지난해 고점 대비 '반토막'",
-"url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBURlRva0hoelZDclZmeE1ZTVN1ZURXUEM1OU9tR28teWtMakRhRy0wUUpMREZhbHFYSmdMVm4zUXlsZ1dYUVFNX0M1SFd5ZmZ4QjJuWmFMY1gwVzVEU2VEQS14VnVLdmU3LVg3aWQwRQ?oc=5",
-"source": "YTN",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-20T22:25:00Z"
-},
-{
-"title": "나스닥, 기술주 매도에 5.3% 폭락…다우·S&P500 조정 진입",
-"url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBXVUd4Y3VVNUM3YkdTR2stNGhQYlZHdHVjTTE4V19oa3R5ckRRUHBmOVE5cnZ3X3Rxek91N0QwaHZBMk9LUHdFSVBzeU5jLW03RURj0gFYQVVfeXFMTU5ObTZwdGFBUGVKUk1fOTgzbW9DMkl2MXpvSFgxNXlRZW1DYU5ReEJxRkZHeDZnX282c29KeWxsZ041Qm5RVDFweUYxSEhRczhEdzF6bTF5NA?oc=5",
-"source": "SBS Biz",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T22:23:00Z"
-},
-{
 "title": "나스닥, 기술주 매도에 5.3% 폭락…다우·S&P500도 조정 진입(종합)",
 "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55NzlORU9XMU9uYjRHM1BOckJLQUFBcFhUaG1CYzZucG1HSmM2M3U5NFhib3UzRVlYOGhrUDFXeFFEUlE1U0JOQ2dqNGFpMklrNm5hdWd3NThNRUXSAWBBVV95cUxNd2lwaXpNaTRHSmRuVnNudzRuRUMzakxmbXhhWkhYU1c0SWlHWkNtQkR4Qi16TUZJOTE3YUdaUVFxcjZKOUNGSVRWeTMwbVhYRnl1ckFnM1NKaVRGZnFIUmk?oc=5",
 "source": "연합뉴스",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-20T22:22:18Z"
+},
+{
+"title": "뉴욕증시 급락…나스닥 5.28%↓·S&P500 조정장 진입",
+"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50LUtkLWFBeU5UT2szaFd4VTFkTm8yOXNhN25pSHYxOTEwZjF1bHRFdm5Bb1BvZGpjdjhfNGhCYzYxS29LRXBDVzBRZ000WmhDMmhoWTRodzZJbi1lbWpmS1dGdGZldEw4WFA4WlJuRFjSAXRBVV95cUxOSmlyOExEUTkxc243T0o1MU1TeE5pZWticXFtb0xseGZxZ1VnNk56YlZFNmg1SjRiUEFlMFg2SjhORHMzMFZmQ2x4QlNVVk5SWWpnWDIzUTFYblNRaEE1X2p4cDJoSXYxRTZCWlFIZGRiRlZLbA?oc=5",
+"source": "더페어",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-20T22:19:30Z"
 },
 {
 "title": "AI 주식 폭락에 뉴욕증시 휘청…엔비디아 13.8% 급락·나스닥 올해 상승분 반납",
@@ -962,15 +1018,7 @@
 "published": "2026-11-20T22:16:25Z"
 },
 {
-"title": "나스닥 하루 5%, 일주일 10% 추락…AI주 투매 공포[월스트리트in]",
-"url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNc21MenJhZkVORmZHSklnQ1NRNktpQkp5VWpQd0RsUUMwS2dRTW5KUlJacWI1RHVVbm5ORlFUZ1FHOHpSdTdFVUgxYnFDdUJyZFo3Q3IwY3pNU2VyZFRHWHFrQmluN0tTNXdFeUQ3VWh3eXQ2Z1dzOW9HekZjZXhieQ?oc=5",
-"source": "이데일리",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T22:12:05Z"
-},
-{
-"title": "뉴욕증시 일제히 하락.. AI주 혼란에 SK하이닉스 ADR도 휘청 > 뉴스",
+"title": "뉴욕증시 일제히 하락.. AI주 혼란에 SK하이닉스 ADR도 급락 > 뉴스",
 "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5HZVlTMjg5cE5TeEd1Y2h3WXhlcTZ1dTlEdTJwd3RhSmxiT2JiOFdJdTJLdUVkVS1TSjEzNkUxWGlFRGkwRDZjTEZ3U21BQTYzaXdYQmt4dFdVTkVvLXhuUEE5Y01Tdk1KdWVnOA?oc=5",
 "source": "지데일리",
 "feed": "구글뉴스: 뉴욕증시",
@@ -1002,20 +1050,20 @@
 "published": "2026-11-20T22:00:02Z"
 },
 {
-"title": "중국 니오 뉴욕 증시서 8%대 급락 2달러선 마감 : 기업주식정보",
-"url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5haWQ3bU9Kd2daLTh4OU85dkFyMEttTll6OUhGMDRDWnhONVlOUndDQ0gteVE2REJ2bVlteWtNeGZMcG5VaWhPLU5aWQ?oc=5",
-"source": "재경일보",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T22:00:00Z"
-},
-{
 "title": "AI 거품 공포에 뉴욕증시 급락…나스닥 5.28% 폭락",
 "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5mTlpNUTJaNFN6WnJDZWpKR1Z0ei1GTXFNSm10cWhKMkgwS2pEZnV6R2swQUVGdVllYXRhLUVWcVdiQmN5eXpRbjc1c3ZDVHBCamJIWkFfSnBFZ28ta3EwUF83eE9GUUxpcVpUaQ?oc=5",
 "source": "뉴시안",
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-20T21:57:13Z"
+},
+{
+"title": "뉴욕증시 급락 마감...나스닥 5.3% 폭락",
+"url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUzd3My1Wbnh5SkY2X0lUQ0NERUt5dUhTdzBsX3lQZXU1Z2h3UGFPcHhyZkI2VEJJUm5RSE82RG1zdUh1U2lYN1NXNmFjcktvS01nM0xTSHlMVENFMElyX1RWRjJXTmF5SkpvQ2dJN3pPNG90YnZDMEM0NVpEajFsb0JB?oc=5",
+"source": "네이버 프리미엄콘텐츠",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-20T21:55:00Z"
 },
 {
 "title": "[뉴욕증시] '시계 제로' AI 테마 패닉 장세…필리 10.7%↓",
@@ -1056,6 +1104,14 @@
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-20T21:46:24Z"
+},
+{
+"title": "뉴욕증시, 기술주 매도에 급락...다우·S&P500도 조정 진입",
+"url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LRUM2SzI5TE91d01ZQjI4MzZOaTlBWmZoRlJHZlJubDJhMS11Si1iTmowWlY0RFFZd2JYazFLblNqX3FXNC1uaWlxX1JZaWhudklJVUhFTVVsU0RJLTBtcGF2Zlpfdw?oc=5",
+"source": "싱글리스트",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-20T21:46:19Z"
 },
 {
 "title": "실적보다 커진 AI 거품론…뉴욕증시, 조정 한파 속 나스닥 5.28%↓",
@@ -1154,22 +1210,6 @@
 "published": "2026-11-20T21:23:00Z"
 },
 {
-"title": "[뉴욕환시] 달러 소폭↓…기술주 투매에 급락 후 보합권 반등",
-"url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5fdjdzbXRsT19LTGEwclRleklJZWZrMVdVUEh2bFZqLWsxc3BUdFZ5NnoxbUhmQVY3QURQMUZJdVQzbEpIMGVud2FFbU9laEVGeFprVHBLUFNXdFE5MTBqOF9tOHdvcVJKTWtWS1pvVzJoUQ?oc=5",
-"source": "KB Think",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T21:20:52Z"
-},
-{
-"title": "AI주 투매에 나스닥 5.28% ↓ 패닉 [뉴욕마감]",
-"url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9EUXk3MzZqanVyUW9Yb3RpVXFyS0hRZUM4TmFHaU4xSUh6OWE3UDRERm1pSFJTWkNwNmtPNXloaGs2VmhkQ1NVYTdWeVRuUVFGT2RGbzREQlBKTzBUWXVF?oc=5",
-"source": "MTN 머니투데이방송",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T21:19:07Z"
-},
-{
 "title": "[뉴욕증시-1보] '시계 제로' 반도체주 패닉 장세…필리 10.7%↓",
 "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IQ0I3NFVKelVKTVg1Nm5YWHFpb0pMTEd5LTZIOFR4M3ZHaG5vYTBSUXV1bzc3ZjBNVTFvWDNIc0xseEU4cm9qVVBXa0JhVWVZUm1OU0RWT0lTUmdycFlabDlzZDB5QWk0Ums0dmJrOTVCN2Vs0gF0QVVfeXFMTkhDQjc0VUp6VUpNWDU2blhYcWlvSkxMR3ktNkg4VHgzdkdobm9hMFJRdXVvNzdmME1VMW9YM0hzTGx4RThyb2pVUFdrQmFVZVlSbU5TRFZPSVNSZ3JwWVpsOXNkMHlBaTRSazR2Yms5NUI3ZWw?oc=5",
 "source": "연합인포맥스",
@@ -1208,46 +1248,6 @@
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-20T21:09:00Z"
-},
-{
-"title": "뉴욕증시, 하락세로 마감…나스닥 5.28%↓",
-"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE96ZmVNa050MW9QS0ZHZ1pvUjA2eGZ5LXkyV3dIaUtockpQamUtVnpkVnM1Z3NMbGw3MHdGQU5KUGU3bTZFMzUzYzZXYnJwNVJw?oc=5",
-"source": "블루밍비트",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T21:08:09Z"
-},
-{
-"title": "[뉴욕채권] 단기물 주도 초강세…美 기술주 패닉에 '내달 동결' 고개",
-"url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBvYlJQWjM2TUI1YzVkMXBINkVJMlJkSzF4WWRjNFBJQ05aUFRCZFY5ZGYzYjFnM2FjTndrb1NCOVpVRGp3dDVrQ3VMYWlrNDRvdFMwY2xWTUQ4NFo1aHkyeW0tbmkxZ1dVNXFoMzZOS19Idw?oc=5",
-"source": "KB Think",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T21:07:15Z"
-},
-{
-"title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
-"url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
-"source": "CNBC Markets",
-"feed": "CNBC Markets",
-"cat": "stock",
-"published": "2026-11-20T21:07:08Z"
-},
-{
-"title": "[속보] 뉴욕증시, 나스닥 5.3% 폭락···다우·S&P500도 조정 진입",
-"url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5PbXNIbHp2M042UmpROHhMTkRNeVBqTzdzcWxGWmh2YlU5bjdEdDBOZmNjaF9oVjh1bDJPN1FFcnFKYURXNWZNTmFSREpaSzkwNG0xaEFfbGhZMHFkczhaLWtuS1dpbG80a2c?oc=5",
-"source": "서울파이낸스",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T21:06:41Z"
-},
-{
-"title": "[속보] 뉴욕증시 급락 마감...나스닥 5.3% 폭락",
-"url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9RM0I5dzRzTHM2VF95QzRFSTlaSnJ6dDZlcGZycWV2cmdsV2FkVXB5NVJrNkVwTTNLUjR5UVhzOWJpWlItTlNlQWstWmhVd2Z6THluRHRMb09ldnJI?oc=5",
-"source": "뉴스핌",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T21:05:00Z"
 }
 ]
 }
