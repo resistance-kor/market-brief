@@ -1,11 +1,11 @@
 {
-"updated_at": "2026-11-21T15:49:54Z",
+"updated_at": "2026-11-21T16:51:14Z",
 "keep_hours": 36,
 "feeds": [
 {
 "feed": "한국경제 증권",
 "ok": true,
-"count": 50
+"count": 49
 },
 {
 "feed": "매일경제 증권",
@@ -15,7 +15,7 @@
 {
 "feed": "연합뉴스 경제",
 "ok": true,
-"count": 90
+"count": 77
 },
 {
 "feed": "구글뉴스: 뉴욕증시",
@@ -25,7 +25,7 @@
 {
 "feed": "구글뉴스: 코스피",
 "ok": true,
-"count": 21
+"count": 20
 },
 {
 "feed": "CNBC Markets",
@@ -49,6 +49,30 @@
 }
 ],
 "items": [
+{
+"title": "Cross-chain protocol Chainflip's FLIP tanks 30% after suspected $4.86 million vault drain",
+"url": "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
+"source": "CoinDesk",
+"feed": "CoinDesk",
+"cat": "coin",
+"published": "2026-11-21T16:41:00Z"
+},
+{
+"title": "앤트로픽, 상장 다음 날 9% 하락…나스닥 5.28% 급락 속 공모가 간신히 웃돌아",
+"url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ad215SmtqOUZHWjN2RHJzS1U4U3Jwc2lQVWhfNU1KdW5vbnViYmswaVpkY1c2ejZBSnVzTWtVbjNhWHptZ0V5cGJyQmZjZllvWWQ3Y0ZR?oc=5",
+"source": "위키트리",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-21T16:36:00Z"
+},
+{
+"title": "비트코인(BTC), 6만달러 일시 반납",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBxellrSjdleUtENUt6SFFuWlJSZ0g3Yk5mbEU2MHB2OVVtMXB1ZTJYZmhOdTd5MGd5V1NDYmpxRUYwbDNZUVBESEtORmI0SFRm?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T16:13:55Z"
+},
 {
 "title": "코스피 5% 폭락했는데 美 나스닥도 5.28% 추락…23일 ‘삼전닉스’ 또 시험대",
 "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5uOW90ZVR5amRKRmFTQnptMDJ2RDRUeVhhU0NBM3ljdVQyLV9RMVhrdHctM3FvbkFGQm1zNXNxYWdOcmFyZElaN2dUNUhOTWtuMDNzNFZnMnBVRHpKNHQzN1JxeUdkbVh6ZTNtdw?oc=5",
@@ -218,14 +242,6 @@
 "published": "2026-11-21T13:02:04Z"
 },
 {
-"title": "비트코인, 5만9000달러 상회",
-"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yYXdFRFVTTGxkTUtWNTF6cFVRVVN1OFU2RGZ3aVFiODdrUzJncmFlY0NIWXhCelI2anAyZWR5S25Nek1kS3pDWkJZcTg5NjJQ?oc=5",
-"source": "블루밍비트",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-21T12:36:28Z"
-},
-{
 "title": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated",
 "url": "https://www.coindesk.com/markets/2026/11/21/ether-treasury-firm-btcs-warns-sec-its-usd54-million-aave-loan-could-be-liquidated",
 "source": "CoinDesk",
@@ -362,6 +378,14 @@
 "published": "2026-11-21T11:15:00Z"
 },
 {
+"title": "XRP 8% 폭락에도 리플 CEO \"앤트로픽 상장 이후 가상자산 시장 회복 전망\"",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9QMXQ5MVhnQ1pNNDJxb3hxSHNKX3V4LWQ2MGdMOFpFY2pNTmlJWmo4MHZ0ZDNVX1gzXzZvWTZPTDlNUGNKbWZWSUt3?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-21T11:05:00Z"
+},
+{
 "title": "엔소(ENSO) 거래대금 459억원…업비트 85% 종목 하락 속 쏠림",
 "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5wOXRqQU1pRjVuLTRlT2FkcUJYVkcwNHBiME03dllFRXJJenpFTmVxaU5DZy1wRXpJTXZZRWEtME55UXZ6Tloxa2x3?oc=5",
 "source": "코인리더스",
@@ -442,7 +466,7 @@
 "published": "2026-11-21T10:32:22Z"
 },
 {
-"title": "유럽중앙은행, 예금·증권 토큰화 실험 위한 금융기관 참여 모집",
+"title": "유럽중앙은행, 예금·증권 토큰화 실험 위한 금융기관 모집",
 "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8wY0tWdm5xTG9XY3RROHE5MVdPZnZVcmxEUTUycmlrWS1lTnhfMjBWVXdydS1ad1MxTC1XOTVXUHdjMU9BRkJYZFluaU1JQjdv?oc=5",
 "source": "블루밍비트",
 "feed": "구글뉴스: 비트코인",
@@ -824,22 +848,6 @@
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-21T04:37:18Z"
-},
-{
-"title": "비트디지털, 1만6639ETH 갤럭시디지털로 이체…매도 가능성",
-"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE10NUlrcnlzTFdKUFFOS3dROHAxU29vbmcweS1uTlo1T1VPS0s5NkRIUVhNd3kxdFl3clhGYnhJTk83aGlTc09qOFpOS0NnZmNs?oc=5",
-"source": "블루밍비트",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-21T04:28:17Z"
-},
-{
-"title": "[속보] 비트코인 시세, 8000만원선 하회…이더리움 215만원·리플 1200원선, 주말 코인 시장 향방은?",
-"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE00aEdZU0M1eG9iXzdIaDZDbFFIV3J5UHo3QXVTLW9uWmZpbjdrb0M2bHZ4Vy1VMW1LMmZVNFhleldYRHhaRUpIRktBODBOVzNrYl9lZmJuQkVGUHk2S3p3RUpmamkwR3o2?oc=5",
-"source": "CBC뉴스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-21T04:21:09Z"
 },
 {
 "title": "코스피 4,900선 붕괴...미국 물가·한은 금통위 '주목'",
@@ -1240,14 +1248,6 @@
 "feed": "구글뉴스: 뉴욕증시",
 "cat": "stock",
 "published": "2026-11-20T23:21:00Z"
-},
-{
-"title": "[뉴욕환시] 달러 소폭↓…기술주 투매에 급락 후 보합권 반등",
-"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Yd2ZKWS1lcTdyZnlxd0tncFZMZTlpRUNZOGhLeW51TDF4aS1Uenh1eldqOHhrMHU4dm1NUlBmOFZqUUFHai1Fb0VxZDdWRE5rN0tPTDQzeG00amxxaHZfcGZpSEU0WTVpdnJwejQtWUE?oc=5",
-"source": "연합인포맥스",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-20T23:20:56Z"
 }
 ]
 }
