@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-23T09:58:36Z",
+"updated_at": "2026-11-23T11:11:45Z",
 "keep_hours": 36,
 "feeds": [
 {
@@ -20,12 +20,12 @@
 {
 "feed": "구글뉴스: 뉴욕증시",
 "ok": true,
-"count": 70
+"count": 55
 },
 {
 "feed": "구글뉴스: 코스피",
 "ok": true,
-"count": 87
+"count": 90
 },
 {
 "feed": "CNBC Markets",
@@ -40,7 +40,7 @@
 {
 "feed": "CoinDesk",
 "ok": true,
-"count": 8
+"count": 10
 },
 {
 "feed": "구글뉴스: 비트코인",
@@ -50,12 +50,180 @@
 ],
 "items": [
 {
+"title": "한 돈 100만원 넘게 주고 샀는데…금값 폭락에 개미 ‘저가 매수’ 중",
+"url": "https://www.mk.co.kr/news/stock/12215932",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-23T11:10:07Z"
+},
+{
+"title": "20년 묵힐 펀드엔 AI 담아야 정답…한투서 나왔다는데",
+"url": "https://www.mk.co.kr/news/stock/12215917",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-23T11:04:22Z"
+},
+{
+"title": "파이버스(PIEVERSE) 거래대금 2,384억원 1위…비트코인은 보합권",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1JaDh0dEh1S2haclJNTnJwaHJPY1I2V1hVb0NCYU9JclR6dkdfTGl3cUVOWVZHSnV2OW9yMHlOd3RtV1JYajVLVmdB?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-23T11:02:54Z"
+},
+{
+"title": "[속보] 업비트, 스카이프로토콜(SKY)·유에스디에스(USDS) 거래 유의 지정…입금 중단",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9zNHdiN2VwTjFGdDYwd19rUEUybXRiMWRHZEdJV1ZRU3ZNYTBZa1RiT010cUJBaEcxUU90dnRJekl4b1I0R1U3SXBR?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-23T11:02:44Z"
+},
+{
+"title": "월가 대표 낙관론자마저 눈높이 낮췄다…“S&P500 더 떨어질것”",
+"url": "https://www.mk.co.kr/news/stock/12215912",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-23T11:02:14Z"
+},
+{
+"title": "[업비트] 스카이프로토콜(SKY), 유에스디에스(USDS) 거래 유의 종목 지정 안내",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhM3FSd3hya3Q2MFJmNTM5S1NSREtab3dYT1l6NG92ZjVvdUhtdXlvSjhxNWM3Q1JDOGd2bGt4Vm1vZWdJYzNZdndIckZPQXQ1?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-23T11:00:57Z"
+},
+{
+"title": "South Korea to expand cryptocurrency account freezes and curb illicit transfers abroad",
+"url": "https://www.coindesk.com/policy/2026/11/23/south-korea-to-expand-cryptocurrency-account-freezes-and-curb-illicit-transfers-abroad",
+"source": "CoinDesk",
+"feed": "CoinDesk",
+"cat": "coin",
+"published": "2026-11-23T10:53:19Z"
+},
+{
+"title": "비트코인, 과거 두 번만 했던 일…트레이더 불안",
+"url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB4MktqRGtfMk0wSlhpT3FYbVFHZ1ZyOW1rRGZTMXVhSVoyVElYbjR6bGdDRHVac0hEa3cwdV9xcHVCbWRnc2U4M1M2ZGJVbExlc0hNQzZGWlR0cFhZMC15Tlg5TjN6WUlqMTlBQQ?oc=5",
+"source": "BeInCrypto",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-23T10:45:08Z"
+},
+{
+"title": "국민연금 때문에 꼬인 증시 수급 ... “증안펀드 10조론 역부족”",
+"url": "https://www.mk.co.kr/news/stock/12215898",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-23T10:43:05Z"
+},
+{
+"title": "피지컬AI 가 밀어올린 알체라…3분기 누적매출 71억",
+"url": "https://www.mk.co.kr/news/it/12215893",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-23T10:40:21Z"
+},
+{
+"title": "靑재정보좌관 “증시 충격 일시적일 수 있어…비관적으로 안 봐”",
+"url": "https://www.mk.co.kr/news/stock/12215890",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-23T10:38:49Z"
+},
+{
+"title": "Bitcoin breaks a record streak of 'lower highs.' Here's what it means",
+"url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-breaks-a-record-streak-of-lower-highs-here-s-what-it-means",
+"source": "CoinDesk",
+"feed": "CoinDesk",
+"cat": "coin",
+"published": "2026-11-23T10:31:02Z"
+},
+{
+"title": "비트코인은 급락, 주가는 반토막인데…세일러 “MSTR 연 34% 수익” 자랑",
+"url": "https://www.blockmedia.co.kr/archives/1169288?utm_source=general&utm_medium=rss",
+"source": "블록미디어",
+"feed": "블록미디어",
+"cat": "coin",
+"published": "2026-11-23T10:30:27Z"
+},
+{
+"title": "“어? 100만원 넣었는데 20만원 됐네”…곱버스, ETF 낙폭 순위 ‘싹쓸이’",
+"url": "https://www.mk.co.kr/news/stock/12215878",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-23T10:26:22Z"
+},
+{
+"title": "코스피, 외인・개인 매도세에 3%대 하락 4700선 마감",
+"url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4wV2NHVVo3d3RMT1FGclNlZjFrdHJwU0toNmdreUtfSUFGR1BMeEs2OVo4cDJYRzJNMllFRk5JVE4xWnl5c3pYelhCQ2ZDYXlOeHYwdUdqbnRkVHU3eFQ2eW5lbVNGcUJUX1ZV?oc=5",
+"source": "www.ksdaily.co.kr",
+"feed": "구글뉴스: 코스피",
+"cat": "stock",
+"published": "2026-11-23T10:19:32Z"
+},
+{
+"title": "[속보] 삼성증권도 해킹 피해…8000여 명 개인정보 유출",
+"url": "https://www.mk.co.kr/news/stock/12215874",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-23T10:16:01Z"
+},
+{
+"title": "[MK시그널] 그리드 다이나믹 홀딩스, 수익률 105.8% 돌파",
+"url": "https://www.mk.co.kr/news/stock/12215869",
+"source": "매일경제 증권",
+"feed": "매일경제 증권",
+"cat": "stock",
+"published": "2026-11-23T10:09:45Z"
+},
+{
+"title": "미국 나스닥100 선물 2.8%↑…AI 매도세 뒤 반등 기대",
+"url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5qOXM5ZE1kQkZUUVNXS0M2QWVBZlYtSlZxRE81WDNBQ2ZTYTZ0eEhsbzBvMTNOTHdZcm1NSlVHTi1lVGJrT2g4b1daLW1jTC1BUmZSTWlTMGFud0tQWHUzZngwSUpRdzdYMlIySkxDZ3J4Unc?oc=5",
+"source": "스페셜타임스",
+"feed": "구글뉴스: 뉴욕증시",
+"cat": "stock",
+"published": "2026-11-23T10:02:44Z"
+},
+{
+"title": "[코인 예측] 비트코인(BTC) 5만 5,000달러 재하락 확률 47%…하루 새 10%p 내렸다",
+"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE8tRTFjZmlxMldMN3R4RWJUc1R1VGlPQmE0VlZTaFk0dDVob2VLc1JxR3QtMmE0VmJVZ190YTdyVjlGeTdPc1BCNlh3?oc=5",
+"source": "코인리더스",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-23T10:02:39Z"
+},
+{
 "title": "“미국 주식 폭락, 매력적인 매수기회 생겼다”…골드만삭스의 분석",
 "url": "https://www.mk.co.kr/news/stock/12215863",
 "source": "매일경제 증권",
 "feed": "매일경제 증권",
 "cat": "stock",
 "published": "2026-11-23T10:02:31Z"
+},
+{
+"title": "코스피 3%넘게 하락 마감…코스닥 2년 만에 최저",
+"url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYZTFUVXk0ZEdfbWRIYjlQeUJ1dF9QbWZzZnZPNFJXWjJqVXVuWllreDl4WFZzMWphN3FYSzlDRDk4TFhNOWNIUjJuUUlYMFRDaXJETnhCZXpFOFk?oc=5",
+"source": "KBS 뉴스",
+"feed": "구글뉴스: 코스피",
+"cat": "stock",
+"published": "2026-11-23T10:02:00Z"
+},
+{
+"title": "미래에셋증권, 'IB 총괄' 사업부 폐지…도입 1년만",
+"url": "https://www.yna.co.kr/view/AKR20261123163400008",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-23T10:00:26Z"
 },
 {
 "title": "SM 14% ‘껑충’ JYP 8% ‘쑥’ … 공연허가 전 주가가 먼저 신난 이유는",
@@ -66,6 +234,30 @@
 "published": "2026-11-23T10:00:00Z"
 },
 {
+"title": "4대 거래소 비트코인 김프 평균 '1.33%'",
+"url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1GRGZsMFBSRnJpTXZ1VW9CcmZEYnRNaVktQ0VsTDBmNEpYRlk4YzBtb3JfelJ2dkJjUXMwWHZMajc2RVN6ek05RGRjdnB3cnM2Q2UtZDJZT0kzRzdJVjEyby1tSGtLaVY3cmlFMjhWQ21IUQ?oc=5",
+"source": "디지털애셋",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-23T10:00:00Z"
+},
+{
+"title": "LH, 공공주택 4천232가구 공모 연기…연내 선정 차질 우려",
+"url": "https://www.yna.co.kr/view/AKR20261123157200003",
+"source": "연합뉴스 경제",
+"feed": "연합뉴스 경제",
+"cat": "stock",
+"published": "2026-11-23T09:59:20Z"
+},
+{
+"title": "아이폰 노린 악성 광고 캠페인 '몰디루스트'…가상자산 지갑 복구 문구 노린다",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1MTVFIczVVZ2tNaDdDc0RhdWhrcmVFMDd2Nmh5SUhaa21semNvRHAwTy1UM1BiU29iUVhndzJHTjZrNGlPZHhjSDVaVXotX0Rl?oc=5",
+"source": "블루밍비트",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-23T09:58:53Z"
+},
+{
 "title": "“설마 4천피 붕괴까지 가겠습니까”…여의도 센터장들이 꼽은 저점은?",
 "url": "https://www.mk.co.kr/news/stock/12216457",
 "source": "매일경제 증권",
@@ -74,12 +266,12 @@
 "published": "2026-11-23T09:56:42Z"
 },
 {
-"title": "[코인 시황] 비트코인, 5.5만달러로 급락 후 6.1만달러 회복…美 연준 '빅스텝' 전망 후퇴",
-"url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5neFZiYlRHdnNGYWpCRlRscE0zSXdkcTB3NzFOamVnclo5aW95WGxqOUpHa3QwWnltUmZYOVYzeG1YdzAyejlpX3kyU05JeW56bk1ULVRRck9jTi1E?oc=5",
-"source": "뉴스핌",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-23T09:52:00Z"
+"title": "코스피, 3.31% 급락, 4천708.54 마감..코스닥 2녀난에 최저",
+"url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xTERpRkRQR1hsVzBYNExpSE5sTkNiamJHZ1ozX25tLVJDV0hkWWVwS1M1Y0d3bnEtQUotNUhqRFg5MnFJTGJJSEtiMmhGM29tVHNvektjcHZOakZJV2RrVUh4UkdnOFdrZGc?oc=5",
+"source": "충청매일",
+"feed": "구글뉴스: 코스피",
+"cat": "stock",
+"published": "2026-11-23T09:55:24Z"
 },
 {
 "title": "화장품주, 중국 큰손 유입 기대감에 강세…뷰티스킨, 21%대 급등",
@@ -290,7 +482,7 @@
 "published": "2026-11-23T08:52:26Z"
 },
 {
-"title": "'10조원 증안펀드' 실효성 있을까 … 대만은 20조 투입에도 증시 급락",
+"title": "'10조원 증안펀드' 실효성 있을까…대만은 20조 실탄에도 증시 흔들",
 "url": "https://www.mk.co.kr/news/stock/12216419",
 "source": "매일경제 증권",
 "feed": "매일경제 증권",
@@ -402,7 +594,7 @@
 "published": "2026-11-23T08:30:01Z"
 },
 {
-"title": "SK하닉 200조 대박 날 뻔했는데…한국 '초비상' 걸렸다",
+"title": "SK하닉 '200조 대박' 날 뻔했는데…한국 '초비상' 걸렸다",
 "url": "https://www.hankyung.com/article/2026112349871",
 "source": "한국경제 증권",
 "feed": "한국경제 증권",
@@ -482,6 +674,14 @@
 "published": "2026-11-23T08:16:34Z"
 },
 {
+"title": "[마켓뷰] 미국발 삭풍에 코스피 4700선 추락… 3.31% 하락 마감",
+"url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ1hBU3lqMzlFdG8wN0EtMHA0YWJDMkFVbkQwbmU5TW1JOUdfdDNRVlN0V3VJenRqaWFlX2RRczNrUXdFd1BueHU1SnRlR01yN25wQzU5TmpBYjlSUVRQMHF0RXNud2J6Q19YN0d5aTJ0YUp5bUI5ODItZGpHS0daZER5dHlycWk30gGcAUFVX3lxTE44LWN5VEtoNWZrWG84cWI0d0dQRG1ROUZXWUFqMnAxTTNzOFlQVXRZbkxCMHJMWXRoS3BKZTlzamtyWUZ5aGxRbHpzTkJwR1B6dG5lZ3RIeU5oNXNqQnFqMUJFRTM1WmY2TXBUQUVrR083NW8zTy03RWNwUXFpdHFMb256NE1YcGVCYlJSRlJha3ZmSWQ2blptdWJJMg?oc=5",
+"source": "Chosunbiz",
+"feed": "구글뉴스: 코스피",
+"cat": "stock",
+"published": "2026-11-23T08:16:00Z"
+},
+{
 "title": "[1123마감체크] 코스피, AI 쇼크에 3% 급락하며 4700선 턱걸이…코스닥 2년 만에 최저",
 "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZbWJubnpFZVFXWHBELTNEMmZrdXY2NmoyeGFRb09uSEExVFZodjFTcllkN0otb3dEZnhlaFAwdlhFMjJXVUtNaGRURWxySTRsY1JrNzZjcDVfZHpJdnM4Mm5aZ3VWN0w1LXNJV0hpQUI4NkVNWXc?oc=5",
 "source": "인포스탁데일리",
@@ -554,28 +754,12 @@
 "published": "2026-11-23T08:02:19Z"
 },
 {
-"title": "코스피 3%넘게 하락 마감…코스닥 2년 만에 최저",
-"url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tVnA3ZzZzN1k3VWk2Ymp4ZV9uZURCekFqSWtzSVBfaDhBc2JCRWlRTzBNb2x4bUZXVkFZSlpHT3YyWVVQbmt1cHFwbFlMbXI1TGhfMllYSVp0M1k?oc=5",
-"source": "KBS 뉴스",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-23T08:01:00Z"
-},
-{
 "title": "이더리움 글램스터담 내년으로 연기…개발자 “구조적 문제 반복”",
 "url": "https://www.blockmedia.co.kr/archives/1169274?utm_source=general&utm_medium=rss",
 "source": "블록미디어",
 "feed": "블록미디어",
 "cat": "coin",
 "published": "2026-11-23T08:00:21Z"
-},
-{
-"title": "[모멘트] 코스피, 3%대 급락 마감",
-"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE93U2NINGxlSThBTF9VU2o4MnVjYkUybUZXTWNvaktxRHZ1WVhXalU2U0dFc3JKTXRqSnBTX3A3TzZjek5GUzZYM0Q2X29tMXp3Rjh0SUZyWHFqbzZkaXNKS9IBYEFVX3lxTE93U2NINGxlSThBTF9VU2o4MnVjYkUybUZXTWNvaktxRHZ1WVhXalU2U0dFc3JKTXRqSnBTX3A3TzZjek5GUzZYM0Q2X29tMXp3Rjh0SUZyWHFqbzZkaXNKSw?oc=5",
-"source": "연합뉴스",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-23T07:56:51Z"
 },
 {
 "title": "이재근 KB금융 회장, 대학생·소상공인 간담회…취임 후 첫 행보",
@@ -722,6 +906,14 @@
 "published": "2026-11-23T07:39:37Z"
 },
 {
+"title": "비트코인 가격 전망: ETF서 17억 8,000만 달러 유출로 연준 우려 완화 효과 상쇄, BTC 반등 여전히 불안정",
+"url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQM2d0TlVSQmxUSUF4aWw5Wk9ENTRWRW1ab1AxTzhGT2dhQmNaTGo0X0JVbGs4X084Wk9KUE5vaGZLbUhISDBMM2V0NUFMektTOXBnMnRJU1FJMVRyakFLYTJLNmpjMkJza1pzTjJENzRCMEZuSTUwMzROZDVhRm9VUVVPdm8wd3hGbGlsVzUybFFkSEhLRWZhRi1JUnpFUzk0RFI2TVZQVnEwbHc1UmlWQmtsdTh4RWxORHhwSHVGamhSYTMzWWpqc0VPdWdhMWNMUWNPMjItVGlaUGZjeVRKRzBrR1NTd29hb1o1MzF1VVBNZHBzVWtUY2xpdVM2dw?oc=5",
+"source": "www.tmgm.com",
+"feed": "구글뉴스: 비트코인",
+"cat": "coin",
+"published": "2026-11-23T07:38:24Z"
+},
+{
 "title": "[바이오 마감 브리핑]제약 4.9% 하락에 대형주 약세…큐로셀·애드바이오텍 상한가",
 "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8xcm80bjlXeGFhMFhWXzV4NEtnMlFzY2puQmNWRWQyR09vRWtkVWJUM2R6X0hVR19iZkg3S0UyYnB0bzRXMkhKY2NHbVgxNFM1MEg2NDlIQ0VNbFdvaWFiOWVXc2FicFM2WmFVNFRrZllmZw?oc=5",
 "source": "메디코파마",
@@ -778,36 +970,12 @@
 "published": "2026-11-23T07:32:49Z"
 },
 {
-"title": "'증시 방어선 흔들'···하락 마감된 코스피",
-"url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UVmdCNUdmMEpSQkthekF5SEJYSmhldlBlaUNrZ05xTVd6WEZqTVFkdWp2NEIwWDlYQkdJc1RCY2dXUHN6Y3ZuT0dFRUMxOUdYY19iSmdMWF9paTctU2ZJajZ0c0ZNRWx4NWc?oc=5",
-"source": "뉴스웨이",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-23T07:32:43Z"
-},
-{
-"title": "코스피, 美 반도체주 급락에 3%대 하락···4700선 턱걸이 마감",
-"url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE91V0NKZ1NfLVBZRy1nTVUzODZkbmtrM2JiLXVHYkM5Slo2OGFYX0hjZ1p2MEU1TTk4bGQ2bDBwZlNSYWROaVBEbU9zM29qX2U1TzBYWnpSSjVMQ2pVczczMW8tNlk1TWNUNlE?oc=5",
-"source": "서울파이낸스",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-23T07:32:29Z"
-},
-{
 "title": "[속보] 업비트, 사이버(CYBER) 거래 유의 종목 지정…12월 4주차까지",
 "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE91UFJ4Y3Z4Q1B5MFBBVmx5MUVyV1dTZ2xsc2FHM0RtaHkxd3Fvc25TWnhnUHZNM04tYlNNRi14UkozQ3JudUtYZXZ3?oc=5",
 "source": "코인리더스",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-23T07:31:45Z"
-},
-{
-"title": "\"개미들, 수년 치 연봉이 사라졌다\"…코스피 4700선 마감에도 불안",
-"url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1abG9xTWJ1d0hmZ3VwTWhvamtwLUdHa3FVZWhUdkpkY0tqNlVfbWl1S0RxNVBBcF9BY2g4RkMyRDRRVi14cUphc1owZlVqZVdDNEg1VFRvQzFPTVRz?oc=5",
-"source": "부산파이낸셜뉴스",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-23T07:31:00Z"
 },
 {
 "title": "[업비트] 사이버(CYBER) 거래 유의 종목 지정 안내",
@@ -818,108 +986,12 @@
 "published": "2026-11-23T07:30:48Z"
 },
 {
-"title": "[빗썸] 사이버(CYBER) 거래유의종목 지정",
-"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1Ka2gwbi1ZSi00QTFsSG96MDYxVVNvOXdNaG5kZXdlOUgzS241WUZsdXhudUJKZGp0MmQ1cVNaU3Jaa1RCR0FtWmFkNUxOVTBO?oc=5",
-"source": "블루밍비트",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-23T07:30:46Z"
-},
-{
-"title": "울산 차유리 조립업체 폐업 맞아 고용안정 대책 촉구",
-"url": "https://www.yna.co.kr/view/AKR20261123135300057",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-23T07:30:08Z"
-},
-{
-"title": "급락에 쪼그라든 코스피…고점 대비 반토막·올 수익률 11%로 뚝",
-"url": "https://www.yna.co.kr/view/AKR20261123140200008",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-23T07:29:45Z"
-},
-{
-"title": "'단지내 영어마을' 들어온다더니…경실련, 분양사기 사례 공개",
-"url": "https://www.yna.co.kr/view/AKR20261123139300004",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-23T07:29:17Z"
-},
-{
 "title": "[코인뉴스] 비트코인 바닥 논쟁…3만 달러대 열리나",
 "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPT2xoSEVNWWIwc2hPV0tGdUgtb3ZzQVpQZTNQTDZBMmc3aC14ZTU3UUhHVW42bGpXRk0teW1yWFJ4QjBHUEJxc202T2Rzd3lWa3VxdDFqMmJvNjZxYlJXZ0loNUd0R0VoWXpDUE8zN3lkNEdZYkNwZ2tUcXJyZ2dOTUZ2Mm9lLTRvRjBNMDlkZ3Z6TFhQX2lwOFRCX3dGMTNTZTBQaUxUOTQyenRVSHg0ZmY0RjdlYXRVNHdsbnFKRHVHdDB3S0ZVbnF1V3E0N2RaNFY5TnhBR19hd0VncTRtdWhEWGV1OTItNW4zaHdnRFdmS2RoTTJqRm9CZmRnUFZVUWVTdEM1ZlRPS0o2Yk5kLTRtU3BqSkZk?oc=5",
 "source": "데일리안",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-23T07:29:00Z"
-},
-{
-"title": "AI 우려에 코스피 하락 마감...연이틀 매도 사이드카",
-"url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE02anNuanlWdFpmM1RtdzFlYV8tSEF1REs4dHlJZDdyNF9FRFAxUXpFNkFsem5keDBmVF8zWTdNWG9QTlBETDNLRWFGbml2ekFYV0R3WUJVRklicG5yRVR3VWR1b1BLaUVBdk5XbDdSdw?oc=5",
-"source": "YTN",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-23T07:28:00Z"
-},
-{
-"title": "'춤만 추는' 휴머노이드…상용화 지연에 로봇株 주가 1년 전으로 회귀",
-"url": "https://www.hankyung.com/article/202611234584i",
-"source": "한국경제 증권",
-"feed": "한국경제 증권",
-"cat": "stock",
-"published": "2026-11-23T07:27:56Z"
-},
-{
-"title": "[마감시황] AI 악재에 외국인 이탈…코스피 3.31% 급락해 4700선 턱걸이",
-"url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBad256VGl5NDhObDdZODZhT195SjRZM1VyV0Q1eC1jakxhU1dzOXFOUWtPNlpMTXdTWXVlblNkWkRfMElJUFdpdElHdTgtVHVWUnoydzNUcVRNbzVwMjdLbW5hQnVLVDlMQ3R3eUdB?oc=5",
-"source": "폴리뉴스 Polinews",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-23T07:27:56Z"
-},
-{
-"title": "우리증권, 첫 공모채 수요예측에 모집예정액 14배 몰려",
-"url": "https://www.yna.co.kr/view/AKR20261123141200008",
-"source": "연합뉴스 경제",
-"feed": "연합뉴스 경제",
-"cat": "stock",
-"published": "2026-11-23T07:27:14Z"
-},
-{
-"title": "4700선 마감한 코스피…\"AI 리스크 충격\"",
-"url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBORk5kV1NmUk5UNmpaQXBtRmsyUFBVbFpmUzU5MVJibUVHWml6b3NnV2ZTam9pUDZhSExEYk9qdXI1LWwweXpKbmtlZ2RhdVluUVdlLV80OTh1aHNDU2c?oc=5",
-"source": "동행미디어 시대",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-23T07:27:04Z"
-},
-{
-"title": "[외환+] AI 쇼크에 강달러···원·달러 환율, 2주 만에 1340원대 마감",
-"url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4wU3VFTGNONHZLYnpQT1czMWlGeFJtQUNxR1RTNG8tRWwzd2xwaEgtWUtTVnVYNFpmWDV2SWtrSk4xc19XdS1DUWhXU2Nxb3VET3ZualNvVEdQLXRXQUJqcGRHejNaYUpSbFE?oc=5",
-"source": "서울파이낸스",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-23T07:26:22Z"
-},
-{
-"title": "‘검은 월요일’ 코스피 3.31% 하락...4700선 턱걸이 마감",
-"url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPU28xY0xwdmdZYk4tdFY3XzZDLWpKb0dHYVpHS08wRUJVUm1QOHJrSmRYanUtSHRvekRHc3JWMmxUQWhhV3pweXI1dGpYaUtIOEdHcElXbFRrNDl4M0xlSGx4VUxDMm04aTN5aTBXUTdDaDNEVlRIYm5XM2t2STNsag?oc=5",
-"source": "조선일보",
-"feed": "구글뉴스: 코스피",
-"cat": "stock",
-"published": "2026-11-23T07:26:00Z"
-},
-{
-"title": "뉴욕 증시 기술주 매도세 확대 … 나스닥 10%·S&P500 8.6% 급락",
-"url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE53WDUzOU9yajlKSVpVM2JSUjFhMjJ2MkFsTndkbFYybUNIc0Z0dkN5NkRJSGl6M1g5cDZoNEp3YVFodVJJQ1NQMzV0WnFOWGdGT3Y5Z290WG14S3ZsQklHQWxSWW4tRnljMnQ5aVJ3?oc=5",
-"source": "세이프머니",
-"feed": "구글뉴스: 뉴욕증시",
-"cat": "stock",
-"published": "2026-11-23T07:25:02Z"
 },
 {
 "title": "This Swedish bitcoin treasury firm lost 30 BTC trading part of its own stack",
@@ -1082,14 +1154,6 @@
 "published": "2026-11-23T06:15:00Z"
 },
 {
-"title": "[시세] BNB(BNB) 4% 뛰었다…560.85달러 뚫을까",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9pdmdRdG5QZ0hNbjVZc09mYnhRLVNOOC1faE40VWZYLXRKUXNWZ0JYVDl3RV9hMzRlYmhKZmdYdzNFemp2LTVkS01R?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-23T06:14:41Z"
-},
-{
 "title": "골드만삭스 “삼성·SK하이닉스 목표가 낮췄다…메모리 가격 급락 경고”",
 "url": "https://www.blockmedia.co.kr/archives/1169323?utm_source=general&utm_medium=rss",
 "source": "블록미디어",
@@ -1178,76 +1242,12 @@
 "published": "2026-11-23T05:12:39Z"
 },
 {
-"title": "금 2.6% 급반등에도 비트코인은 약세장…’디지털 금’ 위상 흔들",
-"url": "https://www.blockmedia.co.kr/archives/1169306?utm_source=general&utm_medium=rss",
-"source": "블록미디어",
-"feed": "블록미디어",
-"cat": "coin",
-"published": "2026-11-23T05:10:52Z"
-},
-{
 "title": "아서 헤이즈 \"비트코인, 나스닥 하락 지속 시 5만달러까지 하락 가능\"",
 "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tODl4X3FvdF85a19mem9NUktVNktReXJkcklYbGllT01xeVFnUGNyRnVnX0IwVVd4OEpHdEpjTUhJSE00UmxBVnNSamh5VW1l?oc=5",
 "source": "블루밍비트",
 "feed": "구글뉴스: 비트코인",
 "cat": "coin",
 "published": "2026-11-23T05:00:26Z"
-},
-{
-"title": "비트코인 5만 5130달러 연중 최저…암호화폐 3대장 동반 추락",
-"url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcVFocDBMclcwUFowY3VCeGExTmpMVmdiVFJmeWZjN1lGM2lmdWRRaW00SEFBdjJ2dlZwTVZQY1VEM2NESV9sZnRtd3hOTGtsYWN5WHdKQlJUd18wWndhWGloTEQyX0Ewd1NhQk8yQ0NjSXhSNjNvUF9Pak5zeW0zemctZUtpVnpD?oc=5",
-"source": "글로벌이코노믹",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-23T04:56:32Z"
-},
-{
-"title": "Market rout kills 50 basis points December Fed rate hike bets",
-"url": "https://www.coindesk.com/markets/2026/11/23/market-rout-kills-50-basis-points-december-fed-rate-hike-bets",
-"source": "CoinDesk",
-"feed": "CoinDesk",
-"cat": "coin",
-"published": "2026-11-23T04:45:47Z"
-},
-{
-"title": "업비트, 비트코인(BTC) 등 25종 입출금 30일 오후 10시부터 중단",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1STE5Xbmo2eDBsakhTMnhIS1U2M3FJdUM1eTU3bGZTWHNJSzgtamZyUGw1NUJycmI2NEZsSDdKQk5mSFNVUlk5QUdR?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-23T04:43:53Z"
-},
-{
-"title": "피터 브랜트 \"비트코인 75% 조정 가능성\"…과거 사이클 '눈길'",
-"url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBOMGFRb3dxVDdKd283Nk5CRWVsYl9rZnFQT0N4Tjh5enZ1ejFqWFY3SEtCbzNoTEVDcTQ4RUN0MFhPdmlkNkJHdHV3U0M4bTRWdmJhYlJWZ0ROOGJGLWtkR2QwcFNudzdGVmRSZ2tDaW9LTEE?oc=5",
-"source": "디지털투데이",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-23T04:41:46Z"
-},
-{
-"title": "비트코인(BTC), 코웬의 4분기 폭락 예측 적중?...\"2018년 항복 장세 판박이\"",
-"url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE54QXN4TU9JX0FDLXBZbUx4Nkl1R2hBdU5sUjhscjBDc0xxS3Y2X0NocUN0YjlUVG9ZSGRHOUV4N0ljR1BLa1U0YWJB?oc=5",
-"source": "코인리더스",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-23T04:35:00Z"
-},
-{
-"title": "코인 투자자 34.6% “하락 원인은 인플레이션·금리 인상 우려”…투심 ‘공포’ 56%",
-"url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1iUVI4NGZyX3pBR1YxcGpvWmFYSU53M2dyeTdHVHlEWGR5dXZOaERTYnRqLUxWLWUwdHlqT3FtQkVBZ0s3Vl84RjVZMzZiS0p6bklHT1E3ZUIxTkF1bHlXMERUbzVkUVA5VVE?oc=5",
-"source": "더스탁(The Stock)",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-23T04:29:20Z"
-},
-{
-"title": "비트코인 8300만원선 되찾아… 주말 낙폭 일부 만회",
-"url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrNUZ2a3hBczgzckZRWGcyb3Fhdk9yb2hKOW4xOXg5Z2xsVDRxUng2ZzZ1ZDhfdmhiZ3BFMTYwTU1ZNkpfYXVET2xjbXYzc2Fhc25qV0xBZTJuQVZjSzlOQVdCU05kN19tRVJrcGhpY9IBdEFVX3lxTE8yNk1ReWlGVE1Rb0dPWFpQWFRPQlZpSXhxZldUR1lsX196dmdfY1JINDR3UVplMVdxcFZlSGlPVkxZMm5nWXNpQVpvWDd4WC00X1VxeTFLeHR6ME1SUmM4dWdhR2lwYnlEbVVDWUZnUVJxN2Vq?oc=5",
-"source": "뉴스클레임",
-"feed": "구글뉴스: 비트코인",
-"cat": "coin",
-"published": "2026-11-23T04:28:05Z"
 }
 ]
 }
