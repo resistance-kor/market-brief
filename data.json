@@ -1,17 +1,258 @@
 {
  "meta": {
-  "updated_at": "2026-11-27T22:26:47Z",
-  "headline": "AI·반도체 반등에 나스닥 2.31%↑·주간 6.7%↑, 美 10년물 4.94%로 반등…비트코인은 6만 달러 하회",
+  "updated_at": "2026-11-28T13:40:00Z",
+  "headline": "주말 비트코인 5.9만 달러대·공포탐욕 10, 트럼프 연계 WLFI 50% 폭락…다음 주 증안펀드 윤곽·젠슨 황 질의 주목",
   "bullets": [
-   "뉴욕증시 단축장에서 나스닥 24,129.50(+2.31%)·S&P500 7,297.49(+1.6%), 필라델피아 반도체 4.7%대↑ — 주간 S&P500 +5.6%·나스닥 +6.7%, 다우는 4년 만 최대 주간 상승.",
-   "샌디스크 16%·마이크론·마벨 7%대 등 메모리주 반등, SK하이닉스 미국 상장주 7%대↑ — 월요일 국내 반도체주에 우호적, 다만 엔비디아 블랙웰 중국 유입 보도는 부담.",
-   "비트코인은 주식 반등에도 5만9천 달러대로 밀려 7주 연속 하락 탈출이 불투명, 공포탐욕 12·블랙록 디지털자산 11월 223억 달러 감소.",
-   "미 10년물 8.8bp 오른 4.94%, 금 3,668달러(+3.8%)·WTI 83달러대, 원·달러 1,333원으로 하락.",
-   "다음 변수: 29일 증안펀드 투자관리위·OPEC+(현지), 30일 금융위 긴급회의, 12월 1일 젠슨 황 하원 질의, 4일 고용, 9일 FOMC."
+   "비트코인 59,169달러·이더리움 1,646달러로 약세, 공포탐욕 10(극단적 공포) — 현물 ETF 8거래일 연속 순유출(27일 3.89억 달러)로 출시 이후 최대 월간 유출.",
+   "트럼프 연계 WLFI 토큰이 하루 새 50% 넘게 폭락해 사상 최저, 스테이블코인 USD1도 0.96달러까지 디페깅.",
+   "코스피 4,915.68로 4,900선 회복·코스닥 주간 9.81%↑, SK하이닉스는 자사주 일일 주문을 70만 주로 확대 — 30일 금융권 긴급회의서 10조 증안펀드 가동안 윤곽.",
+   "뉴욕증시 주간 S&P500 +5.6%·나스닥 +6.7%로 마감, 아서 헤이즈는 월요일 나스닥 하락 시 비트코인도 약세 전망.",
+   "미 10년물 4.94%, 금 3,640달러·WTI 83달러대, 원·달러 1,334원·달러인덱스 104.",
+   "다음 변수: 29일 증안펀드 투자관리위·OPEC+(현지), 30일 금융위 긴급회의, 12월 1일 젠슨 황 하원 질의·MSTR MSCI 편출, 4일 고용, 9일 FOMC."
   ],
   "schedule": "매일 07:19 · 22:19 (KST)"
  },
  "articles": [
+  {
+   "id": "20261128-wlfi-plunge-50",
+   "title": "트럼프 연계 WLFI 토큰 50% 넘게 폭락, 사상 최저",
+   "source": "CoinDesk",
+   "url": "https://www.coindesk.com/markets/2026/11/28/trump-linked-crypto-token-wlfi-plunges-over-50",
+   "published": "2026-11-28T09:32:51Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "트럼프 일가와 연계된 월드리버티파이낸셜의 WLFI 토큰이 하루 새 50% 넘게 떨어지며 사상 최저치로 밀렸다. 국내 매체는 하루 낙폭을 56%로 전하며 담보 청산 우려가 투자자 불안을 키웠다고 보도했다.",
+   "why": "정치 테마 코인의 급락은 알트코인 전반의 위험회피 심리를 자극할 수 있어 단기 변동성 요인으로 볼 수 있다.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 2,
+   "tickers": [
+    "WLFI"
+   ]
+  },
+  {
+   "id": "20261128-usd1-depeg",
+   "title": "월드리버티 스테이블코인 USD1, 0.96달러까지 디페깅",
+   "source": "블루밍비트",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yV3A3aHVVZGZtRFJNQkR1M0E5bW44dWhfLVZnX0lpSDBTOXVxT3VYaTJGZG5KNklub19FREx1QTJXSElCaUh5aUc0NFRqSlpw?oc=5",
+   "published": "2026-11-28T07:03:44Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "WLFI 급락 여파로 같은 회사가 발행하는 스테이블코인 USD1이 1달러 고정에서 벗어나 0.96달러까지 밀렸다. 점프크립토가 디페깅 구간에서 차익거래에 나섰다는 보도도 이어졌다.",
+   "why": "스테이블코인 신뢰 문제는 코인 시장 유동성에 부담이 될 수 있어 페그 회복 여부가 관심사다.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 2,
+   "tickers": [
+    "USD1",
+    "WLFI"
+   ]
+  },
+  {
+   "id": "20261128-btc-etf-record-monthly-outflow",
+   "title": "비트코인 현물 ETF, 출시 이후 최대 월간 순유출",
+   "source": "매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jMEx4SEhTcE5jSl9XaUhhNllZNEcwdjlEVXRUQWxVcHlDUmN3OEVXTGJjSHJKZDRJbDNraV9CNEFtbVR3ekNNNkUzdVdKSXF5VUk4?oc=5",
+   "published": "2026-11-28T11:28:54Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "미국 비트코인 현물 ETF의 11월 자금 유출이 출시 이후 월간 기준 최대 규모를 기록했다. 주요 코인 ETF 가운데 XRP 상품만 순유입으로 돌아섰다.",
+   "why": "기관 자금 이탈이 이어지는 한 비트코인 반등 탄력이 제한될 수 있다는 해석이 가능하다.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 3,
+   "tickers": [
+    "BTC",
+    "XRP"
+   ]
+  },
+  {
+   "id": "20261128-btc-etf-8day-outflow",
+   "title": "비트코인 현물 ETF 8거래일 연속 순유출…27일 3.89억 달러",
+   "source": "PANews",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBocUx1eW9xbUl2bWFMQ1h5TVo2VzVMVEtsRUJDUWtZNUE5aFllbzNnbmxkRnk0X191TnkxeWFmdGYtRVdIQWJvMkNBamNZd2xyUnlPZDJsQm1TSGg0VEpuTllwY1RWMTY4eFZ3WFpZUFlULW9PSkpQRkpxd2xpRHc?oc=5",
+   "published": "2026-11-28T05:29:30Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "미국 비트코인 현물 ETF에서 27일 하루 3억8,900만 달러가 빠져나가며 8거래일 연속 순유출을 이어갔다. 같은 날 이더리움 현물 ETF도 6,927만 달러 순유출을 기록했다.",
+   "why": "주식 반등에도 코인 ETF 자금이 계속 빠지고 있어 비트코인의 상대적 약세가 이어지는 배경으로 꼽힌다.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "악재",
+   "importance": 2,
+   "tickers": [
+    "BTC",
+    "ETH"
+   ]
+  },
+  {
+   "id": "20261128-hayes-monday-nasdaq",
+   "title": "아서 헤이즈 \"월요일 나스닥 하락 시 비트코인도 약세\"",
+   "source": "블루밍비트",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JOUx2M2txUVJlSzB0czRMV1BDUzZCY1FFUUFvQXFQdGFLUzlKYUFjSkhveW1FMWZ2WVBuYXVkWENtSzhySTI5ZmVJdGhheHY1?oc=5",
+   "published": "2026-11-28T09:56:52Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "비트멕스 공동창업자 아서 헤이즈가 다음 주 월요일 나스닥이 하락하면 비트코인도 약세를 보일 것이라는 전망을 내놨다. 그는 앞서 비트코인과 나스닥의 괴리를 달러 유동성 경고로 해석한 바 있다.",
+   "why": "비트코인이 독자 반등보다 기술주 방향에 끌려가는 국면이라는 시각으로, 월요일 미국장 흐름이 코인에도 변수가 될 수 있다.",
+   "markets": [
+    "코인",
+    "미국주식"
+   ],
+   "impact": "중립",
+   "importance": 1,
+   "tickers": [
+    "BTC"
+   ]
+  },
+  {
+   "id": "20261128-skhynix-buyback-700k",
+   "title": "SK하이닉스, 자사주 하루 매수 주문 70만주로 확대",
+   "source": "매일경제 증권",
+   "url": "https://www.mk.co.kr/news/business/12220647",
+   "published": "2026-11-28T09:33:47Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "SK하이닉스가 주가 급락에 대응해 자사주 매입 속도를 높여 하루 매수 주문 수량을 70만 주로 늘렸다. 한국경제는 300만 원에 육박하던 주가가 111만 원까지 떨어진 상황에서 꺼낸 대응책으로 분석했다.",
+   "why": "대규모 자사주 매입은 수급 측면에서 주가 하단을 받치는 요인이 될 수 있으나, 메모리 업황 우려 해소가 관건으로 보인다.",
+   "markets": [
+    "국내주식"
+   ],
+   "impact": "호재",
+   "importance": 2,
+   "tickers": [
+    "000660"
+   ]
+  },
+  {
+   "id": "20261128-foreign-224tn-fund",
+   "title": "외국인 224조 순매도 코스피…당국, 증안펀드로 대응",
+   "source": "매일경제 증권",
+   "url": "https://www.mk.co.kr/news/stock/12220735",
+   "published": "2026-11-28T08:39:46Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "코스피에서 외국인이 224조 원어치를 순매도하며 지수가 고점 대비 반토막 수준까지 밀렸다는 분석이 나왔다. 금융당국은 증안펀드 가동을 시장 안정의 승부수로 꺼내 들었다.",
+   "why": "외국인 매도세가 멈추는지가 국내 증시 반등 지속성의 핵심 변수로 꼽힌다.",
+   "markets": [
+    "국내주식"
+   ],
+   "impact": "혼재",
+   "importance": 2,
+   "tickers": [
+    "KOSPI"
+   ]
+  },
+  {
+   "id": "20261128-stab-fund-next-week",
+   "title": "10조 원 증안펀드 가동 방안 내주 윤곽…30일 금융권 긴급회의",
+   "source": "블루밍비트",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8wWng2QzNLbXE5N0k0WnJINEdZNUpIM2hYQ1ZGdFluekxqd1NpVkJVWXlia1U2dXhaUUU3bmVRUXZ6a3oxcmhDOWZOTWo2eEsx?oc=5",
+   "published": "2026-11-28T05:52:22Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "정부의 10조 원 규모 증권시장안정펀드 가동 방안이 다음 주 구체화될 전망이다. 30일에는 금융권이 참여하는 긴급회의가 열린다.",
+   "why": "정책 자금 투입 규모와 시점이 확정되면 국내 증시 심리 개선 요인이 될 수 있으나 효과는 외국인 수급에 달려 있다.",
+   "markets": [
+    "국내주식"
+   ],
+   "impact": "호재",
+   "importance": 2,
+   "tickers": [
+    "KOSPI",
+    "KOSDAQ"
+   ]
+  },
+  {
+   "id": "20261128-kr-weekly-kosdaq-981",
+   "title": "코스피 4,900선 회복·코스닥 주간 9.81% 상승",
+   "source": "업코리아",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1heXJvbklUelFvQlZfbHFpSW90alI3Y3RBZS0zdW1SVEl1a0NOWTNGaV91dWZ0N000LUJMcTV4b2pmUm5uSXBjSmZ4ZEVmelAwVHNmbnNRc2Q5T1pwOGJCN0M1V2oyOUNXdUc5Ynhn?oc=5",
+   "published": "2026-11-28T06:42:21Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "이번 주 국내 증시는 극심한 변동성 속에 반등으로 마감하며 코스피가 4,900선을 회복했다. 코스닥은 주간 9.81% 올랐다.",
+   "why": "저점 반등이 나타났지만 변동성이 커 다음 주 증안펀드 윤곽과 미국 기술주 흐름이 추세 확인 변수로 꼽힌다.",
+   "markets": [
+    "국내주식"
+   ],
+   "impact": "호재",
+   "importance": 2,
+   "tickers": [
+    "KOSPI",
+    "KOSDAQ"
+   ]
+  },
+  {
+   "id": "20261128-kr-next-week-vars",
+   "title": "다음 주 코스피 변수는 증안펀드·젠슨 황",
+   "source": "한국경제 증권",
+   "url": "https://www.hankyung.com/article/202611275312i",
+   "published": "2026-11-28T03:00:04Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "다음 주 코스피 5,000선 회복 여부를 가를 변수로 증안펀드 가동과 젠슨 황 엔비디아 CEO 관련 일정이 꼽혔다. 연합뉴스도 다음 주 경제 일정으로 증안펀드 가동 윤곽과 한국은행 잠재성장률 추정치 발표를 제시했다.",
+   "why": "엔비디아 대중국 칩 의혹 질의 결과는 국내 반도체주 투자심리에 영향을 줄 수 있다.",
+   "markets": [
+    "국내주식",
+    "미국주식"
+   ],
+   "impact": "중립",
+   "importance": 1,
+   "tickers": [
+    "KOSPI",
+    "NVDA"
+   ]
+  },
+  {
+   "id": "20261128-vtb-bitcoin-sales",
+   "title": "러시아 2위 은행 VTB, 美 제재 속 비트코인 판매 확대",
+   "source": "블록미디어",
+   "url": "https://www.blockmedia.co.kr/archives/1171703?utm_source=general&utm_medium=rss",
+   "published": "2026-11-28T01:28:11Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "미국의 이란 관련 제재 대상이 된 러시아 2위 은행 VTB가 비트코인 판매 거래를 늘리고 있다. 러시아는 최근 거래소의 개인 코인 거래를 허용한 바 있다.",
+   "why": "제재 회피 수단으로 코인이 쓰인다는 인식은 규제 강화 논의로 이어질 수 있다.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "중립",
+   "importance": 1,
+   "tickers": [
+    "BTC"
+   ]
+  },
+  {
+   "id": "20261128-china-blockchain-id",
+   "title": "중국, 블록체인 디지털 신원 규정 확정…2027년 3월 시행",
+   "source": "Cryptonews",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNVJDS0luTWxKMk5vNERuSWE1SDJzRjdFWjlTNDVjVnI0RTlaeXFnR25LYmllSFEwM05GaTFQbjdod0pDbDc4T1dUMUJLcVFtbDRHNFlncDhXdzNIVmFFclZscXJGTDZmZVRnWDdhMWwwRFpTZFhXWjJjWThvRTBNbjdOc25kYzQ?oc=5",
+   "published": "2026-11-28T09:35:17Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "중국이 블록체인 기반 디지털 신원 관련 규정을 확정했으며 2027년 3월 1일부터 시행한다.",
+   "why": "중국의 국가 주도 블록체인 인프라 확대 흐름으로, 공개형 코인 시장에 대한 직접 영향은 제한적으로 보인다.",
+   "markets": [
+    "코인"
+   ],
+   "impact": "중립",
+   "importance": 1,
+   "tickers": []
+  },
+  {
+   "id": "20261128-saudi-vision2030",
+   "title": "사우디, 경제·안보 압박에 비전 2030 지출 조정",
+   "source": "CNBC Markets",
+   "url": "https://www.cnbc.com/2026/11/28/saudi-arabia-vision-2030-spending.html",
+   "published": "2026-11-28T06:00:01Z",
+   "added": "2026-11-28T13:40:00Z",
+   "summary": "사우디아라비아가 경제와 안보 압박 속에 국가 개발 계획인 비전 2030의 지출 방향을 조정하고 있다. OPEC+ 회의를 앞둔 시점이다.",
+   "why": "사우디 재정 여건은 산유량 정책 판단에 영향을 줄 수 있어 OPEC+ 결정과 함께 유가 변수로 볼 수 있다.",
+   "markets": [
+    "원자재·환율"
+   ],
+   "impact": "중립",
+   "importance": 1,
+   "tickers": [
+    "WTI"
+   ]
+  },
   {
    "id": "20261128-us-holiday-spending",
    "title": "미국 소비자, 장난감값까지 올라 연말 지출 축소",
@@ -6903,7 +7144,7 @@
    "id": "20261127-black-friday",
    "date": "2026-11-27",
    "title": "블랙프라이데이 소비",
-   "note": "단축장 마감 — 나스닥 2.31%·필라델피아 반도체 4.7%대 상승, 다우 주간 4년 만 최대 상승(블록미디어·서울경제)"
+   "note": "단축장 마감 — 나스닥 2.31%·필라델피아 반도체 4.7%대 상승, 다우 주간 4년 만 최대 상승(블록미디어·서울경제) / 블랙프라이데이 쇼핑은 예년만 못했다는 평가(YTN)"
   },
   {
    "id": "20261127-btc-options",
@@ -6940,7 +7181,7 @@
    "id": "20261130-fsc-emergency-meeting",
    "date": "2026-11-30",
    "title": "금융위 시장안정 긴급점검회의",
-   "note": "금융위원장 주재, 증안펀드 확대·가동 방안 논의 예정 — 씨티는 20~40조 확대·12월 1~2조 선투입 가능성 제시"
+   "note": "금융권 긴급회의, 10조 원 증안펀드 가동 방안 윤곽 전망(블루밍비트) — 씨티는 20~40조 확대·12월 1~2조 선투입 가능성 제시"
   },
   {
    "id": "20261201-msci-rebal",
